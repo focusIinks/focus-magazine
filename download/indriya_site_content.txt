@@ -1,0 +1,454 @@
+================================================================================
+INDRIYA X RESEARCH CENTRE - COMPREHENSIVE SCRAPE REPORT
+================================================================================
+Date of Scrape: May 17, 2026
+Scraped by: Browser Scraper Agent (Task ID: 1)
+================================================================================
+
+SECTION 1: INSTAGRAM PROFILE (@indriyax.vision)
+================================================================================
+
+USERNAME: indriyax.vision
+DISPLAY NAME: IndriyaX
+URL: https://www.instagram.com/indriyax.vision
+
+FOLLOWER COUNT: 320
+FOLLOWING COUNT: 211
+POST COUNT: Not visible without login (estimated 15-25 posts based on grid)
+
+BIO TEXT (partially truncated due to login wall):
+  •👁️Keeping Your Vision Crystal Clear✨
+  •Precision | Clarity | Care.👓
+  •DM FOR COLLABORATION (indriyax@gmail.com)
+  Founder - [TRUNCATED - login required to expand]
+
+HIGHLIGHTS (Story Highlights):
+  1. "OptoTalks" - Clinical education series
+  2. "LIVE WEBINER" - Webinar recordings/highlights
+
+CONTACT INFORMATION:
+  Email: indriyax@gmail.com
+  Phone: +91 9382617530
+  WhatsApp Community: https://chat.whatsapp.com/LcSbqIUr8KG6DEWiq2ygx7
+
+================================================================================
+SECTION 2: LINKEDIN COMPANY PAGE
+================================================================================
+
+COMPANY NAME: INDRIYA X
+URL: https://www.linkedin.com/company/indriya-x
+INDUSTRY: Research Services
+TAGLINE: "Research and learning platform for vision scientist"
+COMPANY SIZE: 2-10 employees
+TYPE: Self-Employed
+FOUNDED: 2026
+LINKEDIN FOLLOWERS: 300
+
+WEBSITE LISTED: https://www.instagram.com/preci.ous.vision
+  NOTE: This is the founder's personal Instagram account (profile not available/
+
+ABOUT SECTION (full text):
+  "Indriya X is a dedicated research and learning platform for Optometrists and
+  Optometry students who are passionate about gaining in-depth knowledge,
+  clinical excellence, and innovation in eye care.
+
+  What you'll gain:
+  - Evidence-based clinical discussions
+  - Research guidance & paper reviews
+  - Latest advancements in optometry & vision science
+  - Webinars, workshops & expert talks
+  - Case discussions & practical insights
+  - Career guidance, academics & skill development
+
+  Who can join?
+  - Optometry students
+  - Practicing optometrists
+  - Researchers & academicians
+  - Anyone keen to explore new ideas, research & clinical growth
+
+  Our mission:
+  To connect, educate, and empower the optometry community through continuous
+  learning and research-driven practice.
+
+  Learn. Research. Innovate. Grow together."
+
+LISTED EMPLOYEES:
+  1. Anik Dingal (likely co-founder)
+  2. Mainak Motilal (likely co-founder)
+
+SIMILAR PAGES (LinkedIn suggestions):
+  - Neuroptech (Optometrists)
+  - NeuraSim Private Limited (Public Health, Bengaluru South, Karnataka)
+  - Orbis International (Non-profit, New York, NY)
+  - Abira Media (Broadcast Media Production)
+
+================================================================================
+SECTION 3: ALL EXTRACTED POSTS (chronological order)
+================================================================================
+
+POST 1: FOUNDING ANNOUNCEMENT
+Date: December 25, 2025
+Type: Reel
+Likes: 10 | Comments: 0
+URL: https://www.instagram.com/reel/DSsVM3Ikq_s
+Content: "Introducing INDRIYA X Research Centre – a collaborative platform for
+Optometrists and Ophthalmologists. Students, clinicians, researchers, and
+innovators are all welcome to share ideas, develop new concepts, and drive
+innovation in vision science together.
+#optometry #researchoptometrist #researchers #perceivision #optometry"
+
+POST 2: PERCIVISION COLLABORATION
+Date: December 27, 2025
+Type: Reel
+Likes: 11 | Comments: 0
+URL: https://www.instagram.com/reel/DSxVTCukvi3
+Content: "Indriya X Research Centre is proud to collaborate with Percivision to
+launch an online research and learning platform for optometry students and
+professionals. This collaboration is focused on advancing clinical research,
+digital vision solutions, interdisciplinary collaboration, and academic
+excellence in the field of optometry and ophthalmic sciences. Together, we aim
+to empower the next generation of vision care professionals through
+innovation-driven research and education.
+#researchcollaboration #optometryinnovation #visionscience #IndriyaX #percivision"
+
+POST 3: OCT INTERPRETATION WEBINAR
+Date: January 13, 2026
+Type: Post (Edited)
+Likes: 132 | Comments: 1
+URL: https://www.instagram.com/p/DTe52Sdkrdt
+Tagged: @anik_orig, @brajesh_optom, @sanjaisangwan
+Content: "OCT INTERPRETATION MADE EASY FOR OPTOMETRISTS
+Join Indriya X. Learn from experience. Learn from expertise.
+Speaker: Brajesh Kumar
+- 16+ years of clinical experience
+- Senior Faculty – Optometry
+- In-charge, Posterior Segment Diagnostics
+- Dr. Shroff's Charity Eye Hospital, New Delhi
+Topics: Understand OCT beyond reports, Identify common & critical retinal
+conditions, Improve confidence in daily practice
+Date: 1st February 2026, 10:00 AM IST
+Registration: https://forms.gle/hEtVcRx59vSRobde8"
+
+POST 4: NEURO-OPTOMETRY WEBINAR (Dr. Nayan Gupta)
+Date: ~February 2026 (LinkedIn repost by Debmalya Chakraborty ~1 month ago)
+Type: Webinar
+LinkedIn Engagement: 26 likes, 3 comments
+Content: "From Brain to Binocular Vision: A Neuro-Optometric Approach to
+Evaluation and Therapy" - delivered by Dr. Nayan Gupta, Ph.D., FAAO, FIACLE
+
+POST 5: DRY EYE MEETS CONTACT LENS WEBINAR (Dr. Anitha Arvind)
+Date: April 26, 2026 (webinar date)
+Type: Post
+Likes: ~17 (LinkedIn) | Registration: Google Forms
+URL: https://www.instagram.com/p/DXrPZp0gpvm (completion post)
+Speaker: Dr. Anitha Arvind (@anitha_reddy1109)
+  - Associate Professor & HOD Optometry, G D Goenka University
+Topics: Tear film optimization, Best lens materials for dry eye, Practical
+fitting strategies, How to reduce dropouts, Improving long-term comfort
+Registration: https://forms.gle/dUoui5cKqgcoLbSF9
+
+POST 6: NEW AGE OPTICAL STORES WEBINAR (Forus Health)
+Date: March 24, 2026
+Type: Post
+Likes: 12 | Comments: 0
+URL: https://www.instagram.com/p/DWRYRNukhrQ
+Tagged: @forushealthglobal
+Content: "Webinar Successfully Completed! 'New Age Optical Stores: Innovations
+and Digital Products' - Speaker: Mr. Chandrasekhar K, Founder & CEO, Forus
+Health. Topics: AI-based eye testing, virtual try-ons, digital tools in
+optometry."
+
+POST 7: OPTOTALKS INTRODUCTION
+Date: April 16, 2026
+Type: Reel
+Likes: 18 | Comments: 0
+URL: https://www.instagram.com/reel/DXMVZ1SAmNB
+Content: "Introducing OptoTalks by IndriyaX - Where clinical expertise meets
+real-world optometry learning. Short clinical Reels (30-60 sec), 5-10 expert
+theory points. Features: Clinical tips, Case-based learning, Research-backed
+insights. Get Featured: Share your clinical insight with Name | Designation |
+Organization | Country credit. Collaborate: indriyax@gmail.com"
+
+POST 8: MEDIA PARTNERSHIP WITH OPTICIAN INDIA
+Date: ~April 2026 (3 weeks ago from LinkedIn)
+Type: Post
+LinkedIn Likes: 18 | Comments: 4
+URL: https://www.instagram.com/p/DXhCcSrkulP
+Content: "Strategic Media Partnership between IndriyaX – Vision Innovation and
+Optician India. Goals: Strengthen dissemination of evidence-based insights,
+Enhance visibility of emerging technologies, Support continuous professional
+development, Foster collaboration across clinical/academic/industry sectors.
+Mentioned: Madhur Gupta, Anik Dingal"
+
+POST 9: VIDYASAGAR COLLEGE COLLABORATION
+Date: ~April 2026
+Type: Video Post
+Content: "Big Announcement in Optometry & Vision Science! IndriyaX has officially
+collaborated with Vidyasagar College of Optometry & Vision Science to launch a
+powerful online education platform. Features: Expert-led learning, Clinical
+training + real case studies, Advanced courses, Research & certification
+programs, Global exposure."
+
+POST 10: BRAIN INJURY WEBINAR (Dr. Cathy Stern)
+Date: May 10, 2026
+Type: Post
+Likes: 13 (via opticianindia cross-post)
+URL: https://www.instagram.com/p/DYG5hRxE1xA
+Cross-posted by: @opticianindia
+Speaker: Dr. Cathy Stern, OD, FOVDR, FCSO, FNORA
+  - Behavioral and neuro optometrist, Boston, USA
+  - Optometrist at Pappas Rehabilitation Hospital for Children
+  - Key roles with NORA, CSO, and OEP Foundation
+  - Award-winning leader in behavioral optometry, syntonic phototherapy
+Topic: Visual Testing for Concussion & Brain Injury
+Time: 10:00 AM
+
+POST 11: KERATOCONUS WEBINAR (Elizabeth Chetty)
+Date: May 17, 2026
+Type: Post
+LinkedIn Likes: 6
+Registration: https://forms.gle/cgJPhkqofbMTaJFu5
+Speaker: Elizabeth Chetty
+  - Senior Lecturer, University of Johannesburg, South Africa
+  - IACLE African Ambassador
+Topic: Oblate-Designed Lenses for Peripherally Displaced Cones in Keratoconus
+Time: 7:30 PM (IST) | 4:00 PM (SAST)
+E-certificates provided
+
+POST 12: EMBRYOLOGY CONTENT (Educational Reel)
+Date: ~April/May 2026
+Type: Reel
+Content: "EMBRYOLOGY OF ANTERIOR CHAMBER - SHARE AND SAVE THIS POST FOR FUTURE
+#embryology #eyespecialist"
+
+POST 13: CORNEA EMBRYOLOGY REEL
+Date: ~Recent
+Type: Reel
+Content: "From embryo to crystal-clear vision. Day 33 → Lens induction, Neural
+crest migration → corneal structure, 3 months → almost fully developed.
+#embryology #optometrystudent"
+
+POST 14: EYELID EMBRYOLOGY REEL
+Date: ~Recent
+Type: Reel
+Content: "Eyelid Embryology Made Simple | From Fusion to Vision. Week 6-7:
+Eyelids begin forming, Week 9: Eyelids temporarily fuse, Month 5-7: Eyelids
+reopen. Genetic Control: PAX6, SHH, FOXO1. Diagnosing conditions: Congenital
+ptosis, Eyelid coloboma, Developmental ocular anomalies.
+#optometrists #optometrista"
+
+POST 15: DRY EYE WEBINAR (Pinned Post - Registration)
+Type: Post (PINNED)
+Content: "DRY EYE MEETS CONTACT LENS - How to Fit Successfully Without Dropouts
+Speaker: Dr. @anitha_reddy1109 (Associate Professor & HOD OPTOMETRY, G D
+Goenka University)
+Topics: Tear film optimization, Best lens materials, Practical fitting
+strategies, How to reduce dropouts, Improving comfort & compliance
+Date: 26 April 2026, Time: 8:00 PM
+Registration: https://forms.gle/dUoui5cKqgcoLbSF9"
+
+POST 16: OPTOTALKS EP1 - SUMMER EYE CARE
+Date: ~Recent
+Type: Reel
+Content: "OPTOTALKS EP1 - Burning & Itching Eyes in Summer? Tips: Stay hydrated,
+Wear UV-protected sunglasses, Avoid rubbing eyes, Use lubricating eye drops.
+#optometry #eyecaretips #eyecareprofessionals"
+
+================================================================================
+SECTION 4: WEBSITE SEARCH RESULTS
+================================================================================
+
+NO DEDICATED WEBSITE FOUND.
+
+Domains attempted (all failed - ERR_NAME_NOT_RESOLVED):
+  - indriyax.com
+  - www.indriyax.com
+  - indriyax.in
+  - www.indriyax.in
+  - indriyax.org
+  - www.indriyax.org
+  - percivision.com
+  - www.percivision.com
+  - percivision.in
+
+Web search API was rate-limited (HTTP 429) and Bing/DuckDuckGo returned
+irrelevant results or CAPTCHAs.
+
+CONCLUSION: Indriya X does NOT appear to have a dedicated website. The
+organization operates entirely through social media platforms and third-party
+tools (Google Forms for registration, Google Meet for webinars, WhatsApp for
+community management).
+
+================================================================================
+SECTION 5: SERVICES OFFERED
+================================================================================
+
+1. INTERNATIONAL WEBINARS
+   - Monthly/bi-monthly expert-led sessions
+   - Topics: Contact lens fitting, OCT interpretation, Neuro-optometry,
+     Keratoconus, AI in optometry, Embryology, Dry eye management
+   - International speakers from USA, South Africa, India
+   - E-certificates provided
+   - Registration via Google Forms
+
+2. OPTOTALKS SERIES
+   - Short clinical education reels (30-60 seconds)
+   - 5-10 expert theory points per episode
+   - Clinical tips, case-based learning, research-backed insights
+   - Guest feature opportunities for clinicians
+
+3. ONLINE RESEARCH & LEARNING PLATFORM (with Percivision)
+   - Clinical research advancement
+   - Digital vision solutions
+   - Interdisciplinary collaboration
+   - Academic excellence in optometry
+
+4. ONLINE EDUCATION PLATFORM (with Vidyasagar College)
+   - Expert-led courses
+   - Clinical-based training + real case studies
+   - Advanced optometry & vision science courses
+   - Research, innovation & certification programs
+   - Global exposure for students & professionals
+
+5. WHATSAPP COMMUNITY
+   - Notifications for upcoming events
+   - Community engagement
+   - Link: https://chat.whatsapp.com/LcSbqIUr8KG6DEWiq2ygx7
+
+================================================================================
+SECTION 6: KEY TEAM MEMBERS & FOUNDERS
+================================================================================
+
+CONFIRMED TEAM MEMBERS:
+  1. Anik Dingal - Listed as employee on LinkedIn, mentioned in media
+     partnership announcement. Likely co-founder.
+  2. Mainak Motilal - Listed as employee on LinkedIn. Likely co-founder.
+
+FOUNDER INFORMATION:
+  - Bio mentions "Founder -" (truncated, login required)
+  - LinkedIn website field points to @preci.ous.vision (personal Instagram,
+    profile no longer available)
+  - Contact: indriyax@gmail.com, +91 9382617530
+  - Madhur Gupta mentioned in media partnership post (possibly associated
+    with Optician India, not necessarily IndriyaX team)
+
+================================================================================
+SECTION 7: COLLABORATIONS & PARTNERSHIPS
+================================================================================
+
+1. PERCIVISION
+   - Partnership announced: December 27, 2025
+   - Focus: Online research and learning platform for optometry
+
+2. OPTICIAN INDIA
+   - Media Partnership announced: ~April 2026
+   - Focus: Knowledge exchange, professional engagement, technology visibility
+   - Cross-posting content on Instagram
+
+3. VIDYASAGAR COLLEGE OF OPTOMETRY & VISION SCIENCE
+   - Collaboration announced: ~April 2026
+   - Focus: Online education platform launch
+
+4. FORUS HEALTH
+   - Speaker collaboration: March 2026
+   - Speaker: Chandrasekhar K, Founder & CEO
+   - Topic: AI and digital products in optical practice
+
+5. OPTOBHARAT
+   - India's largest optometry student community
+   - Appears in related content / tags
+   - Shared New Year post December 31, 2025
+
+6. EYE-RIS (International Eye Residents Webinar Series)
+   - Content cross-posted/shared
+
+7. NEUROPTECH
+   - Listed as "Similar page" on LinkedIn
+   - Context from worklog: Subject of previous strategic intelligence report
+
+================================================================================
+SECTION 8: EXTERNAL LINKS FOUND
+================================================================================
+
+Registration Forms (Google Forms):
+  - Dry Eye Webinar: https://forms.gle/dUoui5cKqgcoLbSF9
+  - OCT Webinar: https://forms.gle/hEtVcRx59vSRobde8
+  - Keratoconus Webinar: https://forms.gle/cgJPhkqofbMTaJFu5
+
+WhatsApp Community:
+  - https://chat.whatsapp.com/LcSbqIUr8KG6DEWiq2ygx7
+
+Social Media Profiles:
+  - Instagram: https://www.instagram.com/indriyax.vision (320 followers)
+  - LinkedIn: https://www.linkedin.com/company/indriya-x (300 followers)
+  - Facebook: https://www.facebook.com/61577803987898 (login required)
+  - Twitter/X: Partner @OpticianIndia
+
+Google Meet Links (from past webinars):
+  - meet.google.com/quj-xddp-jms (OCT webinar)
+
+LinkedIn Short Links:
+  - https://lnkd.in/g-dwj4Jg (Keratoconus webinar registration)
+  - https://lnkd.in/gd6uD2JK (WhatsApp community)
+  - https://lnkd.in/gv9crtDi (Dry eye registration)
+  - https://lnkd.in/g2gcEKiz (OptoTalks)
+
+================================================================================
+SECTION 9: ENGAGEMENT ANALYSIS
+================================================================================
+
+INSTAGRAM POST ENGAGEMENT (likes, lowest to highest):
+  - Intro Reel (Dec 25, 2025): 10 likes
+  - Percivision Collab (Dec 27, 2025): 11 likes
+  - New Age Optical Stores (Mar 24, 2026): 12 likes
+  - Brain Injury Webinar (May 8, 2026): 13 likes
+  - OptoTalks Intro (Apr 16, 2026): 18 likes
+  - OCT Webinar (Jan 13, 2026): 132 likes [HIGHEST - pinned post]
+
+LINKEDIN POST ENGAGEMENT (likes):
+  - Keratoconus webinar: 6 likes
+  - Neuro-optometry webinar completion: 7 likes
+  - Dry eye webinar announcement: 15 likes
+  - Dry eye webinar completion: 17 likes
+  - Media Partnership announcement: 18 likes
+  - OptoTalks introduction: 21 likes [HIGHEST]
+  - Neuro-optometry repost (by Debmalya): 26 likes
+
+OBSERVATIONS:
+  - OCT webinar was the most engaged Instagram post (132 likes) likely because
+    it was pinned and promoted actively
+  - LinkedIn generally shows higher engagement per post
+  - Comment rates are very low across all platforms
+  - Reposts by community members generate significant additional reach
+  - Content mix: ~60% webinar announcements, ~25% educational reels, ~15%
+    partnership/collaboration announcements
+
+================================================================================
+SECTION 10: CONTENT THEMES
+================================================================================
+
+PRIMARY THEMES:
+  1. International Webinars on specialized optometry topics
+  2. Clinical education (OptoTalks series, embryology content)
+  3. Research collaboration announcements
+  4. Industry partnership announcements
+  5. Student community building
+
+TOPIC COVERAGE:
+  - Contact Lens Fitting & Dry Eye
+  - OCT Interpretation
+  - Neuro-optometry & Brain Injury
+  - Keratoconus Management
+  - Ocular Embryology
+  - AI & Digital Optometry
+  - Summer Eye Care Tips
+
+HASHTAGS USED:
+  #Indriyax #optometry #eyecare #optometrist #vision #webinar
+  #internationalwebinar #keratoconus #contactlens #dryeye
+  #embryology #optometrystudent #opticianindia #optobharat
+  #researchcollaboration #BrainInjury #neurooptometry
+
+================================================================================
+END OF REPORT
+================================================================================

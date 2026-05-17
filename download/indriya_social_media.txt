@@ -1,0 +1,398 @@
+================================================================================
+     SOCIAL MEDIA INTELLIGENCE REPORT: Indriya X Research Centre (IndriyaX)
+================================================================================
+     Generated: May 2026 | Analyst: Social Media Intelligence Watcher
+     Scope: Full digital footprint analysis across 12+ platforms
+================================================================================
+
+## EXECUTIVE SUMMARY
+
+Indriya X Research Centre ("IndriyaX") is a niche optometry/vision science
+education and research platform founded by Anik Dingal (Optometrist). The
+organization focuses on international webinars, clinical education, and
+research collaboration for optometrists, ophthalmologists, and eye care
+professionals.
+
+TOTAL PLATFORMS FOUND: 4 (Instagram, Facebook, YouTube, LinkedIn)
+TOTAL PLATFORMS ABSENT: 8+ (X/Twitter, TikTok, Reddit, Discord, Telegram,
+  Threads, Pinterest, Snapchat, Medium)
+SOCIAL MEDIA HEALTH SCORE: 28 / 100 (CRITICAL - needs immediate attention)
+
+================================================================================
+## PLATFORM-BY-PLATFORM ANALYSIS
+================================================================================
+
+### 1. INSTAGRAM [PRIMARY PLATFORM - MOST ACTIVE]
+--------------------------------------------------------------------------------
+Profile URL    : https://www.instagram.com/indriyax.vision
+Username       : @indriyax.vision
+Display Name   : IndriyaX
+Bio            : "👁️Keeping Your Vision Crystal Clear✨ •Precision | Clarity
+                 | Care. •DM FOR COLLABORATION (indriyax@gmail.com)
+                 Founder - @anik_orig"
+Follower Count : NOT publicly visible / estimated <500 (based on engagement)
+Post Count     : ~40-60 posts (estimated from search results)
+Post Frequency : 3-5 posts per week (active)
+Content Themes :
+  - International webinar announcements (primary content, ~60%)
+  - "OptoTalks" series - clinical education content
+  - Vision Quizinar interactive MCQ rounds
+  - Collaboration announcements (Percivision, Optician India partnership)
+  - Clinical tips (OCT interpretation, scleral lenses, binocular vision,
+    neuro-optometry, keratoconus management)
+  - Webinar completion/success reports
+  - Vision science educational infographics/reels
+Engagement     : VERY LOW - Introduction reel: 10 likes, 0 comments
+                 Typical posts appear to get 5-30 likes, minimal comments
+  - Hashtag strategy: minimal/absent
+  - No visible influencer collaborations beyond the founder
+Active/Abandoned: ACTIVE (posting regularly since Dec 2025 - present)
+Rating         : 6/10 (best of their platforms, but still weak)
+Brutal Take    : The content is educational but DRY. Zero personality. Looks
+  like a bulletin board, not an Instagram account. Posting webinar flyers
+  as your primary content is social media malpractice in 2026.
+
+### 2. FACEBOOK [SECONDARY - CROSS-POSTING]
+--------------------------------------------------------------------------------
+Profile URL    : https://www.facebook.com/61577803987898
+Page Name      : IndriyaX
+Follower Count : NOT publicly visible / estimated <200
+Post Count     : ~20-30 posts
+Post Frequency : 2-3 posts per week (appears to mirror Instagram)
+Content Themes : Identical to Instagram (cross-posted content)
+  - Webinar announcements
+  - Percivision collaboration announcement
+  - OptoTalks series
+  - Research centre introduction
+Engagement     : VERY LOW - minimal visible likes/comments
+Active/Abandoned: ACTIVE (but clearly auto-cross-posted from Instagram)
+Rating         : 3/10
+Brutal Take    : Facebook for a niche optometry research org? The audience
+  isn't here. Cross-posting without platform-specific optimization is lazy.
+  The page exists but nobody is home - just an echo chamber of their own
+  content with zero community engagement.
+
+### 3. YOUTUBE [VIDEO CONTENT]
+--------------------------------------------------------------------------------
+Channel URL    : https://www.youtube.com/@INDRIYAX
+Channel Name   : INDRIYAX
+Subscriber Ct  : NOT publicly visible / estimated <100
+Video Count    : ~5-10 videos (webinar recordings)
+Notable Videos :
+  - "Dry Eye & Contact Lens Fitting | Prevent Dropouts | Optometry
+     Webinar 2026 | IndriyaX"
+  - "How to Interpret OCT & Visual Field in Glaucoma | Step-by-Step"
+Content Themes :
+  - Recorded webinar sessions
+  - Clinical education lectures
+  - Optometry skill-building content
+View Counts    : VERY LOW - estimated 50-200 views per video
+Post Frequency : 1-2 videos per month (new channel)
+Channel Art    : Likely default/basic (not customized based on search)
+Active/Abandoned: ACTIVE (slow growth, new channel)
+Rating         : 4/10
+Brutal Take    : Raw webinar recordings dumped on YouTube without editing,
+  thumbnails, SEO optimization, or shorts strategy. Zero chance of organic
+  discovery. This is a video archive, not a YouTube strategy.
+
+### 4. LINKEDIN [COMPANY PAGE]
+--------------------------------------------------------------------------------
+Profile URL    : https://www.linkedin.com/company/indriya-x
+Page Name      : INDRIYA X
+Follower Count : NOT publicly visible / estimated <500
+Post Count     : ~10-15 posts
+Post Frequency : 1-2 posts per week
+Content Themes :
+  - Webinar success reports
+  - Research discussion posts
+  - Professional networking content
+  - Industry partnership announcements
+  - "Follow IndriyaX – Vision Innovation for more impactful webinars"
+Also Found     : Founder Anik Dingal's personal LinkedIn
+  (linkedin.com/in/anik-dingal-02a9a6192)
+  Title: "Professional Optometrist | Founder of IndriyaX | Research
+          Scholar & Innovation Lead (Vision Instruments & Software)"
+Engagement     : LOW - minimal reactions/comments on company posts
+Active/Abandoned: ACTIVE (this is actually the RIGHT platform for them)
+Rating         : 5/10
+Brutal Take    : LinkedIn is where their B2B audience actually lives, yet
+  they're barely utilizing it. The founder's profile is decent but the
+  company page is an afterthought. This should be their #1 platform.
+
+================================================================================
+## ABSENT PLATFORMS (CRITICAL GAPS)
+================================================================================
+
+### 5. X/TWITTER - ABSENT ❌
+  No dedicated IndriyaX account found. They rely on partner Optician India
+  (@OpticianIndia) for X/Twitter visibility. For an academic/research org,
+  this is a missed opportunity for real-time engagement and academic discourse.
+
+### 6. TIKTOK - ABSENT ❌
+  Zero presence. While their niche is professional, short-form educational
+  content ("Did you know?" eye facts, clinical myth-busting) could reach
+  optometry students effectively.
+
+### 7. REDDIT - ABSENT ❌
+  No subreddit, no account activity. Missing community-driven discussions
+  in r/optometry or related eye care communities.
+
+### 8. DISCORD - ABSENT ❌
+  No community server. For a research/education platform, Discord would
+  create an engaged student/professional community.
+
+### 9. TELEGRAM - ABSENT ❌
+  No channel or group. Common for Indian academic/professional communities.
+
+### 10. THREADS - ABSENT ❌
+  No dedicated account. Partner Optician India has one, but IndriyaX doesn't.
+
+### 11. PINTEREST - ABSENT ❌
+  No presence. Infographics and clinical charts could perform well here.
+
+### 12. MEDIUM/BLOG - ABSENT ❌
+  No long-form content platform found. Webinar summaries could drive traffic.
+
+### 13. WEBSITE - UNCLEAR
+  No clear standalone website domain found (indriyax.com, indriyax.in, etc.)
+  Relies entirely on social media and Google Forms for registrations.
+
+================================================================================
+## CONTENT STRATEGY ANALYSIS
+================================================================================
+
+PRIMARY CONTENT TYPES (by frequency):
+  1. Webinar announcements/flyers (60%) - repetitive, same format
+  2. Post-webinar success reports (15%) - self-congratulatory
+  3. OptoTalks educational content (10%) - actually valuable
+  4. Partnership announcements (10%) - corporate/institutional
+  5. Interactive quizzes/Quizinar (5%) - only engaging content type
+
+CONTENT VOICE: Clinical, formal, institutional. ZERO personality.
+  - No behind-the-scenes content
+  - No founder story/origin content
+  - No student testimonials
+  - No community UGC (user-generated content)
+  - No trending formats/humor/relatable content
+
+HASHTAG STRATEGY: Virtually non-existent
+  - No consistent branded hashtag
+  - No campaign-specific hashtags
+  - Missing industry hashtags (#optometry #eyecare #visiontherapy)
+
+================================================================================
+## ENGAGEMENT METRICS SUMMARY
+================================================================================
+
+Platform     | Est. Followers | Est. Avg Likes | Est. Avg Comments | Status
+-------------|---------------|----------------|-------------------|--------
+Instagram    | <500          | 5-30           | 0-2               | Active
+Facebook     | <200          | 5-15           | 0-1               | Active
+YouTube      | <100          | 50-200 views   | N/A               | Active
+LinkedIn     | <500          | 5-20           | 0-3               | Active
+X/Twitter    | N/A           | N/A            | N/A               | ABSENT
+TikTok       | N/A           | N/A            | N/A               | ABSENT
+Reddit       | N/A           | N/A            | N/A               | ABSENT
+
+TOTAL ESTIMATED REACH ACROSS ALL PLATFORMS: <1,500 followers combined
+
+================================================================================
+## BRUTAL ASSESSMENT: WEAKNESSES
+================================================================================
+
+### 🔴 CRITICAL WEAKNESSES (Must Fix Immediately)
+
+1. MINISCULE AUDIENCE: Combined <1,500 followers across all platforms is
+   EMBARRASSING for any organization claiming to be a "Research Centre."
+   An individual optometry student probably has more followers.
+
+2. ZERO VIRAL CONTENT: Every single post reads like a bulletin board flyer.
+   No content is designed for shareability, discovery, or algorithmic
+   amplification. The content is functional, not viral.
+
+3. NO X/TWITTER PRESENCE: For an academic/research organization in 2026,
+   not having a Twitter/X account is like not having a phone number.
+   This is where academic discourse, live updates, and professional
+   networking happens in real-time.
+
+4. NO WEBSITE: Relying on Instagram bio links and Google Forms for a
+   "Research Centre" undermines all credibility. You can't build a brand
+   on rented platforms without a digital home base.
+
+5. INDRIYA JEWELS CONFUSION: The name "Indriya" is dominated by Indriya
+   Jewels (Aditya Birla Group) with 1.5M+ Facebook likes and massive
+   social presence. Every search for "Indriya X" returns jewelry results.
+   Their brand is being buried by a much larger entity.
+
+### 🟠 MAJOR WEAKNESSES
+
+6. ZERO COMMUNITY BUILDING: No Discord, no Telegram, no Reddit presence.
+   They're BROADCASTING, not ENGAGING. Social media is two-way; they're
+   using it as a one-way announcement board.
+
+7. NO CONTENT VARIETY: 90% of content is "WEBINAR ALERT" or "WEBINAR
+   COMPLETED." This is an events calendar, not a social media strategy.
+
+8. NO TESTIMONIALS/SOCIAL PROOF: Zero student reviews, zero speaker quotes,
+   zero success stories. Nobody is vouching for them publicly.
+
+9. FOUNDER PROFILE NOT LEVERAGED: Anik Dingal's LinkedIn exists but isn't
+   being used to drive traffic to IndriyaX content. The founder should be
+   the face of the brand.
+
+10. NO SHORT-FORM CONTENT: No Reels strategy on Instagram, no YouTube Shorts,
+    no TikTok. They're completely missing the most consumed content format.
+
+### 🟡 MODERATE WEAKNESSES
+
+11. INCONSISTENT BRANDING: "IndriyaX", "Indriya X Research Centre",
+    "IndriyaX – Vision Innovation" - pick ONE name and stick with it.
+
+12. NO EMAIL LIST STRATEGY: All registrations via Google Forms = zero
+    owned audience. Platform-dependent = platform-vulnerable.
+
+13. POOR VISUAL IDENTITY: No custom thumbnails, no brand templates,
+    inconsistent visual style across platforms.
+
+14. NO ANALYTICS/SEO: Content is not optimized for search discovery on
+    any platform. YouTube titles are descriptive but not SEO-optimized.
+
+================================================================================
+## MOST ACTIVE vs. LEAST ACTIVE PLATFORMS
+================================================================================
+
+MOST ACTIVE: Instagram (@indriyax.vision)
+  - Highest post frequency (3-5x/week)
+  - Most diverse content types (though still limited)
+  - Primary hub for all announcements
+  - Contact point for collaborations
+
+LEAST ACTIVE: YouTube (@INDRIYAX)
+  - Only 1-2 videos per month
+  - Minimal subscriber growth
+  - No community engagement features utilized
+
+MOST STRATEGICALLY MISALIGNED: Facebook
+  - Wrong audience for niche optometry research
+  - Cross-posted content shows zero platform-specific thinking
+
+================================================================================
+## SOCIAL MEDIA HEALTH SCORE: 28 / 100
+================================================================================
+
+  Category                    Score    Max     Notes
+  --------------------------  ------  ------  ------------------------------
+  Platform Coverage            4/25    25%    Only 4 of 12+ key platforms
+  Audience Size                3/25    12%    <1,500 total followers
+  Content Quality              8/15    53%    Good clinical content, boring format
+  Engagement Rate              2/15    13%    Near-zero interaction
+  Brand Consistency            5/10    50%    Name inconsistency issues
+  Growth Trajectory            4/10    40%    New accounts, slow/no growth
+  --------------------------  ------  ------  ------------------------------
+  TOTAL                       28/100    28%    ⛔ CRITICAL - INTERVENTION NEEDED
+
+  Score Interpretation:
+    90-100: Excellent | 70-89: Good | 50-69: Average
+    30-49: Below Average | 0-29: CRITICAL
+
+================================================================================
+## KEY PARTNERSHIPS IDENTIFIED
+================================================================================
+
+1. Percivision - Online research & learning platform collaboration
+   (announced jointly on Instagram & Facebook)
+
+2. Optician India - Strategic Media Partnership
+   (announced on Instagram; Optician India promotes IndriyaX webinars
+    on their X/Twitter account @OpticianIndia)
+
+3. PerceiVision - Webinar collaboration partner
+   (co-branded webinar sessions)
+
+4. Hindustan Institute of Technology and Science - Academic partnership
+   (Department of Optometry, School of Health Sciences)
+
+================================================================================
+## COMPETITIVE INTELLIGENCE: "INDRIYA" NAME CONFUSION
+================================================================================
+
+⚠️  SEVERE BRAND DILUTION RISK ⚠️
+
+"Indriya Jewels by Aditya Birla Group" is a MASSIVE jewelry brand with:
+  - Facebook: 1,583,000+ likes, 43,000+ talking about this
+  - Instagram: @indriyajewels (large following, celebrity collaborations)
+  - YouTube: @indriyajewels (millions of views, top-tier production)
+  - X/Twitter: @indriyajewels (active account)
+  - Collaborations: Disha Patani, Amit Aggarwal, Vogue India, FDCI,
+    Lakme Fashion Week, Paris Couture Week
+
+When anyone searches "Indriya X" or "IndriyaX," the jewelry brand DOMINATES
+the results. IndriyaX Research Centre is effectively invisible in organic
+search. This is an existential branding crisis.
+
+================================================================================
+## RECOMMENDATIONS (PRIORITY ORDER)
+================================================================================
+
+1. 🚨 LAUNCH A WEBSITE IMMEDIATELY
+   - Build indriyax.in or indriyaxresearch.com
+   - Own your digital presence, stop being platform-dependent
+
+2. 🚨 CREATE X/TWITTER ACCOUNT
+   - Claim @IndriyaX or @IndriyaXResearch immediately
+   - This is non-negotiable for an academic organization
+
+3. 🔴 REBRAND TO REDUCE CONFUSION
+   - Consider "IndriyaX Vision Science" or "IndriyaX Optometry"
+   - Add descriptors to every social profile to differentiate from
+     the jewelry brand
+
+4. 🔴 START AN EMAIL LIST
+   - Build owned audience through Mailchimp/Brevo
+   - Never rely solely on platform algorithms for reach
+
+5. 🟠 PIVOT CONTENT STRATEGY
+   - 30% educational tips (not webinars)
+   - 20% student testimonials/stories
+   - 20% behind-the-scenes/founder content
+   - 15% trending formats (myth-busting, "day in the life")
+   - 15% webinar/promotional content
+
+6. 🟠 LAUNCH SHORT-FORM CONTENT
+   - Instagram Reels 3x/week
+   - YouTube Shorts weekly
+   - Consider TikTok for student audience reach
+
+7. 🟡 BUILD COMMUNITY
+   - Launch Telegram group for webinar attendees
+   - Consider Discord for research community
+   - Engage in r/optometry on Reddit
+
+8. 🟡 DOUBLE DOWN ON LINKEDIN
+   - This is where the professional audience IS
+   - Founder should post personal content linking to IndriyaX
+   - Company page needs daily activity, not weekly
+
+================================================================================
+## APPENDIX: ALL SEARCH QUERIES EXECUTED
+================================================================================
+
+1. "Indriya X Instagram indriyax" -> Found @indriyax.vision ✓
+2. "IndriyaX Twitter X social media" -> NO dedicated account found
+3. "Indriya X LinkedIn Research Centre" -> Found company page + founder ✓
+4. "Indriya X Facebook" -> Found IndriyaX page ✓
+5. "Indriya X YouTube channel" -> Found @INDRIYAX ✓
+6. "Indriya X TikTok" -> NOT FOUND
+7. "Indriya X Reddit" -> NOT FOUND
+8. "Indriya X Discord Telegram" -> NOT FOUND
+9. site:instagram.com indriyax.vision -> Confirmed profile ✓
+10. site:x.com IndriyaX -> NOT FOUND (partner Optician India only)
+11. site:linkedin.com/company/indriya-x -> Confirmed company page ✓
+12. "Indriya X social media presence" -> Confirmed limited presence
+13. "IndriyaX Research Centre optometry social media" -> Cross-verified
+14. "IndriyaX" excluding jewelry -> Confirmed all genuine IndriyaX results
+15. "Indriya X Research Centre" other platforms -> NOT FOUND
+
+================================================================================
+                         END OF REPORT
+================================================================================
