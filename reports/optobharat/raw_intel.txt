@@ -1,0 +1,82 @@
+OPTOBHARAT RAW INTELLIGENCE REPORT
+====================================
+
+SUBJECT: OPTOBHARAT - India's Optometry Student Community
+ANALYSIS DATE: 2026-05-17
+ANALYST: Focuslinks Autonomous Agent Swarm
+
+DOMAIN STATUS:
+==============
+1. optobharat.simdif.com (ORIGINAL SITE - STILL LIVE)
+   - Platform: SimDif Website Builder V2.02.10954
+   - Status: ACTIVE
+   - Built on: Free website builder (SimDif)
+   - Google Site Verification: OVma_K-zb6Vwb5WR-tWdRzDymW0ZUaInsTge7G5tbuo
+
+2. optobharat.com (HIJACKED/REPURPOSED)
+   - Status: ACTIVE but COMPLETELY DIFFERENT CONTENT
+   - New Owner: "Envision Bharat"
+   - New Brand: "OptoAI - The Ultimate AI Study Assistant"
+   - Description: "Transform handwritten notes into interactive learning sessions, generate homework solutions, master engineering projects"
+   - Tech Stack: React (SPA), Cloudinary, Razorpay (payments)
+   - OG Title: "OptoAI - The Ultimate AI Study Assistant by Envision Bharat"
+   - Icon: Cloudinary hosted at deic5ha4h
+   - JS Bundle: /assets/index-D8EqmgYS.js
+   - CSS: /assets/index-DWhfl8jN.css
+   - Payment: Razorpay checkout integrated
+   - ORIGINAL OPTOMETRY COMMUNITY CONTENT = COMPLETELY REMOVED
+
+COMMUNITY CLAIMS:
+=================
+- India's Largest Optometry Student Community
+- 1000+ Members across India
+- 12+ Webinars & Events
+- 30 Indian States & Union Territories Connected
+- 22+ Countries Reached
+- Global Expert Network
+- Webinars, workshops, courses, blogs, interactive discussions
+- Eye health awareness & outreach programs
+- Free eye health camps as volunteer
+
+SOCIAL MEDIA LINKS (from simdif site):
+=====================================
+- LinkedIn: https://www.linkedin.com/company/optobharat/
+- YouTube: https://youtube.com/@optobharat
+- Facebook: https://www.facebook.com/share/15SA2emDi3/
+- Instagram: https://www.instagram.com/optobharat/
+- Twitter/X: https://x.com/optobharat
+
+SITE STRUCTURE (SimDif):
+========================
+- HOME
+- ABOUT (Vision & Mission)
+- COMMUNITY (Membership)
+- LEARNING (Webinars, Workshops, Courses)
+- GET INVOLVED (Speaker, Volunteer, Partner, Eye Camp)
+- CONTACT US
+
+TECH ANALYSIS (SimDif):
+=======================
+- Font: Nunito Sans (primary), Quattrocento (display)
+- jQuery 1.12.4 (OUTDATED - 2016)
+- jQuery UI 1.12.1 (OUTDATED)
+- Swiper 11.0.5 (OK)
+- Google reCAPTCHA for spam prevention
+- Google Analytics/Services cookies
+- Schema.org WebSite markup (minimal)
+- OG tags present
+- Robots: index, follow
+- Canonical URL set correctly
+- Mobile responsive (basic)
+- HTTPS enabled
+
+KEY ISSUES IDENTIFIED:
+======================
+1. DOMAIN LOSS: optobharat.com lost to "Envision Bharat" - complete brand identity theft
+2. FREE WEBSITE BUILDER: Using SimDif (free tier) - unprofessional for "India's Largest"
+3. OUTDATED JS: jQuery 1.12.4 from 2016 - security vulnerability
+4. NO .COM DOMAIN: Only simdif subdomain - terrible for branding
+5. NO PROPER SEO: Minimal schema, basic OG tags
+6. NO MONETIZATION: No payment integration, no premium content
+7. NO SSL/CDN: Dependent on SimDif infrastructure
+8. RAZORPAY ON .COM: The domain squatter is actually MONETIZING the stolen domain
