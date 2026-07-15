@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://medium.com/@the_manoj_desai/system-prompt-vs-agent-skills-the-architecture-decision-that-makes-or-breaks-your-ai-agent-b58357df1f10",
+    "name": "System Prompt vs Agent Skills. The Architecture Decision That Makes or Breaks Your AI Agent | by Manoj Desai | Medium",
+    "snippet": "The system prompt is the agent's constitution. It defines who the agent is and how it reasons. Agent skills are the agent's hands. They define ...",
+    "host_name": "medium.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.linkedin.com/pulse/agent-skills-explained-developers-pavan-belagatti-83csc",
+    "name": "Agent Skills Explained for Developers! - LinkedIn",
+    "snippet": "Agent Skills are folders of instructions and supporting files that package a repeatable workflow, specialized knowledge, or a new capability ...",
+    "host_name": "www.linkedin.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.backslash.security/blog/ai-agent-skills-the-new-standard-for-modular-ai-workflows",
+    "name": "AI Agent Skills: The New Standard for Modular AI Workflows - Backslash Security",
+    "snippet": "AI Agent Skills introduce a critical vulnerability described as \"prompt injection by design,\" where a malicious SKILL.md file can rewrite an ...",
+    "host_name": "www.backslash.security",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.datacamp.com/blog/agent-skills",
+    "name": "What Are Agent Skills? Modular AI Agent Frameworks Explained - DataCamp",
+    "snippet": "Agent skills are portable, self-contained units of domain knowledge and procedural logic. It includes how to perform a workflow, Agent skills ... Missing: marketing | Show results with: marketing",
+    "host_name": "www.datacamp.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://aiquinta.ai/blog/ai-agent-skills-the-skill-md-format",
+    "name": "What Are AI Agent Skills? The SKILL.md Format - AIQuinta",
+    "snippet": "An AI Agent Skill is a portable package that provides an AI agent with specialized capabilities. Technically, a skill is usually implemented as a folder ...",
+    "host_name": "aiquinta.ai",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://cloud.google.com/discover/what-is-prompt-engineering",
+    "name": "Prompt Engineering for AI Guide | Google Cloud",
+    "snippet": "Prompt engineering is the art and science of designing and optimizing prompts to guide AI models, particularly LLMs, towards generating the desired responses.",
+    "host_name": "cloud.google.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://monday.com/blog/ai-agents/what-is-prompt-engineering",
+    "name": "What is prompt engineering? The complete guide for 2026",
+    "snippet": "Prompt engineering is the process of designing and refining instructions for AI models to produce accurate, relevant, and usable outputs ...",
+    "host_name": "monday.com",
+    "rank": 6,
+    "date": "Jul 12, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/AI_Agents/comments/1sivryo/can_someone_explain_what_skills_are_and_how_they",
+    "name": "Can someone explain what skills are and how they work? : r/AI_Agents - Reddit",
+    "snippet": "Skills are specialized markdown files containing instructions, knowledge, or workflows that extend Claude Code 's capabilities. They follow the ...",
+    "host_name": "www.reddit.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=S_oN3vlzpMw",
+    "name": "How AI agents & Claude skills work (Clearly Explained) - YouTube",
+    "snippet": "Agent md and claude md files get loaded into context on every single ... The Vibe Marketer - Resources for people into vibe marketing/marketing ... Missing: prompts | Show results with: prompts",
+    "host_name": "www.youtube.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.aiagentslibrary.com/blog/what-is-an-ai-agent-skill",
+    "name": "What Is an AI Agent Skill? Skills vs Prompts vs AI Agents",
+    "snippet": "An AI agent skill is a reusable workflow that teaches an AI tool how to complete a specific task repeatedly. A prompt is something you ask ...",
+    "host_name": "www.aiagentslibrary.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]
