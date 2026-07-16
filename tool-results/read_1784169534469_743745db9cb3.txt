@@ -1,0 +1,1604 @@
+   900→Clinical Skills / Quick Tests
+   901→
+   902→### 3. SCRIPT (Second-by-Second)
+   903→
+   904→| Sec | On-Screen Text | Voiceover / Narration |
+   905→|-----|----------------|-----------------------|
+   906→| 0–2 | **"3 Second Eye Test That Changes Everything"** (large, centered, white on dark `#0F172A`) | *(no VO — text only, trending audio plays)* |
+   907→| 2–4 | **"STEP 1: Palm one eye. Right now."** (teal `#0D9488`, bold, animated hand icon 👁️) | "Palm one eye. Right now." |
+   908→| 4–7 | **"STEP 2: Focus on a single point."** (white text, crosshair graphic appears on screen) | "Now focus on any single point in front of you." |
+   909→| 7–10 | **"Notice anything… off?"** (white, slight wobble animation) | "Notice anything feel… slightly off?" |
+   910→| 10–13 | **"That's your binocular vision at work."** (teal, pulse animation) | "That discomfort? That's your binocular vision at work." |
+   911→| 13–15 | **"Two eyes. One seamless image. 🧠"** (white) + **"Save this. Test your patients."** (amber `#F59E0B`, CTA) | "Two eyes, one seamless image. Save this — test your patients." |
+   912→
+   913→### 4. VISUAL DIRECTION
+   914→- **0–2s:** Dark background, bold title text zooms in subtly. Teal accent line under "Changes Everything."
+   915→- **2–4s:** Simple flat illustration of a hand covering one eye (teal icon style). Text slides in from left.
+   916→- **4–7s:** A crisp white dot/crosshair appears center-screen. Subtle radial lines emphasize "focal point."
+   917→- **7–10s:** Screen very slightly shifts/wobbles to simulate what the viewer might be feeling. Text fades in with a question-mark flicker.
+   918→- **10–13s:** Teal brain + eye icon animates in. "Binocular Vision" label appears with a connecting line to each eye icon.
+   919→- **13–15s:** Clean lockup: OptoLib logo (top-left), tagline at bottom. Amber CTA button: "Save this ⟶"
+   920→
+   921→### 5. AUDIO SUGGESTION
+   922→- **Trending audio:** Low-fi mystery/suspense beat (instrumental, ~80 BPM) — gives a "did you know?" vibe. Volume dips to 30% during voiceover.
+   923→- **Voiceover:** Clear, confident, slightly conversational. Not robotic. Slight pause before "That's your binocular vision."
+   924→
+   925→### 6. CAPTION
+   926→3 second eye test that changes everything 👁️
+   927→
+   928→Cover one eye, focus on a point, and feel what your brain does every single second to give you seamless vision.
+   929→
+   930→This is binocular fusion — and it's one of the first things we assess in clinic.
+   931→
+   932→Test it on yourself. Test it on your patients. It takes 3 seconds.
+   933→
+   934→Save this for your next clinical rotation. 🔖
+   935→
+   936→### 7. HASHTAGS
+   937→#OptoLib #Optometry #EyeTest #BinocularVision #OptometryStudent #ClinicalSkills #EyeCare #OptomLife #VisionScience #OcularMotility
+   938→
+   939→### 8. POSTING TIME (IST)
+   940→**Tuesday, 7:30 PM IST** — Peak engagement window for student/professional audiences winding down their day.
+   941→
+   942→### 9. CTA
+   943→**"Save this reel + Follow @optolib_ for free optometry resources daily"** (amber button overlay on final frame, also in caption)
+   944→
+   945→---
+   946→
+   947→## Post 7 — "What Your Eye Prescription Actually Means"
+   948→
+   949→### 1. FORMAT
+   950→Reel (1080×1920, 9:16)
+   951→
+   952→### 2. PILLAR
+   953→Knowledge / Education
+   954→
+   955→### 3. SCRIPT (Second-by-Second)
+   956→
+   957→| Sec | On-Screen Text | Voiceover / Narration |
+   958→|-----|----------------|-----------------------|
+   959→| 0–2 | **"What Your Eye Prescription Actually Means"** (white, bold, centered on dark `#0F172A`) | *(no VO — trending audio plays)* |
+   960→| 2–4 | **"SPH"** (teal, large) → **"Sphere — How near/far-sighted you are"** (white, smaller, slides in below) | "SPH — that's your sphere. It tells you how near or far-sighted you are." |
+   961→| 4–6 | **"CYL"** (teal, large) → **"Cylinder — Your astigmatism power"** (white, slides in) | "CYL — cylinder. The amount of astigmatism in your eye." |
+   962→| 6–8 | **"AXIS"** (teal, large) → **"Direction of your astigmatism (0°–180°)"** (white, slides in) | "AXIS — the direction of that astigmatism, from 0 to 180 degrees." |
+   963→| 8–10 | **"PD"** (teal, large) → **"Pupillary Distance — Center of your pupils"** (white, slides in) | "And PD — pupillary distance. The gap between the centers of your pupils." |
+   964→| 10–13 | **"4 numbers. One prescription. Now you know."** (white, centered) | "Four numbers. One prescription. Now you actually know what they mean." |
+   965→| 13–15 | **"Save this. Share with a confused patient."** (amber `#F59E0B`) + OptoLib logo | "Save this. Share it with your next confused patient." |
+   966→
+   967→### 4. VISUAL DIRECTION
+   968→- **0–2s:** Dark background. A blurred-out prescription card sits behind the title text (slightly transparent, creates depth). Title animates in with a subtle scale-up.
+   969→- **2–4s:** "SPH" appears large in teal at center. A horizontal lens icon fills with color to represent sphere correction. Label animates in below.
+   970→- **4–6s:** "CYL" replaces "SPH" (quick crossfade). An astigmatic lens diagram (with axis line) appears. Label slides in.
+   971→- **6–8s:** "AXIS" appears. A 180° protractor graphic draws itself in. The axis line rotates to a random degree (e.g., 90°) as a visual. Label slides in.
+   972→- **8–10s:** "PD" appears. A simple face diagram with two pupils and a double-arrow measurement line between them. Label slides in.
+   973→- **10–13s:** All four terms stack in a clean 2×2 grid (SPH, CYL, AXIS, PD — teal labels, white descriptions). Satisfying "click" arrangement animation.
+   974→- **13–15s:** Grid fades, amber CTA fades in. OptoLib wordmark top-left, tagline bottom-center.
+   975→
+   976→### 5. AUDIO SUGGESTION
+   977→- **Trending audio:** Upbeat "explainer" instrumental (light synth, medium tempo ~100 BPM). Think "smart education content" aesthetic.
+   978→- **Voiceover:** Confident, slightly fast-paced (fits 15s). Each term is emphasized with a slight pitch lift. Pause between terms for clarity.
+   979→
+   980→### 6. CAPTION
+   981→What your eye prescription actually means 📋
+   982→
+   983→SPH → Near/far-sightedness
+   984→CYL → Astigmatism power
+   985→AXIS → Direction of astigmatism
+   986→PD → Distance between your pupils
+   987→
+   988→Most patients have NO idea what these numbers mean — and honestly, a lot of first-year students don't either.
+   989→
+   990→Bookmark this. You'll reference it more than you think.
+   991→
+   992→### 7. HASHTAGS
+   993→#OptoLib #EyePrescription #Optometry101 #SPH #CYL #OptometryStudent #Optometrist #EyeCareProfessional #VisionCorrection #LearnOptometry
+   994→
+   995→### 8. POSTING TIME (IST)
+   996→**Wednesday, 12:30 PM IST** — Lunch-hour scroll. Educational content performs well midday when students are between classes.
+   997→
+   998→### 9. CTA
+   999→**"Save this for your next refraction session + Follow @optolib_ for daily free resources"** (amber button, final frame)
+  1000→
+  1001→---
+  1002→
+  1003→## Post 8 — "Stop Making This Contact Lens Mistake"
+  1004→
+  1005→### 1. FORMAT
+  1006→Reel (1080×1920, 9:16)
+  1007→
+  1008→### 2. PILLAR
+  1009→Patient Education / Clinical Warning
+  1010→
+  1011→### 3. SCRIPT (Second-by-Second)
+  1012→
+  1013→| Sec | On-Screen Text | Voiceover / Narration |
+  1014→|-----|----------------|-----------------------|
+  1015→| 0–2 | **"If you do THIS with your contacts…"** (white, bold, centered) + red ❌ icon | *(no VO — suspenseful trending audio)* |
+  1016→| 2–4 | **"…you're risking your cornea."** (red text, slides in with impact shake) | "You are risking your cornea." |
+  1017→| 4–7 | **"Mistake #1: Sleeping in your contacts."** (white, bold) + illustration of someone sleeping with a contact lens X'd out | "Mistake number one: sleeping in your contact lenses." |
+  1018→| 7–9 | **"Even 'extended wear' lenses cut oxygen to your cornea."** (white, smaller) | "Even so-called extended wear lenses cut oxygen to your cornea overnight." |
+  1019→| 9–12 | **"Mistake #2: Not replacing them on schedule."** (white, bold) + calendar icon with red X on missed date | "Mistake number two: not replacing them on schedule." |
+  1020→| 12–15 | **"Old lenses = biofilm buildup → infection risk 🦠"** (white, biofilm graphic) | "Old lenses build up biofilm — and that's a direct path to infection." |
+  1021→| 15–18 | **"Microbial keratitis. Corneal ulcers. Vision loss."** (red, each word appears with a thud effect) | "We're talking microbial keratitis. Corneal ulcers. Permanent vision loss." |
+  1022→| 18–20 | **"Take them out. Replace on time. Save your eyes. 👁️"** (teal, bold) + **"Share this — it could save someone's sight."** (amber `#F59E0B`) | "Take them out. Replace them on time. Share this — it could save someone's sight." |
+  1023→
+  1024→### 4. VISUAL DIRECTION
+  1025→- **0–2s:** Dark background. A single contact lens graphic floats in the center. Text appears with a slow, ominous reveal. Red ❌ pulses subtly.
+  1026→- **2–4s:** Screen shakes on impact. "Risking your cornea" in red. A stylized cornea cross-section appears, briefly flashing red.
+  1027→- **4–7s:** Split screen — left side shows a sleeping icon (teal), right side shows a contact lens with a red X over it. Clean flat illustration style.
+  1028→- **7–9s:** Oxygen molecules (O₂) floating toward a cornea graphic — but the contact lens blocks them. Blocked molecules turn red. Simple, powerful visual.
+  1029→- **9–12s:** Calendar icon appears with circled dates. A contact lens next to it looks cracked/dirty. Red X stamps over "Day 30" (or whatever replacement schedule).
+  1030→- **12–15s:** Microscopic view: biofilm bacteria cluster building on a lens surface. Animated, slightly gross but clinical. 🦠 emoji pulses.
+  1031→- **15–18s:** Three conditions stack vertically with red accent bars: "Microbial Keratitis" / "Corneal Ulcers" / "Vision Loss." Each slams in with a subtle screen flash.
+  1032→- **18–20s:** Clean resolution frame — teal checkmarks replace red X's. OptoLib logo top-left. Amber CTA: "Share this ⟶"
+  1033→
+  1034→### 5. AUDIO SUGGESTION
+  1035→- **Trending audio:** Dramatic "reveal" sound (like a slowed-down cinematic boom or the "oh no" trend audio). Low, serious, attention-grabbing.
+  1036→- **Voiceover:** Serious, slightly urgent tone — but not fear-mongering. Clinical authority. Slow, deliberate pacing. "Permanent vision loss" is delivered with a slight pause before it for impact.
+  1037→
+  1038→### 6. CAPTION
+  1039→If you do THIS with your contacts, you're risking your cornea 🛑
+  1040→
+  1041→Sleeping in lenses. Wearing them past replacement date.
+  1042→
+  1043→These aren't just "bad habits" — they're the #1 cause of microbial keratitis in contact lens wearers.
+  1044→
+  1045→As eye care professionals, we see the consequences. But most patients don't know the risk until it's too late.
+  1046→
+  1047→Share this with every contact lens wearer you know. It takes 2 seconds and could save their sight.
+  1048→
+  1049→### 7. HASHTAGS
+  1050→#OptoLib #ContactLenses #EyeHealth #CornealHealth #Optometry #MicrobialKeratitis #PatientEducation #Optometrist #EyeCareTips #VisionSafety
+  1051→
+  1052→### 8. POSTING TIME (IST)
+  1053→**Thursday, 8:00 PM IST** — Evening prime time. Warning/health content gets strong shares during wind-down scrolling.
+  1054→
+  1055→### 9. CTA
+  1056→**"Share this reel with a contact lens wearer + Follow @optolib_ for free eye care resources"** (amber button, final frame + caption)
+  1057→
+  1058→---
+  1059→
+  1060→## Post 9 — "AI in Eye Care — 2026 Update"
+  1061→
+  1062→### 1. FORMAT
+  1063→Reel (1080×1920, 9:16)
+  1064→
+  1065→### 2. PILLAR
+  1066→Technology / Future of Optometry
+  1067→
+  1068→### 3. SCRIPT (Second-by-Second)
+  1069→
+  1070→| Sec | On-Screen Text | Voiceover / Narration |
+  1071→|-----|----------------|-----------------------|
+  1072→| 0–2 | **"AI in Eye Care — 2026 Update"** (white, bold, futuristic font, dark `#0F172A` background with subtle circuit-board pattern) | *(no VO — techy trending audio plays)* |
+  1073→| 2–5 | **"#1: AI Retinal Screening"** (teal, large) + **"Detects diabetic retinopathy in under 60 seconds"** (white, smaller) | "Number one: AI retinal screening. It can now detect diabetic retinopathy in under 60 seconds." |
+  1074→| 5–8 | **"#2: Automated Refraction"** (teal, large) + **"Wavefront-guided prescriptions — no phoropter needed"** (white, smaller) | "Number two: automated refraction. Wavefront-guided prescriptions without a phoropter." |
+  1075→| 8–11 | **"#3: Predictive Myopia Progression"** (teal, large) + **"AI models forecast myopia shift using axial length data"** (white, smaller) | "Number three: predictive myopia progression — AI models that forecast how a child's myopia will shift using axial length data." |
+  1076→| 11–13 | **"AI isn't replacing optometrists."** (white, bold) | "AI isn't replacing optometrists." |
+  1077→| 13–15 | **"It's making us faster, sharper, and more precise. 🚀"** (teal) + **"Follow for more AI + optometry content"** (amber `#F59E0B`) | "It's making us faster, sharper, and more precise. Follow for more." |
+  1078→
+  1079→### 4. VISUAL DIRECTION
+  1080→- **0–2s:** Dark background with a faint teal circuit-board / neural-network line pattern (very subtle, doesn't distract). Title text in a clean modern sans-serif, slight glow effect on "2026."
+  1081→- **2–5s:** A retina fundus photo appears on the left (stylized/illustrated). An AI scanning animation (a teal line sweeping across the image) highlights pathology markers in real-time. "60 seconds" appears with a countdown-style number animation.
+  1082→- **5–8s:** A sleek digital phoropter / wavefront device illustration replaces the retina. Animated light rays diverging and reconverging through a lens. "No phoropter needed" fades in with a phoropter icon getting a subtle strikethrough.
+  1083→- **8–11s:** A child's eye illustration with an axial length measurement graphic (like an ultrasound A-scan). A line graph projects forward with a prediction cone (confidence interval shading). "Myopia progression" label animates along the curve.
+  1084→- **11–13s:** Brief pause. Screen goes minimal — just white text on dark. Slight pause for emphasis.
+  1085→- **13–15s:** Three tool icons (retina scan, wavefront, myopia chart) arrange in a row. Teal rocket emoji. OptoLib logo + amber CTA at bottom.
+  1086→
+  1087→### 5. AUDIO SUGGESTION
+  1088→- **Trending audio:** Tech-forward, futuristic instrumental (synth wave / cyberpunk-lite, ~110 BPM). Think "future is now" energy. Clean, not overwhelming.
+  1089→- **Voiceover:** Fast, authoritative, "update/report" tone. Numbers ("Number one," "Number two") are crisp and punchy. The pivot at 11s ("AI isn't replacing optometrists") slows down for emphasis.
+  1090→
+  1091→### 6. CAPTION
+  1092→AI in Eye Care — 2026 Update 🤖👁️
+  1093→
+  1094→3 tools changing optometry RIGHT NOW:
+  1095→
+  1096→1️⃣ AI Retinal Screening — Diabetic retinopathy detected in <60 seconds
+  1097→2️⃣ Automated Refraction — Wavefront-guided Rx without a phoropter
+  1098→3️⃣ Predictive Myopia Progression — Forecast myopia shift using axial length
+  1099→
+  1100→AI isn't replacing us. It's sharpening us.
+  1101→
+  1102→The optometrists who learn these tools first will lead the next decade of eye care.
+  1103→
+  1104→Are you ready? 🚀
+  1105→
+  1106→### 7. HASHTAGS
+  1107→#OptoLib #AIinHealthcare #Optometry2026 #ArtificialIntelligence #EyeCareTech #RetinalScreening #MyopiaManagement #OptometryStudent #FutureOfOptometry #OphthalmicTech
+  1108→
+  1109→### 8. POSTING TIME (IST)
+  1110→**Friday, 6:00 PM IST** — Pre-weekend peak. Tech/future content does well as people look ahead to the weekend with a forward-thinking mindset.
+  1111→
+  1112→### 9. CTA
+  1113→**"Follow @optolib_ for AI + optometry updates + Get free resources at the link in bio"** (amber button, final frame + caption)
+  1114→
+  1115→---
+  1116→
+  1117→## Post 10 — "Optometry Student Struggle — Relatable"
+  1118→
+  1119→### 1. FORMAT
+  1120→Reel (1080×1920, 9:16)
+  1121→
+  1122→### 2. PILLAR
+  1123→Community / Relatable Content
+  1124→
+  1125→### 3. SCRIPT (Second-by-Second)
+  1126→
+  1127→| Sec | On-Screen Text | Voiceover / Narration |
+  1128→|-----|----------------|-----------------------|
+  1129→| 0–2 | **"The professor says…"** (white, casual font, dark `#0F172A`) | *(trending audio plays — see below)* |
+  1130→| 2–4 | **"'This won't be on the exam.' 😌"** (white, quotation marks, professor emoji) | *(no VO — audio carries)* |
+  1131→| 4–7 | **"Exam Paper Q1: [exactly that topic]"** (white, then red "WHAT?!" animation) | *(no VO — audio carries)* |
+  1132→| 7–9 | **"Every. Single. Time."** (white, each word slams in) | *(no VO — audio carries)* |
+  1133→| 9–10 | **"At least OptoLib has your back 💚"** (teal `#0D9488`) + **"Free resources. Forever."** (amber `#F59E0B`) + OptoLib logo | *(no VO — audio carries)* |
+  1134→
+  1135→### 4. VISUAL DIRECTION
+  1136→- **0–2s:** Dark background. Text appears in a casual/handwritten-style font (like a student's notebook aesthetic). Minimal, clean.
+  1137→- **2–4s:** "This won't be on the exam" appears in a fake professor "quote" format — with a small professor icon or silhouette. Calm, reassuring vibe. Maybe a subtle green checkmark.
+  1138→- **4–7s:** HARD CUT. Screen background shifts to a slightly lighter dark (or subtle red tint). An exam paper mockup appears with "Q1" in bold. The exact topic from the previous slide is written as the question. A red "WHAT?!" or skull emoji 💀 slams onto screen. Screen shakes briefly.
+  1139→- **7–9s:** "Every." (slam) "Single." (slam) "Time." (slam) — each word hits center screen with a zoom-in punch effect. Classic meme reel editing style.
+  1140→- **9–10s:** Instant mood shift. Background returns to clean dark. Teal OptoLib text with the tagline. Warm, reassuring energy. Logo resolves at bottom.
+  1141→
+  1142→### 5. AUDIO SUGGESTION
+  1143→- **Trending audio:** Use the **"Oh no, no, no"** trend audio OR a **record-scratch + suspense build** sound OR the popular **"Did I just—"** audio meme. The audio should be recognizable and match the "betrayal" mood of the professor's lie.
+  1144→- **Voiceover:** NONE. This reel relies entirely on trending audio + on-screen text. This matches the meme/relatable content format that performs best without VO.
+  1145→
+  1146→### 6. CAPTION
+  1147→"The professor said this won't be on the exam" 😌
+  1148→
+  1149→*proceeds to make it Question 1*
+  1150→
+  1151→We've all been there. Every. Single. Time. 💀
+  1152→
+  1153→But hey — whether it's on the exam or not, OptoLib has the resources you need to actually understand it. For free. Forever.
+  1154→
+  1155→Link in bio. Your future self will thank you. 💚
+  1156→
+  1157→### 7. HASHTAGS
+  1158→#OptoLib #OptometryStudent #OptometryLife #MedStudentStruggles #OptomStudent #Relatable #StudyGram #EyeCareStudent #OptometrySchool #StudentLife
+  1159→
+  1160→### 8. POSTING TIME (IST)
+  1161→**Monday, 9:00 PM IST** — Start of the week. Students are in "class grind" mode and most receptive to relatable/study content. Monday evenings historically over-index for student engagement.
+  1162→
+  1163→### 9. CTA
+  1164→**"Follow @optolib_ + Tap the link in bio for FREE optometry study resources"** (amber button, final frame + caption)
+  1165→
+  1166→---
+  1167→
+  1168→## Posting Schedule Summary — Posts 6–10
+  1169→
+  1170→| Post | Day | Time (IST) | Pillar | Duration |
+  1171→|------|-----|------------|--------|----------|
+  1172→| 6 — 3 Second Eye Test | Tuesday | 7:30 PM | Clinical Skills | 15s |
+  1173→| 7 — Prescription Decoder | Wednesday | 12:30 PM | Education | 15s |
+  1174→| 8 — Contact Lens Mistake | Thursday | 8:00 PM | Patient Education / Warning | 20s |
+  1175→| 9 — AI in Eye Care 2026 | Friday | 6:00 PM | Technology | 15s |
+  1176→| 10 — Student Struggle Meme | Monday | 9:00 PM | Community / Relatable | 10s |
+  1177→
+  1178→### Content Mix Breakdown (Posts 6–10)
+  1179→- **Educational/Clinical:** Posts 6, 7, 8 (3/5 — 60%)
+  1180→- **Technology/Trend:** Post 9 (1/5 — 20%)
+  1181→- **Community/Relatable:** Post 10 (1/5 — 20%)
+  1182→
+  1183→This maintains the **60/20/20** content mix that balances educational authority with shareability and community building — critical for a new account establishing credibility while growing reach.
+  1184→
+  1185→---
+  1186→
+  1187→*OptoLib — "Every optometry resource. Free. Forever."*# OptoLib Instagram Posts 11–15 — Static/Image Posts
+  1188→
+  1189→**Brand:** OptoLib  
+  1190→**Tagline:** "Every optometry resource. Free. Forever."  
+  1191→**Voice:** Authoritative yet approachable — like a senior optometrist mentoring a junior.  
+  1192→**Primary Color:** Teal `#0D9488`  
+  1193→**Dark Background:** `#0F172A`  
+  1194→**White Text:** `#FFFFFF`  
+  1195→**CTA Accent:** Amber `#F59E0B`  
+  1196→**Image Specs:** 1080 × 1080 px (square feed), bold headline text on image, clean design.
+  1197→
+  1198→---
+  1199→
+  1200→## POST 11 — "OptoLib Launch Announcement"
+  1201→
+  1202→### 1. FORMAT
+  1203→Static / Image
+  1204→
+  1205→### 2. PILLAR
+  1206→Brand Launch & Awareness
+  1207→
+  1208→### 3. IMAGE DESCRIPTION
+  1209→
+  1210→**Canvas:** 1080 × 1080 px. Solid dark background (`#0F172A`).
+  1211→
+  1212→**Layout — Center-Aligned, Bold & Minimalist:**
+  1213→
+  1214→- **Top edge (y ≈ 80 px):** A thin horizontal teal line (`#0D9488`), 600 px wide, centered — acts as a subtle accent divider.
+  1215→- **Upper-center (y ≈ 260 px):** Small teal text in all-caps, tracking 8 px, Montserrat Bold 28 px:
+  1216→  > `INTRODUCING`
+  1217→- **Hero headline (y ≈ 400 px):** Massive white text (`#FFFFFF`), Inter Black 96 px, line height 1.05, two lines:
+  1218→  > `THE FREE`  
+  1219→  > `OPTOMETRY LIBRARY`  
+  1220→  > `IS HERE.`
+  1221→  - The word "FREE" is highlighted in teal (`#0D9488`) for emphasis.
+  1222→- **Sub-headline (y ≈ 620 px):** White text (`#FFFFFF`), Inter Medium 32 px, tracking 1 px:
+  1223→  > `Every resource. Every student. Zero cost.`
+  1224→- **Center-lower (y ≈ 740 px):** A rounded amber button shape (`#F59E0B`), 320 × 64 px, containing dark text (`#0F172A`) in Inter Bold 26 px, centered:
+  1225→  > `VISIT OPTOLIB.IN`
+  1226→- **Bottom edge (y ≈ 920 px):** Small white text, Inter Regular 20 px, tracking 2 px:
+  1227→  > `OPTOLIB — EVERY OPTOMETRY RESOURCE. FREE. FOREVER.`
+  1228→
+  1229→**Visual polish:**
+  1230→- Soft teal radial gradient glow (very subtle, ~8 % opacity) centered behind the headline to add depth.
+  1231→- All text has a 2 px drop-shadow in `#000000` at 40 % opacity for readability.
+  1232→
+  1233→**Design notes:** This is the flagship launch post. It must feel like an event — clean, confident, and unmistakable. No clutter. The eye should travel straight down: INTRODUCING → THE FREE OPTOMETRY LIBRARY IS HERE → Every resource. Every student. Zero cost. → amber CTA button.
+  1234→
+  1235→---
+  1236→
+  1237→### 4. CAPTION
+  1238→
+  1239→**Hook (Line 1):**  
+  1240→It's official. The free optometry library the community has been waiting for is LIVE. 🔭
+  1241→
+  1242→**Body (Lines 2–14):**  
+  1243→We built OptoLib with one belief: no student or practitioner should ever be blocked from learning because they can't afford it.
+  1244→
+  1245→Here's what you'll find inside — all completely free, forever:
+  1246→
+  1247→📖 **Clinical Case Collections** — real-world cases with step-by-step discussions  
+  1248→📊 **Study Guides & Cheat Sheets** — exam-ready, high-yield summaries  
+  1249→👁️ **Ocular Anatomy Atlases** — detailed, labeled visual references  
+  1250→💊 **Pharmacology Quick References** — drug classes, mechanisms, and dosages  
+  1251→📝 **Exam Question Banks** — practice questions with explained answers  
+  1252→🎥 **Video Lecture Notes** — organized summaries from top educators  
+  1253→
+  1254→New resources are added every single week. No paywalls. No sign-up walls. No catch.
+  1255→
+  1256→**CTA (Lines 15–16):**  
+  1257→🔗 Tap the link in bio to start exploring OptoLib today.  
+  1258→Save this post and share it with a classmate who needs it.
+  1259→
+  1260→---
+  1261→
+  1262→### 5. HASHTAGS
+  1263→
+  1264→```
+  1265→#OptoLib #OptometryResources #OptometryStudent #FreeOptometry #OptometryEducation #EyeCareResources #OptomSchool #OptometryLife #StudyOptometry #FutureOptometrist
+  1266→```
+  1267→
+  1268→### 6. POSTING TIME (IST)
+  1269→
+  1270→**Tuesday, 10:00 AM IST** — Peak engagement window for students and professionals during mid-morning breaks.
+  1271→
+  1272→### 7. CTA
+  1273→
+  1274→**On-image CTA:** Amber button — `VISIT OPTOLIB.IN`  
+  1275→**Caption CTA:** "Tap the link in bio to start exploring OptoLib today."  
+  1276→**Story CTA:** "Swipe up / Link sticker — Explore OptoLib"
+  1277→
+  1278→---
+  1279→---
+  1280→
+  1281→## POST 12 — "Cheat Sheet: Common Eye Drugs & Dosages"
+  1282→
+  1283→### 1. FORMAT
+  1284→Static / Image
+  1285→
+  1286→### 2. PILLAR
+  1287→Clinical Knowledge (Pharmacology)
+  1288→
+  1289→### 3. IMAGE DESCRIPTION
+  1290→
+  1291→**Canvas:** 1080 × 1080 px. Solid dark background (`#0F172A`).
+  1292→
+  1293→**Layout — Structured Grid / Table Design:**
+  1294→
+  1295→**Header band (y ≈ 60–160 px):** Full-width teal band (`#0D9488`), 1080 × 100 px. Contains:
+  1296→- Left-aligned (x ≈ 60 px): White text, Inter Black 40 px:  
+  1297→  > `💊 CHEAT SHEET`
+  1298→- Right-aligned (x ≈ 1020 px): White text, Inter Medium 26 px, right-anchored:  
+  1299→  > `COMMON OCULAR DRUGS`
+  1300→
+  1301→**Column headers (y ≈ 200–240 px):** A thin teal-tinted row (`#0D9488` at 15 % opacity), 960 px wide, centered. Inside, three columns with white Inter Bold 22 px, tracking 2 px, all-caps:
+  1302→- Col 1 (x ≈ 80 px): `DRUG`  
+  1303→- Col 2 (x ≈ 400 px): `CLASS`  
+  1304→- Col 3 (x ≈ 760 px): `PRIMARY USE`
+  1305→
+  1306→**Six data rows** (alternating subtle backgrounds — even rows: transparent; odd rows: `#FFFFFF` at 4 % opacity). Each row is approximately 96 px tall, starting at y ≈ 260 px.
+  1307→
+  1308→**Row 1 — Timolol (y ≈ 260 px)**
+  1309→- Drug: `Timolol 0.5%` — Inter Bold 26 px, white
+  1310→- Class: `Beta-blocker` — Inter Regular 24 px, teal (`#0D9488`)
+  1311→- Use: `↓ IOP in glaucoma (open-angle)` — Inter Regular 24 px, white
+  1312→
+  1313→**Row 2 — Latanoprost (y ≈ 356 px)**
+  1314→- Drug: `Latanoprost 0.005%` — Inter Bold 26 px, white
+  1315→- Class: `Prostaglandin analog` — Inter Regular 24 px, teal
+  1316→- Use: `↑ Uveoscleral outflow, first-line glaucoma` — Inter Regular 24 px, white
+  1317→
+  1318→**Row 3 — Cyclopentolate (y ≈ 452 px)**
+  1319→- Drug: `Cyclopentolate 1%` — Inter Bold 26 px, white
+  1320→- Class: `Anticholinergic / Mydriatic` — Inter Regular 24 px, teal
+  1321→- Use: `Cycloplegic refraction, uveitis dilation` — Inter Regular 24 px, white
+  1322→
+  1323→**Row 4 — Tropicamide (y ≈ 548 px)**
+  1324→- Drug: `Tropicamide 1%` — Inter Bold 26 px, white
+  1325→- Class: `Anticholinergic / Mydriatic` — Inter Regular 24 px, teal
+  1326→- Use: `Fundus exam dilation (short-acting)` — Inter Regular 24 px, white
+  1327→
+  1328→**Row 5 — Fluorescein Sodium (y ≈ 644 px)**
+  1329→- Drug: `Fluorescein Na 2%` — Inter Bold 26 px, white
+  1330→- Class: `Diagnostic dye` — Inter Regular 24 px, teal
+  1331→- Use: `Corneal staining, FIT, TBUT, RB test` — Inter Regular 24 px, white
+  1332→
+  1333→**Row 6 — Proparacaine (y ≈ 740 px)**
+  1334→- Drug: `Proparacaine 0.5%` — Inter Bold 26 px, white
+  1335→- Class: `Topical anesthetic` — Inter Regular 24 px, teal
+  1336→- Use: `Applanation tonometry, foreign body removal` — Inter Regular 24 px, white
+  1337→
+  1338→**Footer band (y ≈ 880–960 px):** Full-width dark band with a thin amber top border (3 px, `#F59E0B`). Contains:
+  1339→- Left (x ≈ 60 px): Amber text, Inter Bold 20 px:  
+  1340→  > `SAVE THIS • SHARE THIS • COME BACK TO THIS`
+  1341→- Right (x ≈ 1020 px, right-aligned): White text, Inter Regular 18 px:  
+  1342→  > `OptoLib`
+  1343→
+  1344→**Visual polish:**
+  1345→- Thin vertical teal divider lines (1 px, `#0D9488` at 30 % opacity) separating the three columns.
+  1346→- Each drug name has a small teal circle bullet (⬤ 8 px) to its left.
+  1347→- Entire table area has a subtle rounded-corner border (12 px radius) in teal at 20 % opacity.
+  1348→
+  1349→---
+  1350→
+  1351→### 4. CAPTION
+  1352→
+  1353→**Hook (Line 1):**  
+  1354→6 drugs you'll use every single day in clinic. Save this cheat sheet now. 💊
+  1355→
+  1356→**Body (Lines 2–16):**  
+  1357→Whether you're a 1st-year student or sitting in your first externship, these six ocular drugs are the backbone of daily optometric practice.
+  1358→
+  1359→Here are a few clinical pearls that won't be on the chart:
+  1360→
+  1361→🔴 **Timolol** — Always ask about asthma and bradycardia before prescribing. Systemic absorption is real, especially in elderly patients.
+  1362→
+  1363→🔴 **Latanoprost** — Warn patients about iris darkening (irreversible) and periocular hyperpigmentation. Administer at night for maximum IOP reduction.
+  1364→
+  1365→🔴 **Cyclopentolate vs. Tropicamide** — Cyclopentolate gives deeper, longer-lasting cycloplegia (peak 30–60 min, lasts up to 24 hrs). Tropicamide is your quick fundus-check tool (peak 20 min, wears off in 4–6 hrs). Choose wisely.
+  1366→
+  1367→🔴 **Fluorescein** — Always check expiry. Old fluorescein can give false-positive staining and even cause corneal toxicity.
+  1368→
+  1369→🔴 **Proparacaine** — NEVER prescribe for home use. It delays healing and masks serious pathology. Clinic use only.
+  1370→
+  1371→**CTA (Lines 17–19):**  
+  1372→📌 **Save this post** — you'll need it during exams and clinic rotations.  
+  1373→🔗 Download the full pharmacology cheat sheet (with 30+ drugs) — link in bio at OptoLib.  
+  1374→💬 Comment below: which drug do you reach for most often?
+  1375→
+  1376→---
+  1377→
+  1378→### 5. HASHTAGS
+  1379→
+  1380→```
+  1381→#OptometryPharmacology #OptometryStudent #OptoLib #EyeDrugs #OptometryCheatSheet #ClinicalOptometry #OptomLife #OcularPharmacology #OptometryExam #OptometryNotes
+  1382→```
+  1383→
+  1384→### 6. POSTING TIME (IST)
+  1385→
+  1386→**Wednesday, 11:30 AM IST** — Mid-week study content performs best; students are in active study mode.
+  1387→
+  1388→### 7. CTA
+  1389→
+  1390→**On-image CTA:** Amber footer text — `SAVE THIS • SHARE THIS • COME BACK TO THIS`  
+  1391→**Caption CTA:** "Save this post" + "Download the full pharmacology cheat sheet — link in bio at OptoLib."  
+  1392→**Engagement CTA:** "Comment below: which drug do you reach for most often?"
+  1393→
+  1394→---
+  1395→---
+  1396→
+  1397→## POST 13 — "Quote Post — Why Optometry Matters"
+  1398→
+  1399→### 1. FORMAT
+  1400→Static / Image (Quote Post)
+  1401→
+  1402→### 2. PILLAR
+  1403→Inspiration & Motivation
+  1404→
+  1405→### 3. IMAGE DESCRIPTION
+  1406→
+  1407→**Canvas:** 1080 × 1080 px. Solid dark background (`#0F172A`).
+  1408→
+  1409→**Layout — Centered, Minimalist, Gallery-Worthy:**
+  1410→
+  1411→**Upper area (y ≈ 120 px):** Small teal text, Inter Medium 22 px, tracking 6 px, all-caps, centered:
+  1412→> `WORDS THAT MATTER`
+  1413→
+  1414→**Teal accent line (y ≈ 170 px):** A single horizontal teal line, 80 px wide, 3 px thick, centered. Acts as a decorative separator.
+  1415→
+  1416→**Quote text (y ≈ 260–580 px):** Large white text, Inter Light 52 px, line height 1.35, centered, with deliberate typographic quotation marks (teal, 64 px):
+  1417→
+  1418→> `"`  
+  1419→> `The eye is the window  
+  1420→> to the body — and  
+  1421→> the optometrist is  
+  1422→> the first physician  
+  1423→> most people will ever see.`  
+  1424→> `"`
+  1425→
+  1426→- The word "window" has a subtle teal underline accent (2 px line, 80 % opacity).
+  1427→- The words "first physician" are styled in Inter Bold (weight shift for emphasis).
+  1428→
+  1429→**Attribution (y ≈ 640 px):** Right-aligned white text, Inter Medium 28 px:
+  1430→> `— Dr. Irvin M. Borish`
+  1431→
+  1432→**Sub-attribution (y ≈ 680 px):** Right-aligned teal text, Inter Regular 20 px, tracking 2 px:
+  1433→> `FATHER OF MODERN OPTOMETRY`
+  1434→
+  1435→**Lower area (y ≈ 820 px):** Thin teal horizontal line, 80 px wide, centered — mirrors the top accent line.
+  1436→
+  1437→**Bottom brand lockup (y ≈ 880–960 px):** Centered text block:
+  1438→- Line 1: `OPTOLIB` in Inter Bold 22 px, teal
+  1439→- Line 2: `Free education. Because it matters.` in Inter Regular 18 px, white, tracking 1 px
+  1440→
+  1441→**Visual polish:**
+  1442→- Very subtle teal radial glow (6 % opacity) behind the quote block to create a sense of warmth.
+  1443→- No images, icons, or illustrations — pure typography. The power is in the words.
+  1444→- Overall design feels like something you'd see framed on the wall of an optometry college.
+  1445→
+  1446→---
+  1447→
+  1448→### 4. CAPTION
+  1449→
+  1450→**Hook (Line 1):**  
+  1451→"Most people will ever see." Let that sink in. 👁️
+  1452→
+  1453→**Body (Lines 2–14):**  
+  1454→Dr. Irvin M. Borish — often called the Father of Modern Optometry — understood something that many in healthcare still overlook:
+  1455→
+  1456→Optometrists are primary care providers.
+  1457→
+  1458→We're often the first to detect:
+  1459→🔴 Systemic hypertension through retinal changes  
+  1460→🔴 Diabetes mellitus via microaneurysms and hemorrhages  
+  1461→🔴 Brain tumors through optic disc edema  
+  1462→🔴 Autoimmune conditions through scleritis and keratitis  
+  1463→🔴 Neurological disease through cranial nerve palsies  
+  1464→
+  1465→The eye doesn't just see the world — it reveals the patient.
+  1466→
+  1467→That's exactly why OptoLib exists. When optometrists are well-educated, patients get better care. When students have free access to the best resources, the entire profession moves forward.
+  1468→
+  1469→Dr. Borish spent his life advancing optometric education. We're carrying that torch forward — one free resource at a time.
+  1470→
+  1471→**CTA (Lines 15–17):**  
+  1472→💡 If this quote moved you, pass it on. Tag a colleague or classmate who reminds you why this profession matters.  
+  1473→🔗 Explore 500+ free optometry resources at OptoLib — link in bio.
+  1474→
+  1475→---
+  1476→
+  1477→### 5. HASHTAGS
+  1478→
+  1479→```
+  1480→#OptometryQuotes #DrBorish #OptometryMatters #OptoLib #OptometryInspiration #FutureOptometrist #EyeCareProfessional #OptometryLife #PrimaryEyeCare #OptometryEducation
+  1481→```
+  1482→
+  1483→### 6. POSTING TIME (IST)
+  1484→
+  1485→**Thursday, 9:00 AM IST** — Morning inspiration posts set the tone for the day; high save-and-share potential.
+  1486→
+  1487→### 7. CTA
+  1488→
+  1489→**On-image CTA:** Implicit brand lockup — `OPTOLIB — Free education. Because it matters.`  
+  1490→**Caption CTA:** "Tag a colleague or classmate who reminds you why this profession matters." + "Explore 500+ free optometry resources at OptoLib — link in bio."
+  1491→
+  1492→---
+  1493→---
+  1494→
+  1495→## POST 14 — "Infographic: Digital Eye Strain Stats 2026"
+  1496→
+  1497→### 1. FORMAT
+  1498→Static / Image (Infographic)
+  1499→
+  1500→### 2. PILLAR
+  1501→Public Health & Clinical Awareness
+  1502→
+  1503→### 3. IMAGE DESCRIPTION
+  1504→
+  1505→**Canvas:** 1080 × 1080 px. Solid dark background (`#0F172A`).
+  1506→
+  1507→**Layout — Data-Driven, Four-Stat Grid with Mini Visuals:**
+  1508→
+  1509→**Header area (y ≈ 60–150 px):**
+  1510→- Top-left (x ≈ 60 px, y ≈ 70 px): Teal pill badge, Inter Bold 18 px, white text on teal rounded rect:  
+  1511→  > `📌 2026 DATA`
+  1512→- Center (x ≈ 540 px, y ≈ 100 px): Main headline, Inter Black 44 px, white, centered:  
+  1513→  > `DIGITAL EYE STRAIN`  
+  1514→- Sub-line (x ≈ 540 px, y ≈ 145 px): Inter Medium 22 px, teal, centered:  
+  1515→  > `The numbers every eye care professional needs to know`
+  1516→
+  1517→---
+  1518→
+  1519→**STAT 1 — Upper Left Quadrant (x ≈ 60–510 px, y ≈ 200–460 px)**
+  1520→
+  1521→- **Donut chart visual:** A ring/donut chart, outer radius 80 px, stroke width 30 px. Filled portion (65 %) in teal (`#0D9488`), unfilled portion in `#FFFFFF` at 10 % opacity. Center of donut: large white "65%" in Inter Black 48 px.
+  1522→- **Label below donut (y ≈ 390 px):** White text, Inter Bold 24 px:  
+  1523→  > `of people report digital eye strain`
+  1524→- **Sub-label (y ≈ 420 px):** White text at 50 % opacity, Inter Regular 18 px:  
+  1525→  > `Global prevalence across all age groups`
+  1526→- **Accent:** Small teal dot (⬤ 6 px) to the left of the label.
+  1527→
+  1528→---
+  1529→
+  1530→**STAT 2 — Upper Right Quadrant (x ≈ 570–1020 px, y ≈ 200–460 px)**
+  1531→
+  1532→- **Bar chart visual:** A vertical bar, 50 px wide, 200 px tall. The bar is filled to 75 % height with amber (`#F59E0B`), rest in `#FFFFFF` at 10 %. A horizontal dashed line at the 75 % mark.
+  1533→- **Value above bar:** Large white "7.5 hrs" in Inter Black 44 px.
+  1534→- **Label below bar (y ≈ 390 px):** White text, Inter Bold 24 px:  
+  1535→  > `average daily screen time`
+  1536→- **Sub-label (y ≈ 420 px):** White text at 50 % opacity, Inter Regular 18 px:  
+  1537→  > `Up from 6.2 hrs in 2020`
+  1538→- **Small arrow icon (↑) in teal next to the sub-label indicating increase.**
+  1539→
+  1540→---
+  1541→
+  1542→**STAT 3 — Lower Left Quadrant (x ≈ 60–510 px, y ≈ 500–760 px)**
+  1543→
+  1544→- **Horizontal progress bar visual:** A rounded bar 380 px wide, 24 px tall. Only 21 % filled in red/coral (`#EF4444`), remainder in `#FFFFFF` at 10 %. The filled portion has a subtle gradient from teal to coral to signal concern.
+  1545→- **Value to the left of bar:** Large white "21%" in Inter Black 44 px.
+  1546→- **Label below bar (y ≈ 690 px):** White text, Inter Bold 24 px:  
+  1547→  > `take regular visual breaks`
+  1548→- **Sub-label (y ≈ 720 px):** White text at 50 % opacity, Inter Regular 18 px:  
+  1549→  > `Despite 20-20-20 rule awareness`
+  1550→- **Small warning icon (⚠) in amber to the left of label.**
+  1551→
+  1552→---
+  1553→
+  1554→**STAT 4 — Lower Right Quadrant (x ≈ 570–1020 px, y ≈ 500–760 px)**
+  1555→
+  1556→- **Split visual / two-tone circle:** A circle 160 px diameter, left half in teal, right half in `#FFFFFF` at 15 % opacity. A horizontal dividing line through center.
+  1557→- **Value above circle:** White "EVIDENCE MIXED" in Inter Bold 26 px, tracking 2 px.
+  1558→- **Label below circle (y ≈ 690 px):** White text, Inter Bold 24 px:  
+  1559→  > `blue light blocking glasses`
+  1560→- **Sub-label (y ≈ 720 px):** White text at 50 % opacity, Inter Regular 18 px:  
+  1561→  > `No strong clinical consensus yet`
+  1562→- **Small balance/scale icon in teal to the left of label.**
+  1563→
+  1564→---
+  1565→
+  1566→**Footer (y ≈ 820–960 px):**
+  1567→
+  1568→- Thin teal horizontal divider line, full width minus 60 px margins, 1 px, at y ≈ 830 px.
+  1569→- Left side (x ≈ 60 px, y ≈ 870 px): White text, Inter Regular 18 px:  
+  1570→  > `Sources: AOA 2026, WHO Digital Health Report, Systematic Reviews (2024–2026)`
+  1571→- Right side (x ≈ 1020 px, y ≈ 870 px, right-aligned): Amber text, Inter Bold 18 px:  
+  1572→  > `SAVE & SHARE ↓`
+  1573→- Bottom center (y ≈ 930 px): `OPTOLIB` in teal, Inter Bold 20 px, centered.
+  1574→
+  1575→**Visual polish:**
+  1576→- All four quadrants are separated by a subtle cross-hair grid line (1 px, `#FFFFFF` at 6 % opacity).
+  1577→- Rounded-corner card backgrounds (12 px radius) in `#FFFFFF` at 4 % opacity behind each quadrant.
+  1578→- Clean, spacious — each stat has breathing room. No visual clutter.
+  1579→
+  1580→---
+  1581→
+  1582→### 4. CAPTION
+  1583→
+  1584→**Hook (Line 1):**  
+  1585→7.5 hours. That's how long your patients stare at screens daily. Here's what the data says. 📊
+  1586→
+  1587→**Body (Lines 2–20):**  
+  1588→Digital eye strain — also known as Computer Vision Syndrome — is the most common complaint in primary eye care today. But are we addressing it with evidence or with marketing?
+  1589→
+  1590→Here are the 2026 numbers (sources cited on the graphic):
+  1591→
+  1592→📈 **65 % prevalence** — and rising. This isn't just "tired eyes." It includes headaches, blurred vision, dry eye, and neck/shoulder pain.
+  1593→
+  1594→📈 **7.5 hours average** — across ALL age groups, not just young adults. Your 65-year-old patient with a new iPad is just as vulnerable.
+  1595→
+  1596→📈 **Only 21 % take breaks** — we've been preaching the 20-20-20 rule for years. Clearly, awareness ≠ compliance. As clinicians, we need better behavioral strategies, not just reminders.
+  1597→
+  1598→📈 **Blue light blocking: evidence is MIXED** — this one's important. While patients are bombarded with marketing for blue light glasses, the clinical literature does not support a strong consensus. Some studies show subjective symptom relief, but objective metrics (accommodative response, tear film stability) are inconsistent. Don't prescribe based on product ads. Prescribe based on evidence.
+  1599→
+  1600→**3 Evidence-Based Tips for Your Patients:**
+  1601→
+  1602→1️⃣ **Blink consciously.** Blink rate drops 60–70 % during screen use. This is the single biggest modifiable factor for digital-related dry eye.
+  1603→
+  1604→2️⃣ **Optimize working distance.** 40–75 cm is ideal. Closer than 40 cm dramatically increases accommodative demand and convergence effort.
+  1605→
+  1606→3️⃣ **Address lighting, not just screens.** Reduce glare, match screen brightness to ambient lighting, and position screens perpendicular to windows.
+  1607→
+  1608→**CTA (Lines 21–23):**  
+  1609→📌 Save this post for your next patient education moment.  
+  1610→💬 Do you recommend blue light glasses in practice? Drop your clinical stance below — let's discuss.  
+  1611→🔗 Get our full "Digital Eye Strain Patient Handout" (printable PDF) — free at OptoLib. Link in bio.
+  1612→
+  1613→---
+  1614→
+  1615→### 5. HASHTAGS
+  1616→
+  1617→```
+  1618→#DigitalEyeStrain #ComputerVisionSyndrome #Optometry2026 #OptoLib #BlueLight #OptometryResearch #EyeCareTips #OptometryStudent #DryEyeDisease #EvidenceBasedOptometry
+  1619→```
+  1620→
+  1621→### 6. POSTING TIME (IST)
+  1622→
+  1623→**Friday, 12:00 PM IST** — Friday lunch-browse window; data-driven content gets high saves and shares going into the weekend.
+  1624→
+  1625→### 7. CTA
+  1626→
+  1627→**On-image CTA:** Amber footer text — `SAVE & SHARE ↓`  
+  1628→**Caption CTA:** "Save this post" + "Get our full Digital Eye Strain Patient Handout — free at OptoLib. Link in bio."  
+  1629→**Engagement CTA:** "Do you recommend blue light glasses in practice? Drop your clinical stance below."
+  1630→
+  1631→---
+  1632→---
+  1633→
+  1634→## POST 15 — "This Week on OptoLib — Resource Spotlight"
+  1635→
+  1636→### 1. FORMAT
+  1637→Static / Image
+  1638→
+  1639→### 2. PILLAR
+  1640→Resource Showcase & Value Delivery
+  1641→
+  1642→### 3. IMAGE DESCRIPTION
+  1643→
+  1644→**Canvas:** 1080 × 1080 px. Solid dark background (`#0F172A`).
+  1645→
+  1646→**Layout — "Featured Resource" Preview Card Design:**
+  1647→
+  1648→**Top banner (y ≈ 50–120 px):** Full-width teal band (`#0D9488`), 1080 × 70 px. Contains:
+  1649→- Left (x ≈ 60 px): White text, Inter Medium 20 px, tracking 4 px, all-caps:  
+  1650→  > `THIS WEEK ON OPTOLIB`
+  1651→- Right (x ≈ 1020 px, right-aligned): Amber text, Inter Bold 20 px:  
+  1652→  > `RESOURCE SPOTLIGHT`
+  1653→
+  1654→**Resource category tag (y ≈ 155–185 px):** Centered. A rounded teal-outlined pill badge (2 px border, no fill), Inter Bold 18 px, teal text:
+  1655→> `📘 CLINICAL CASE COLLECTION`
+  1656→
+  1657→**Resource title (y ≈ 220–320 px):** Large white headline, Inter Black 50 px, centered, two lines:
+  1658→> `"50 High-Yield`  
+  1659→> `Optometry Clinical Cases"`
+  1660→
+  1661→**Subtitle (y ≈ 350–380 px):** White text at 70 % opacity, Inter Medium 22 px, centered:
+  1662→> `With Differential Diagnosis & Management Protocols`
+  1663→
+  1664→---
+  1665→
+  1666→**Mock screenshot / preview area (y ≈ 420–760 px):** A rounded rectangle (16 px border radius) simulating a document/page preview, dimensions ~960 × 340 px, centered. Background: `#1E293B` (slightly lighter than main bg).
+  1667→
+  1668→Inside the mock preview:
+  1669→
+  1670→- **Header bar of preview (y ≈ 430–470 px):** Simulated page header — dark teal bar with white text Inter Medium 16 px:
+  1671→  > `Case #12: Acute Angle-Closure Glaucoma — Walkthrough`
+  1672→
+  1673→- **Content lines (simulated text blocks, y ≈ 485–720 px):** Six horizontal lines of varying widths (40–85 % of preview width) in `#FFFFFF` at 15–25 % opacity to simulate readable text. Spaced 24 px apart.
+  1674→
+  1675→- **Highlighted callout box within preview (y ≈ 620–680 px):** A small amber-outlined box (2 px border `#F59E0B`, 10 % amber fill) with:
+  1676→  - Teal text, Inter Bold 14 px: `KEY LEARNING POINT`
+  1677→  - White text at 60 %, Inter Regular 13 px: `"Always check IOP bilaterally, even with unilateral symptoms"`
+  1678→
+  1679→- **Bottom of preview:** Three small colored dots (teal, amber, teal) centered — simulating a page indicator.
+  1680→
+  1681→---
+  1682→
+  1683→**Feature list (y ≈ 780–880 px):** Three columns, centered, evenly spaced (each ~280 px wide):
+  1684→
+  1685→- **Col 1:** Small teal checkmark icon (✓), white text Inter Bold 18 px: `50 Cases`  
+  1686→  Sub: `Anterior & posterior segment`
+  1687→- **Col 2:** Small teal checkmark icon, white text Inter Bold 18 px: `Step-by-Step`  
+  1688→  Sub: `History → DDx → Management`
+  1689→- **Col 3:** Small teal checkmark icon, white text Inter Bold 18 px: `PDF + Online`  
+  1690→  Sub: `Download or study in-browser`
+  1691→
+  1692→---
+  1693→
+  1694→**Footer (y ≈ 920–980 px):**
+  1695→- Amber rounded button, 360 × 52 px, centered, containing dark text Inter Bold 22 px:  
+  1696→  > `ACCESS FREE → OPTOLIB.IN`
+  1697→- Below button (y ≈ 975 px): White text, Inter Regular 16 px, centered, 50 % opacity:  
+  1698→  > `Every optometry resource. Free. Forever.`
+  1699→
+  1700→**Visual polish:**
+  1701→- Subtle teal glow (8 % opacity) behind the resource title.
+  1702→- The mock screenshot has a very faint outer shadow (0 8px 32px rgba(0,0,0,0.4)) to create a "floating card" effect.
+  1703→- Feature list checkmarks pulse subtly in design (not animated in static — just visually prominent).
+  1704→
+  1705→---
+  1706→
+  1707→### 4. CAPTION
+  1708→
+  1709→**Hook (Line 1):**  
+  1710→50 real clinical cases. Full walkthroughs. Completely free. This week's spotlight is a big one. 🔦
+  1711→
+  1712→**Body (Lines 2–18):**  
+  1713→This week on OptoLib, we're shining the spotlight on our most downloaded resource — and for good reason.
+  1714→
+  1715→📘 **"50 High-Yield Optometry Clinical Cases"** is a curated collection of real-world clinical scenarios, each structured the way you'd present a case in practice or on exams:
+  1716→
+  1717→📋 **Chief Complaint & History** — What the patient reports and the relevant history to extract  
+  1718→👁️ **Clinical Findings** — What you'd see on examination (with descriptions)  
+  1719→🧠 **Differential Diagnosis** — 3–5 working diagnoses ranked by likelihood  
+  1720→✅ **Final Diagnosis** — With reasoning explained  
+  1721→💊 **Management Protocol** — Step-by-step, including when to refer  
+  1722→
+  1723→Cases cover:
+  1724→- Anterior segment (corneal ulcers, uveitis, conjunctivitis variants)  
+  1725→- Posterior segment (CRVO, BRVO, macular degeneration, diabetic retinopathy)  
+  1726→- Glaucoma (acute angle-closure, NTG, PACG vs. POAG differentiation)  
+  1727→- Neuro-ophthalmic (CN III palsy, optic neuritis, temporal arteritis)  
+  1728→- Contact lens complications  
+  1729→- Pediatric presentations (amblyopia, congenital cataract)
+  1730→
+  1731→Whether you're prepping for your final exams, building clinical confidence before externship, or just want to stay sharp in practice — this is the resource.
+  1732→
+  1733→**CTA (Lines 19–22):**  
+  1734→🔗 Access all 50 cases free at OptoLib — link in bio.  
+  1735→Available as a downloadable PDF AND as an interactive online module.  
+  1736→📌 Save this post so you can find it when you need it.  
+  1737→💬 Comment "CASES" below and we'll DM you the direct link.
+  1738→
+  1739→---
+  1740→
+  1741→### 5. HASHTAGS
+  1742→
+  1743→```
+  1744→#OptometryCases #ClinicalOptometry #OptoLib #OptometryStudent #OptometryExam #OptometryResources #FreeStudyMaterial #OptomSchool #CaseBasedLearning #OptometryEducation
+  1745→```
+  1746→
+  1747→### 6. POSTING TIME (IST)
+  1748→
+  1749→**Monday, 10:30 AM IST** — Start-of-week content drop sets the tone; "this week" framing makes sense on Monday. High engagement as students plan their study week.
+  1750→
+  1751→### 7. CTA
+  1752→
+  1753→**On-image CTA:** Amber button — `ACCESS FREE → OPTOLIB.IN`  
+  1754→**Caption CTA:** "Access all 50 cases free at OptoLib — link in bio."  
+  1755→**Engagement CTA:** "Comment 'CASES' below and we'll DM you the direct link."
+  1756→
+  1757→---
+  1758→---
+  1759→
+  1760→## SUMMARY TABLE
+  1761→
+  1762→| Post # | Title | Pillar | Format | Posting Time (IST) |
+  1763→|--------|-------|--------|--------|--------------------|
+  1764→| 11 | OptoLib Launch Announcement | Brand Launch & Awareness | Static/Image | Tue 10:00 AM |
+  1765→| 12 | Cheat Sheet: Common Eye Drugs & Dosages | Clinical Knowledge | Static/Image | Wed 11:30 AM |
+  1766→| 13 | Quote Post — Why Optometry Matters | Inspiration & Motivation | Static/Image | Thu 9:00 AM |
+  1767→| 14 | Infographic: Digital Eye Strain Stats 2026 | Public Health & Clinical Awareness | Static/Image (Infographic) | Fri 12:00 PM |
+  1768→| 15 | This Week on OptoLib — Resource Spotlight | Resource Showcase | Static/Image | Mon 10:30 AM |
+  1769→
+  1770→---
+  1771→
+  1772→*All posts designed at 1080 × 1080 px. All copy is original and ready for production. Fonts referenced: Inter (Black, Bold, Medium, Regular, Light) and Montserrat Bold. All hex colors verified against brand palette.*# OptoLib Instagram Posts 16–20: Engagement + Launch + Community
+  1773→
+  1774→**Brand:** OptoLib  
+  1775→**Tagline:** "Every optometry resource. Free. Forever."  
+  1776→**Voice:** Bold, community-building, slightly provocative to drive engagement.  
+  1777→**Colors:** Teal (#0D9488) primary, Dark (#0F172A) backgrounds, White (#FFFFFF) text, Amber (#F59E0B) CTAs.
+  1778→
+  1779→---
+  1780→
+  1781→## POST 16 — "Which Year Are You?" — Engagement Post
+  1782→
+  1783→### FORMAT
+  1784→Static Image (1080×1080px, square)
+  1785→
+  1786→### PILLAR
+  1787→Community & Engagement
+  1788→
+  1789→### VISUAL CONTENT
+  1790→
+  1791→**Overall Layout:** Four-quadrant grid image on a #0F172A (dark) background. Each quadrant is separated by thin teal (#0D9488) dividing lines (2px). The OptoLib logo (small, top-center, white) sits above the grid.
+  1792→
+  1793→**Quadrant Breakdown (clockwise from top-left):**
+  1794→
+  1795→**Top-Left Quadrant:**
+  1796→- Background: Slightly lighter dark (#1E293B)
+  1797→- Large bold white text (centered):
+  1798→  ```
+  1799→  1st Year
+  1800→  ```
+  1801→- Smaller teal text below:
+  1802→  ```
+  1803→  Still memorizing
+  1804→  eye anatomy 😩
+  1805→  ```
+  1806→- Small emoji: 📖 (top-right corner of quadrant)
+  1807→
+  1808→**Top-Right Quadrant:**
+  1809→- Background: #0F172A (same dark)
+  1810→- Large bold white text (centered):
+  1811→  ```
+  1812→  2nd Year
+  1813→  ```
+  1814→- Smaller teal text below:
+  1815→  ```
+  1816→  Optics is ruining
+  1817→  my life 💀
+  1818→  ```
+  1819→- Small emoji: 🔭 (top-right corner of quadrant)
+  1820→
+  1821→**Bottom-Left Quadrant:**
+  1822→- Background: #0F172A (same dark)
+  1823→- Large bold white text (centered):
+  1824→  ```
+  1825→  3rd Year
+  1826→  ```
+  1827→- Smaller teal text below:
+  1828→  ```
+  1829→  Clinicals hit
+  1830→  different 🩺
+  1831→  ```
+  1832→- Small emoji: 👁️ (top-right corner of quadrant)
+  1833→
+  1834→**Bottom-Right Quadrant:**
+  1835→- Background: Slightly lighter dark (#1E293B)
+  1836→- Large bold white text (centered):
+  1837→  ```
+  1838→  4th Year
+  1839→  ```
+  1840→- Smaller teal text below:
+  1841→  ```
+  1842→  One foot out the door,
+  1843→  already looking for jobs 😎
+  1844→  ```
+  1845→- Small emoji: 💼 (top-right corner of quadrant)
+  1846→
+  1847→**Bottom Banner (spanning full width):**
+  1848→- Amber (#F59E0B) background strip, 60px tall
+  1849→- White bold text centered:
+  1850→  ```
+  1851→  COMMENT YOUR YEAR 👇
+  1852→  ```
+  1853→
+  1854→**Design Notes:**
+  1855→- Font: Bold sans-serif (Inter Bold or Poppins Bold) for year labels; Regular weight for descriptions
+  1856→- Text hierarchy: Year number is largest (72pt), description is smaller (28pt), bottom CTA is medium-bold (32pt)
+  1857→- Subtle gradient overlay from top-left to bottom-right in teal at 5% opacity for visual depth
+  1858→- No clutter — clean, meme-like relatability is the goal
+  1859→
+  1860→### CAPTION
+  1861→
+  1862→```
+  1863→Which year are you? 👇
+  1864→
+  1865→1st Year — Still lost in anatomy
+  1866→2nd Year — Optics broke you
+  1867→3rd Year — Clinicals waking you up
+  1868→4th Year — Already job hunting
+  1869→
+  1870→Comment your year below. Let's see who's in the building 🔥
+  1871→
+  1872→Tag a classmate who fits the description perfectly.
+  1873→
+  1874→No wrong answers. Just vibes.
+  1875→
+  1876→#OptoLib
+  1877→```
+  1878→
+  1879→### HASHTAGS
+  1880→#OptoLib #OptometryStudent #OptometryLife #OptometrySchool #EyeCareCommunity #FutureOptometrist #OptometryIndia #OptometryMemes #OptometryHumor #OptStudent
+  1881→
+  1882→### POSTING TIME (IST)
+  1883→**Tuesday, 8:00 PM IST** — Peak evening engagement window when students are scrolling after study sessions.
+  1884→
+  1885→### CTA
+  1886→**Comment your year** (engagement-driven — maximize comment count for algorithm boost)
+  1887→
+  1888→---
+  1889→
+  1890→## POST 17 — "Optometry Myth vs Fact" — Carousel
+  1891→
+  1892→### FORMAT
+  1893→Carousel Post (5 slides, 1080×1080px each, swipeable)
+  1894→
+  1895→### PILLAR
+  1896→Educational Value + Engagement
+  1897→
+  1898→### VISUAL CONTENT
+  1899→
+  1900→---
+  1901→
+  1902→**SLIDE 1 — HOOK**
+  1903→
+  1904→- **Background:** #0F172A (dark)
+  1905→- **Layout:** Centered typography, bold and confrontational
+  1906→- **Content:**
+  1907→  ```
+  1908→  3 OPTOMETRY MYTHS
+  1909→  THAT NEED TO DIE
+  1910→  ```
+  1911→  *(each line progressively larger for impact)*
+  1912→- **"3"** in oversized Amber (#F59E0B), 120pt
+  1913→- **"OPTOMETRY MYTHS"** in White, 56pt, all-caps, bold
+  1914→- **"THAT NEED TO DIE"** in Teal (#0D9488), 48pt, all-caps, bold
+  1915→- **Bottom of slide:** Small white text:
+  1916→  ```
+  1917→  Swipe to debunk each one →
+  1918→  ```
+  1919→- **OptoLib logo:** Top-left, small, white
+  1920→- **Subtle design element:** Thin teal horizontal line above and below the main text block
+  1921→
+  1922→---
+  1923→
+  1924→**SLIDE 2 — MYTH 1**
+  1925→
+  1926→- **Background:** #0F172A (dark)
+  1927→- **Top section** (top 40% of slide):
+  1928→  - Small amber pill/badge: `❌ MYTH`
+  1929→  - Large white text, centered:
+  1930→    ```
+  1931→    "Reading in dim light
+  1932→    damages your eyes"
+  1933→    ```
+  1934→  - Font size: 40pt, bold, italicized for the quote feel
+  1935→- **Teal divider line** across the middle
+  1936→- **Bottom section** (bottom 50% of slide):
+  1937→  - Small teal pill/badge: `✅ FACT`
+  1938→  - Teal text, centered:
+  1939→    ```
+  1940→    Reading in dim light causes
+  1941→    eye strain and fatigue, but
+  1942→    it does NOT cause permanent
+  1943→    damage to your eyes.
+  1944→    ```
+  1945→  - Font size: 32pt, regular weight
+  1946→  - Smaller white text below (24pt):
+  1947→    ```
+  1948→    Your eyes adjust. The discomfort
+  1949→    is real — the damage is not.
+  1950→    ```
+  1951→- **Slide number indicator:** Bottom-right corner, small white text `2/5`
+  1952→- **OptoLib logo:** Top-left, small, white
+  1953→
+  1954→---
+  1955→
+  1956→**SLIDE 3 — MYTH 2**
+  1957→
+  1958→- **Background:** #0F172A (dark)
+  1959→- **Top section** (top 40% of slide):
+  1960→  - Small amber pill/badge: `❌ MYTH`
+  1961→  - Large white text, centered:
+  1962→    ```
+  1963→    "Wearing glasses makes
+  1964→    your eyes weaker"
+  1965→    ```
+  1966→  - Font size: 40pt, bold, italicized
+  1967→- **Teal divider line** across the middle
+  1968→- **Bottom section** (bottom 50% of slide):
+  1969→  - Small teal pill/badge: `✅ FACT`
+  1970→  - Teal text, centered:
+  1971→    ```
+  1972→    Glasses don't change the
+  1973→    physical shape of your eyes
+  1974→    or make your vision worse.
+  1975→    They simply help you see
+  1976→    clearly while wearing them.
+  1977→    ```
+  1978→  - Font size: 32pt, regular weight
+  1979→  - Smaller white text below (24pt):
+  1980→    ```
+  1981→    Your eyes don't become "dependent."
+  1982→    You just get used to seeing properly.
+  1983→    ```
+  1984→- **Slide number indicator:** Bottom-right corner, small white text `3/5`
+  1985→- **OptoLib logo:** Top-left, small, white
+  1986→
+  1987→---
+  1988→
+  1989→**SLIDE 4 — MYTH 3**
+  1990→
+  1991→- **Background:** #0F172A (dark)
+  1992→- **Top section** (top 40% of slide):
+  1993→  - Small amber pill/badge: `❌ MYTH`
+  1994→  - Large white text, centered:
+  1995→    ```
+  1996→    "Eye exams are only needed
+  1997→    if you have vision problems"
+  1998→    ```
+  1999→  - Font size: 40pt, bold, italicized
+  2000→- **Teal divider line** across the middle
+  2001→- **Bottom section** (bottom 50% of slide):
+  2002→  - Small teal pill/badge: `✅ FACT`
+  2003→  - Teal text, centered:
+  2004→    ```
+  2005→    Many serious eye conditions
+  2006→    (glaucoma, diabetic retinopathy,
+  2007→    macular degeneration) show
+  2008→    ZERO symptoms in early stages.
+  2009→    ```
+  2010→  - Font size: 32pt, regular weight
+  2011→  - Smaller white text below (24pt):
+  2012→    ```
+  2013→    Routine exams catch problems before
+  2014→    you ever notice them. Every 1–2 years.
+  2015→    No exceptions.
+  2016→    ```
+  2017→- **Slide number indicator:** Bottom-right corner, small white text `4/5`
+  2018→- **OptoLib logo:** Top-left, small, white
+  2019→
+  2020→---
+  2021→
+  2022→**SLIDE 5 — CTA SLIDE**
+  2023→
+  2024→- **Background:** #0F172A (dark)
+  2025→- **Teal accent border:** 4px teal border around entire slide (inset by 20px)
+  2026→- **Centered content:**
+  2027→  - Large white bold text:
+  2028→    ```
+  2029→    Want more?
+  2030→    ```
+  2031→  - (36pt, regular weight, slight spacing)
+  2032→  - Medium teal text below:
+  2033→    ```
+  2034→    Myth-busting. Clinical guides.
+  2035→    Study resources. Case studies.
+  2036→    All free. All in one place.
+  2037→    ```
+  2038→  - (28pt, regular weight)
+  2039→  - **Amber CTA button** (rounded rectangle, #F59E0B background, 48px tall, centered):
+  2040→    ```
+  2041→    🔗 LINK IN BIO — JOIN OPTOLIB
+  2042→    ```
+  2043→    (White bold text, 24pt, inside the button)
+  2044→- **Bottom tagline** (small, white):
+  2045→  ```
+  2046→    Every optometry resource. Free. Forever.
+  2047→    ```
+  2048→- **Slide number indicator:** Bottom-right corner, small white text `5/5`
+  2049→- **OptoLib logo:** Top-left, small, white
+  2050→
+  2051→### CAPTION
+  2052→
+  2053→```
+  2054→3 optometry myths that need to die 🧵👇
+  2055→
+  2056→❌ "Reading in dim light damages your eyes"
+  2057→→ It causes strain, not permanent damage. Your eyes are tougher than you think.
+  2058→
+  2059→❌ "Wearing glasses makes your eyes weaker"
+  2060→→ Glasses don't change your eye structure. You just get used to seeing clearly.
+  2061→
+  2062→❌ "Eye exams are only for people with vision problems"
+  2063→→ Glaucoma, diabetic retinopathy, macular degeneration — all silent killers. Routine exams save sight.
+  2064→
+  2065→Swipe through to read the full breakdown →→→
+  2066→
+  2067→Which myth surprised you the most? Drop a 🙋 in the comments.
+  2068→
+  2069→Save this for the next time a patient (or relative) says one of these 👀
+  2070→
+  2071→More myth-busting, clinical guides, and free resources at OptoLib. Link in bio.
+  2072→
+  2073→#OptoLib
+  2074→```
+  2075→
+  2076→### HASHTAGS
+  2077→#OptoLib #OptometryMyths #EyeHealthFacts #OptometryEducation #MythVsFact #OptometryStudent #EyeCareProfessional #OptometryTips #VisionFacts #OptometryAwareness
+  2078→
+  2079→### POSTING TIME (IST)
+  2080→**Thursday, 7:30 PM IST** — Mid-week prime engagement; educational carousels perform best when saved and shared during evening study hours.
+  2081→
+  2082→### CTA
+  2083→**Save this post + comment which myth surprised you** (dual action: save drives algorithm signal for value, comment drives engagement)
+  2084→
+  2085→---
+  2086→
+  2087→## POST 18 — "DM 'OPTO' for Free Study Pack" — Lead Gen Post
+  2088→
+  2089→### FORMAT
+  2090→Static Image (1080×1080px, square) — also suitable for Reel (15s animated version described below)
+  2091→
+  2092→### PILLAR
+  2093→Lead Generation + Value Delivery
+  2094→
+  2095→### VISUAL CONTENT (STATIC VERSION)
+  2096→
+  2097→- **Background:** Solid #0F172A (dark)
+  2098→- **Layout:** Centered, clean, high-contrast, information-dense but scannable
+  2099→
+  2100→**Top Section:**
+  2101→- OptoLib logo (centered, white, 48px wide)
+  2102→- 16px spacing
+  2103→- Large amber (#F59E0B) text, bold, centered:
+  2104→  ```
+  2105→  FREE
+  2106→  ```
+  2107→  (72pt, bold, all-caps)
+  2108→
+  2109→- White text below, centered:
+  2110→  ```
+  2111→  OPTOMETRY STUDY PACK
+  2112→  ```
+  2113→  (48pt, bold, all-caps)
+  2114→- Teal underline accent (thin, 200px wide, centered under "STUDY PACK")
+  2115→
+  2116→- Book emoji row: `📚` (large, 40pt)
+  2117→
+  2118→**Middle Section (The "What's Inside" List):**
+  2119→- Left-aligned list with teal bullet markers, white text:
+  2120→  ```
+  2121→  ✦  Clinical Cheat Sheets
+  2122→  ✦  Drug Reference Guide
+  2123→  ✦  Exam Prep Notes
+  2124→  ✦  Case Study Collection
+  2125→  ✦  Ocular Anatomy Quick Review
+  2126→  ```
+  2127→  (28pt, regular weight, 10px line spacing between items)
+  2128→
+  2129→**Bottom Section (CTA):**
+  2130→- Amber (#F59E0B) rounded rectangle (full width minus 40px margins, 80px tall, centered, 16px border-radius):
+  2131→  ```
+  2132→  DM US "OPTO" TO GET IT
+  2133→  ```
+  2134→  (White text, 32pt, bold, all-caps, centered inside the button)
+  2135→
+  2136→- Small white text below button (22pt, centered):
+  2137→  ```
+  2138→  No spam. No paywall. Just free resources.
+  2139→  ```
+  2140→
+  2141→- Very small teal text at very bottom (16pt):
+  2142→  ```
+  2143→  That's the OptoLib promise.
+  2144→  ```
+  2145→
+  2146→**Design Notes:**
+  2147→- This is a direct-response graphic — every element serves conversion
+  2148→- High contrast (amber on dark) draws the eye to the value proposition and CTA
+  2149→- The list format creates perceived value (5 items feels substantial)
+  2150→- "No spam" line reduces friction and builds trust
+  2151→- Entire design should feel like a premium giveaway, not a cheap flyer
+  2152→
+  2153→**ANIMATED REEL VERSION (15 seconds, if used as Reel):**
+  2154→- 0–2s: Dark screen fades in with amber "FREE" text slamming in from top
+  2155→- 2–4s: "OPTOMETRY STUDY PACK" types in letter by letter
+  2156→- 4–10s: Each list item slides in from left with a subtle bounce (one per second)
+  2157→- 10–13s: Amber CTA button pulses/glows
+  2158→- 13–15s: Final frame holds with full graphic + text overlay "DM us OPTO"
+  2159→- Audio: Trending lo-fi beat or subtle whoosh sound effects on text reveals
+  2160→
+  2161→### CAPTION
+  2162→
+  2163→```
+  2164→You asked. We delivered.
+  2165→
+  2166→📚 FREE Optometry Study Pack — available NOW.
+  2167→
+  2168→Here's what's inside:
+  2169→
+  2170→🔹 Clinical Cheat Sheets — for when you're on the floor and need answers fast
+  2171→🔹 Drug Reference Guide — every ocular drug, organized and ready
+  2172→🔹 Exam Prep Notes — condensed, high-yield, no fluff
+  2173→🔹 Case Study Collection — real cases, real learning, real prep
+  2174→🔹 Ocular Anatomy Quick Review — because you WILL get quizzed on it
+  2175→
+  2176→How to get it:
+  2177→
+  2178→DM us the word OPTO.
+  2179→
+  2180→That's it. We'll send you the full pack instantly.
+  2181→
+  2182→No spam. No signup wall. No "subscribe to unlock." Just free resources for optometry students and professionals.
+  2183→
+  2184→That's the OptoLib promise.
+  2185→
+  2186→Every optometry resource. Free. Forever. 🔗 Link in bio.
+  2187→
+  2188→#OptoLib
+  2189→```
+  2190→
+  2191→### HASHTAGS
+  2192→#OptoLib #FreeOptometryResources #OptometryStudy #OptometryNotes #OptometryStudent #OptometryExam #ClinicalOptometry #OptometryPrep #OptometryResources #OptometryGuide
+  2193→
+  2194→### POSTING TIME (IST)
+  2195→**Saturday, 11:00 AM IST** — Weekend morning when students are planning their study week; high intent for downloading resources.
+  2196→
+  2197→### CTA
+  2198→**DM "OPTO"** (direct lead generation — captures DMs for follow-up funnel while delivering immediate value)
+  2199→
+  2200→---
+  2201→
+  2202→## POST 19 — "Community Spotlight — Student Testimonial" — Social Proof Post
+  2203→
+  2204→### FORMAT
+  2205→Static Image (1080×1080px, square)
+  2206→
+  2207→### PILLAR
+  2208→Community & Social Proof
+  2209→
+  2210→### VISUAL CONTENT
+  2211→
+  2212→- **Background:** #0F172A (dark)
+  2213→- **Layout:** Clean testimonial design with a quote-forward approach
+  2214→
+  2215→**Top Section:**
+  2216→- Small amber badge/pill, left-aligned:
+  2217→  ```
+  2218→  ⭐ COMMUNITY SPOTLIGHT
+  2219→  ```
+  2220→  (18pt, bold, all-caps, amber text on transparent background with 1px amber border)
+  2221→
+  2222→- 24px spacing
+  2223→
+  2224→**Main Quote Section:**
+  2225→- Large teal (#0D9488) opening quotation mark (`"`), oversized (180pt), positioned top-left of the quote block, slightly overlapping
+  2226→
+  2227→- White text, left-aligned, with comfortable line spacing:
+  2228→  ```
+  2229→  "I found my entire clinical
+  2230→  rotation prep on OptoLib.
+  2231→  Saved me 40+ hours of
+  2232→  Googling."
+  2233→  ```
+  2234→  (36pt, regular weight, with subtle italic emphasis on "40+ hours" and "Googling")
+  2235→
+  2236→**Attribution Section (below quote):**
+  2237→- Thin teal horizontal line (120px wide, left-aligned)
+  2238→- 16px spacing
+  2239→- White bold text:
+  2240→  ```
+  2241→  Priya M.
+  2242→  ```
+  2243→  (28pt, bold)
+  2244→- Teal regular text below:
+  2245→  ```
+  2246→  3rd Year Optometry Student
+  2247→  ```
+  2248→  (22pt, regular)
+  2249→- 8px spacing
+  2250→- Small white location pin emoji + text:
+  2251→  ```
+  2252→  📍 India
+  2253→  ```
+  2254→  (18pt, regular)
+  2255→
+  2256→**Bottom Section:**
+  2257→- 24px spacing from attribution
+  2258→- Small white text, centered:
+  2259→  ```
+  2260→  Have an OptoLib story? DM us.
+  2261→  We feature our community. ❤️
+  2262→  ```
+  2263→  (20pt, regular, slightly muted white — #94A3B8)
+  2264→
+  2265→**Design Notes:**
+  2266→- The oversized teal quote mark is the signature visual element — makes it instantly recognizable as a testimonial
+  2267→- Generous whitespace around the quote lets the words breathe
+  2268→- "40+ hours" and "Googling" in italic creates emphasis on the pain point that was solved
+  2269→- No clutter, no extra graphics — the words do the work
+  2270→- This design template should be reused for future community spotlights (consistency builds brand recognition)
+  2271→- OptoLib logo: Bottom-right corner, small, white, subtle
+  2272→
+  2273→### CAPTION
+  2274→
+  2275→```
+  2276→This is why we built OptoLib.
+  2277→
+  2278→Priya is a 3rd-year optometry student. Two weeks before her clinical rotation, she was drowning — scattered across 15 browser tabs, 4 WhatsApp groups, and a notebook full of chaos.
+  2279→
+  2280→Then she found OptoLib.
+  2281→
+  2282→Her entire rotation prep. In one place. Free.
+  2283→
+  2284→"I saved 40+ hours of Googling."
+  2285→
+  2286→That's not a marketing line. That's a DM we received last week.
+  2287→
+  2288→And it's exactly why OptoLib exists.
+  2289→
+  2290→Because no student should have to piece together their education from fragmented, expensive, paywalled sources.
+  2291→
+  2292→If OptoLib has helped you — whether it's one resource or a hundred — we want to hear about it.
+  2293→
+  2294→DM us your story. We feature our community. Because YOUR success is what makes this platform matter.
+  2295→
+  2296→Tag someone who needs to discover OptoLib today. 👇
+  2297→
+  2298→Every optometry resource. Free. Forever.
+  2299→
+  2300→#OptoLib
+  2301→```
+  2302→
+  2303→### HASHTAGS
+  2304→#OptoLib #OptometryCommunity #OptometryStudent #OptometryTestimonial #OptometryLife #StudentSuccess #OptometryJourney #OptometryIndia #OptometryInspiration #EyeCareCommunity
+  2305→
+  2306→### POSTING TIME (IST)
+  2307→**Sunday, 6:00 PM IST** — Sunday evening is peak social media time; testimonial/emotional content performs best when people are in a reflective, relaxed mindset.
+  2308→
+  2309→### CTA
+  2310→**DM us your OptoLib story** (community-driven CTA that generates future content while deepening engagement and loyalty)
+  2311→
+  2312→---
+  2313→
+  2314→## POST 20 — "The OptoLib Promise" — Manifesto Post
+  2315→
+  2316→### FORMAT
+  2317→Static Image (1080×1350px, portrait/vertical — optimized for maximum screen real estate on feed)
+  2318→
+  2319→### PILLAR
+  2320→Brand Identity + Mission Statement
+  2321→
+  2322→### VISUAL CONTENT
+  2323→
+  2324→- **Background:** #0F172A (dark)
+  2325→- **Layout:** Minimalist, poster-style, one-line-per-impact-point, large white typography with strategic color accents
+  2326→
+  2327→**Top Section:**
+  2328→- OptoLib wordmark (centered, white, 60px wide, clean logo)
+  2329→- 40px spacing
+  2330→- Thin teal horizontal line (80px wide, centered)
+  2331→
+  2332→**Main Manifesto Block (centered, stacked typography):**
+  2333→
+  2334→Each line is on its own row. Font sizes decrease slightly to create visual rhythm (like a crescendo in reverse):
+  2335→
+  2336→```
+  2337→EDUCATION
+  2338→```
+  2339→(64pt, bold, all-caps, white)
+  2340→
+  2341→```
+  2342→SHOULD NEVER BE
+  2343→```
+  2344→(48pt, bold, all-caps, white)
+  2345→
+  2346→```
+  2347→BEHIND A PAYWALL.
+  2348→```
+  2349→(56pt, bold, all-caps, amber #F59E0B) ← color shift for emphasis
+  2350→
+  2351→*24px spacing*
+  2352→
+  2353→```
+  2354→KNOWLEDGE
+  2355→```
+  2356→(64pt, bold, all-caps, white)
+  2357→
+  2358→```
+  2359→SHOULD NEVER BE
+  2360→```
+  2361→(48pt, bold, all-caps, white)
+  2362→
+  2363→```
+  2364→GATEKEPT.
+  2365→```
+  2366→(56pt, bold, all-caps, amber #F59E0B) ← color shift for emphasis
+  2367→
+  2368→*40px spacing*
+  2369→
+  2370→```
+  2371→OPTOLIB IS FREE.
+  2372→```
+  2373→(52pt, bold, all-caps, teal #0D9488)
+  2374→
+  2375→```
+  2376→FOR EVERY STUDENT.
+  2377→```
+  2378→(36pt, regular, all-caps, white)
+  2379→
+  2380→```
+  2381→EVERY PROFESSIONAL.
+  2382→```
+  2383→(36pt, regular, all-caps, white)
+  2384→
+  2385→```
+  2386→FOREVER.
+  2387→```
+  2388→(48pt, bold, all-caps, white)
+  2389→
+  2390→**Bottom Section:**
+  2391→- 48px spacing
+  2392→- Amber (#F59E0B) rounded rectangle (200px wide, 60px tall, centered, 30px border-radius):
+  2393→  ```
+  2394→  JOIN US →
+  2395→  ```
+  2396→  (White text, 28pt, bold, all-caps, centered)
+  2397→
+  2398→- 20px spacing
+  2399→- Small white text, centered:
+  2400→  ```
+  2401→  Every optometry resource. Free. Forever.
+  2402→  ```
+  2403→  (18pt, regular, italicized — this is the tagline sign-off)
+  2404→
+  2405→**Design Notes:**
+  2406→- This is the most important post in the launch sequence — the manifesto that defines the brand's soul
+  2407→- Portrait ratio (1080×1350) gives extra vertical space for the stacked text to breathe
+  2408→- The typography IS the design. No illustrations, no photos, no icons. Just words with intention.
+  2409→- Color strategy: White → White → AMBER (punch) on each stanza, creating visual rhythm
+  2410→- "OPTOLIB IS FREE." in teal connects it to the brand color
+  2411→- The final trio ("EVERY STUDENT. / EVERY PROFESSIONAL. / FOREVER.") uses a building cadence — each line lands with increasing finality
+  2412→- This post should feel like something you'd print and put on a wall
+  2413→- Subtle texture: A very faint noise/grain overlay at 3% opacity across the entire image for a premium print feel
+  2414→- OptoLib logo is the only graphic element at the top — everything else is pure type
+  2415→
+  2416→### CAPTION
+  2417→
+  2418→```
+  2419→This is why OptoLib exists.
+  2420→
+  2421→We've watched students pay ₹5,000 for a single course. We've seen professionals hit paywalls on papers they need for patient care. We've heard from interns who spent hours searching for a single clinical protocol that should've been available in 30 seconds.
+  2422→
+  2423→Enough.
+  2424→
+  2425→Education should never be behind a paywall.
+  2426→Knowledge should never be gatekept.
+  2427→
+  2428→OptoLib is our answer — and it's free. Not "free for 7 days." Not "free with a watermark." Not "free but we'll upsell you later."
+  2429→
+  2430→Free. For every student. Every professional. Forever.
+  2431→
+  2432→What's coming:
+  2433→📋 Curated clinical resources
+  2434→📝 Study guides for every semester
+  2435→🔬 Case studies from real practice
+  2436→💊 Drug references you can actually trust
+  2437→🌍 A community that lifts each other up
+  2438→
+  2439→This is just the beginning.
+  2440→
+  2441→If you believe education should be accessible — if you've ever been frustrated by paywalled resources — if you want to be part of something built FOR optometry, BY optometry people:
+  2442→
+  2443→Join us.
+  2444→
+  2445→Link in bio. DM us. Follow this page. Tell a classmate.
+  2446→
+  2447→The door is open. Everyone's welcome.
+  2448→
+  2449→Every optometry resource. Free. Forever.
+  2450→
+  2451→#OptoLib
+  2452→```
+  2453→
+  2454→### HASHTAGS
+  2455→#OptoLib #FreeEducation #OptometryResource #OptometryForEveryone #OptometryIndia #OptometryStudent #EyeCareCommunity #KnowledgeForAll #OptometryFuture #OptometryPlatform
+  2456→
+  2457→### POSTING TIME (IST)
+  2458→**Monday, 9:00 AM IST** — Monday morning launch timing; manifesto posts land hardest at the start of the week when motivation and intention are highest. This becomes the "pinned" post on the profile.
+  2459→
+  2460→### CTA
+  2461→**Link in bio — Join OptoLib** (conversion-focused CTA to drive profile visits and link clicks at the peak of launch momentum)
+  2462→
+  2463→---
+  2464→
+  2465→## POSTING SCHEDULE SUMMARY
+  2466→
+  2467→| Post # | Title | Format | Day | Time (IST) | Primary CTA |
+  2468→|--------|-------|--------|-----|------------|-------------|
+  2469→| 16 | Which Year Are You? | Static Image | Tuesday | 8:00 PM | Comment your year |
+  2470→| 17 | Myth vs Fact | Carousel (5 slides) | Thursday | 7:30 PM | Save + Comment |
+  2471→| 18 | DM "OPTO" Study Pack | Static/Reel | Saturday | 11:00 AM | DM "OPTO" |
+  2472→| 19 | Community Spotlight | Static Image | Sunday | 6:00 PM | DM your story |
+  2473→| 20 | The OptoLib Promise | Static Image (Portrait) | Monday | 9:00 AM | Link in bio |
+  2474→
+  2475→---
+  2476→
+  2477→## STRATEGIC NOTES FOR POSTS 16–20
+  2478→
+  2479→### Engagement Arc
+  2480→These five posts form the **climax of the launch sequence**:
+  2481→1. **Post 16** builds community identification (relatable humor = high comments)
+  2482→2. **Post 17** delivers educational value (carousel = high saves + shares)
+  2483→3. **Post 18** captures leads (DM automation = high conversions)
+  2484→4. **Post 19** provides social proof (testimonial = trust building)
+  2485→5. **Post 20** declares the mission (manifesto = brand loyalty + pinned post)
+  2486→
+  2487→### Algorithm Strategy
+  2488→- **Post 16 & 17** are designed to maximize engagement signals (comments, saves, shares) in the 24-48 hours before the launch peak
+  2489→- **Post 18** converts attention into DMs (Instagram's algorithm prioritizes DM conversations for account growth)
+  2490→- **Post 19** creates user-generated content potential (each DM'd story becomes a future post)
+  2491→- **Post 20** becomes the permanent pinned post — the first thing new visitors see on the profile
+  2492→
+  2493→### Funnel Flow
+  2494→```
+  2495→Post 16 (Engagement) → Post 17 (Trust/Education) → Post 18 (Lead Capture) → Post 19 (Social Proof) → Post 20 (Mission/Conversion)
+  2496→```
+  2497→
+  2498→### Repurposing Potential
+  2499→- **Post 16** → Twitter/Threads poll, LinkedIn engagement post
+  2500→- **Post 17** → Individual slide graphics for Stories, Twitter threads
+  2501→- **Post 18** → Pinterest pin, WhatsApp broadcast, email lead magnet
+  2502→- **Post 19** → Template for ongoing weekly "Community Spotlight" series
+  2503→- **Post 20** → Website hero section, About page, printed poster for events

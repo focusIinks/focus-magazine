@@ -1,304 +1,326 @@
 # OptoLib Instagram Reels — Posts 6–10
+## Reels Series — Full Script Brief
 
-**Brand:** OptoLib  
-**Tagline:** "Every optometry resource. Free. Forever."  
-**Voice:** Knowledge-rich, punchy, engaging — like a clinical tutor who makes complex topics click in seconds.  
-**Color Palette:** Teal `#0D9488` (primary), Dark `#0F172A` (backgrounds), White `#FFFFFF` (text), Amber `#F59E0B` (CTAs).  
-**Reel Specs:** 1080×1920 (9:16), 7–20 seconds, trending audio + original overlay, text on screen for first 2 seconds, subtitles mandatory.
+**Brand:** OptoLib
+**Tagline:** "Every optometry note. Free. Forever."
+**Voice:** Study-buddy, helpful, punchy. The smart friend who makes studying easier.
+**Target Audience:** Optometry students in India
 
----
+**Color System:**
+- Primary: Teal `#0D9488`
+- Background: Dark `#0F172A`
+- Text on dark: White `#FFFFFF`
+- CTA / Highlights: Amber `#F59E0B`
 
-## Post 6 — "3 Second Eye Test That Changes Everything"
+**Reel Specs (apply to ALL posts):**
+- Resolution: 1080 × 1920px (9:16 vertical)
+- Duration: 7–20 seconds per reel
+- Subtitles: **Mandatory** — every VO line must appear as on-screen text (lower-third or centered, white with dark shadow/stroke for readability)
+- Font: Inter or Poppins (clean, modern sans-serif), bold for emphasis words
+- Subtle OptoLib watermark: bottom-right corner, low opacity, on every frame
+- Teal accent underlines or highlights on key phrases
+- CTA frames use Amber `#F59E0B` text/buttons on dark `#0F172A` background
 
-### 1. FORMAT
-Reel (1080×1920, 9:16)
-
-### 2. PILLAR
-Clinical Skills / Quick Tests
-
-### 3. SCRIPT (Second-by-Second)
-
-| Sec | On-Screen Text | Voiceover / Narration |
-|-----|----------------|-----------------------|
-| 0–2 | **"3 Second Eye Test That Changes Everything"** (large, centered, white on dark `#0F172A`) | *(no VO — text only, trending audio plays)* |
-| 2–4 | **"STEP 1: Palm one eye. Right now."** (teal `#0D9488`, bold, animated hand icon 👁️) | "Palm one eye. Right now." |
-| 4–7 | **"STEP 2: Focus on a single point."** (white text, crosshair graphic appears on screen) | "Now focus on any single point in front of you." |
-| 7–10 | **"Notice anything… off?"** (white, slight wobble animation) | "Notice anything feel… slightly off?" |
-| 10–13 | **"That's your binocular vision at work."** (teal, pulse animation) | "That discomfort? That's your binocular vision at work." |
-| 13–15 | **"Two eyes. One seamless image. 🧠"** (white) + **"Save this. Test your patients."** (amber `#F59E0B`, CTA) | "Two eyes, one seamless image. Save this — test your patients." |
-
-### 4. VISUAL DIRECTION
-- **0–2s:** Dark background, bold title text zooms in subtly. Teal accent line under "Changes Everything."
-- **2–4s:** Simple flat illustration of a hand covering one eye (teal icon style). Text slides in from left.
-- **4–7s:** A crisp white dot/crosshair appears center-screen. Subtle radial lines emphasize "focal point."
-- **7–10s:** Screen very slightly shifts/wobbles to simulate what the viewer might be feeling. Text fades in with a question-mark flicker.
-- **10–13s:** Teal brain + eye icon animates in. "Binocular Vision" label appears with a connecting line to each eye icon.
-- **13–15s:** Clean lockup: OptoLib logo (top-left), tagline at bottom. Amber CTA button: "Save this ⟶"
-
-### 5. AUDIO SUGGESTION
-- **Trending audio:** Low-fi mystery/suspense beat (instrumental, ~80 BPM) — gives a "did you know?" vibe. Volume dips to 30% during voiceover.
-- **Voiceover:** Clear, confident, slightly conversational. Not robotic. Slight pause before "That's your binocular vision."
-
-### 6. CAPTION
-3 second eye test that changes everything 👁️
-
-Cover one eye, focus on a point, and feel what your brain does every single second to give you seamless vision.
-
-This is binocular fusion — and it's one of the first things we assess in clinic.
-
-Test it on yourself. Test it on your patients. It takes 3 seconds.
-
-Save this for your next clinical rotation. 🔖
-
-### 7. HASHTAGS
-#OptoLib #Optometry #EyeTest #BinocularVision #OptometryStudent #ClinicalSkills #EyeCare #OptomLife #VisionScience #OcularMotility
-
-### 8. POSTING TIME (IST)
-**Tuesday, 7:30 PM IST** — Peak engagement window for student/professional audiences winding down their day.
-
-### 9. CTA
-**"Save this reel + Follow @optolib_ for free optometry resources daily"** (amber button overlay on final frame, also in caption)
+**General Audio Notes:**
+- All reels use trending/upbeat background audio at 15–25% volume beneath voiceover
+- VO should sound energetic, conversational — like a friend talking, not an ad read
+- Subtitles auto-generated then manually corrected for accuracy
 
 ---
 
-## Post 7 — "What Your Eye Prescription Actually Means"
+## POST 6: "This Free Site Replaced My ₹12,000 Textbooks"
 
-### 1. FORMAT
-Reel (1080×1920, 9:16)
+### FORMAT
+Reel (15 seconds)
 
-### 2. PILLAR
-Knowledge / Education
+### PILLAR
+Social Proof / Testimonial — Money-Saving Value Proposition
 
-### 3. SCRIPT (Second-by-Second)
+### SCRIPT (Second-by-Second)
 
-| Sec | On-Screen Text | Voiceover / Narration |
-|-----|----------------|-----------------------|
-| 0–2 | **"What Your Eye Prescription Actually Means"** (white, bold, centered on dark `#0F172A`) | *(no VO — trending audio plays)* |
-| 2–4 | **"SPH"** (teal, large) → **"Sphere — How near/far-sighted you are"** (white, smaller, slides in below) | "SPH — that's your sphere. It tells you how near or far-sighted you are." |
-| 4–6 | **"CYL"** (teal, large) → **"Cylinder — Your astigmatism power"** (white, slides in) | "CYL — cylinder. The amount of astigmatism in your eye." |
-| 6–8 | **"AXIS"** (teal, large) → **"Direction of your astigmatism (0°–180°)"** (white, slides in) | "AXIS — the direction of that astigmatism, from 0 to 180 degrees." |
-| 8–10 | **"PD"** (teal, large) → **"Pupillary Distance — Center of your pupils"** (white, slides in) | "And PD — pupillary distance. The gap between the centers of your pupils." |
-| 10–13 | **"4 numbers. One prescription. Now you know."** (white, centered) | "Four numbers. One prescription. Now you actually know what they mean." |
-| 13–15 | **"Save this. Share with a confused patient."** (amber `#F59E0B`) + OptoLib logo | "Save this. Share it with your next confused patient." |
+| Time | On-Screen Text | Voiceover (VO) | Visual Direction |
+|------|---------------|----------------|------------------|
+| 0:00–0:02 | **"This free site replaced my ₹12,000 textbooks"** (white bold text, centered, dark bg) | "This free site replaced my twelve thousand rupee textbooks." | Open on a **stack of 4–5 thick optometry textbooks** piled on a desk. Camera is slightly low angle, making the stack look overwhelming. Teal glow accent on the edges. |
+| 0:02–0:04 | *(no text — visual transition)* | *(sound effect: books sliding)* | **Fast cut:** Hands dramatically push the entire textbook stack off-screen to the right. Satisfying "whoosh" sound. |
+| 0:04–0:07 | **"All my notes."** (teal, large) | "All my notes..." | **Fast cut:** A phone screen slides in from the left showing the **OptoLib homepage** (mock UI — dark bg, teal branding, clean subject list). Phone is held by hands against the same desk. |
+| 0:07–0:09 | **"Free."** (amber `#F59E0B`, extra large, centered) | "...Free." | **Quick zoom** on the phone screen. The OptoLib logo pulses subtly. Background darkens slightly to make the phone pop. |
+| 0:09–0:12 | **"Updated."** (white, bold) | "...Updated." | **Screen recording style:** Scrolling through a notes page on OptoLib. Text is clean, organized, with headings and bullet points. A small **"Updated: July 2025"** badge is visible in the corner (teal pill). |
+| 0:12–0:15 | **"Why did I ever pay?"** (white, bold, with shrug emoji) + **"Start studying smarter → optolib.in"** (amber CTA at bottom) | "Why did I ever pay?" | **Pull back** to show student looking at phone with a satisfied expression, textbooks visible (pushed aside) in the background. Final frame holds for 1 second with CTA. Amber button: "Visit OptoLib →" |
 
-### 4. VISUAL DIRECTION
-- **0–2s:** Dark background. A blurred-out prescription card sits behind the title text (slightly transparent, creates depth). Title animates in with a subtle scale-up.
-- **2–4s:** "SPH" appears large in teal at center. A horizontal lens icon fills with color to represent sphere correction. Label animates in below.
-- **4–6s:** "CYL" replaces "SPH" (quick crossfade). An astigmatic lens diagram (with axis line) appears. Label slides in.
-- **6–8s:** "AXIS" appears. A 180° protractor graphic draws itself in. The axis line rotates to a random degree (e.g., 90°) as a visual. Label slides in.
-- **8–10s:** "PD" appears. A simple face diagram with two pupils and a double-arrow measurement line between them. Label slides in.
-- **10–13s:** All four terms stack in a clean 2×2 grid (SPH, CYL, AXIS, PD — teal labels, white descriptions). Satisfying "click" arrangement animation.
-- **13–15s:** Grid fades, amber CTA fades in. OptoLib wordmark top-left, tagline bottom-center.
+### VISUAL DIRECTION
+- **Style:** Hybrid — real student footage + phone mockups/text overlays
+- **Lighting:** Warm desk lamp lighting, slightly dim to make the phone screen pop
+- **Transitions:** Fast, punchy cuts (0.3s) — no slow fades
+- **Phone mockups:** Use Figma/Canva mockup of OptoLib with dark theme, teal accents, clean typography showing real-looking note content (e.g., "Retinoscopy — Chapter 3," "Optics — Lenses & Refraction")
+- **Props:** Real optometry textbooks (if unavailable, any thick medical textbooks with covers slightly blurred), a phone, a desk with notes/scattered papers
 
-### 5. AUDIO SUGGESTION
-- **Trending audio:** Upbeat "explainer" instrumental (light synth, medium tempo ~100 BPM). Think "smart education content" aesthetic.
-- **Voiceover:** Confident, slightly fast-paced (fits 15s). Each term is emphasized with a slight pitch lift. Pause between terms for clarity.
+### AUDIO
+- **Background:** Trending upbeat instrumental (lo-fi or phonk beat) — low volume (~20%)
+- **Sound Effects:**
+  - 0:02 — Heavy "whoosh/slide" SFX when books are pushed
+  - 0:04 — Soft "ding" when phone appears
+  - 0:07–0:09 — Subtle "cha-ching" or "unlock" sound
+- **VO Tone:** Confident, slightly incredulous ("I can't believe this is free" energy), Indian English accent preferred for authenticity with target audience
 
-### 6. CAPTION
-What your eye prescription actually means 📋
+### CAPTION
+This free site replaced my ₹12,000 textbooks 📚➡️📱
+All optometry notes. Completely free. Regularly updated.
+Your bank account will thank you. Link in bio.
 
-SPH → Near/far-sightedness
-CYL → Astigmatism power
-AXIS → Direction of astigmatism
-PD → Distance between your pupils
+### HASHTAGS
+#OptoLib #OptometryNotes #OptometryStudent #OptometryIndia #FreeStudyNotes #OptometryExam #BSOptometry #StudyHacks #OptometryLife #SaveMoney
 
-Most patients have NO idea what these numbers mean — and honestly, a lot of first-year students don't either.
+### POSTING TIME (IST)
+**Tuesday, 7:30 PM** — Peak engagement window for student audience; post-dinner study scroll time
 
-Bookmark this. You'll reference it more than you think.
-
-### 7. HASHTAGS
-#OptoLib #EyePrescription #Optometry101 #SPH #CYL #OptometryStudent #Optometrist #EyeCareProfessional #VisionCorrection #LearnOptometry
-
-### 8. POSTING TIME (IST)
-**Wednesday, 12:30 PM IST** — Lunch-hour scroll. Educational content performs well midday when students are between classes.
-
-### 9. CTA
-**"Save this for your next refraction session + Follow @optolib_ for daily free resources"** (amber button, final frame)
+### CTA
+"Visit OptoLib →" (amber button, bottom of final frame) + caption CTA: "Link in bio"
 
 ---
 
-## Post 8 — "Stop Making This Contact Lens Mistake"
+## POST 7: "Optometry Students vs Exams — Relatable"
 
-### 1. FORMAT
-Reel (1080×1920, 9:16)
+### FORMAT
+Reel (12 seconds)
 
-### 2. PILLAR
-Patient Education / Clinical Warning
+### PILLAR
+Relatable / Community Engagement — Shareable Meme-Style Content
 
-### 3. SCRIPT (Second-by-Second)
+### SCRIPT (Second-by-Second)
 
-| Sec | On-Screen Text | Voiceover / Narration |
-|-----|----------------|-----------------------|
-| 0–2 | **"If you do THIS with your contacts…"** (white, bold, centered) + red ❌ icon | *(no VO — suspenseful trending audio)* |
-| 2–4 | **"…you're risking your cornea."** (red text, slides in with impact shake) | "You are risking your cornea." |
-| 4–7 | **"Mistake #1: Sleeping in your contacts."** (white, bold) + illustration of someone sleeping with a contact lens X'd out | "Mistake number one: sleeping in your contact lenses." |
-| 7–9 | **"Even 'extended wear' lenses cut oxygen to your cornea."** (white, smaller) | "Even so-called extended wear lenses cut oxygen to your cornea overnight." |
-| 9–12 | **"Mistake #2: Not replacing them on schedule."** (white, bold) + calendar icon with red X on missed date | "Mistake number two: not replacing them on schedule." |
-| 12–15 | **"Old lenses = biofilm buildup → infection risk 🦠"** (white, biofilm graphic) | "Old lenses build up biofilm — and that's a direct path to infection." |
-| 15–18 | **"Microbial keratitis. Corneal ulcers. Vision loss."** (red, each word appears with a thud effect) | "We're talking microbial keratitis. Corneal ulcers. Permanent vision loss." |
-| 18–20 | **"Take them out. Replace on time. Save your eyes. 👁️"** (teal, bold) + **"Share this — it could save someone's sight."** (amber `#F59E0B`) | "Take them out. Replace them on time. Share this — it could save someone's sight." |
+| Time | On-Screen Text | Voiceover (VO) | Visual Direction |
+|------|---------------|----------------|------------------|
+| 0:00–0:03 | **"Professor: Study chapters 1 to 15 for tomorrow's exam"** (white text, top portion of frame) | *(no VO — let text speak)* | **Solid dark bg `#0F172A`.** Text appears with a typewriter/pop-in effect. Small professor emoji (🧑‍🏫) or silhouette icon in teal on the left. Dramatic silence beat. |
+| 0:03–0:05 | **"Me:"** (white, smaller, bottom-left) | *(no VO)* | **Beat change.** Background shifts slightly (subtle teal tint). "Me:" appears with a pause — building anticipation. |
+| 0:05–0:08 | **"Opens OptoLib 💻"** (teal `#0D9488`, large, centered, with laptop icon) | *(no VO — trending audio carries)* | **Quick zoom-in effect.** Text pops in with a scale animation. OptoLib logo appears briefly (0.5s) as a "stamp" overlay. Background pulse of teal. |
+| 0:08–0:10 | **"OptoLib: Every note. Free. Forever."** (white bold, with tagline in teal italic below) | *(no VO)* | **Clean frame.** Text centered. Minimal design — dark bg, white text, teal underline on "Free. Forever." This is the brand moment — clean and confident. |
+| 0:10–0:12 | **"Me: 😌"** (large emoji, centered) + **"optolib.in"** (amber, small, bottom) | *(no VO)* | **Hold frame.** Just the relieved face emoji on dark background. Simple. Memorable. Shareable. Small amber CTA at very bottom. |
 
-### 4. VISUAL DIRECTION
-- **0–2s:** Dark background. A single contact lens graphic floats in the center. Text appears with a slow, ominous reveal. Red ❌ pulses subtly.
-- **2–4s:** Screen shakes on impact. "Risking your cornea" in red. A stylized cornea cross-section appears, briefly flashing red.
-- **4–7s:** Split screen — left side shows a sleeping icon (teal), right side shows a contact lens with a red X over it. Clean flat illustration style.
-- **7–9s:** Oxygen molecules (O₂) floating toward a cornea graphic — but the contact lens blocks them. Blocked molecules turn red. Simple, powerful visual.
-- **9–12s:** Calendar icon appears with circled dates. A contact lens next to it looks cracked/dirty. Red X stamps over "Day 30" (or whatever replacement schedule).
-- **12–15s:** Microscopic view: biofilm bacteria cluster building on a lens surface. Animated, slightly gross but clinical. 🦠 emoji pulses.
-- **15–18s:** Three conditions stack vertically with red accent bars: "Microbial Keratitis" / "Corneal Ulcers" / "Vision Loss." Each slams in with a subtle screen flash.
-- **18–20s:** Clean resolution frame — teal checkmarks replace red X's. OptoLib logo top-left. Amber CTA: "Share this ⟶"
+### VISUAL DIRECTION
+- **Style:** Pure text-on-dark meme format (similar to popular "POV" / expectation vs. reality reels)
+- **Background:** Solid `#0F172A` for all frames — no photos, no complex graphics
+- **Text Animation:** Pop-in/scale-in transitions (not slide) — each line "pops" onto screen
+- **Color Coding:** "Me" lines in white, OptoLib mentions in teal, CTA in amber
+- **Emoji Usage:** Minimal but intentional — 🧑‍🏫 at start, 😌 at end. No emoji overload
+- **Font treatment:** Bold for statements, regular weight for "Me:" labels. Slightly larger font than average reel for readability
+- **Vibe:** Clean, punchy, text-first. The kind of reel people screenshot and share in WhatsApp study groups
 
-### 5. AUDIO SUGGESTION
-- **Trending audio:** Dramatic "reveal" sound (like a slowed-down cinematic boom or the "oh no" trend audio). Low, serious, attention-grabbing.
-- **Voiceover:** Serious, slightly urgent tone — but not fear-mongering. Clinical authority. Slow, deliberate pacing. "Permanent vision loss" is delivered with a slight pause before it for impact.
+### AUDIO
+- **Background:** Trending meme audio — use a popular "expectation vs. reality" or "oh no" trending sound
+  - *Option A:* "Oh No" by Kreepa (classic meme audio)
+  - *Option B:* Any current trending "beat drop" audio with a quiet build-up that hits at 0:05 when "Opens OptoLib" appears
+- **Volume:** Audio at 40–50% — it should be recognizable but not overpower text readability
+- **VO:** **None.** This reel relies entirely on text + trending audio. Silence makes it more meme-like and shareable
 
-### 6. CAPTION
-If you do THIS with your contacts, you're risking your cornea 🛑
+### CAPTION
+Professor said "study everything" 💀
+I said "bet" and opened OptoLib 😌
+Every optometry note. Free. Forever.
 
-Sleeping in lenses. Wearing them past replacement date.
+### HASHTAGS
+#OptoLib #OptometryMemes #OptometryStudent #OptometryStruggles #ExamPrep #OptometryIndia #StudyMemes #OptometryLife #FreeNotes #StudentRelatable
 
-These aren't just "bad habits" — they're the #1 cause of microbial keratitis in contact lens wearers.
+### POSTING TIME (IST)
+**Sunday, 8:00 PM** — Students are thinking about Monday exams; maximum relatability and share potential
 
-As eye care professionals, we see the consequences. But most patients don't know the risk until it's too late.
-
-Share this with every contact lens wearer you know. It takes 2 seconds and could save their sight.
-
-### 7. HASHTAGS
-#OptoLib #ContactLenses #EyeHealth #CornealHealth #Optometry #MicrobialKeratitis #PatientEducation #Optometrist #EyeCareTips #VisionSafety
-
-### 8. POSTING TIME (IST)
-**Thursday, 8:00 PM IST** — Evening prime time. Warning/health content gets strong shares during wind-down scrolling.
-
-### 9. CTA
-**"Share this reel with a contact lens wearer + Follow @optolib_ for free eye care resources"** (amber button, final frame + caption)
+### CTA
+"optolib.in" (amber text, bottom of final frame) + caption CTA: implicit (the meme itself drives curiosity clicks to bio)
 
 ---
 
-## Post 9 — "AI in Eye Care — 2026 Update"
+## POST 8: "5 Seconds to Find Any Optometry Topic"
 
-### 1. FORMAT
-Reel (1080×1920, 9:16)
+### FORMAT
+Reel (10 seconds)
 
-### 2. PILLAR
-Technology / Future of Optometry
+### PILLAR
+Product Demo / Utility — Speed & Ease of Access
 
-### 3. SCRIPT (Second-by-Second)
+### SCRIPT (Second-by-Second)
 
-| Sec | On-Screen Text | Voiceover / Narration |
-|-----|----------------|-----------------------|
-| 0–2 | **"AI in Eye Care — 2026 Update"** (white, bold, futuristic font, dark `#0F172A` background with subtle circuit-board pattern) | *(no VO — techy trending audio plays)* |
-| 2–5 | **"#1: AI Retinal Screening"** (teal, large) + **"Detects diabetic retinopathy in under 60 seconds"** (white, smaller) | "Number one: AI retinal screening. It can now detect diabetic retinopathy in under 60 seconds." |
-| 5–8 | **"#2: Automated Refraction"** (teal, large) + **"Wavefront-guided prescriptions — no phoropter needed"** (white, smaller) | "Number two: automated refraction. Wavefront-guided prescriptions without a phoropter." |
-| 8–11 | **"#3: Predictive Myopia Progression"** (teal, large) + **"AI models forecast myopia shift using axial length data"** (white, smaller) | "Number three: predictive myopia progression — AI models that forecast how a child's myopia will shift using axial length data." |
-| 11–13 | **"AI isn't replacing optometrists."** (white, bold) | "AI isn't replacing optometrists." |
-| 13–15 | **"It's making us faster, sharper, and more precise. 🚀"** (teal) + **"Follow for more AI + optometry content"** (amber `#F59E0B`) | "It's making us faster, sharper, and more precise. Follow for more." |
+| Time | On-Screen Text | Voiceover (VO) | Visual Direction |
+|------|---------------|----------------|------------------|
+| 0:00–0:02 | **"5 seconds to find ANY optometry topic"** (white bold, centered, dark bg) | "Five seconds to find any optometry topic." | **Dark bg `#0F172A`.** Bold white text with teal underline on "ANY." Minimal — just text. Quick fade-in (0.3s). |
+| 0:00–0:03 | *(transition frame)* | *(keyboard typing SFX begins)* | **Smooth transition:** Dark bg "dissolves" into a **phone screen recording mockup** — OptoLib search page (dark theme UI, teal search bar at top, subject categories visible below) |
+| 0:03–0:06 | **Typing animation: "retinoscopy"** appears letter-by-letter in the search bar | "Watch this." | **Close-up of phone screen.** Cursor blinks in the teal search bar. Letters "r-e-t-i-n-o-s-c-o-p-y" appear one by one with a subtle typing sound. Search bar has a magnifying glass icon in teal. |
+| 0:06–0:08 | **Search results appear** — list of matching notes: "Retinoscopy — Principles," "Retinoscopy — Procedure," "Retinoscopy — Clinical Cases" (each with a teal bullet/dot) | *(no VO — let the visual speak)* | **Instant results.** As soon as the last letter is typed, results slide in from below with a smooth animation. Each result is a clean card: topic name in white, subject tag in teal, brief preview text in grey. The speed is the star — results appear in <0.5s. |
+| 0:08–0:10 | **"Find any topic. Any subject. Free."** (white, bold, over blurred phone screen bg) + **"→ optolib.in"** (amber, bottom) | "Find any topic. Any subject. Free." | **Pull back slightly.** Phone screen blurs (20% gaussian). Text overlay appears centered on top. Clean, confident, direct. Final frame holds 1.5s with CTA. |
 
-### 4. VISUAL DIRECTION
-- **0–2s:** Dark background with a faint teal circuit-board / neural-network line pattern (very subtle, doesn't distract). Title text in a clean modern sans-serif, slight glow effect on "2026."
-- **2–5s:** A retina fundus photo appears on the left (stylized/illustrated). An AI scanning animation (a teal line sweeping across the image) highlights pathology markers in real-time. "60 seconds" appears with a countdown-style number animation.
-- **5–8s:** A sleek digital phoropter / wavefront device illustration replaces the retina. Animated light rays diverging and reconverging through a lens. "No phoropter needed" fades in with a phoropter icon getting a subtle strikethrough.
-- **8–11s:** A child's eye illustration with an axial length measurement graphic (like an ultrasound A-scan). A line graph projects forward with a prediction cone (confidence interval shading). "Myopia progression" label animates along the curve.
-- **11–13s:** Brief pause. Screen goes minimal — just white text on dark. Slight pause for emphasis.
-- **13–15s:** Three tool icons (retina scan, wavefront, myopia chart) arrange in a row. Teal rocket emoji. OptoLib logo + amber CTA at bottom.
+### VISUAL DIRECTION
+- **Style:** Screen recording / product demo — feels authentic, like a real user recording their phone
+- **Phone UI Mockup (OptoLib Search Page):**
+  - Dark theme (`#0F172A` bg)
+  - Teal `#0D9488` search bar with rounded corners, magnifying glass icon
+  - Subject categories below search: "Optics," "Ocular Anatomy," "Clinical Optometry," "Contact Lenses," "Pharmacology" — each as a teal-outlined pill/tag
+  - Search results: clean list with topic name (white), subject in small teal tag, word count or chapter reference in grey
+  - Top of screen: "OptoLib" logo (teal) + hamburger menu icon
+- **Animation:** Typing effect should feel snappy (50ms per character). Results should appear with a satisfying "slide up" animation
+- **No hands/face needed** — this is a pure screen recording style reel, which feels more authentic for a "demo"
+- **Subtle screen reflection/glow** effect to make it feel like a real phone screen
+- **Text overlay at end:** Semi-transparent dark overlay (60% opacity) behind white text for readability over blurred phone screen
 
-### 5. AUDIO SUGGESTION
-- **Trending audio:** Tech-forward, futuristic instrumental (synth wave / cyberpunk-lite, ~110 BPM). Think "future is now" energy. Clean, not overwhelming.
-- **Voiceover:** Fast, authoritative, "update/report" tone. Numbers ("Number one," "Number two") are crisp and punchy. The pivot at 11s ("AI isn't replacing optometrists") slows down for emphasis.
+### AUDIO
+- **Background:** Soft, modern lo-fi beat — non-distracting, tech-forward feel (~15% volume)
+- **Sound Effects:**
+  - 0:03–0:06 — Keyboard typing SFX synchronized with each letter appearing
+  - 0:06 — Soft "success" chime/ding when results load
+- **VO:** Calm, confident, slightly fast-paced — "watch this" should feel like you're about to see something impressive
 
-### 6. CAPTION
-AI in Eye Care — 2026 Update 🤖👁️
+### CAPTION
+Typing "retinoscopy" and getting INSTANT results 🤯
+Every topic. Every subject. One search bar.
+Free study notes that actually work → Link in bio
 
-3 tools changing optometry RIGHT NOW:
+### HASHTAGS
+#OptoLib #OptometryNotes #StudySmarter #OptometryStudent #OptometryIndia #Retinoscopy #OptometryExam #FreeStudyResources #BSOptometry #OptomStudents
 
-1️⃣ AI Retinal Screening — Diabetic retinopathy detected in <60 seconds
-2️⃣ Automated Refraction — Wavefront-guided Rx without a phoropter
-3️⃣ Predictive Myopia Progression — Forecast myopia shift using axial length
+### POSTING TIME (IST)
+**Wednesday, 1:00 PM** — Lunch break scrolling; demo-style content performs well mid-day when students take breaks between classes
 
-AI isn't replacing us. It's sharpening us.
-
-The optometrists who learn these tools first will lead the next decade of eye care.
-
-Are you ready? 🚀
-
-### 7. HASHTAGS
-#OptoLib #AIinHealthcare #Optometry2026 #ArtificialIntelligence #EyeCareTech #RetinalScreening #MyopiaManagement #OptometryStudent #FutureOfOptometry #OphthalmicTech
-
-### 8. POSTING TIME (IST)
-**Friday, 6:00 PM IST** — Pre-weekend peak. Tech/future content does well as people look ahead to the weekend with a forward-thinking mindset.
-
-### 9. CTA
-**"Follow @optolib_ for AI + optometry updates + Get free resources at the link in bio"** (amber button, final frame + caption)
+### CTA
+"→ optolib.in" (amber text, bottom-right of final frame) + caption CTA: "Link in bio"
 
 ---
 
-## Post 10 — "Optometry Student Struggle — Relatable"
+## POST 9: "The Notes Get Updated. Here's Why That Matters."
 
-### 1. FORMAT
-Reel (1080×1920, 9:16)
+### FORMAT
+Reel (15 seconds)
 
-### 2. PILLAR
-Community / Relatable Content
+### PILLAR
+Trust & Authority — Quality Assurance & Currency
 
-### 3. SCRIPT (Second-by-Second)
+### SCRIPT (Second-by-Second)
 
-| Sec | On-Screen Text | Voiceover / Narration |
-|-----|----------------|-----------------------|
-| 0–2 | **"The professor says…"** (white, casual font, dark `#0F172A`) | *(trending audio plays — see below)* |
-| 2–4 | **"'This won't be on the exam.' 😌"** (white, quotation marks, professor emoji) | *(no VO — audio carries)* |
-| 4–7 | **"Exam Paper Q1: [exactly that topic]"** (white, then red "WHAT?!" animation) | *(no VO — audio carries)* |
-| 7–9 | **"Every. Single. Time."** (white, each word slams in) | *(no VO — audio carries)* |
-| 9–10 | **"At least OptoLib has your back 💚"** (teal `#0D9488`) + **"Free resources. Forever."** (amber `#F59E0B`) + OptoLib logo | *(no VO — audio carries)* |
+| Time | On-Screen Text | Voiceover (VO) | Visual Direction |
+|------|---------------|----------------|------------------|
+| 0:00–0:03 | **"Your notes are outdated."** (white, bold, large, centered, dark bg) | "Your notes are outdated." | **Dark bg `#0F172A`.** Text appears with a hard cut — no fade. Slightly unsettling/dramatic tone. A faint red tint on "outdated" (subtle, not overwhelming — just enough to signal "warning"). |
+| 0:00–0:04 | *(problem visualization)* | *(tension-building beat continues)* | **Transition:** Text slides up and out. A mock "old notes" page appears — yellowed/aged paper aesthetic, with a red "X" stamp or "OUTDATED" watermark diagonally across it. Text visible: old classification systems, deprecated drug names, old ICD codes. |
+| 0:04–0:07 | **"Syllabus changed. Exams changed."** (white, two lines, centered) | "The syllabus changed. The exams changed." | **Two quick cuts (1.5s each).** Frame 1: "Syllabus changed." with an icon of a document with a circular arrow (update icon) in teal. Frame 2: "Exams changed." with an icon of a exam paper with a checkmark in teal. Clean, minimal, text-driven. |
+| 0:07–0:10 | **"Our notes changed WITH it."** (teal `#0D9488`, bold, large, centered) with OptoLib logo appearing below | "Our notes changed with it." | **Energy shift.** Background transitions from pure dark to dark with a subtle teal radial glow (center). This is the "hero" frame — the solution moment. Text is larger than previous frames. OptoLib logo fades in below in white. |
+| 0:10–0:13 | **Mock notes page** showing clean content with a green/teal badge: **"✓ Last Updated: July 2025"** | *(no VO — visual proof)* | **Screen recording style:** Clean, well-structured OptoLib notes page (dark theme). Content is readable — headings, bullet points, a small diagram placeholder. Prominently visible: a teal pill badge in the top-right corner reading "✓ Updated: July 2025" with a small checkmark icon. |
+| 0:13–0:15 | **"Always current. Always free."** (white bold) + **"Study with confidence → optolib.in"** (amber CTA, bottom) | "Always current. Always free. Study with confidence." | **Final hold frame.** Dark bg with centered text. "Always current." on line 1, "Always free." on line 2. Amber CTA button at bottom: "Study with confidence → optolib.in" |
 
-### 4. VISUAL DIRECTION
-- **0–2s:** Dark background. Text appears in a casual/handwritten-style font (like a student's notebook aesthetic). Minimal, clean.
-- **2–4s:** "This won't be on the exam" appears in a fake professor "quote" format — with a small professor icon or silhouette. Calm, reassuring vibe. Maybe a subtle green checkmark.
-- **4–7s:** HARD CUT. Screen background shifts to a slightly lighter dark (or subtle red tint). An exam paper mockup appears with "Q1" in bold. The exact topic from the previous slide is written as the question. A red "WHAT?!" or skull emoji 💀 slams onto screen. Screen shakes briefly.
-- **7–9s:** "Every." (slam) "Single." (slam) "Time." (slam) — each word hits center screen with a zoom-in punch effect. Classic meme reel editing style.
-- **9–10s:** Instant mood shift. Background returns to clean dark. Teal OptoLib text with the tagline. Warm, reassuring energy. Logo resolves at bottom.
+### VISUAL DIRECTION
+- **Style:** Problem → Agitation → Solution — classic marketing reel structure
+- **Tone Shift:**
+  - 0:00–0:07: Tense, slightly dramatic (dark, red accents, hard cuts)
+  - 0:07–0:15: Confident, clean, reassuring (teal glows, smooth transitions, calm pace)
+- **"Old Notes" Mock (0:04):** Beige/yellowed bg, serif font (to look dated), content like "ICD-9 Codes" or "Old TNM Classification" to visually communicate "this is wrong now." Red diagonal stamp overlay.
+- **"New Notes" Mock (0:10–0:13):** OptoLib dark theme, clean sans-serif, organized headings, a teal "Updated" badge — the contrast with the old notes should be stark and immediate
+- **The "Updated" badge** is the visual hero of this reel — it should be designed as a reusable component: teal pill with white checkmark + "Updated: [Month Year]" text
+- **No face/camera needed** — this is a text + mockup-driven reel
 
-### 5. AUDIO SUGGESTION
-- **Trending audio:** Use the **"Oh no, no, no"** trend audio OR a **record-scratch + suspense build** sound OR the popular **"Did I just—"** audio meme. The audio should be recognizable and match the "betrayal" mood of the professor's lie.
-- **Voiceover:** NONE. This reel relies entirely on trending audio + on-screen text. This matches the meme/relatable content format that performs best without VO.
+### AUDIO
+- **Background:** Starts with a slightly tense/curious beat (0:00–0:07), then **transitions** to an upbeat, confident lo-fi track (0:07 onward) — the audio shift reinforces the problem→solution narrative
+- **Sound Effects:**
+  - 0:04 — Low "buzzer" or "wrong answer" sound when old notes appear
+  - 0:07 — Bright "whoosh" or "reveal" sound when solution appears
+  - 0:10 — Subtle "ding" when the "Updated" badge appears on screen
+- **VO Tone:** Starts serious/direct (0:00–0:07), shifts to warm and confident (0:07–0:15) — "our notes changed with it" should sound like a proud promise
 
-### 6. CAPTION
-"The professor said this won't be on the exam" 😌
+### CAPTION
+Still studying from 3-year-old notes? ❌
+OptoLib notes are regularly updated to match your current syllabus.
+Because wrong information = wrong answers in exams.
+Study notes that keep up with you → Link in bio
 
-*proceeds to make it Question 1*
+### HASHTAGS
+#OptoLib #UpdatedNotes #OptometryStudent #OptometryIndia #StudySmart #OptometryExam #FreeOptometryNotes #AccurateNotes #BSOptometry #OptometryPrep
 
-We've all been there. Every. Single. Time. 💀
+### POSTING TIME (IST)
+**Thursday, 6:00 PM** — Early evening; students settling into evening study sessions, receptive to "study better" content
 
-But hey — whether it's on the exam or not, OptoLib has the resources you need to actually understand it. For free. Forever.
-
-Link in bio. Your future self will thank you. 💚
-
-### 7. HASHTAGS
-#OptoLib #OptometryStudent #OptometryLife #MedStudentStruggles #OptomStudent #Relatable #StudyGram #EyeCareStudent #OptometrySchool #StudentLife
-
-### 8. POSTING TIME (IST)
-**Monday, 9:00 PM IST** — Start of the week. Students are in "class grind" mode and most receptive to relatable/study content. Monday evenings historically over-index for student engagement.
-
-### 9. CTA
-**"Follow @optolib_ + Tap the link in bio for FREE optometry study resources"** (amber button, final frame + caption)
-
----
-
-## Posting Schedule Summary — Posts 6–10
-
-| Post | Day | Time (IST) | Pillar | Duration |
-|------|-----|------------|--------|----------|
-| 6 — 3 Second Eye Test | Tuesday | 7:30 PM | Clinical Skills | 15s |
-| 7 — Prescription Decoder | Wednesday | 12:30 PM | Education | 15s |
-| 8 — Contact Lens Mistake | Thursday | 8:00 PM | Patient Education / Warning | 20s |
-| 9 — AI in Eye Care 2026 | Friday | 6:00 PM | Technology | 15s |
-| 10 — Student Struggle Meme | Monday | 9:00 PM | Community / Relatable | 10s |
-
-### Content Mix Breakdown (Posts 6–10)
-- **Educational/Clinical:** Posts 6, 7, 8 (3/5 — 60%)
-- **Technology/Trend:** Post 9 (1/5 — 20%)
-- **Community/Relatable:** Post 10 (1/5 — 20%)
-
-This maintains the **60/20/20** content mix that balances educational authority with shareability and community building — critical for a new account establishing credibility while growing reach.
+### CTA
+"Study with confidence → optolib.in" (amber button, bottom of final frame) + caption CTA: "Link in bio"
 
 ---
 
-*OptoLib — "Every optometry resource. Free. Forever."*
+## POST 10: "Study Hack: How I Scored 85+ Using Only Free Notes"
+
+### FORMAT
+Reel (20 seconds) — *longer format for value-packed content*
+
+### PILLAR
+Educational / Study Hacks — Actionable Value + Platform Proof
+
+### SCRIPT (Second-by-Second)
+
+| Time | On-Screen Text | Voiceover (VO) | Visual Direction |
+|------|---------------|----------------|------------------|
+| 0:00–0:02 | **"How I scored 85+ using ONLY free notes"** (white bold, centered, dark bg) — "85+" in teal, "ONLY" in amber | "How I scored eighty-five plus using only free notes." | **Dark bg `#0F172A`.** Bold hook text. "85+" has a subtle glow effect in teal. "ONLY" pops in amber. Energy is high from frame 1. No image — pure text, pure hook. |
+| 0:02–0:04 | **"Step 1:"** (amber badge, top-left) **"Read notes BEFORE the lecture"** (white, bold) | "Step one: Read the notes before the lecture." | **Clean text-on-dark frame.** Numbered step format. "Step 1" in an amber rounded-rectangle badge. Main instruction in white bold. A small book+clock icon in teal on the right side. Subtle teal left-border accent line. |
+| 0:04–0:07 | **"Step 2:"** (amber badge) **"Make flashcards from key points"** (white, bold) + small flashcard icon | "Step two: Make flashcards from the key points." | **Same layout as Step 1** — consistent visual template. "Step 2" amber badge. Small flashcard/deck icon in teal. The repetition creates rhythm — viewers can anticipate the format, which keeps attention. |
+| 0:07–0:10 | **"Step 3:"** (amber badge) **"Revise with chapter summaries"** (white, bold) + small list/checklist icon | "Step three: Revise using the chapter summaries." | **Same template.** "Step 3" amber badge. Checklist icon in teal. |
+| 0:10–0:14 | **"Step 4:"** (amber badge) **"Practice with clinical case notes"** (white, bold) + small stethoscope/eye icon | "Step four: Practice with clinical case notes." | **Same template.** "Step 4" amber badge. Clinical/eye icon in teal. Slightly longer hold (4s vs 3s) because this is the most "advanced" tip — gives viewers a beat to absorb it. |
+| 0:14–0:17 | **"All of this. Free."** (white, large, centered, two lines) — "Free." in teal with underline | "All of this. Free." | **Visual reset.** The numbered template disappears. Back to full-width centered text on dark bg. Clean, powerful, minimal. "Free." gets a teal underline sweep animation. OptoLib logo fades in below the text (small, white). |
+| 0:17–0:20 | **"On OptoLib."** (teal, bold, large) + **"Start now → optolib.in"** (amber CTA button, bottom-center) | "On OptoLib. Start now." | **Final frame.** "On OptoLib." in large teal text. Below it: a rounded amber button/pill reading "Start now → optolib.in" — this is the primary CTA and should look clickable. Frame holds for full 3 seconds. |
+
+### VISUAL DIRECTION
+- **Style:** Clean, text-heavy "listicle" reel — the kind students save and revisit
+- **Layout System (Steps 1–4):**
+  - Consistent template: amber step badge (top-left), white bold instruction text (center-left), teal icon (right)
+  - Subtle teal left-border line (4px) running vertically — creates visual continuity across steps
+  - Each step transitions with a quick slide-left/slide-in from right (0.3s)
+  - The consistency is intentional — it creates a "card stack" feel that's satisfying to watch
+- **Icons (teal `#0D9488`, thin-line style):**
+  - Step 1: Open book with clock (prep before class)
+  - Step 2: Stack of flashcards
+  - Step 3: Checklist with checkmarks (revision)
+  - Step 4: Eye with a magnifying glass or clinical cross (clinical practice)
+- **Final Frames (0:14–0:20):** Break from the template — full-width centered text, no borders, no icons. This visual break signals "conclusion" and draws attention back for the CTA
+- **Color Rhythm:** Amber (step numbers/CTA) → White (content) → Teal (accents/logo/brand) — consistent throughout
+- **Text Size:** Steps should be large enough to read on a phone held at arm's length — this is a "save for later" reel, readability is paramount
+
+### AUDIO
+- **Background:** Upbeat, motivational lo-fi or instrumental beat — consistent throughout, no mood shift needed (this reel is all positive/energetic). Volume at 20%
+- **Sound Effects:**
+  - 0:02, 0:04, 0:07, 0:10 — Subtle "pop" or "card flip" SFX when each new step appears (keeps the rhythm engaging)
+  - 0:14 — Soft "whoosh" when the template breaks and we go to centered text
+  - 0:17 — Subtle "success chime" when CTA appears
+- **VO Tone:** Energetic but structured — like a senior student giving advice to a junior. Confident, clear, slightly fast (but not rushed). Each step delivered with the same cadence for rhythm. Final "On OptoLib. Start now." is slower and more deliberate — a closing pitch, not a tip
+
+### CAPTION
+4 steps to 85+ in optometry exams 📈
+1️⃣ Read notes BEFORE lecture
+2️⃣ Flashcards from key points
+3️⃣ Revise with chapter summaries
+4️⃣ Practice with clinical cases
+
+All notes. Free. On OptoLib. Link in bio 🔗
+
+### HASHTAGS
+#OptoLib #OptometryStudyTips #Score85Plus #OptometryStudent #OptometryIndia #StudyHacks #FreeStudyNotes #OptometryExam #BSOptometry #OptometryPreparation
+
+### POSTING TIME (IST)
+**Monday, 8:30 PM** — Start of the week; students are in "productive mode" and most likely to save/engage with study hack content. Monday evening is the #1 save-rate window for educational content on Instagram in India.
+
+### CTA
+"Start now → optolib.in" (amber rounded button, bottom-center of final frame) + caption CTA: "Link in bio 🔗"
+
+---
+
+## REEL SERIES SUMMARY
+
+| Post # | Title | Duration | Pillar | Primary Emotion | Save Potential |
+|--------|-------|----------|--------|-----------------|----------------|
+| 6 | "This Free Site Replaced My ₹12,000 Textbooks" | 15s | Social Proof | Surprise / Relief | ★★★★☆ |
+| 7 | "Optometry Students vs Exams — Relatable" | 12s | Community | Humor / Relatability | ★★★★★ (shareable) |
+| 8 | "5 Seconds to Find Any Optometry Topic" | 10s | Product Demo | Impressed / Curious | ★★★☆☆ |
+| 9 | "The Notes Get Updated. Here's Why That Matters." | 15s | Trust | Concern → Reassurance | ★★★★☆ |
+| 10 | "Study Hack: How I Scored 85+ Using Only Free Notes" | 20s | Educational | Motivated / Empowered | ★★★★★ (highest save) |
+
+### Posting Cadence (Recommended Schedule)
+| Day | Post | Time (IST) | Rationale |
+|-----|------|-----------|-----------|
+| Week 1, Tuesday | Post 6 | 7:30 PM | Mid-week engagement peak |
+| Week 1, Sunday | Post 7 | 8:00 PM | Pre-exam anxiety + meme shareability |
+| Week 2, Wednesday | Post 8 | 1:00 PM | Lunch break demo viewing |
+| Week 2, Thursday | Post 9 | 6:00 PM | Evening study session start |
+| Week 3, Monday | Post 10 | 8:30 PM | Week-start productivity mindset |
+
+### Cross-Posting Notes
+- **Reels can be re-shared as Stories** with a "New Reel" sticker — extends reach by 15–25%
+- **Post 7 (meme format)** should also be posted as a static Instagram post (screenshot of best frame) for dual-format reach
+- **Post 10 (study hack)** is ideal for YouTube Shorts and LinkedIn reposts (with minor caption tweaks for LinkedIn's professional tone)
+- All reels should have **captions/subtitles burned in** — 80% of Indian Instagram users watch with sound off

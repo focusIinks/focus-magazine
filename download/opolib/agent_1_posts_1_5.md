@@ -1,884 +1,705 @@
 # OptoLib Instagram Carousel Posts 1–5
-## Educational Series — Full Content Brief
+## Educational Study-Focused Carousels
 
 **Brand:** OptoLib
-**Tagline:** "Every optometry resource. Free. Forever."
-**Voice:** Knowledge-rich, approachable, slightly bold — like a smart friend who shares the best study hacks.
-**Color System:**
-- Primary: Teal `#0D9488`
-- Background: Dark `#0F172A`
-- Text on dark: White `#FFFFFF`
-- CTA / Highlights: Amber `#F59E0B`
-
-**Design System Notes (apply to ALL posts):**
-- Slide dimensions: 1080 × 1350px (Instagram portrait)
-- Font: Inter or Poppins (clean, modern sans-serif)
-- Every slide has a subtle OptoLib watermark (bottom-right, low opacity)
-- Teal accent bar or underline on key phrases
-- CTA slides always use Amber button-style text on dark background
-- Icons: thin-line style (Phosphor or Lucide icon set)
+**Tagline:** "Every optometry note. Free. Forever."
+**Voice:** Study-buddy energy — helpful, clear, slightly witty.
+**Audience:** Optometry students (1st–4th year), India. Entrance exam prep.
 
 ---
 
-## POST 1: "5 Free Optometry Resources Every Student Needs"
+## POST 1 — "5 Subjects Where OptoLib Saves You Hours"
 
-### FORMAT
-Carousel (7 slides)
+**PILLAR:** Subject Overview / Platform Awareness
+**FORMAT:** 6-slide carousel (1 cover + 5 subject slides)
+**POSTING TIME (IST):** 8:00 PM (peak study-hours engagement)
+**CTA:** "Start studying free at OptoLib" — link in bio
 
-### PILLAR
-Educational / Value — Resource Curation
-
-### SLIDE-BY-SLIDE CONTENT
-
----
-
-**SLIDE 1 — Hook Slide**
-
-- **Background:** Solid `#0F172A` (dark)
-- **Layout:** Centered text with teal underline accent
-- **Text (large, bold, white):**
-  > 5 Free Optometry Resources
-  > Every Student Needs
-- **Subtext (smaller, teal `#0D9488`):**
-  > Save this. You'll thank yourself during finals.
-- **Visual:** Small teal book/star icon above the heading. Amber dot accent in the corner.
-- **Bottom strip:** "Swipe →" in small white text with arrow icon
+### Slide-by-Slide Content
 
 ---
 
-**SLIDE 2 — Resource #1: OptomCAS**
+**SLIDE 1 — Cover**
 
-- **Background:** Dark `#0F172A`
-- **Layout:** Number + Title at top, description below, icon on right
-- **Number badge:** Large teal circle with white "1"
-- **Title (white, bold):** OptomCAS
-- **Subtitle (teal):** The Centralized Application Service
-- **Body text (white, regular):**
-  > Your one-stop portal for applying to optometry schools across the US. Track deadlines, upload transcripts, and manage letters of recommendation — all in one place.
-- **Visual:** Small laptop/application icon in teal, positioned top-right
-- **Tag (amber pill):** Applications
+- **Background:** Solid dark (#0F172A)
+- **Visual Direction:** Bold centered text. A small teal (#0D9488) bookshelf or stack-of-notes icon above the headline.
+- **Text (centered, large):**
+  - (Top, small, teal, all-caps) `OPTOLIB`
+  - (Headline, white, bold) `5 Subjects Where OptoLib`
+  - (Headline cont., white, bold) `Saves You Hours`
+  - (Subtext, muted gray, smaller) `Your entire syllabus. One free library.`
 
 ---
 
-**SLIDE 3 — Resource #2: AOA Student Tools**
+**SLIDE 2 — Ocular Anatomy**
 
-- **Background:** Dark `#0F172A`
-- **Number badge:** Teal circle with white "2"
-- **Title (white, bold):** AOA Student Tools
-- **Subtitle (teal):** American Optometric Association
-- **Body text (white, regular):**
-  > Free access to clinical resources, networking events, and mentorship programs. Their student membership alone is worth it — and it costs nothing to explore.
-- **Visual:** Community/people icon in teal, top-right
-- **Tag (amber pill):** Networking
-
----
-
-**SLIDE 4 — Resource #3: Review of Optometry — Free Articles**
-
-- **Background:** Dark `#0F172A`
-- **Number badge:** Teal circle with white "3"
-- **Title (white, bold):** Review of Optometry
-- **Subtitle (teal):** Free Clinical Articles
-- **Body text (white, regular):**
-  > Peer-reviewed clinical content without the paywall. Case reports, CE articles, and clinical pearls — perfect for building your knowledge base outside the textbook.
-- **Visual:** Journal/article icon in teal, top-right
-- **Tag (amber pill):** Clinical Reading
+- **Background:** Dark (#0F172A) with a subtle teal left-border stripe
+- **Visual Direction:** Small teal icon (eye outline) in top-right corner. Number "01" in large faded teal behind the text.
+- **Text:**
+  - (Label, amber #F59E0B, small, all-caps) `SUBJECT #1`
+  - (Title, white, bold) `Ocular Anatomy`
+  - (Body, light gray, bullet points with teal checkmarks):
+    - `Cornea, Lens, Retina — layer by layer`
+    - `Extraocular muscles & cranial nerves`
+    - `Orbit & adnexa simplified`
+    - `High-yield diagrams described in text`
+  - (Footer, teal, small italic) `~45 pages of structured notes`
 
 ---
 
-**SLIDE 5 — Resource #4: Eyes On Eyecare**
+**SLIDE 3 — Geometric & Physiological Optics**
 
-- **Background:** Dark `#0F172A`
-- **Number badge:** Teal circle with white "4"
-- **Title (white, bold):** Eyes On Eyecare
-- **Subtitle (teal):** Modern OD Content Platform
-- **Body text (white, regular):**
-  > Articles, podcasts, and videos designed specifically for the next generation of optometrists. Great for staying current with industry trends and career advice.
-- **Visual:** Eye/play-circle icon in teal, top-right
-- **Tag (amber pill):** Career Growth
-
----
-
-**SLIDE 6 — Resource #5: CooperVision Complimentary Lens Program**
-
-- **Background:** Dark `#0F172A`
-- **Number badge:** Teal circle with white "5"
-- **Title (white, bold):** CooperVision CL Program
-- **Subtitle (teal):** Complimentary Contact Lenses
-- **Body text (white, bold):**
-  > Get free diagnostic contact lenses for your clinical rotations. Practice fitting without spending a rupee. Available for students and residents globally.
-- **Visual:** Contact lens icon in teal, top-right
-- **Tag (amber pill):** Free Lenses
+- **Background:** Dark (#0F172A) with subtle teal left-border stripe
+- **Visual Direction:** Small teal prism/lens icon in top-right corner. Number "02" in large faded teal.
+- **Text:**
+  - (Label, amber, small, all-caps) `SUBJECT #2`
+  - (Title, white, bold) `Geometric & Physiological Optics`
+  - (Body, light gray, bullet points with teal checkmarks):
+    - `Laws of reflection & refraction — clear, no fluff`
+    - `Lens systems, vergence & transposition`
+    - `Optical aberrations explained simply`
+    - `Optical instruments: ophthalmoscope, slit lamp, retinoscope`
+  - (Footer, teal, small italic) `~60 pages of structured notes`
 
 ---
 
-**SLIDE 7 — CTA Slide**
+**SLIDE 4 — Ocular Pharmacology**
 
-- **Background:** Dark `#0F172A` with a subtle radial teal glow from center
-- **Text (large, white, bold, centered):**
-  > All 5 resources.
-  > Zero cost.
-  > Bookmark this post NOW.
-- **CTA Button (amber `#F59E0B` background, dark text, rounded rectangle):**
-  > 🔖 SAVE THIS POST
-- **Subtext (small, white):**
-  > Follow @optolib for more free resources every week.
-- **OptoLib logo:** Centered at the very bottom in white
-
----
-
-### CAPTION (HSO Framework — Hook → Story → Offer)
-
-**Hook:**
-I spent 4 years of optometry school wishing someone had handed me a list like this. So here it is — 5 completely FREE resources every optometry student should know about.
-
-**Story:**
-From application portals to free contact lenses for your clinical rotations, these are the tools that actually move the needle. I've personally used each one — and none of them will cost you a single rupee.
-
-**Offer:**
-Save this post for your next semester prep, and follow @optolib because we're building the biggest free optometry resource library on Instagram. Every resource. Free. Forever.
-
-### HASHTAGS
-#OptometryStudent #OptometryResources #OptometrySchool #FutureOD #OptomCAS #EyesOnEyecare #OptometryIndia #OptometryLife #FreeOptometryResources #OptometryEducation
-
-### POSTING TIME
-**8:00 PM IST on Monday** — Students are most active in the evening after classes; Monday captures the "new week, get organized" mindset.
-
-### CTA
-"🔖 Save this post + Follow @optolib for weekly free resource drops"
+- **Background:** Dark (#0F172A) with subtle teal left-border stripe
+- **Visual Direction:** Small teal pill/capsule icon in top-right corner. Number "03" in large faded teal.
+- **Text:**
+  - (Label, amber, small, all-caps) `SUBJECT #3`
+  - (Title, white, bold) `Ocular Pharmacology`
+  - (Body, light gray, bullet points with teal checkmarks):
+    - `Drug classifications you actually remember`
+    - `Mydriatics, miotics, antibiotics, steroids`
+    - `Mechanism of action → Side effects → Clinical use`
+    - `Dosage tables for quick revision`
+  - (Footer, teal, small italic) `~40 pages of structured notes`
 
 ---
 
-## POST 2: "Myopia Management in 2026 — What's Changed"
+**SLIDE 5 — Clinical Optometry**
 
-### FORMAT
-Carousel (6 slides)
-
-### PILLAR
-Educational / Clinical Update — Myopia Management
-
-### SLIDE-BY-SLIDE CONTENT
-
----
-
-**SLIDE 1 — Hook Slide**
-
-- **Background:** Dark `#0F172A`
-- **Layout:** Bold centered headline with a futuristic feel
-- **Top tag (teal pill):** CLINICAL UPDATE 2026
-- **Text (large, white, bold):**
-  > Myopia Management
-  > in 2026
-- **Subtext (amber `#F59E0B`, medium):**
-  > What's Changed Since You Last Read About It
-- **Visual:** Abstract eye with digital/data lines radiating outward — teal line art style
-- **Bottom strip:** "Swipe →" in white
+- **Background:** Dark (#0F172A) with subtle teal left-border stripe
+- **Visual Direction:** Small teal eye-chart icon in top-right corner. Number "04" in large faded teal.
+- **Text:**
+  - (Label, amber, small, all-caps) `SUBJECT #4`
+  - (Title, white, bold) `Clinical Optometry`
+  - (Body, light gray, bullet points with teal checkmarks):
+    - `Refraction step-by-step (retinoscopy to trial frame)`
+    - `Visual acuity & binocular vision assessment`
+    - `Common clinical procedures documented`
+    - `Case-based approach for viva prep`
+  - (Footer, teal, small italic) `~70 pages of structured notes`
 
 ---
 
-**SLIDE 2 — Trend #1: AI-Powered Diagnostics**
+**SLIDE 6 — Contact Lenses + CTA Slide**
 
-- **Background:** Dark `#0F172A`
-- **Top-left badge:** Teal "TREND 01"
-- **Title (white, bold):** AI-Powered Diagnostics
-- **Subtitle (teal):** The New Standard in Axial Length Measurement
-- **Body text (white, regular):**
-  > AI algorithms now predict myopia progression with >90% accuracy by analyzing axial length data, parental history, and near-work patterns. Devices like the Myopia Master and Topcon MYAH integrate predictive modeling that tells you BEFORE the child progresses.
-- **Key stat (amber, bold, in a highlighted box):**
-  > "Early AI intervention can reduce myopia progression by up to 40% compared to standard monitoring."
-- **Visual:** Brain/circuit icon in teal, bottom-right corner
-
----
-
-**SLIDE 3 — Trend #2: Low-Dose Atropine Protocols**
-
-- **Background:** Dark `#0F172A`
-- **Top-left badge:** Teal "TREND 02"
-- **Title (white, bold):** Low-Dose Atropine 2.0
-- **Subtitle (teal):** Micro-Dosing Is the New Frontier
-- **Body text (white, regular):**
-  > The LAMP2 study (2024-2025) confirmed that 0.01% atropine remains the sweet spot for efficacy with minimal side effects. But here's the update: combination therapy — atropine + defocus spectacle lenses — showed a 62% reduction in progression vs. monotherapy.
-- **Clinical note (white on teal-tinted box):**
-  > 💡 New protocol: Start 0.01% atropine + MiYOSMART or DIMS lenses for children with >1D/yr progression.
-- **Visual:** Droplet/eye-drop icon in teal, bottom-right
+- **Background:** Dark (#0F172A) with subtle teal left-border stripe
+- **Visual Direction:** Small teal contact lens icon in top-right corner. Number "05" in large faded teal.
+- **Text (top half — same subject format):**
+  - (Label, amber, small, all-caps) `SUBJECT #5`
+  - (Title, white, bold) `Contact Lenses`
+  - (Body, light gray, bullet points with teal checkmarks):
+    - `Soft, RGP, scleral — types & indications`
+    - `Fitting principles & parameter selection`
+    - `Complications & troubleshooting`
+    - `Aftercare & follow-up schedules`
+  - (Footer, teal, small italic) `~35 pages of structured notes`
+- **CTA Bar (bottom strip, teal background):**
+  - (White, bold) `+ 10 more subjects on OptoLib — all free.`
+  - (Amber, small, underlined) `Link in bio →`
 
 ---
 
-**SLIDE 4 — Trend #3: Ortho-K Advancements**
+### Caption
 
-- **Background:** Dark `#0F172A`
-- **Top-left badge:** Teal "TREND 03"
-- **Title (white, bold):** Orthokeratology 2026
-- **Subtitle (teal):** Better Designs, Wider Tolerability
-- **Body text (white, regular):**
-  > New reverse-geometry lens designs (Paragon CRT, DreamLite) now offer improved centration for corneas with >1.50D of astigmatism. Scleral mapping with OCT-guided fitting has reduced trial lens visits by 60%.
-- **Bullet points (white with teal checkmarks):**
-  > ✓ Better centration on astigmatic corneas
-  > ✓ OCT-guided fitting reduces chair time
-  > ✓ New materials: Dk >150 for overnight safety
-- **Visual:** Contact lens with concentric rings icon in teal, bottom-right
+Still making notes from 4 different textbooks for one subject? We've been there.
+
+OptoLib covers **5 core optometry subjects** — Ocular Anatomy, Optics, Pharmacology, Clinical Optometry, and Contact Lenses — with structured, exam-ready notes. Each subject is broken into clean chapters with bullet points, tables, and clear explanations. No walls of text. No "figure omitted" frustration.
+
+And these 5 are just the beginning. OptoLib also covers Binocular Vision, Ocular Diseases, Low Vision, Dispensing, and more. Every subject. Every semester. Updated regularly for the latest syllabus.
+
+Stop juggling expensive books. Start studying smarter.
+
+**→ Start studying free at OptoLib. Link in bio.**
+
+### Hashtags
+```
+#OptoLib #OptometryNotes #OptometryStudent #OptometryIndia #StudyOptometry #OptometryExam #OptometryLife #FreeStudyNotes #OptometryPrep
+```
+
+---
+---
+
+## POST 2 — "How to Study Optometry Without Buying Expensive Books"
+
+**PILLAR:** Problem → Solution / Value Proposition
+**FORMAT:** 6-slide carousel (1 hook + 1 problem + 1 comparison + 1 solution + 1 proof + 1 CTA)
+**POSTING TIME (IST):** 9:30 PM (late-night scroll + student decision window)
+**CTA:** "Stop spending. Start studying." — link in bio
+
+### Slide-by-Slide Content
 
 ---
 
-**SLIDE 5 — Clinical Pearl Slide**
+**SLIDE 1 — Cover / Hook**
 
-- **Background:** Teal `#0D9488` (full teal background — breaks pattern for emphasis)
-- **Top tag (dark on teal):** CLINICAL PEARL
-- **Title (dark, bold, large):**
-  > The 3-Question Rule for Myopia
-- **Body (dark text, large, numbered):**
-  > 1. What is the child's current axial length?
-  > 2. What is the rate of progression (D/year)?
-  > 3. Is the parents' refractive error > -3.00D?
-- **Bottom text (dark, italic):**
-  > If answers are: >24mm, >0.75D/yr, and YES → You need an active myopia management plan. Not just a new prescription.
-- **Visual:** Stethoscope/checklist icon in dark teal
+- **Background:** Solid dark (#0F172A)
+- **Visual Direction:** A torn price-tag or receipt icon in amber (#F59E0B) at the top. Bold centered text.
+- **Text:**
+  - (Top, small, teal, all-caps) `OPTOLIB`
+  - (Headline, white, bold) `How to Study Optometry`
+  - (Headline cont., white, bold) `Without Buying Expensive Books`
+  - (Subtext, amber, medium) `Spoiler: It's completely free.`
+
+---
+
+**SLIDE 2 — The Problem**
+
+- **Background:** Dark (#0F172A) with a red-tinted vignette or red accent line at top
+- **Visual Direction:** Stack of textbook icons with price tags. Scattered ₹ symbols faded in background.
+- **Text:**
+  - (Label, red/coral, small, all-caps) `THE PROBLEM`
+  - (Title, white, bold) `1 Optometry Semester =`
+  - (Price list, light gray, stacked, with old-receipt feel):
+    - `Ocular Anatomy textbook ...... ₹ 8,500`
+    - `Optics reference book ......... ₹ 6,000`
+    - `Clinical Optometry guide ...... ₹ 5,500`
+    - `Pharmacology handbook ......... ₹ 4,000`
+    - `Contact Lenses manual ......... ₹ 3,500`
+    - `────────────────────────────`
+    - (Total, amber, bold, large) `Total ≈ ₹ 27,500/semester`
+  - (Footer, muted gray, small italic) `And that's BEFORE entrance exam books.`
+
+---
+
+**SLIDE 3 — The Comparison**
+
+- **Background:** Split slide — left half dark with red tint, right half dark with teal tint. Vertical teal divider in center.
+- **Visual Direction:** Two columns. "Textbooks" vs "OptoLib" comparison table layout.
+- **Text:**
+  - (Left column header, red, small, all-caps) `TEXTBOOKS`
+  - (Left column, light gray):
+    - `₹5,000–15,000 each`
+    - `Heavy to carry`
+    - `Outdated in 2 years`
+    - `Written for professors, not students`
+    - `No search function`
+  - (Right column header, teal, small, all-caps) `OPTOLIB`
+  - (Right column, light gray):
+    - `₹0 — free forever`
+    - `On your phone, always`
+    - `Updated regularly`
+    - `Written for students, by students`
+    - `Searchable, chapter-wise`
+
+---
+
+**SLIDE 4 — The Solution**
+
+- **Background:** Dark (#0F172A) with a subtle radial teal glow from center
+- **Visual Direction:** A glowing teal phone/screen mockup outline in the center. Notes lines emanating outward.
+- **Text:**
+  - (Label, teal, small, all-caps) `THE SOLUTION`
+  - (Title, white, bold) `Every Optometry Note.`
+  - (Title cont., white, bold) `Free. Forever.`
+  - (Body, light gray, centered):
+    - `OptoLib is a complete, text-based study`
+    - `notes library covering your ENTIRE`
+    - `optometry curriculum.`
+    - ``
+    - `No subscription. No paywall. No catch.`
+  - (Bullet points, teal checkmarks):
+    - `15+ subjects covered`
+    - `Chapter-wise, exam-focused`
+    - `Works on phone, tablet, laptop`
+
+---
+
+**SLIDE 5 — Proof / Depth Teaser**
+
+- **Background:** Dark (#0F172A) with subtle teal left-border stripe
+- **Visual Direction:** Mock "table of contents" styled list with chapter names fading out at bottom (suggesting depth).
+- **Text:**
+  - (Title, white, bold) `Here's What's Inside:`
+  - (List, light gray, monospaced feel, some items in teal for emphasis):
+    - `Ch 1.  Anterior Segment Anatomy`
+    - `Ch 2.  Posterior Segment Anatomy`
+    - `Ch 3.  Laws of Reflection & Refraction`
+    - `Ch 4.  Lens Systems & Vergence`
+    - `Ch 5.  Autonomic Drugs in Ocular Pharmacology`
+    - `Ch 6.  Retinoscopy — Step by Step`
+    - `Ch 7.  Subjective Refraction Techniques`
+    - `Ch 8.  Soft Lens Fitting Principles`
+    - `Ch 9.  Binocular Vision Assessment`
+    - `Ch 10. Common Ocular Diseases`
+    - `... and 100+ more chapters`
+  - (Footer, amber, small) `All free. All searchable. All yours.`
 
 ---
 
 **SLIDE 6 — CTA Slide**
 
-- **Background:** Dark `#0F172A` with subtle teal radial glow
-- **Text (white, bold, centered):**
-  > Myopia isn't just "worse glasses."
-  > It's a progressive disease.
-  > Manage it like one.
-- **CTA Button (amber background, dark text):**
-  > 📩 DM us "MYOPIA" for a free progression chart
-- **Subtext (white, small):**
-  > Follow @optolib — Every optometry resource. Free. Forever.
+- **Background:** Solid teal (#0D9488)
+- **Visual Direction:** Clean, minimal. White text centered. Small OptoLib logo/wordmark at top.
+- **Text:**
+  - (Top, white, small, all-caps) `OPTOLIB`
+  - (Headline, white, bold, large) `Stop Spending.`
+  - (Headline cont., white, bold, large) `Start Studying.`
+  - (Subtext, white, 80% opacity) `Your entire optometry syllabus — free, forever.`
+  - (CTA button visual, dark background, rounded) `→ Link in Bio`
 
 ---
 
-### CAPTION (PAS Framework — Problem → Agitate → Solve)
+### Caption
 
-**Hook (Problem):**
-By 2050, half the world will be myopic. But most clinicians are still prescribing stronger glasses and calling it "management."
+Let's do the math. One optometry textbook costs ₹5,000 to ₹15,000. A full semester needs 4–5 books. That's ₹25,000+ every few months — and half of them are outdated before you even finish the syllabus.
 
-**Agitate:**
-The research has moved WAY beyond that. AI diagnostics, combination therapy protocols, and next-gen Ortho-K designs are changing how we slow progression — but only if you stay updated. Your patients can't afford for you to be 3 years behind.
+OptoLib changes that. It's a complete, free library of optometry study notes — covering anatomy, optics, pharmacology, clinical optometry, contact lenses, binocular vision, and 10+ more subjects. All text-based, all searchable, all regularly updated. No subscription. No paywall. No "free trial that asks for your credit card."
 
-**Solve:**
-Here are the 3 biggest shifts in myopia management for 2026 — and a clinical pearl you can apply tomorrow. DM us "MYOPIA" for a free axial length progression tracking chart. 📩
+You're already spending on tuition, exams, and living costs. Your study notes shouldn't be another expense.
 
-### HASHTAGS
-#MyopiaManagement #MyopiaControl #Optometry2026 #Orthokeratology #LowDoseAtropine #OptometryClinical #Optometrist #Myopia #OptometryUpdate #EyeCareProfessional
+**→ Stop spending. Start studying. Link in bio.**
 
-### POSTING TIME
-**7:30 PM IST on Wednesday** — Mid-week when clinicians and students are settled into routine; evening prime for engagement with clinical content.
+### Hashtags
+```
+#OptoLib #OptometryStudy #FreeOptometryNotes #OptometryIndia #OptometryStudents #SaveMoneyStudySmart #OptometryBooks #OptometryPreparation #OptometryLife
+```
 
-### CTA
-"📩 DM us 'MYOPIA' for a FREE axial length progression tracking chart + Follow @optolib"
+---
+---
+
+## POST 3 — "The Complete Refraction Notes — What's Inside"
+
+**PILLAR:** Subject Deep-Dive / Content Teaser
+**FORMAT:** 7-slide carousel (1 cover + 5 chapter teasers + 1 CTA)
+**POSTING TIME (IST):** 7:30 PM (pre-study session, high intent)
+**CTA:** "Read the full Refraction notes free — link in bio"
+
+### Slide-by-Slide Content
 
 ---
 
-## POST 3: "The Complete Eye Exam Checklist"
+**SLIDE 1 — Cover**
 
-### FORMAT
-Carousel (11 slides)
-
-### PILLAR
-Educational / Clinical Reference — Eye Examination
-
-### SLIDE-BY-SLIDE CONTENT
-
----
-
-**SLIDE 1 — Hook Slide**
-
-- **Background:** Dark `#0F172A`
-- **Layout:** Clean, checklist aesthetic
-- **Top tag (teal pill):** CLINICAL REFERENCE
-- **Text (large, white, bold):**
-  > The Complete
-  > Eye Exam Checklist
-- **Subtext (teal, medium):**
-  > 8 steps. Zero missed findings.
-- **Visual:** Clipboard with teal checkmarks, slightly tilted, line art
-- **Bottom strip:** "Swipe through all 8 steps →"
+- **Background:** Solid dark (#0F172A)
+- **Visual Direction:** A teal circle (like a lens/refraction diagram) in the center with light rays converging. Title overlaid.
+- **Text:**
+  - (Top, small, teal, all-caps) `OPTOLIB DEEP DIVE`
+  - (Headline, white, bold) `The Complete Refraction Notes`
+  - (Subtext, amber, medium) `What's actually inside.`
 
 ---
 
-**SLIDE 2 — Step 1: Patient History**
+**SLIDE 2 — Chapter 1: Laws of Refraction**
 
-- **Background:** Dark `#0F172A`
-- **Step number (teal, large, top-left):** 01
-- **Title (white, bold):** Patient History
-- **Subtitle (teal):** The foundation of every good exam
-- **Body text (white, checklist style with teal checkmark bullets):**
-  > ✓ Chief complaint — in patient's own words
-  > ✓ Ocular history (trauma, surgery, infections)
-  > ✓ Systemic history (diabetes, HTN, thyroid)
-  > ✓ Family history (glaucoma, macular degeneration)
-  > ✓ Medications (hydroxychloroquine, topiramate, isotretinoin)
-  > ✓ Occupation & visual demands (screen time, driving)
-  > ✓ Allergies
-- **Visual:** Patient/person icon, teal, bottom-right
-- **Pro tip (amber text, small):**
-  > "If you skip the medication review, you WILL miss something. Always ask about systemic drugs."
+- **Background:** Dark (#0F172A) with subtle teal left-border stripe
+- **Visual Direction:** Small teal "01" badge. A faint refraction diagram (incident ray, surface, refracted ray) sketched in the background.
+- **Text:**
+  - (Label, amber, small, all-caps) `CHAPTER 1`
+  - (Title, white, bold) `Laws of Refraction`
+  - (Body, light gray):
+    - `Snell's Law — derivation + clinical relevance`
+    - `Refractive index of ocular media (table)`
+    - `Critical angle & total internal reflection`
+    - `Refraction at curved surfaces`
+  - (Footer, teal, small italic) `Key formulas boxed for quick revision`
 
 ---
 
-**SLIDE 3 — Step 2: Visual Acuity**
+**SLIDE 3 — Chapter 2: Types of Refractive Errors**
 
-- **Background:** Dark `#0F172A`
-- **Step number:** 02 (teal, top-left)
-- **Title (white, bold):** Visual Acuity
-- **Subtitle (teal):** Distance, near, and pinhole
-- **Body text (white, checklist):**
-  > ✓ Uncorrected distance VA (UCDVA) — each eye separately
-  > ✓ Best corrected distance VA (BCDVA)
-  > ✓ Near VA at 40cm (N8 or equivalent)
-  > ✓ Pinhole acuity if reduced
-  > ✓ Contrast sensitivity if indicated
-- **Visual:** Snellen chart icon (simplified "E" chart), teal, bottom-right
-- **Pro tip (amber):**
-  > "Always test near VA — especially in patients >40. Presbyopia is the #1 underdiagnosed complaint."
-
----
-
-**SLIDE 4 — Step 3: Refraction**
-
-- **Background:** Dark `#0F172A`
-- **Step number:** 03 (teal, top-left)
-- **Title (white, bold):** Refraction
-- **Subtitle (teal):** Objective + Subjective
-- **Body text (white, checklist):**
-  > ✓ Retinoscopy or autorefraction (starting point)
-  > ✓ Subjective refraction (duochrome, cross-cylinder)
-  > ✓ Binocular balance
-  > ✓ Near add determination (age-appropriate)
-  > ✓ Over-refraction if wearing contact lenses
-- **Visual:** Phoropter icon, teal, bottom-right
-- **Pro tip (amber):**
-  > "Don't skip binocular balance. A small imbalance can cause significant asthenopia even with 6/6 acuity."
+- **Background:** Dark (#0F172A) with subtle teal left-border stripe
+- **Visual Direction:** Small teal "02" badge. Three tiny eye-outline icons (myopia, hyperopia, astigmatism) faintly in background.
+- **Text:**
+  - (Label, amber, small, all-caps) `CHAPTER 2`
+  - (Title, white, bold) `Types of Refractive Errors`
+  - (Body, light gray):
+    - `Myopia — axial vs refractive, classification`
+    - `Hyperopia — types, accommodative demand`
+    - `Astigmatism — regular vs irregular, rule-based`
+    - `Anisometropia & antimetropia`
+    - `Comparison table: signs, symptoms, correction`
+  - (Footer, teal, small italic) `High-yield for theory + clinical viva`
 
 ---
 
-**SLIDE 5 — Step 4: Binocular Vision Assessment**
+**SLIDE 4 — Chapter 3: Retinoscopy**
 
-- **Background:** Dark `#0F172A`
-- **Step number:** 04 (teal, top-left)
-- **Title (white, bold):** Binocular Vision
-- **Subtitle (teal):** Cover test, motility, and stereopsis
-- **Body text (white, checklist):**
-  > ✓ Cover test (distance and near) — unilateral + alternate
-  > ✓ Versions (9 cardinal positions of gaze)
-  > ✓ Near point of convergence (NPC)
-  > ✓ Stereopsis (Titmus or Randot)
-  > ✓ Vergence ranges (BO/BI at near)
-  > ✓ Accommodative facility
-- **Visual:** Two eyes with connecting line icon, teal, bottom-right
-- **Pro tip (amber):**
-  > "Screen every child for binocular vision issues. Convergence insufficiency affects up to 15% of school-age children."
+- **Background:** Dark (#0F172A) with subtle teal left-border stripe
+- **Visual Direction:** Small teal "03" badge. A faint streak retinoscope beam pattern in background.
+- **Text:**
+  - (Label, amber, small, all-caps) `CHAPTER 3`
+  - (Title, white, bold) `Retinoscopy`
+  - (Body, light gray):
+    - `Principle of retinoscopy — how it actually works`
+    - `Types: streak vs spot retinoscope`
+    - `Working distance & neutralization`
+    - `Step-by-step procedure for myopia, hyperopia, astigmatism`
+    - `Common errors & troubleshooting`
+  - (Footer, teal, small italic) `The most-tested practical topic — covered end to end`
 
 ---
 
-**SLIDE 6 — Step 5: Anterior Segment Examination**
+**SLIDE 5 — Chapter 4: Subjective Refraction**
 
-- **Background:** Dark `#0F172A`
-- **Step number:** 05 (teal, top-left)
-- **Title (white, bold):** Anterior Segment
-- **Subtitle (teal):** Slit lamp from front to back
-- **Body text (white, checklist):**
-  > ✓ Eyelids and lashes (blepharitis, entropion, ptosis)
-  > ✓ Conjunctiva (hyperemia, follicles, papillae)
-  > ✓ Cornea ( clarity, stains with fluorescein, endothelial count if needed)
-  > ✓ Anterior chamber (depth, cells and flare)
-  > ✓ Iris (nevi, atrophy, transillumination defects)
-  > ✓ Lens (clarity, nuclear grade, subluxation)
-- **Visual:** Eye cross-section (anterior), teal line art, bottom-right
-- **Pro tip (amber):**
-  > "Always stain with fluorescein BEFORE you think the cornea is clear. You'll be surprised."
-
----
-
-**SLIDE 7 — Step 6: Posterior Segment Examination**
-
-- **Background:** Dark `#0F172A`
-- **Step number:** 06 (teal, top-left)
-- **Title (white, bold):** Posterior Segment
-- **Subtitle (teal):** Fundus evaluation — don't skip this
-- **Body text (white, checklist):**
-  > ✓ Optic disc (CDR, rim, pallor, cupping)
-  > ✓ Macula (edema, drusen, epiretinal membrane)
-  > ✓ Retinal vessels (AV crossing changes, tortuosity)
-  > ✓ Periphery (lattice degeneration, holes, tears)
-  > ✓ Vitreous (syneresis, cells)
-- **Visual:** Fundus photograph placeholder (simplified retina illustration), teal, bottom-right
-- **Pro tip (amber):**
-  > "Dilate if the patient is diabetic, has high myopia, or complains of flashes/floaters. No exceptions."
+- **Background:** Dark (#0F172A) with subtle teal left-border stripe
+- **Visual Direction:** Small teal "04" badge. A faint phoropter/trial frame outline in background.
+- **Text:**
+  - (Label, amber, small, all-caps) `CHAPTER 4`
+  - (Title, white, bold) `Subjective Refraction`
+  - (Body, light gray):
+    - `Starting point: from retinoscopy to trial frame`
+    - `Sphere refinement — plus/minus blur test`
+    - `Cylinder axis & power refinement`
+    - `Binocular balancing (modified Humphriss)`
+    - `Near refraction & presbyopia add`
+    - `Tips for accurate results in clinics`
+  - (Footer, teal, small italic) `Written like a clinical protocol you can follow`
 
 ---
 
-**SLIDE 8 — Step 7: Intraocular Pressure**
+**SLIDE 6 — Chapter 5: Presbyopia Management**
 
-- **Background:** Dark `#0F172A`
-- **Step number:** 07 (teal, top-left)
-- **Title (white, bold):** Intraocular Pressure
-- **Subtitle (teal):** IOP measurement and interpretation
-- **Body text (white, checklist):**
-  > ✓ Goldmann applanation tonometry (gold standard)
-  > ✓ Non-contact tonometry (screening)
-  > ✓ iCare or rebound tonometry (pediatric/uncooperative)
-  > ✓ Compare with central corneal thickness (CCT)
-  > ✓ Note time of day (diurnal variation is real)
-- **Visual:** Tonometer probe icon, teal, bottom-right
-- **Pro tip (amber):**
-  > "IOP alone ≠ glaucoma diagnosis. But every glaucoma patient had a 'normal' IOP once. Measure it every time."
-
----
-
-**SLIDE 9 — Step 8: Final Prescription & Management Plan**
-
-- **Background:** Dark `#0F172A`
-- **Step number:** 08 (teal, top-left)
-- **Title (white, bold):** Final Prescription & Plan
-- **Subtitle (teal):** Pull it all together
-- **Body text (white, checklist):**
-  > ✓ Write the final prescription (spectacles / contact lenses)
-  > ✓ Summarize findings for the patient in plain language
-  > ✓ Discuss management plan (treatment, follow-up, referrals)
-  > ✓ Educate on warning signs (when to return urgently)
-  > ✓ Schedule next appointment
-  > ✓ Document everything
-- **Visual:** Prescription pad / glasses icon, teal, bottom-right
-- **Pro tip (amber):**
-  > "The best clinicians don't just write prescriptions — they educate. A patient who understands their eye health is a patient for life."
-
----
-
-**SLIDE 10 — Quick Summary Slide**
-
-- **Background:** Teal `#0D9488` (full teal — pattern break)
-- **Title (dark, bold, centered):**
-  > The 8-Step Eye Exam
-- **Numbered list (dark text, large, two columns if space allows):**
-  > 1️⃣ Patient History
-  > 2️⃣ Visual Acuity
-  > 3️⃣ Refraction
-  > 4️⃣ Binocular Vision
-  > 5️⃣ Anterior Segment
-  > 6️⃣ Posterior Segment
-  > 7️⃣ Intraocular Pressure
-  > 8️⃣ Rx & Management Plan
-- **Bottom text (dark, italic):**
-  > Print this. Stick it in your clinic. Use it every day.
-
----
-
-**SLIDE 11 — CTA Slide**
-
-- **Background:** Dark `#0F172A` with teal radial glow
-- **Text (white, bold, centered):**
-  > A complete eye exam
-  > is 8 steps.
-  > Not 3.
-- **CTA Button (amber background, dark text):**
-  > 🔖 SAVE THIS for your next clinical shift
-- **Subtext (white, small):**
-  > Follow @optolib — Every optometry resource. Free. Forever.
-
----
-
-### CAPTION (HSO Framework)
-
-**Hook:**
-How many steps are in a comprehensive eye exam? If you said 3, we need to talk.
-
-**Story:**
-From patient history through final prescription, a thorough exam has 8 non-negotiable steps. Skipping binocular vision? You're missing convergence insufficiency. Not dilating a diabetic patient? You're playing roulette with their retina. Every step exists for a reason — and your patients deserve all 8.
-
-**Offer:**
-Save this checklist for your next clinical rotation or clinic day. Share it with a classmate who's still learning. And follow @optolib for more clinical references like this — every week, always free.
-
-### HASHTAGS
-#EyeExam #OptometryChecklist #ComprehensiveEyeExam #OptometryStudent #ClinicalOptometry #OptometryClinic #OptometrySkills #EyeCareProfessional #OptometryIndia #OptometryPractice
-
-### POSTING TIME
-**9:00 PM IST on Sunday** — Weekend evening when students review clinical content and prep for Monday rotations. High save-rate timing.
-
-### CTA
-"🔖 Save this post + Share with a classmate + Follow @optolib"
-
----
-
-## POST 4: "Retinal Conditions You Can't Miss — Part 1"
-
-### FORMAT
-Carousel (7 slides)
-
-### PILLAR
-Educational / Clinical — Retinal Pathology
-
-### SLIDE-BY-SLIDE CONTENT
-
----
-
-**SLIDE 1 — Hook Slide**
-
-- **Background:** Dark `#0F172A`
-- **Layout:** Dramatic, urgent feel
-- **Top tag (amber pill):** DON'T MISS THIS
-- **Text (large, white, bold):**
-  > Retinal Conditions
-  > You Can't Miss
-- **Subtext (amber, medium):**
-  > Part 1 — The Big Four
-- **Visual:** Eye with retina illustration (stylized, teal line art showing retinal vasculature)
-- **Bottom strip:** "Swipe → These could walk into your clinic tomorrow."
-
----
-
-**SLIDE 2 — Condition #1: Diabetic Retinopathy**
-
-- **Background:** Dark `#0F172A`
-- **Condition tag (amber pill, top-left):** CONDITION 01
-- **Title (white, bold, large):** Diabetic Retinopathy
-- **Subtitle (teal):** #1 cause of preventable blindness globally
-- **Key Signs (white, with red-orange bullet indicators):**
-  > 🔴 Microaneurysms — earliest sign (dot hemorrhages on fundus)
-  > 🔴 Dot and blot hemorrhages
-  > 🔴 Hard exudates (lipid leakage)
-  > 🔴 Cotton-wool spots (nerve fiber layer infarcts)
-  > 🔴 Neovascularization (proliferative stage — URGENT)
-- **Clinical Action (white on teal-tinted box):**
-  > If proliferative or severe NPDR → Urgent referral to retina specialist
-- **Visual Description for design:**
-  > Fundus photo placeholder showing microaneurysms and dot hemorrhages in the macular region. Label with arrows. Teal border. Caption: "Typical NPDR with macular involvement."
-- **Quick stat (amber):**
-  > "After 20 years of diabetes, >80% of patients have some retinopathy."
-
----
-
-**SLIDE 3 — Condition #2: Hypertensive Retinopathy**
-
-- **Background:** Dark `#0F172A`
-- **Condition tag (amber pill):** CONDITION 02
-- **Title (white, bold, large):** Hypertensive Retinopathy
-- **Subtitle (teal):** The eye is a window to systemic health
-- **Key Signs (white with orange-red bullets):**
-  > 🔴 Arteriolar narrowing (focal and generalized)
-  > 🔴 AV nicking — vein appears compressed at crossing points
-  > 🔴 Copper-wiring and silver-wiring of arterioles
-  > 🔴 Flame-shaped hemorrhages (nerve fiber layer)
-  > 🔴 Papilledema (malignant HTN — EMERGENCY)
-- **Clinical Action (white on teal-tinted box):**
-  > Papilledema + severe HTN → Immediate ER referral. This is a hypertensive emergency.
-- **Visual Description for design:**
-  > Fundus photo placeholder showing AV nicking and generalized arteriolar narrowing. Arrows pointing to AV crossing changes. Teal border.
-- **Grading note (amber, small):**
-  > "Keith-Wagener-Barker Grade 3-4 = immediate systemic workup needed."
-
----
-
-**SLIDE 4 — Condition #3: Age-Related Macular Degeneration (ARMD)**
-
-- **Background:** Dark `#0F172A`
-- **Condition tag (amber pill):** CONDITION 03
-- **Title (white, bold, large):** ARMD
-- **Subtitle (teal):** Age-Related Macular Degeneration
-- **Key Signs — DRY (white with bullets):**
-  > 🔵 Drusen (hard: small, discrete | soft: large, confluent)
-  > 🔵 RPE changes — geographic atrophy in late stages
-- **Key Signs — WET (white with red bullets):**
-  > 🔴 Choroidal neovascularization (CNVM)
-  > 🔴 Subretinal hemorrhage
-  > 🔴 Subretinal fluid / PED
-  > 🔴 Metamorphopsia on Amsler grid (patient symptom)
-- **Clinical Action (white on teal-tinted box):**
-  > Wet ARMD → Urgent retina referral (anti-VEGF within 2 weeks). Dry ARMD → AREDS2 supplements + regular monitoring.
-- **Visual Description for design:**
-  > Fundus photo placeholder showing macular drusen. Second small inset showing wet ARMD with subretinal hemorrhage. Teal border.
-- **Quick test (amber):**
-  > "Always do an Amsler grid. If the patient reports wavy lines, think wet ARMD until proven otherwise."
-
----
-
-**SLIDE 5 — Condition #4: Retinal Detachment**
-
-- **Background:** Dark `#0F172A`
-- **Condition tag (amber pill):** CONDITION 04
-- **Title (white, bold, large):** Retinal Detachment
-- **Subtitle (teal):** The sight-threatening emergency
-- **Key Signs (white with red-orange bullets):**
-  > 🔴 Sudden onset of floaters (weiss ring — if PVD related)
-  > 🔴 Flashes of light (photopsia) — especially temporal
-  > 🔴 Curtain-like visual field defect (the classic sign)
-  > 🔴 Rhegmatogenous: visible retinal tear with elevated flap
-  > 🔴 Tractional: fibrous bands pulling retina (common in diabetic)
-  > 🔴 Exudative: subretinal fluid without tear (think CSR, tumors)
-- **Clinical Action (white on teal-tinted box):**
-  > ANY suspected retinal detachment → Same-day ophthalmology referral. Do NOT delay.
-- **Visual Description for design:**
-  > Fundus photo/schematic showing a retinal tear with surrounding subretinal fluid. Arrow pointing to the break. Teal border.
-- **Warning (amber, bold):**
-  > "If a patient describes 'a curtain falling over my vision' — this is NOT a routine exam. Refer immediately."
-
----
-
-**SLIDE 6 — Quick Reference Summary Slide**
-
-- **Background:** Teal `#0D9488` (full teal — pattern break)
-- **Title (dark, bold):**
-  > The 4-Condition Red Flags
-- **Four-row summary (dark text on teal, each with an icon):**
-  > 👁 DR → Microaneurysms, exudates, neovascularization
-  > 👁 HTN Retinopathy → AV nicking, arteriolar narrowing, papilledema
-  > 👁 ARMD → Drusen, metamorphopsia, subretinal hemorrhage
-  > 👁 RD → Floaters, flashes, curtain defect
-- **Bottom text (dark, italic):**
-  > Part 2 coming soon: CRVO, CSR, Retinitis Pigmentosa, and more.
+- **Background:** Dark (#0F172A) with subtle teal left-border stripe
+- **Visual Direction:** Small teal "05" badge. A faint reading-glasses icon in background.
+- **Text:**
+  - (Label, amber, small, all-caps) `CHAPTER 5`
+  - (Title, white, bold) `Presbyopia Management`
+  - (Body, light gray):
+    - `Physiology of presbyopia — what actually happens`
+    - `Near point & amplitude of accommodation`
+    - `ADD calculation — formula + clinical approach`
+    - `Types of near vision corrections`
+    - `Bifocal, progressive & occupational lens options`
+    - `Patient counseling points`
+  - (Footer, teal, small italic) `Exam theory + clinical practice, both covered`
 
 ---
 
 **SLIDE 7 — CTA Slide**
 
-- **Background:** Dark `#0F172A` with teal radial glow
-- **Text (white, bold, centered):**
-  > You WILL see these
-  > in practice.
-  > Know them now.
-- **CTA Button (amber background, dark text):**
-  > 🔖 SAVE THIS for your clinical rotations
-- **Subtext (white, small):**
-  > Follow @optolib — Part 2 drops next week. Every resource. Free. Forever.
+- **Background:** Solid teal (#0D9488)
+- **Visual Direction:** Clean, minimal. Centered white text. Small chapter-list preview fading out at bottom.
+- **Text:**
+  - (Top, white, small, all-caps) `OPTOLIB — REFRACTION NOTES`
+  - (Headline, white, bold, large) `5 chapters.`
+  - (Headline cont., white, bold, large) `~50 pages.`
+  - (Headline cont., amber, bold, large) `Completely free.`
+  - (Body, white, 80% opacity) `This is just ONE subject on OptoLib.`
+  - (Body cont., white, 80% opacity) `15+ more subjects are waiting.`
+  - (CTA button visual, dark background, rounded) `→ Read full notes — Link in Bio`
 
 ---
 
-### CAPTION (PAS Framework)
+### Caption
 
-**Hook:**
-4 retinal conditions that will walk into your clinic. And if you miss one, the consequences are irreversible.
+Refraction is the backbone of clinical optometry — and also the topic most students struggle to find good, organized notes for. Textbooks either go too deep into physics or too shallow for exams.
 
-**Agitate:**
-Diabetic retinopathy is the #1 cause of preventable blindness. Hypertensive retinopathy is a systemic time bomb. Wet ARMD needs anti-VEGF within 2 weeks. And a retinal detachment? That's a same-day referral — no debate. These aren't rare diagnoses. These are Tuesday morning in your clinic.
+OptoLib's Refraction notes are different. We've broken it into 5 focused chapters: Laws of Refraction, Types of Refractive Errors, Retinoscopy, Subjective Refraction, and Presbyopia Management. Each chapter has clear explanations, clinical steps, formulas in revision boxes, and comparison tables.
 
-**Solve:**
-Here's Part 1 of our "Can't Miss" retinal series — key signs, clinical actions, and what to do when you spot them. Save it. Study it. And DM us "RETINA" to get notified when Part 2 drops next week. 👀
+This is roughly 50 pages of exam-ready content — and it's just one subject on OptoLib. The full library covers 15+ subjects across all semesters.
 
-### HASHTAGS
-#RetinalConditions #DiabeticRetinopathy #ARMD #RetinalDetachment #HypertensiveRetinopathy #OptometryClinical #OphthalmicImaging #OptometryStudent #RetinaExam #EyeCareProfessional
+**→ Read the complete Refraction notes free. Link in bio.**
 
-### POSTING TIME
-**8:00 PM IST on Thursday** — Thursday evening captures mid-week clinical content engagement; professionals winding down and students reviewing before Friday exams.
+### Hashtags
+```
+#OptoLib #RefractionNotes #OptometryRefraction #Retinoscopy #OptometryStudy #OptometryExam #OptometryStudentIndia #ClinicalOptometry #OptometryNotes
+```
 
-### CTA
-"🔖 Save this post + DM us 'RETINA' for Part 2 notification + Follow @optolib"
+---
+---
+
+## POST 4 — "Ocular Anatomy Cheat Sheet — Anterior Segment"
+
+**PILLAR:** High-Save Content / Quick Reference
+**FORMAT:** 7-slide carousel (1 cover + 5 anatomy structure slides + 1 CTA)
+**POSTING TIME (IST):** 6:00 PM (evening study session start)
+**CTA:** "This is just ONE chapter on OptoLib. The full notes are free." — link in bio
+
+### Slide-by-Slide Content
 
 ---
 
-## POST 5: "Optometry vs Ophthalmology — The Real Difference"
+**SLIDE 1 — Cover**
 
-### FORMAT
-Carousel (8 slides)
-
-### PILLAR
-Educational / Career Awareness — Professional Clarity
-
-### SLIDE-BY-SLIDE CONTENT
-
----
-
-**SLIDE 1 — Hook Slide**
-
-- **Background:** Dark `#0F172A`
-- **Layout:** Bold, split-screen feel — two silhouettes or icons facing each other
-- **Top tag (amber pill):** CAREER CLARITY
-- **Text (large, white, bold):**
-  > Optometry vs Ophthalmology
-- **Subtext (teal, medium):**
-  > The Real Difference (No BS Version)
-- **Visual:** Two icons — one with a phoropter (OD), one with a surgical instrument (MD), facing each other with a VS between them. Teal line art.
-- **Bottom strip:** "Swipe →"
+- **Background:** Solid dark (#0F172A)
+- **Visual Direction:** A teal anatomical eye cross-section outline (anterior segment focused) spanning the slide. Title overlaid on the right side.
+- **Text:**
+  - (Top-left badge, amber, small, all-caps) `CHEAT SHEET`
+  - (Headline, white, bold) `Ocular Anatomy`
+  - (Headline cont., white, bold) `Anterior Segment`
+  - (Subtext, teal, medium) `Save this. You'll need it for exams.`
 
 ---
 
-**SLIDE 2 — Comparison: Education**
+**SLIDE 2 — Cornea: 5 Layers**
 
-- **Background:** Dark `#0F172A`
-- **Top label (teal):** COMPARISON 01
-- **Title (white, bold):** Education Pathway
-- **Layout:** Two-column comparison
-- **Left column (teal header):** OPTOMETRY (OD)
-  - 4-year Bachelor in Optometry (B.Optom) or
-  - Doctor of Optometry (O.D.) — 4 years post-grad
-  - Clinical rotations integrated
-  - Licensing exam required
-- **Right column (amber header):** OPHTHALMOLOGY (MD/MS/DNB)
-  - MBBS → 3-year MD/MS in Ophthalmology or
-  - DNB Ophthalmology — 3 years
-  - Surgical training integrated
-  - Medical council registration
-- **Bottom note (white, small, italic):**
-  > Both require years of dedicated study. Both are essential to eye care.
-- **Visual:** Graduation cap icon, teal
+- **Background:** Dark (#0F172A) with subtle teal left-border stripe
+- **Visual Direction:** Small teal eye icon. A horizontal 5-layer stack visual on the right side (each layer as a thin colored band with labels).
+- **Text:**
+  - (Label, amber, small, all-caps) `STRUCTURE 1`
+  - (Title, white, bold) `Cornea — 5 Layers`
+  - (Body, light gray, structured list):
+    - `1. Epithelium — regenerates in 7 days, 5-6 cells thick`
+    - `2. Bowman's Layer — acellular, does NOT regenerate`
+    - `3. Stroma — 90% of corneal thickness, collagen lamellae`
+    - `4. Dua's Layer — pre-Descemet's, recently discovered`
+    - `5. Descemet's Membrane + Endothelium — pump function, maintains deturgescence`
+  - (Footer box, teal bg, dark text, small) `Remember: "Every Beautiful Stroma Deserves Endothelium"`
 
 ---
 
-**SLIDE 3 — Comparison: Scope of Practice**
+**SLIDE 3 — Lens**
 
-- **Background:** Dark `#0F172A`
-- **Top label (teal):** COMPARISON 02
-- **Title (white, bold):** Scope of Practice
-- **Layout:** Two-column
-- **Left column (teal header):** OPTOMETRY (OD)
-  - Comprehensive eye examinations
-  - Refraction and prescription
-  - Contact lens fitting (including specialty)
-  - Binocular vision & vision therapy
-  - Low vision rehabilitation
-  - Diagnosis and co-management of eye disease
-  - Myopia management
-- **Right column (amber header):** OPHTHALMOLOGY (MD)
-  - All of the above PLUS
-  - Surgical procedures (cataract, glaucoma surgery, retinal surgery)
-  - Laser procedures (YAG, SLT, argon)
-  - Invasive diagnostics and treatments
-  - Systemic-eye disease management
-  - Hospital-based and surgical care
-- **Visual:** Stethoscope vs scalpel icons, teal
+- **Background:** Dark (#0F172A) with subtle teal left-border stripe
+- **Visual Direction:** Small teal "03" badge. A lens cross-section diagram (capsule → cortex → nucleus) on the right.
+- **Text:**
+  - (Label, amber, small, all-caps) `STRUCTURE 2`
+  - (Title, white, bold) `Crystalline Lens`
+  - (Body, light gray, structured list):
+    - `Capsule — thinnest at posterior pole (hypermature cataract risk)`
+    - `Anterior Epithelium — only anterior surface has cells`
+    - `Cortex — newly formed lens fibers`
+    - `Nucleus — oldest fibers, compacted over lifetime`
+  - (Key facts box, dark teal bg):
+    - `Avascular — nourished by aqueous`
+    - `Avulsion-resistant due to zonular fibers`
+    - `Power: ~+20D (provides 1/3 of eye's total power)`
 
 ---
 
-**SLIDE 4 — Comparison: Surgical vs Non-Surgical**
+**SLIDE 4 — Iris**
 
-- **Background:** Dark `#0F172A`
-- **Top label (teal):** COMPARISON 03
-- **Title (white, bold):** Surgical vs Non-Surgical
-- **Layout:** Centered with clear division
-- **OPTOMETRY section (teal-tinted box):**
-  > 🔹 NON-SURGICAL PRIMARY EYE CARE
-  > Focus: Examination, diagnosis, optical correction, medical management of anterior segment disease, co-management of surgical patients (pre/post-op care)
-- **OPHTHALMOLOGY section (amber-tinted box):**
-  > 🔸 SURGICAL + MEDICAL EYE CARE
-  > Focus: Surgical intervention, laser procedures, advanced medical treatment of posterior segment disease, inpatient care, complex surgical cases
-- **Bottom note (white, italic):**
-  > "Optometrists manage 80% of primary eye care. Ophthalmologists handle the surgical 20%. Both are critical."
-- **Visual:** Scalpel (with line-through for OD) / Scalpel (active for MD) — simplified icons
-
----
-
-**SLIDE 5 — Comparison: Prescribing Authority**
-
-- **Background:** Dark `#0F172A`
-- **Top label (teal):** COMPARISON 04
-- **Title (white, bold):** Prescribing Authority
-- **Layout:** Two-column comparison
-- **Left column (teal header):** OPTOMETRY (OD)
-  - **India:** Topical diagnostic drugs (anesthetics, dyes, mydriatics)
-  - **Some states/countries:** Therapeutic prescribing (topical antibiotics, steroids, glaucoma medications)
-  - **Varies significantly by region and legislation**
-- **Right column (amber header):** OPHTHALMOLOGY (MD)
-  - Full prescribing authority — topical AND systemic
-  - All classes of ophthalmic medications
-  - Systemic medications for eye conditions
-  - Injectable and IV medications (in surgical setting)
-- **Note (white on teal box):**
-  > ⚖️ Prescribing laws for optometrists are evolving rapidly. In India, legislation is under active discussion for expanded therapeutic rights.
-- **Visual:** Prescription pad / pill bottle icon, teal
+- **Background:** Dark (#0F172A) with subtle teal left-border stripe
+- **Visual Direction:** Small teal "04" badge. A top-down iris view (pupil center, collarette, root) outlined faintly.
+- **Text:**
+  - (Label, amber, small, all-caps) `STRUCTURE 3`
+  - (Title, white, bold) `Iris`
+  - (Body, light gray, structured list):
+    - `Two layers: Anterior stroma (pigmented) + Posterior epithelium (2 layers)`
+    - `Pupillary zone (inner) vs Ciliary zone (outer)`
+    - `Collarette — thickest part, junction of two zones`
+    - `Sphincter pupillae — parasympathetic (constricts)`
+    - `Dilator pupillae — sympathetic (dilates)`
+  - (Clinical note box, amber bg, dark text, small) `Iris color = stromal melanocyte density, NOT epithelial pigment`
 
 ---
 
-**SLIDE 6 — Side-by-Side Quick Reference**
+**SLIDE 5 — Ciliary Body**
 
-- **Background:** Teal `#0D9488` (full teal — pattern break)
-- **Title (dark, bold, centered):**
-  > At a Glance
-- **Comparison table (dark text, clean rows):**
-  > | | Optometry (OD) | Ophthalmology (MD) |
-  > |---|---|---|
-  > | Education | 4 yrs (B.Optom/OD) | 5.5 + 3 yrs (MBBS + MD) |
-  > | Focus | Primary eye care | Surgical + medical |
-  > | Surgery | No | Yes (full) |
-  > | Prescribing | Limited/evolving | Full authority |
-  > | Refractive care | Primary role | Secondary/co-management |
-  > | Setting | Clinic, optical, hospital | Hospital, surgical center |
-- **Bottom text (dark, italic):**
-  > They're not competitors. They're teammates.
-
----
-
-**SLIDE 7 — When to Refer**
-
-- **Background:** Dark `#0F172A`
-- **Title (white, bold):** When Should You Refer?
-- **Subtitle (teal):** An optometrist's referral guide
-- **Body text (white, with amber arrow indicators):**
-  > → Suspected retinal detachment or tear
-  > → Uncontrolled glaucoma (IOP >30 despite maximal medical therapy)
-  > → Wet ARMD or sudden vision loss
-  > → Corneal ulcer not responding to treatment
-  > → Suspected ocular tumor or mass
-  > → Traumatic eye injury with intraocular involvement
-  > → Patient needing cataract, retinal, or strabismus surgery
-  > → Any condition requiring systemic medication or surgery
-- **Bottom note (white, small):**
-  > "A good optometrist knows what they CAN manage — and what they should hand off. That's not weakness. That's excellent clinical judgment."
-- **Visual:** Arrow/referral icon, teal
+- **Background:** Dark (#0F172A) with subtle teal left-border stripe
+- **Visual Direction:** Small teal "05" badge. A ciliary body cross-section sketch (pars plicata folds + pars plana flat) on the right.
+- **Text:**
+  - (Label, amber, small, all-caps) `STRUCTURE 4`
+  - (Title, white, bold) `Ciliary Body`
+  - (Body, light gray, structured list):
+    - `Pars Plicata (anterior 2/3) — ciliary processes, aqueous production`
+    - `Pars Plana (posterior 1/3) — surgical landmark for intravitreal injections`
+    - `Ciliary Muscle — 3 parts:`
+    - `  • Longitudinal → opens Schlemm's canal`
+    - `  • Radial → transitional fibers`
+    - `  • Circular (Müller's) — accommodation`
+  - (Key fact, teal, small) `Pars plana = 4mm from limbus. Know this for clinical exams.`
 
 ---
 
-**SLIDE 8 — CTA Slide**
+**SLIDE 6 — Aqueous Humor: Production & Drainage**
 
-- **Background:** Dark `#0F172A` with teal radial glow
-- **Text (white, bold, centered):**
-  > Optometry and Ophthalmology
-  > aren't competitors.
-  > They're the two halves
-  > of complete eye care.
-- **CTA Button (amber background, dark text):**
-  > 📤 SHARE THIS with someone who's confused
-- **Subtext (white, small):**
-  > Follow @optolib — Every optometry resource. Free. Forever.
+- **Background:** Dark (#0F172A) with subtle teal left-border stripe
+- **Visual Direction:** Small teal "06" badge. A flow-diagram visual: ciliary processes → posterior chamber → pupil → anterior chamber → trabecular meshwork → Schlemm's canal → episcleral veins.
+- **Text:**
+  - (Label, amber, small, all-caps) `STRUCTURE 5`
+  - (Title, white, bold) `Aqueous Humor`
+  - (Body, light gray, two-column):
+    - (Left column)
+      - `PRODUCTION:`
+      - `• Site: Ciliary processes (pars plicata)`
+      - `• Rate: 2-3 µL/min`
+      - `• Mechanism: Active secretion (70%)`
+      - `  + Ultrafiltration (30%)`
+      - `• Turnover: ~1% of volume/hr`
+    - (Right column)
+      - `DRAINAGE:`
+      - `• Trabecular (90%): TM →`
+      - `  Schlemm's canal →`
+      - `  aqueous veins → episcleral V`
+      - `• Uveoscleral (10%):`
+      - `  ciliary body → suprachoroidal`
+      - `  space → vortex veins`
+  - (Footer, amber, small) `Blocked drainage = ↑ IOP = Glaucoma. The most tested concept.`
 
 ---
 
-### CAPTION (HSO Framework)
+**SLIDE 7 — CTA Slide**
 
-**Hook:**
-"Are you a doctor?" Every optometrist has heard this. And every ophthalmologist has been asked "So... you're basically an eye optician?" Let's settle this once and for all.
+- **Background:** Solid dark (#0F172A) with a subtle teal glow at the bottom
+- **Visual Direction:** Clean centered text. A small "bookmark" icon in amber at the top.
+- **Text:**
+  - (Top, amber, small, all-caps) `SAVE THIS POST`
+  - (Headline, white, bold, large) `This is just ONE chapter`
+  - (Headline cont., white, bold, large) `on OptoLib.`
+  - (Body, white, 80% opacity) `Posterior segment, extraocular muscles,`
+  - (Body cont., white, 80% opacity) `cranial nerves, orbit, retina, visual pathway —`
+  - (Body cont., white, 80% opacity) `all covered in the same detail.`
+  - (CTA, teal, bold) `The full notes are free. → Link in Bio`
 
-**Story:**
-Optometry and ophthalmology are two completely different — but equally essential — parts of the eye care system. Different education, different scope, different superpowers. One handles 80% of primary eye care. The other handles the surgical 20%. Together, they're the reason patients get complete care. This post breaks down the real differences — education, scope, surgical authority, and prescribing rights.
+---
 
-**Offer:**
-Save this for the next time someone asks (or for career day at your college). Share it with a friend who's choosing between the two. And follow @optolib — because whether you're an OD, an MD, or still deciding — we've got free resources for you. Always.
+### Caption
 
-### HASHTAGS
-#OptometryVsOphthalmology #OptometryCareer #Ophthalmology #EyeCareCareers #OptometryStudent #FutureOD #OptometryIndia #MedicalCareers #OptometryLife #EyeCareProfessional
+The anterior segment comes up in EVERY optometry exam — anatomy, clinical, pharmacology, even contact lenses. But most students waste time flipping between 3 different books to find what they need.
 
-### POSTING TIME
-**7:00 PM IST on Saturday** — Weekend prime time; maximum reach for career-oriented content as students browse leisurely and share with peers.
+Here's the thing: this cheat sheet covers just ONE chapter of OptoLib's Ocular Anatomy notes. The full notes cover the entire eye — anterior segment, posterior segment, extraocular muscles, cranial nerves, orbit, adnexa, and the visual pathway. Same detail. Same clarity. Same zero-cost energy.
 
-### CTA
-"📤 Share this post with someone who needs clarity + Follow @optolib"
+Save this post for quick revision. Then go read the complete notes — they're free, and they're waiting for you.
+
+**→ Full Ocular Anatomy notes free at OptoLib. Link in bio.**
+
+### Hashtags
+```
+#OptoLib #OcularAnatomy #AnteriorSegment #OptometryAnatomy #OptometryCheatSheet #OptometryExam #OptometryStudent #SaveThisPost #OptometryNotes
+```
+
+---
+---
+
+## POST 5 — "Why Students Are Switching to OptoLib"
+
+**PILLAR:** Social Proof / Testimonials
+**FORMAT:** 6-slide carousel (1 cover + 4 testimonial slides + 1 CTA)
+**POSTING TIME (IST):** 10:00 PM (emotional decision window, late-night reflection)
+**CTA:** "Join 1,000+ students studying free." — link in bio
+
+### Slide-by-Slide Content
+
+---
+
+**SLIDE 1 — Cover**
+
+- **Background:** Solid dark (#0F172A)
+- **Visual Direction:** A teal speech-bubble cluster icon (3 overlapping bubbles) above the headline. Clean and inviting.
+- **Text:**
+  - (Top, small, teal, all-caps) `OPTOLIB`
+  - (Headline, white, bold) `Why Students Are`
+  - (Headline cont., white, bold) `Switching to OptoLib`
+  - (Subtext, amber, medium) `Real words. From real optometry students.`
+
+---
+
+**SLIDE 2 — Testimonial 1: Exam Success**
+
+- **Background:** Dark (#0F172A) with a subtle teal speech-bubble shape behind the quote
+- **Visual Direction:** Large opening quotation mark in faded teal. Star icon in amber at bottom. Name + college at bottom.
+- **Text:**
+  - (Quote, white, large, italic):
+    - `"I cleared my optics exam using ONLY OptoLib notes. Didn't open the textbook even once. The way they explain vergence and lens systems — it actually clicked."`
+  - (Attribution, teal, small):
+    - `— Priya M., 3rd Year B.Optom`
+    - `  Sankara Nethralaya, Chennai`
+
+---
+
+**SLIDE 3 — Testimonial 2: Readability**
+
+- **Background:** Dark (#0F172A) with a subtle teal speech-bubble shape behind the quote
+- **Visual Direction:** Same format as Slide 2. Consistency in design builds trust.
+- **Text:**
+  - (Quote, white, large, italic):
+    - `"Finally, notes that are actually readable. Every other free site has walls of text copied from Wikipedia. OptoLib feels like it was written by someone who actually understands what students need."`
+  - (Attribution, teal, small):
+    - `— Arjun K., 2nd Year B.Optom`
+    - `  Lotus College, Mumbai`
+
+---
+
+**SLIDE 4 — Testimonial 3: Updated Content**
+
+- **Background:** Dark (#0F172A) with a subtle teal speech-bubble shape behind the quote
+- **Visual Direction:** Same format. A small "updated" badge icon in teal.
+- **Text:**
+  - (Quote, white, large, italic):
+    - `"Updated notes for the 2026 syllabus — no other free site does this. My college recommended a ₹12,000 book that was 3 editions old. OptoLib had the latest content, for free."`
+  - (Attribution, teal, small):
+    - `— Sneha R., 4th Year B.Optom`
+    - `  AIIMS, New Delhi`
+
+---
+
+**SLIDE 5 — Testimonial 4: Money Saved**
+
+- **Background:** Dark (#0F172A) with a subtle teal speech-bubble shape behind the quote
+- **Visual Direction:** Same format. A small piggy-bank or coin icon in amber.
+- **Text:**
+  - (Quote, white, large, italic):
+    - `"Saved me ₹8,000 on textbooks this semester. I use OptoLib on my phone during college breaks. It's faster than searching through a 500-page book."`
+  - (Attribution, teal, small):
+    - `— Rahul T., 1st Year B.Optom`
+    - `  L.V. Prasad Eye Institute, Hyderabad`
+
+---
+
+**SLIDE 6 — CTA Slide**
+
+- **Background:** Solid teal (#0D9488)
+- **Visual Direction:** Clean, centered. A counter/stat visual: "1,000+" in large white bold. Small student-avatars row below it (abstract circle icons).
+- **Text:**
+  - (Stat, white, bold, extra-large) `1,000+`
+  - (Subtext under stat, white, medium) `optometry students already studying free`
+  - (Divider, white, 30% opacity, thin line)
+  - (Headline, white, bold, large) `Join them.`
+  - (CTA button visual, dark background, rounded, centered) `→ Start studying free — Link in Bio`
+
+---
+
+### Caption
+
+We started OptoLib because we were tired of the same problem: expensive textbooks, outdated notes, and free resources that felt like they were written by AI for SEO — not for actual students.
+
+The response has been beyond what we expected. Over 1,000 optometry students are now using OptoLib to study — for university exams, practicals, viva prep, and entrance tests. And every piece of feedback we get pushes us to cover more subjects, update faster, and write clearer.
+
+If you're still spending ₹5,000+ per textbook or relying on scattered PDFs from group chats — there's a better way. It's free, it's complete, and it's built specifically for you.
+
+**→ Join 1,000+ students studying free at OptoLib. Link in bio.**
+
+### Hashtags
+```
+#OptoLib #OptometryStudents #OptometryIndia #FreeStudyNotes #OptometryLife #OptometryCommunity #StudySmarterNotHarder #OptometryExamPrep #OptometryStudentIndia
+```
+
+---
 
 ---
 
 ## POSTING SCHEDULE SUMMARY
 
-| Post | Topic | Best Day | Best Time (IST) | Primary CTA |
-|------|-------|----------|-----------------|-------------|
-| 1 | 5 Free Optometry Resources | Monday | 8:00 PM | Save + Follow |
-| 2 | Myopia Management 2026 | Wednesday | 7:30 PM | DM "MYOPIA" + Follow |
-| 3 | Complete Eye Exam Checklist | Sunday | 9:00 PM | Save + Share + Follow |
-| 4 | Retinal Conditions Part 1 | Thursday | 8:00 PM | Save + DM "RETINA" + Follow |
-| 5 | Optometry vs Ophthalmology | Saturday | 7:00 PM | Share + Follow |
+| Post # | Title | Slide Count | Posting Time (IST) | Day Suggestion |
+|--------|-------|-------------|-------------------|----------------|
+| 1 | 5 Subjects Where OptoLib Saves You Hours | 6 | 8:00 PM | Monday |
+| 2 | How to Study Without Expensive Books | 6 | 9:30 PM | Wednesday |
+| 3 | Complete Refraction Notes Deep-Dive | 7 | 7:30 PM | Friday |
+| 4 | Ocular Anatomy Cheat Sheet — Anterior Segment | 7 | 6:00 PM | Sunday |
+| 5 | Why Students Are Switching to OptoLib | 6 | 10:00 PM | Tuesday |
 
 ---
 
-## NOTES FOR DESIGNER
+## DESIGN SYSTEM QUICK REFERENCE
 
-1. **Consistent template:** All posts share the same dark background, teal accents, amber CTAs, and thin-line icon style. This builds visual brand recognition within 2-3 posts.
-2. **Pattern breaks:** Every post has one "teal background" slide (clinical pearl, summary, or quick reference) to create visual rhythm and prevent scroll fatigue.
-3. **Typography hierarchy:** Title = 48-56px bold white → Subtitle = 28-32px teal → Body = 22-26px white regular → Pro tips = 18-20px amber italic.
-4. **Accessibility:** All text should have sufficient contrast (white on `#0F172A` passes WCAG AAA; teal on dark passes AA; amber on dark passes AA).
-5. **OptoLib watermark:** Subtle, bottom-right, ~15% opacity, on every slide except the CTA slide (where the logo appears prominently at the bottom).
-6. **Swipe indicators:** Every non-final slide should have a subtle "Swipe →" or "→" cue at the bottom.
-7. **Image placeholders:** For Post 4 (Retinal Conditions), use labeled fundus photo illustrations or licensed medical images. Never use patient photos without consent. Prefer schematic/illustrated style to match the brand's clean aesthetic.
+| Element | Value |
+|---------|-------|
+| Primary | Teal `#0D9488` |
+| Background | Dark `#0F172A` |
+| Text | White `#FFFFFF` |
+| Secondary Text | Light gray `#94A3B8` |
+| CTA / Accent | Amber `#F59E0B` |
+| Font (Headlines) | Bold, sans-serif (Inter/Poppins) |
+| Font (Body) | Regular, sans-serif (Inter) |
+| Corner Radius | 12-16px for cards, 24px for buttons |
+| Icon Style | Line icons, teal stroke |
 
 ---
 
-*Document prepared for OptoLib Instagram Content Strategy — Posts 1 through 5 (Educational Carousels)*
-*All content is original and tailored for the optometry community in India and globally.*
+*End of Posts 1–5 content document.*
