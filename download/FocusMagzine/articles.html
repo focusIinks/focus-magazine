@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles — Focus Magazine</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo"><span class="logo-focus">FOCUS</span><span class="logo-mag">MAGAZINE</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="articles.html" class="active">Articles</a></li>
+                <li><a href="index.html#categories">Categories</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html#newsletter">Subscribe</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="search-btn" id="searchBtn" aria-label="Search">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                </button>
+                <button class="dark-toggle" id="darkToggle" aria-label="Toggle dark mode">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search overlay (same structure) -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <button class="search-close" id="searchClose">&times;</button>
+            <h2>Search Articles</h2>
+            <div class="search-input-wrap">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <input type="text" id="searchInput" placeholder="Search for topics, authors, keywords..." autocomplete="off">
+            </div>
+            <div class="search-results" id="searchResults"></div>
+        </div>
+    </div>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-inner">
+                <span class="hero-badge" style="border-color: var(--border);">Archive</span>
+                <h1 class="page-header-title">All Articles</h1>
+                <p class="page-header-desc">Browse our complete collection of clinical reviews, research summaries, case studies, and practice management insights.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FILTER BAR -->
+    <section class="filter-bar">
+        <div class="container">
+            <div class="filter-pills" id="filterPills">
+                <button class="filter-pill active" data-filter="all">All</button>
+                <button class="filter-pill" data-filter="clinical">Clinical</button>
+                <button class="filter-pill" data-filter="contact-lens">Contact Lenses</button>
+                <button class="filter-pill" data-filter="glaucoma">Glaucoma</button>
+                <button class="filter-pill" data-filter="myopia">Myopia</button>
+                <button class="filter-pill" data-filter="pediatric">Pediatric</button>
+                <button class="filter-pill" data-filter="neuro">Neuro</button>
+                <button class="filter-pill" data-filter="practice">Practice</button>
+                <button class="filter-pill" data-filter="tech">Technology</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ARTICLES LIST -->
+    <section class="section">
+        <div class="container">
+            <div class="articles-list" id="articlesList">
+
+                <article class="list-card reveal" data-cat="clinical">
+                    <div class="list-date"><span class="list-day">18</span><span class="list-month">Jul</span></div>
+                    <div class="list-body">
+                        <span class="pick-category">Clinical Practice</span>
+                        <h3><a href="#">Integrating AI-Assisted OCT Analysis into Routine Optometric Practice</a></h3>
+                        <p>How machine learning algorithms are transforming retinal disease screening in primary eye care settings across India and Southeast Asia. A practical implementation guide with workflow integration strategies.</p>
+                        <div class="article-meta"><span>Dr. Ravi Sundaram</span><span class="meta-sep">&bull;</span><span>8 min read</span><span class="meta-sep">&bull;</span><span>AI, OCT, Primary Care</span></div>
+                    </div>
+                </article>
+
+                <article class="list-card reveal" data-cat="myopia">
+                    <div class="list-date"><span class="list-day">15</span><span class="list-month">Jul</span></div>
+                    <div class="list-body">
+                        <span class="pick-category">Myopia Management</span>
+                        <h3><a href="#">Low-Dose Atropine 0.01%: 5-Year Outcomes from the LAMP Study Extension</a></h3>
+                        <p>Extended follow-up data from 384 children showing sustained myopia control with minimal side effects. Comparison of 0.01%, 0.025%, and 0.05% concentrations.</p>
+                        <div class="article-meta"><span>Dr. Priya Menon</span><span class="meta-sep">&bull;</span><span>6 min read</span><span class="meta-sep">&bull;</span><span>Atropine, Myopia Control</span></div>
+                    </div>
+                </article>
+
+                <article class="list-card reveal" data-cat="tech">
+                    <div class="list-date"><span class="list-day">12</span><span class="list-month">Jul</span></div>
+                    <div class="list-body">
+                        <span class="pick-category">Technology</span>
+                        <h3><a href="#">Smart Contact Lenses: From Glucose Monitoring to IOP Sensing</a></h3>
+                        <p>Review of emerging smart CL platforms including sensor-embedded lenses for continuous IOP monitoring, glucose detection, and drug delivery applications currently in clinical trials.</p>
+                        <div class="article-meta"><span>Dr. James Chen</span><span class="meta-sep">&bull;</span><span>10 min read</span><span class="meta-sep">&bull;</span><span>Smart CL, Sensors, Drug Delivery</span></div>
+                    </div>
+                </article>
+
+                <article class="list-card reveal" data-cat="glaucoma">
+                    <div class="list-date"><span class="list-day">09</span><span class="list-month">Jul</span></div>
+                    <div class="list-body">
+                        <span class="pick-category">Glaucoma</span>
+                        <h3><a href="#">MIGS Evolution: Comparing iStent Inject, Hydrus, and Xen for Mild-to-Moderate POAG</a></h3>
+                        <p>A comprehensive review of minimally invasive glaucoma surgery outcomes, patient selection criteria, and long-term IOP reduction data from 15 peer-reviewed studies.</p>
+                        <div class="article-meta"><span>Dr. Suresh Nair</span><span class="meta-sep">&bull;</span><span>15 min read</span><span class="meta-sep">&bull;</span><span>MIGS, iStent, Hydrus, Xen</span></div>
+                    </div>
+                </article>
+
+                <article class="list-card reveal" data-cat="contact-lens">
+                    <div class="list-date"><span class="list-day">06</span><span class="list-month">Jul</span></div>
+                    <div class="list-body">
+                        <span class="pick-category">Contact Lenses</span>
+                        <h3><a href="#">Scleral Lens Fitting for Irregular Corneas: A Step-by-Step Clinical Guide</a></h3>
+                        <p>From initial assessment to vault optimization, a practical guide for fitting advanced scleral lens designs in keratoconus, post-PKP, and post-RK patients.</p>
+                        <div class="article-meta"><span>Dr. Meera Joshi</span><span class="meta-sep">&bull;</span><span>11 min read</span><span class="meta-sep">&bull;</span><span>Scleral Lens, Keratoconus</span></div>
+                    </div>
+                </article>
+
+                <article class="list-card reveal" data-cat="pediatric">
+                    <div class="list-date"><span class="list-day">03</span><span class="list-month">Jul</span></div>
+                    <div class="list-body">
+                        <span class="pick-category">Pediatric Optometry</span>
+                        <h3><a href="#">Amblyopia Management in 2026: Beyond Patching — Binocular Dichoptic Treatment</a></h3>
+                        <p>New evidence supports binocular treatment approaches that may achieve faster VA improvement than traditional occlusion in children aged 4-12 years.</p>
+                        <div class="article-meta"><span>Dr. Kavitha Rajan</span><span class="meta-sep">&bull;</span><span>9 min read</span><span class="meta-sep">&bull;</span><span>Amblyopia, Dichoptic, VT</span></div>
+                    </div>
+                </article>
+
+                <article class="list-card reveal" data-cat="neuro">
+                    <div class="list-date"><span class="list-day">28</span><span class="list-month">Jun</span></div>
+                    <div class="list-body">
+                        <span class="pick-category">Neuro-Optometry</span>
+                        <h3><a href="#">Post-Concussion Vision Syndrome: Assessment and Vision Therapy Protocols</a></h3>
+                        <p>Convergence insufficiency, saccadic dysfunction, and accommodative deficits after TBI — evidence-based vision therapy rehabilitation programs for athletes and military personnel.</p>
+                        <div class="article-meta"><span>Dr. Arun Patel</span><span class="meta-sep">&bull;</span><span>13 min read</span><span class="meta-sep">&bull;</span><span>TBI, Concussion, VT</span></div>
+                    </div>
+                </article>
+
+                <article class="list-card reveal" data-cat="practice">
+                    <div class="list-date"><span class="list-day">25</span><span class="list-month">Jun</span></div>
+                    <div class="list-body">
+                        <span class="pick-category">Practice Management</span>
+                        <h3><a href="#">Building a Profitable Myopia Control Clinic: Revenue Models and Patient Flow</a></h3>
+                        <p>From equipment investment to insurance billing — practical business strategies for integrating myopia management services into your existing optometric practice.</p>
+                        <div class="article-meta"><span>Dr. Neha Gupta</span><span class="meta-sep">&bull;</span><span>10 min read</span><span class="meta-sep">&bull;</span><span>Business, Revenue, Myopia Clinic</span></div>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Load More -->
+            <div class="load-more-wrap">
+                <button class="hero-cta" id="loadMore" style="background: var(--bg-card); color: var(--text-primary); border: 1px solid var(--border);">Load More Articles</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as index) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo"><span class="logo-focus">FOCUS</span><span class="logo-mag">MAGAZINE</span></a>
+                    <p>The leading digital publication for optometry professionals. Clinical excellence, practice innovation, and career growth.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Twitter"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                        <a href="#" aria-label="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+                        <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+                    </div>
+                </div>
+                <div class="footer-links"><h4>Categories</h4><ul><li><a href="#">Clinical Refraction</a></li><li><a href="#">Contact Lenses</a></li><li><a href="#">Glaucoma</a></li><li><a href="#">Myopia Management</a></li><li><a href="#">Neuro-Ophthalmology</a></li><li><a href="#">Pediatric Optometry</a></li></ul></div>
+                <div class="footer-links"><h4>Magazine</h4><ul><li><a href="about.html">About Us</a></li><li><a href="#">Write for Us</a></li><li><a href="#">Advertise</a></li><li><a href="#">Past Issues</a></li><li><a href="#">Contact</a></li></ul></div>
+                <div class="footer-links"><h4>Resources</h4><ul><li><a href="#">CE Credits</a></li><li><a href="#">Clinical Calculators</a></li><li><a href="#">Drug Reference</a></li><li><a href="#">Webinars</a></li><li><a href="#">Podcast</a></li></ul></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 Focus Magazine. All rights reserved. Published by <strong>Focuslinks</strong>.</p><div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a></div></div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+    // Filter pills
+    document.querySelectorAll('.filter-pill').forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.querySelector('.filter-pill.active').classList.remove('active');
+            btn.classList.add('active');
+            const filter = btn.dataset.filter;
+            document.querySelectorAll('.list-card').forEach(card => {
+                card.style.display = (filter === 'all' || card.dataset.cat === filter) ? '' : 'none';
+            });
+        });
+    });
+    </script>
+</body>
+</html>

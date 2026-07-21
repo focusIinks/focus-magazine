@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About — Focus Magazine</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .page-header { padding: calc(var(--nav-height) + 80px) 0 60px; text-align: center; }
+        .page-header-inner { max-width: 640px; margin: 0 auto; }
+        .page-header-title { font-family: var(--font-display); font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 900; margin-bottom: 16px; }
+        .page-header-desc { color: var(--text-secondary); font-size: 1.1rem; line-height: 1.7; }
+
+        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; padding: 80px 0; }
+        .about-text h2 { font-family: var(--font-display); font-size: 1.75rem; margin-bottom: 20px; }
+        .about-text p { color: var(--text-secondary); line-height: 1.8; margin-bottom: 16px; font-size: 1.05rem; }
+        .about-text blockquote {
+            border-left: 3px solid var(--accent); padding: 16px 24px; margin: 32px 0;
+            font-family: var(--font-display); font-style: italic; font-size: 1.25rem;
+            color: var(--text-primary); line-height: 1.6;
+        }
+
+        .about-sidebar { position: sticky; top: calc(var(--nav-height) + 32px); }
+        .about-card {
+            background: var(--bg-card); border: 1px solid var(--border-light);
+            border-radius: var(--radius); padding: 32px; margin-bottom: 24px;
+        }
+        .about-card h3 { font-family: var(--font-display); font-size: 1.25rem; margin-bottom: 20px; }
+        .about-card p { color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7; margin-bottom: 12px; }
+
+        .team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 20px; }
+        .team-member { text-align: center; }
+        .team-avatar {
+            width: 72px; height: 72px; border-radius: 50%; margin: 0 auto 12px;
+            background: var(--bg-secondary); display: flex; align-items: center; justify-content: center;
+            font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; color: var(--accent);
+            border: 2px solid var(--border);
+        }
+        .team-member h4 { font-size: 0.95rem; font-weight: 600; margin-bottom: 2px; }
+        .team-member span { font-size: 0.8rem; color: var(--text-muted); }
+
+        .values-list { display: flex; flex-direction: column; gap: 16px; }
+        .value-item { display: flex; gap: 14px; align-items: start; }
+        .value-icon {
+            width: 40px; height: 40px; border-radius: 8px; background: var(--accent-bg);
+            color: var(--accent); display: flex; align-items: center; justify-content: center;
+            flex-shrink: 0;
+        }
+        .value-item h4 { font-size: 0.95rem; font-weight: 600; margin-bottom: 2px; }
+        .value-item p { font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6; }
+
+        .cta-section { padding: 80px 0; background: var(--bg-secondary); text-align: center; }
+        .cta-section h2 { font-family: var(--font-display); font-size: 2rem; margin-bottom: 12px; }
+        .cta-section p { color: var(--text-secondary); margin-bottom: 32px; font-size: 1.05rem; }
+
+        @media (max-width: 768px) {
+            .about-grid { grid-template-columns: 1fr; gap: 40px; }
+            .about-sidebar { position: static; }
+            .team-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo"><span class="logo-focus">FOCUS</span><span class="logo-mag">MAGAZINE</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="index.html#categories">Categories</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="index.html#newsletter">Subscribe</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="dark-toggle" id="darkToggle" aria-label="Toggle dark mode">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-inner">
+                <span class="hero-badge" style="border-color: var(--border);">Est. 2021</span>
+                <h1 class="page-header-title">About <em>Focus</em></h1>
+                <p class="page-header-desc">The essential reading for optometrists who demand clinical depth, practice innovation, and career growth.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2>Our Mission</h2>
+                    <p>Focus Magazine was founded with a singular purpose: to elevate the standard of optometric education by delivering clinically rigorous, peer-reviewed content that optometrists can immediately apply in practice.</p>
+                    <p>We bridge the gap between academic research and day-to-day clinical practice. Every article is reviewed by practicing optometrists and ophthalmologists to ensure accuracy, relevance, and practical utility.</p>
+
+                    <blockquote>"In an era of information overload, Focus Magazine curates what matters most — the knowledge that directly improves patient outcomes."</blockquote>
+
+                    <h2>What Sets Us Apart</h2>
+                    <p>Unlike generic medical publications, Focus Magazine is built exclusively for the optometric profession. Our content spans the full scope of optometric practice — from refraction fundamentals to cutting-edge myopia control, from pediatric vision screening to neuro-ophthalmic emergencies.</p>
+                    <p>Each article is structured for the busy clinician: clear clinical takeaways, evidence levels cited, and practical implementation tips. We respect your time by ensuring every minute spent reading delivers real value.</p>
+                    <p>Published by <strong>Focuslinks</strong>, Focus Magazine serves as the knowledge hub for the innovative lab of optometry — connecting 47,000+ optometrists across 40+ countries with the latest advancements in eye care.</p>
+                </div>
+
+                <div class="about-sidebar">
+                    <div class="about-card reveal">
+                        <h3>Editorial Board</h3>
+                        <div class="team-grid">
+                            <div class="team-member">
+                                <div class="team-avatar">AS</div>
+                                <h4>Dr. Ananya Sharma</h4>
+                                <span>Editor-in-Chief</span>
+                            </div>
+                            <div class="team-member">
+                                <div class="team-avatar">RS</div>
+                                <h4>Dr. Ravi Sundaram</h4>
+                                <span>Clinical Editor</span>
+                            </div>
+                            <div class="team-member">
+                                <div class="team-avatar">PM</div>
+                                <h4>Dr. Priya Menon</h4>
+                                <span>Myopia Editor</span>
+                            </div>
+                            <div class="team-member">
+                                <div class="team-avatar">SN</div>
+                                <h4>Dr. Suresh Nair</h4>
+                                <span>Glaucoma Editor</span>
+                            </div>
+                            <div class="team-member">
+                                <div class="team-avatar">MJ</div>
+                                <h4>Dr. Meera Joshi</h4>
+                                <span>CL Section Editor</span>
+                            </div>
+                            <div class="team-member">
+                                <div class="team-avatar">AP</div>
+                                <h4>Dr. Arun Patel</h4>
+                                <span>Neuro Editor</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-card reveal">
+                        <h3>Our Values</h3>
+                        <div class="values-list">
+                            <div class="value-item">
+                                <div class="value-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                                </div>
+                                <div>
+                                    <h4>Evidence-Based</h4>
+                                    <p>Every claim backed by peer-reviewed research with cited evidence levels.</p>
+                                </div>
+                            </div>
+                            <div class="value-item">
+                                <div class="value-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                                </div>
+                                <div>
+                                    <h4>Clinician-First</h4>
+                                    <p>Written by optometrists, for optometrists. Practical over theoretical.</p>
+                                </div>
+                            </div>
+                            <div class="value-item">
+                                <div class="value-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                                </div>
+                                <div>
+                                    <h4>Global Perspective</h4>
+                                    <p>Covering innovations from India, US, UK, Australia, Japan, and beyond.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-card reveal" style="background: var(--accent-bg); border-color: var(--accent);">
+                        <h3 style="color: var(--accent);">Write for Us</h3>
+                        <p>We welcome submissions from optometrists, ophthalmologists, and researchers. Share your clinical expertise with our global audience.</p>
+                        <a href="#" class="hero-cta" style="display: inline-flex; margin-top: 12px; padding: 12px 24px; font-size: 0.85rem;">Submit an Article</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Join the Focus Community</h2>
+            <p>Get weekly curated optometry insights delivered to your inbox.</p>
+            <a href="index.html#newsletter" class="hero-cta">Subscribe Free</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom" style="border-top: none;">
+                <p>&copy; 2026 Focus Magazine. All rights reserved. Published by <strong>Focuslinks</strong>.</p>
+                <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
