@@ -2,6 +2,8 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: "export",
+  basePath: "/focus-magazine",
+  assetPrefix: "/focus-magazine/",
   images: {
     unoptimized: true,
   },
