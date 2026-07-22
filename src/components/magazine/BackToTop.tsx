@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { useEffect, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowUp } from 'lucide-react';
+import { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { ArrowUp } from "lucide-react";
 
 export default function BackToTop() {
   const [visible, setVisible] = useState(false);
@@ -12,12 +12,12 @@ export default function BackToTop() {
       setVisible(window.scrollY > 400);
     };
 
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
@@ -25,19 +25,18 @@ export default function BackToTop() {
       {visible && (
         <motion.div
           className="fixed bottom-6 right-6 z-40"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.2 }}
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          exit={{ opacity: 0, scale: 0.8 }}
+          transition={{ duration: 0.25 }}
         >
-          <motion.button
+          <button
             onClick={scrollToTop}
-            whileHover={{ scale: 1.1 }}
-            className="w-11 h-11 rounded-full bg-primary text-primary-foreground shadow-lg hover:shadow-xl flex items-center justify-center cursor-pointer"
+            className="w-10 h-10 rounded-full border border-border bg-background/80 backdrop-blur-sm flex items-center justify-center text-primary hover:text-primary-foreground hover:bg-primary transition-colors duration-200 cursor-pointer"
             aria-label="Back to top"
           >
-            <ArrowUp className="w-5 h-5" />
-          </motion.button>
+            <ArrowUp className="w-4 h-4" />
+          </button>
         </motion.div>
       )}
     </AnimatePresence>

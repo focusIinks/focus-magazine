@@ -35,24 +35,77 @@ export default function HomePage() {
     <div className="min-h-screen flex flex-col">
       <ReadingProgress />
       <Navbar onSearchOpen={() => setSearchOpen(true)} />
+
       <main className="flex-1">
-        <HeroSection onArticleOpen={openArticle} />
+        <div id="home">
+          <HeroSection onArticleOpen={openArticle} />
+        </div>
+
         <BreakingNewsTicker />
+
         <FeaturedArticles onArticleOpen={openArticle} />
-        <MasonryGrid onArticleOpen={openArticle} />
+
+        <div className="magazine-rule max-w-7xl mx-auto" />
+
         <EditorialBanner />
+
+        <div className="magazine-rule max-w-7xl mx-auto" />
+
+        <div id="articles">
+          <MasonryGrid onArticleOpen={openArticle} />
+        </div>
+
+        <div className="magazine-rule max-w-7xl mx-auto" />
+
         <IssueCover onArticleOpen={openArticle} />
-        <PopularThisWeek onArticleOpen={openArticle} />
-        <EditorsPicks onArticleOpen={openArticle} />
+
         <PullQuote />
+
+        <div className="magazine-rule max-w-7xl mx-auto" />
+
+        <PopularThisWeek onArticleOpen={openArticle} />
+
+        <div className="magazine-rule max-w-7xl mx-auto" />
+
+        <EditorsPicks onArticleOpen={openArticle} />
+
+        <div className="magazine-rule max-w-7xl mx-auto" />
+
         <LatestArticles onArticleOpen={openArticle} />
-        <CategorySection />
+
+        <div className="magazine-rule max-w-7xl mx-auto" />
+
+        <div id="categories">
+          <CategorySection />
+        </div>
+
+        <div className="magazine-rule max-w-7xl mx-auto" />
+
         <AuthorSpotlight onArticleOpen={openArticle} />
+
+        <div className="magazine-rule max-w-7xl mx-auto" />
+
         <TestimonialsSection />
-        <AboutSection />
-        <NewsletterSection />
-        <ContactSection />
+
+        <div className="magazine-rule max-w-7xl mx-auto" />
+
+        <div id="about">
+          <AboutSection />
+        </div>
+
+        <div className="magazine-rule max-w-7xl mx-auto" />
+
+        <div id="newsletter">
+          <NewsletterSection />
+        </div>
+
+        <div className="magazine-rule max-w-7xl mx-auto" />
+
+        <div id="contact">
+          <ContactSection />
+        </div>
       </main>
+
       <Footer />
       <BackToTop />
 

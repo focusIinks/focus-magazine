@@ -4,7 +4,6 @@ import { useState, useRef, useCallback, useEffect, useMemo } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { Progress } from "@/components/ui/progress";
 import {
   Dialog,
   DialogContent,
@@ -25,7 +24,6 @@ import {
 } from "@/components/ui/dropdown-menu";
 import {
   Clock,
-  Eye,
   Share2,
   X,
   Link2,
@@ -35,6 +33,7 @@ import {
 import { articles, type Article } from "@/lib/magazine-data";
 import { useMediaQuery } from "@reactuses/core";
 import { toast } from "sonner";
+import { motion, AnimatePresence } from "framer-motion";
 
 interface ArticleModalProps {
   articleId: string | null;
@@ -48,34 +47,26 @@ function truncateToWords(text: string, maxWords: number): string {
   return result.length < text.length ? result + "…" : result;
 }
 
-function generateTags(article: Article): string[] {
-  const tags: string[] = [];
-  // Add category-based tag
-  if (article.category) {
-    tags.push(article.category.toLowerCase().replace(/\s+/g, "-"));
+function DropCapParagraph({ children, index }: { children: string; index: number }) {
+  if (index !== 0) {
+    return (
+      <p className="text-editorial text-foreground/85 leading-[1.85] mb-6 text-[17px]">
+        {children}
+      </p>
+    );
   }
-  // Extract keywords from title (filter out common words)
-  const stopWords = new Set([
-    "a", "an", "the", "and", "or", "but", "in", "on", "at", "to", "for",
-    "of", "with", "by", "is", "are", "was", "were", "be", "been", "being",
-    "have", "has", "had", "do", "does", "did", "will", "would", "could",
-    "should", "may", "might", "shall", "can", "how", "what", "which", "who",
-    "this", "that", "these", "those", "from", "into", "through", "during",
-    "before", "after", "above", "below", "between", "under", "again",
-    "further", "then", "once", "here", "there", "when", "where", "why",
-    "all", "each", "every", "both", "few", "more", "most", "other", "some",
-    "such", "no", "not", "only", "own", "same", "so", "than", "too", "very",
-    "just", "about", "new", "your", "our", "their", "its", "the", "in",
-  ]);
-  const titleWords = article.title
-    .replace(/[^a-zA-Z\s]/g, "")
-    .split(/\s+/)
-    .filter((w) => w.length > 2 && !stopWords.has(w.toLowerCase()))
-    .slice(0, 3);
-  tags.push(...titleWords.map((w) => w.toLowerCase()));
 
-  // Deduplicate and limit to 4
-  return [...new Set(tags)].slice(0, 4);
+  const firstChar = children.charAt(0);
+  const rest = children.slice(1);
+
+  return (
+    <p className="text-editorial text-foreground/85 leading-[1.85] mb-6 text-[17px]">
+      <span className="float-left text-[4.5em] leading-[0.8] mr-[0.08em] mt-[0.05em] font-bold text-foreground/90 font-editorial">
+        {firstChar}
+      </span>
+      {rest}
+    </p>
+  );
 }
 
 export function ArticleModal({
@@ -87,7 +78,6 @@ export function ArticleModal({
   const article = articles.find((a) => a.id === articleId);
   const contentRef = useRef<HTMLDivElement>(null);
   const [activeParagraph, setActiveParagraph] = useState(0);
-  const [scrollProgress, setScrollProgress] = useState(0);
 
   const related = article
     ? articles
@@ -109,20 +99,12 @@ export function ArticleModal({
     [paragraphs]
   );
 
-  const tags = useMemo(
-    () => (article ? generateTags(article) : []),
-    [article]
-  );
+  // Use article.tags if available, otherwise empty
+  const tags: string[] = (article as any)?.tags ?? [];
 
   const handleScroll = useCallback(() => {
     if (!contentRef.current) return;
     const el = contentRef.current;
-    const scrollTop = el.scrollTop;
-    const scrollHeight = el.scrollHeight - el.clientHeight;
-    const progress = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
-    setScrollProgress(Math.min(progress, 100));
-
-    // Determine active paragraph based on scroll position
     const pElements = el.querySelectorAll("[data-paragraph-index]");
     let active = 0;
     pElements.forEach((elem) => {
@@ -160,385 +142,360 @@ export function ArticleModal({
     window.open(url, "_blank");
   };
 
-  // Reset state when article changes or modal opens
   useEffect(() => {
-    setScrollProgress(0);
     setActiveParagraph(0);
   }, [articleId, open]);
 
   if (!article) return null;
 
-  const content = (
-    <>
-      {/* Header Image */}
-      <div
-        className={`h-48 md:h-64 bg-gradient-to-br ${article.imageGradient} relative`}
-      >
-        <div className="absolute inset-0 bg-black/10" />
+  const imageUrl = (article as any).imageUrl as string | undefined;
+  const imageCaption = (article as any).imageCaption as string | undefined;
 
-        {/* Prominent close button with backdrop blur */}
-        <button
-          onClick={onClose}
-          className="absolute top-4 right-4 w-10 h-10 rounded-full bg-black/30 backdrop-blur-md text-white hover:bg-black/50 flex items-center justify-center transition-all duration-200 z-10 hover:scale-105 shadow-lg"
-          aria-label="Close"
-        >
-          <X className="w-5 h-5" />
-        </button>
-      </div>
-
-      {/* Reading progress indicator */}
-      <div className="sticky top-0 z-20 bg-background/95 backdrop-blur-sm border-b border-border/50 px-4">
-        <Progress value={scrollProgress} className="h-1 rounded-none" />
-      </div>
-
-      <div className="flex">
-        {/* Table of Contents sidebar - desktop only */}
-        <nav className="hidden md:block w-56 shrink-0 border-r border-border/50 sticky top-8 self-start max-h-[calc(90vh-4rem)] overflow-y-auto p-4 pl-6">
-          <p className="text-[11px] font-bold text-muted-foreground uppercase tracking-wider mb-3">
-            Table of Contents
-          </p>
-          <div className="space-y-1">
-            {tocItems.map((item, i) => (
-              <button
-                key={i}
-                onClick={() => scrollToParagraph(i)}
-                className={`block w-full text-left text-xs leading-relaxed py-1.5 px-2 rounded transition-colors ${
-                  activeParagraph === i
-                    ? "text-primary font-medium border-l-2 border-primary bg-primary/5 pl-[6px]"
-                    : "text-muted-foreground hover:text-foreground hover:bg-accent/50"
-                }`}
-              >
-                {item}
-              </button>
-            ))}
-          </div>
-        </nav>
-
-        {/* Article Content */}
+  // ─── Shared: Header Image ───
+  const ArticleHeroImage = () => (
+    <div className="relative w-full">
+      {imageUrl ? (
+        <img
+          src={imageUrl}
+          alt={article.title}
+          className="w-full h-64 md:h-80 lg:h-96 object-cover"
+        />
+      ) : (
         <div
-          ref={contentRef}
-          onScroll={handleScroll}
-          className="flex-1 overflow-y-auto max-h-[calc(90vh-5rem)] p-6 md:p-8"
-        >
-          <div className="max-w-3xl mx-auto">
-            <Badge variant="secondary" className="mb-4">
-              {article.category}
-            </Badge>
-
-            <h1 className="text-2xl md:text-3xl font-bold leading-tight mb-4">
-              {article.title}
-            </h1>
-
-            <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground mb-6">
-              <div className="flex items-center gap-2">
-                <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-xs font-bold text-primary">
-                  {article.author.initials}
-                </div>
-                <div>
-                  <p className="font-medium text-foreground text-sm">
-                    {article.author.name}
-                  </p>
-                  <p className="text-xs">{article.author.specialty}</p>
-                </div>
-              </div>
-              <Separator
-                orientation="vertical"
-                className="h-8 hidden sm:block"
-              />
-              <div className="flex items-center gap-4">
-                <span>{article.date}</span>
-                <div className="flex items-center gap-1">
-                  <Clock className="w-3.5 h-3.5" />
-                  <span>{article.readTime}</span>
-                </div>
-                <div className="flex items-center gap-1">
-                  <Eye className="w-3.5 h-3.5" />
-                  <span>{article.views.toLocaleString()} views</span>
-                </div>
-              </div>
-            </div>
-
-            <Separator className="mb-8" />
-
-            {/* Article Content paragraphs */}
-            <div className="prose prose-sm md:prose-base max-w-none">
-              {paragraphs.map((p, i) => (
-                <p
-                  key={i}
-                  data-paragraph-index={i}
-                  className="text-foreground/85 leading-relaxed mb-5 text-sm md:text-base scroll-mt-8"
-                >
-                  {p}
-                </p>
-              ))}
-            </div>
-
-            {/* Tags */}
-            {tags.length > 0 && (
-              <div className="flex flex-wrap items-center gap-2 mt-8 pt-6 border-t border-border">
-                <span className="text-xs font-semibold text-muted-foreground mr-1">
-                  Tags:
-                </span>
-                {tags.map((tag) => (
-                  <Badge
-                    key={tag}
-                    variant="secondary"
-                    className="text-[11px] font-normal"
-                  >
-                    {tag}
-                  </Badge>
-                ))}
-              </div>
-            )}
-
-            {/* Share dropdown */}
-            <div className="flex items-center gap-3 mt-6 pt-6 border-t border-border">
-              <Share2 className="w-4 h-4 text-muted-foreground" />
-              <span className="text-sm text-muted-foreground">
-                Share this article
-              </span>
-              <div className="ml-auto">
-                <DropdownMenu>
-                  <DropdownMenuTrigger asChild>
-                    <Button
-                      variant="outline"
-                      size="sm"
-                      className="text-xs gap-1.5"
-                    >
-                      <Share2 className="w-3.5 h-3.5" />
-                      Share
-                    </Button>
-                  </DropdownMenuTrigger>
-                  <DropdownMenuContent align="end">
-                    <DropdownMenuItem onClick={handleCopyLink}>
-                      <Link2 className="w-4 h-4 mr-2" />
-                      Copy Link
-                    </DropdownMenuItem>
-                    <DropdownMenuItem onClick={handleShareTwitter}>
-                      <Twitter className="w-4 h-4 mr-2" />
-                      Twitter
-                    </DropdownMenuItem>
-                    <DropdownMenuItem onClick={handleShareLinkedIn}>
-                      <Linkedin className="w-4 h-4 mr-2" />
-                      LinkedIn
-                    </DropdownMenuItem>
-                  </DropdownMenuContent>
-                </DropdownMenu>
-              </div>
-            </div>
-
-            {/* Related */}
-            {related.length > 0 && (
-              <div className="mt-10 pt-8 border-t border-border">
-                <h3 className="font-bold text-lg mb-4">Related Articles</h3>
-                <div className="space-y-3">
-                  {related.map((r) => (
-                    <div
-                      key={r.id}
-                      className="flex gap-4 p-3 rounded-lg hover:bg-accent cursor-pointer transition-colors"
-                    >
-                      <div
-                        className={`w-16 h-16 rounded-lg bg-gradient-to-br ${r.imageGradient} shrink-0`}
-                      />
-                      <div>
-                        <p className="font-medium text-sm leading-snug">
-                          {r.title}
-                        </p>
-                        <p className="text-xs text-muted-foreground mt-1">
-                          {r.author.name} &middot; {r.readTime}
-                        </p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
-          </div>
-        </div>
-      </div>
-    </>
+          className={`w-full h-64 md:h-80 lg:h-96 bg-gradient-to-br ${article.imageGradient}`}
+        />
+      )}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-black/10" />
+      <button
+        onClick={onClose}
+        className="absolute top-4 right-4 w-10 h-10 rounded-full bg-black/30 backdrop-blur-md text-white hover:bg-black/50 flex items-center justify-center transition-all duration-200 z-10 hover:scale-105 shadow-lg"
+        aria-label="Close"
+      >
+        <X className="w-5 h-5" />
+      </button>
+      {imageCaption && (
+        <p className="absolute bottom-3 right-4 text-[11px] text-white/70 italic max-w-xs text-right">
+          {imageCaption}
+        </p>
+      )}
+    </div>
   );
 
+  // ─── Shared: Byline ───
+  const ArticleByline = () => (
+    <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-muted-foreground mb-2">
+      <div className="flex items-center gap-3">
+        <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-sm font-bold text-primary shrink-0">
+          {article.author.initials}
+        </div>
+        <div>
+          <p className="font-semibold text-foreground text-sm leading-tight">
+            {article.author.name}
+          </p>
+          <p className="text-xs text-muted-foreground leading-tight mt-0.5">
+            {article.author.specialty}
+          </p>
+        </div>
+      </div>
+      <Separator orientation="vertical" className="h-8 hidden sm:block" />
+      <div className="flex items-center gap-4 text-xs">
+        <span>{article.date}</span>
+        <div className="flex items-center gap-1">
+          <Clock className="w-3 h-3" />
+          <span>{article.readTime}</span>
+        </div>
+      </div>
+    </div>
+  );
+
+  // ─── Shared: Article Body ───
+  const ArticleBody = ({ showTOCMarker = true }: { showTOCMarker?: boolean }) => (
+    <div>
+      {paragraphs.map((p, i) => (
+        <div key={i} data-paragraph-index={showTOCMarker ? i : undefined}>
+          <DropCapParagraph index={i}>{p}</DropCapParagraph>
+        </div>
+      ))}
+    </div>
+  );
+
+  // ─── Shared: Share Bar ───
+  const ShareBar = () => (
+    <div className="flex items-center gap-3 pt-6 border-t border-border/60">
+      <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+        Share
+      </span>
+      <DropdownMenu>
+        <DropdownMenuTrigger asChild>
+          <Button variant="ghost" size="sm" className="text-xs gap-1.5 h-8 px-3">
+            <Share2 className="w-3.5 h-3.5" />
+            Options
+          </Button>
+        </DropdownMenuTrigger>
+        <DropdownMenuContent align="end">
+          <DropdownMenuItem onClick={handleCopyLink}>
+            <Link2 className="w-4 h-4 mr-2" />
+            Copy Link
+          </DropdownMenuItem>
+          <DropdownMenuItem onClick={handleShareTwitter}>
+            <Twitter className="w-4 h-4 mr-2" />
+            Twitter / X
+          </DropdownMenuItem>
+          <DropdownMenuItem onClick={handleShareLinkedIn}>
+            <Linkedin className="w-4 h-4 mr-2" />
+            LinkedIn
+          </DropdownMenuItem>
+        </DropdownMenuContent>
+      </DropdownMenu>
+      {/* Quick-share icon buttons */}
+      <div className="flex items-center gap-1 ml-auto">
+        <Button
+          variant="ghost"
+          size="icon"
+          className="w-8 h-8"
+          onClick={handleCopyLink}
+          aria-label="Copy link"
+        >
+          <Link2 className="w-4 h-4" />
+        </Button>
+        <Button
+          variant="ghost"
+          size="icon"
+          className="w-8 h-8"
+          onClick={handleShareTwitter}
+          aria-label="Share on Twitter"
+        >
+          <Twitter className="w-4 h-4" />
+        </Button>
+        <Button
+          variant="ghost"
+          size="icon"
+          className="w-8 h-8"
+          onClick={handleShareLinkedIn}
+          aria-label="Share on LinkedIn"
+        >
+          <Linkedin className="w-4 h-4" />
+        </Button>
+      </div>
+    </div>
+  );
+
+  // ─── Shared: Related Articles ───
+  const RelatedArticles = () => {
+    if (related.length === 0) return null;
+    return (
+      <div className="mt-10 pt-8 border-t border-border/60">
+        <h3 className="font-bold text-lg mb-5 font-editorial">Related Articles</h3>
+        <div className="grid gap-4 sm:grid-cols-3">
+          {related.map((r) => (
+            <motion.div
+              key={r.id}
+              whileHover={{ y: -2 }}
+              className="group cursor-pointer rounded-xl overflow-hidden border border-border/50 hover:border-border transition-colors"
+            >
+              <div className="aspect-[16/9] overflow-hidden">
+                {(r as any).imageUrl ? (
+                  <img
+                    src={(r as any).imageUrl}
+                    alt={r.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                ) : (
+                  <div
+                    className={`w-full h-full bg-gradient-to-br ${r.imageGradient} group-hover:scale-105 transition-transform duration-500`}
+                  />
+                )}
+              </div>
+              <div className="p-3">
+                <p className="font-medium text-sm leading-snug line-clamp-2 group-hover:text-primary transition-colors">
+                  {r.title}
+                </p>
+                <p className="text-xs text-muted-foreground mt-1.5">
+                  {r.author.name} &middot; {r.readTime}
+                </p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    );
+  };
+
+  // ═══════════════════════════════════════════
+  //  MOBILE: Sheet from bottom, full-screen
+  // ═══════════════════════════════════════════
   if (isMobile) {
     return (
       <Sheet open={open} onOpenChange={(v) => !v && onClose()}>
         <SheetContent
           side="bottom"
-          className="max-h-[90vh] overflow-y-auto p-0 rounded-t-2xl"
+          className="h-screen max-h-screen p-0 rounded-t-2xl overflow-y-auto"
         >
           <SheetTitle className="sr-only">{article.title}</SheetTitle>
           <SheetDescription className="sr-only">
             Article by {article.author.name}
           </SheetDescription>
-          {/* Mobile: no TOC sidebar, simpler layout */}
-          <>
-            {/* Header Image */}
-            <div
-              className={`h-48 md:h-64 bg-gradient-to-br ${article.imageGradient} relative`}
-            >
-              <div className="absolute inset-0 bg-black/10" />
-              <button
-                onClick={onClose}
-                className="absolute top-4 right-4 w-10 h-10 rounded-full bg-black/30 backdrop-blur-md text-white hover:bg-black/50 flex items-center justify-center transition-all duration-200 z-10 hover:scale-105 shadow-lg"
-                aria-label="Close"
+          <AnimatePresence>
+            {open && (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.3 }}
+                className="flex flex-col min-h-full"
               >
-                <X className="w-5 h-5" />
-              </button>
-            </div>
+                <ArticleHeroImage />
 
-            {/* Reading progress indicator */}
-            <div className="sticky top-0 z-20 bg-background/95 backdrop-blur-sm border-b border-border/50 px-4">
-              <Progress value={scrollProgress} className="h-1 rounded-none" />
-            </div>
-
-            <div className="p-6 md:p-8 max-w-3xl mx-auto">
-              <Badge variant="secondary" className="mb-4">
-                {article.category}
-              </Badge>
-
-              <h1 className="text-2xl md:text-3xl font-bold leading-tight mb-4">
-                {article.title}
-              </h1>
-
-              <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground mb-6">
-                <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-xs font-bold text-primary">
-                    {article.author.initials}
-                  </div>
-                  <div>
-                    <p className="font-medium text-foreground text-sm">
-                      {article.author.name}
-                    </p>
-                    <p className="text-xs">{article.author.specialty}</p>
-                  </div>
-                </div>
-                <Separator
-                  orientation="vertical"
-                  className="h-8 hidden sm:block"
-                />
-                <div className="flex items-center gap-4">
-                  <span>{article.date}</span>
-                  <div className="flex items-center gap-1">
-                    <Clock className="w-3.5 h-3.5" />
-                    <span>{article.readTime}</span>
-                  </div>
-                  <div className="flex items-center gap-1">
-                    <Eye className="w-3.5 h-3.5" />
-                    <span>{article.views.toLocaleString()} views</span>
-                  </div>
-                </div>
-              </div>
-
-              <Separator className="mb-8" />
-
-              <div className="prose prose-sm md:prose-base max-w-none">
-                {paragraphs.map((p, i) => (
-                  <p
-                    key={i}
-                    className="text-foreground/85 leading-relaxed mb-5 text-sm md:text-base"
-                  >
-                    {p}
-                  </p>
-                ))}
-              </div>
-
-              {/* Tags */}
-              {tags.length > 0 && (
-                <div className="flex flex-wrap items-center gap-2 mt-8 pt-6 border-t border-border">
-                  <span className="text-xs font-semibold text-muted-foreground mr-1">
-                    Tags:
-                  </span>
-                  {tags.map((tag) => (
+                <div className="flex-1 px-6 pb-12">
+                  {/* Category badge + tags */}
+                  <div className="flex flex-wrap items-center gap-2 mt-6 mb-4">
                     <Badge
-                      key={tag}
                       variant="secondary"
-                      className="text-[11px] font-normal"
+                      className="text-[11px] font-semibold uppercase tracking-wider"
                     >
-                      {tag}
+                      {article.category}
                     </Badge>
-                  ))}
-                </div>
-              )}
-
-              {/* Share dropdown */}
-              <div className="flex items-center gap-3 mt-6 pt-6 border-t border-border">
-                <Share2 className="w-4 h-4 text-muted-foreground" />
-                <span className="text-sm text-muted-foreground">
-                  Share this article
-                </span>
-                <div className="ml-auto">
-                  <DropdownMenu>
-                    <DropdownMenuTrigger asChild>
-                      <Button
-                        variant="outline"
-                        size="sm"
-                        className="text-xs gap-1.5"
+                    {tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="inline-flex items-center rounded-full border border-border/60 px-2.5 py-0.5 text-[10px] text-muted-foreground font-medium"
                       >
-                        <Share2 className="w-3.5 h-3.5" />
-                        Share
-                      </Button>
-                    </DropdownMenuTrigger>
-                    <DropdownMenuContent align="end">
-                      <DropdownMenuItem onClick={handleCopyLink}>
-                        <Link2 className="w-4 h-4 mr-2" />
-                        Copy Link
-                      </DropdownMenuItem>
-                      <DropdownMenuItem onClick={handleShareTwitter}>
-                        <Twitter className="w-4 h-4 mr-2" />
-                        Twitter
-                      </DropdownMenuItem>
-                      <DropdownMenuItem onClick={handleShareLinkedIn}>
-                        <Linkedin className="w-4 h-4 mr-2" />
-                        LinkedIn
-                      </DropdownMenuItem>
-                    </DropdownMenuContent>
-                  </DropdownMenu>
-                </div>
-              </div>
-
-              {/* Related */}
-              {related.length > 0 && (
-                <div className="mt-10 pt-8 border-t border-border">
-                  <h3 className="font-bold text-lg mb-4">
-                    Related Articles
-                  </h3>
-                  <div className="space-y-3">
-                    {related.map((r) => (
-                      <div
-                        key={r.id}
-                        className="flex gap-4 p-3 rounded-lg hover:bg-accent cursor-pointer transition-colors"
-                      >
-                        <div
-                          className={`w-16 h-16 rounded-lg bg-gradient-to-br ${r.imageGradient} shrink-0`}
-                        />
-                        <div>
-                          <p className="font-medium text-sm leading-snug">
-                            {r.title}
-                          </p>
-                          <p className="text-xs text-muted-foreground mt-1">
-                            {r.author.name} &middot; {r.readTime}
-                          </p>
-                        </div>
-                      </div>
+                        {tag}
+                      </span>
                     ))}
                   </div>
+
+                  {/* Title */}
+                  <h1 className="font-editorial text-3xl md:text-4xl font-bold leading-[1.15] tracking-tight mb-4">
+                    {article.title}
+                  </h1>
+
+                  {/* Byline */}
+                  <ArticleByline />
+
+                  {/* Magazine rule divider */}
+                  <div className="my-6 flex items-center gap-3">
+                    <div className="h-px flex-1 bg-border/80" />
+                    <div className="w-1.5 h-1.5 rounded-full bg-border" />
+                    <div className="h-px flex-1 bg-border/80" />
+                  </div>
+
+                  {/* Body */}
+                  <ArticleBody showTOCMarker={false} />
+
+                  {/* Share + Related */}
+                  <ShareBar />
+                  <RelatedArticles />
                 </div>
-              )}
-            </div>
-          </>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </SheetContent>
       </Sheet>
     );
   }
 
+  // ═══════════════════════════════════════════
+  //  DESKTOP: Dialog with sidebar TOC
+  // ═══════════════════════════════════════════
   return (
     <Dialog open={open} onOpenChange={(v) => !v && onClose()}>
-      <DialogContent className="max-w-5xl w-full max-h-[90vh] overflow-hidden p-0">
+      <DialogContent className="max-w-4xl w-full h-[90vh] p-0 overflow-hidden gap-0">
         <DialogTitle className="sr-only">{article.title}</DialogTitle>
         <DialogDescription className="sr-only">
           Article by {article.author.name}
         </DialogDescription>
-        {content}
+        <AnimatePresence>
+          {open && (
+            <motion.div
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 8 }}
+              transition={{ duration: 0.3, ease: "easeOut" }}
+              className="flex flex-col h-full"
+            >
+              {/* Hero image */}
+              <div className="shrink-0">
+                <ArticleHeroImage />
+              </div>
+
+              {/* Scrollable body area with sidebar */}
+              <div className="flex flex-1 overflow-hidden">
+                {/* Right sidebar: Table of Contents */}
+                <nav className="hidden lg:flex w-56 shrink-0 flex-col border-l border-border/40 bg-muted/20 p-5 pt-8">
+                  <p className="text-[10px] font-bold text-muted-foreground uppercase tracking-[0.15em] mb-4">
+                    Contents
+                  </p>
+                  <div className="flex-1 overflow-y-auto space-y-1 pr-1">
+                    {tocItems.map((item, i) => (
+                      <button
+                        key={i}
+                        onClick={() => scrollToParagraph(i)}
+                        className={`block w-full text-left text-[11px] leading-relaxed py-1.5 px-2.5 rounded-md transition-all duration-200 ${
+                          activeParagraph === i
+                            ? "text-foreground font-medium bg-primary/8 border-l-2 border-primary pl-2"
+                            : "text-muted-foreground hover:text-foreground hover:bg-accent/40"
+                        }`}
+                      >
+                        {item}
+                      </button>
+                    ))}
+                  </div>
+                </nav>
+
+                {/* Main content column */}
+                <div
+                  ref={contentRef}
+                  onScroll={handleScroll}
+                  className="flex-1 overflow-y-auto px-8 md:px-12 py-8"
+                >
+                  <div className="max-w-2xl mx-auto">
+                    {/* Category badge + tags as small pills */}
+                    <div className="flex flex-wrap items-center gap-2 mb-5">
+                      <Badge
+                        variant="secondary"
+                        className="text-[11px] font-semibold uppercase tracking-wider"
+                      >
+                        {article.category}
+                      </Badge>
+                      {tags.map((tag) => (
+                        <span
+                          key={tag}
+                          className="inline-flex items-center rounded-full border border-border/60 px-2.5 py-0.5 text-[10px] text-muted-foreground font-medium transition-colors hover:bg-accent/50 cursor-default"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+
+                    {/* Title */}
+                    <h1 className="font-editorial text-3xl md:text-4xl font-bold leading-[1.12] tracking-tight mb-5">
+                      {article.title}
+                    </h1>
+
+                    {/* Byline */}
+                    <ArticleByline />
+
+                    {/* Thin magazine-rule divider */}
+                    <div className="my-8 flex items-center gap-3">
+                      <div className="h-px flex-1 bg-border/80" />
+                      <div className="w-1.5 h-1.5 rounded-full bg-border" />
+                      <div className="h-px flex-1 bg-border/80" />
+                    </div>
+
+                    {/* Article body with drop cap */}
+                    <ArticleBody />
+
+                    {/* Share bar */}
+                    <ShareBar />
+
+                    {/* Related articles */}
+                    <RelatedArticles />
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </DialogContent>
     </Dialog>
   );

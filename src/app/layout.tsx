@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Playfair_Display, Source_Serif_4 } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 import { ThemeProvider } from "next-themes";
@@ -14,10 +14,22 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const playfairDisplay = Playfair_Display({
+  variable: "--font-editorial",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const sourceSerif = Source_Serif_4({
+  variable: "--font-body",
+  subsets: ["latin"],
+  display: "swap",
+});
+
 export const metadata: Metadata = {
-  title: "Focus Magazine — The Premier Publication for Optometrists",
+  title: "Focus Magazine — Where Vision Science Meets Clinical Excellence",
   description:
-    "Focus Magazine delivers the latest in optometry — clinical techniques, myopia management, contact lens innovations, glaucoma care, practice growth, and technology advances for eye care professionals.",
+    "Focus Magazine is the definitive independent publication for optometrists and vision scientists — delivering peer-reviewed clinical insights, cutting-edge myopia management strategies, advanced contact lens science, glaucoma breakthroughs, and actionable practice growth tactics to elevate patient care and professional development.",
   keywords: [
     "optometry",
     "optometrist",
@@ -33,9 +45,9 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Focus Magazine Editorial Team" }],
   openGraph: {
-    title: "Focus Magazine — The Premier Publication for Optometrists",
+    title: "Focus Magazine — Where Vision Science Meets Clinical Excellence",
     description:
-      "The latest in optometry research, clinical techniques, and practice management for eye care professionals.",
+      "The definitive independent publication for optometrists — peer-reviewed clinical insights, myopia management strategies, and practice growth for eye care professionals.",
     type: "website",
   },
 };
@@ -48,7 +60,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}
+        className={`${geistSans.variable} ${geistMono.variable} ${playfairDisplay.variable} ${sourceSerif.variable} antialiased bg-background text-foreground`}
       >
         <ThemeProvider
           attribute="class"

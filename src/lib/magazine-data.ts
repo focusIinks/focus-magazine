@@ -13,9 +13,12 @@ export interface Article {
   date: string;
   readTime: string;
   imageGradient: string;
+  imageUrl: string;
+  imageCaption: string;
   featured: boolean;
   content: string;
   views: number;
+  tags: string[];
 }
 
 export interface Category {
@@ -27,327 +30,762 @@ export interface Category {
 }
 
 export const authors: Author[] = [
-  { name: "Dr. Priya Sharma", specialty: "Clinical Optometry", initials: "PS" },
-  { name: "Dr. Rajesh Menon", specialty: "Cornea & Contact Lenses", initials: "RM" },
-  { name: "Dr. Ananya Gupta", specialty: "Pediatric Optometry", initials: "AG" },
-  { name: "Dr. Vikram Patel", specialty: "Glaucoma Specialist", initials: "VP" },
-  { name: "Dr. Meera Krishnan", specialty: "Low Vision Rehabilitation", initials: "MK" },
-  { name: "Dr. Arjun Desai", specialty: "Binocular Vision", initials: "AD" },
-  { name: "Dr. Sneha Reddy", specialty: "Ocular Pharmacology", initials: "SR" },
-  { name: "Dr. Karthik Iyer", specialty: "Practice Management", initials: "KI" },
-  { name: "Dr. Nisha Verma", specialty: "Neuro-Ophthalmology", initials: "NV" },
-  { name: "Dr. Rohan Fernandez", specialty: "Myopia Management", initials: "RF" },
-  { name: "Dr. Divya Nair", specialty: "Anterior Segment", initials: "DN" },
-  { name: "Dr. Amit Joshi", specialty: "Teleoptometry", initials: "AJ" },
-];
-
-export const categories: Category[] = [
-  { name: "Clinical Refraction", icon: "Eye", count: 28, description: "Advanced techniques in refraction and prescription management", color: "bg-teal-500/10 text-teal-700 dark:text-teal-400" },
-  { name: "Contact Lenses", icon: "Circle", count: 22, description: "Latest in contact lens materials, fitting, and management", color: "bg-emerald-500/10 text-emerald-700 dark:text-emerald-400" },
-  { name: "Myopia Management", icon: "TrendingUp", count: 19, description: "Strategies and breakthroughs in controlling myopia progression", color: "bg-cyan-500/10 text-cyan-700 dark:text-cyan-400" },
-  { name: "Glaucoma", icon: "Activity", count: 25, description: "Diagnosis, monitoring, and treatment of glaucoma", color: "bg-amber-500/10 text-amber-700 dark:text-amber-400" },
-  { name: "Pediatric Optometry", icon: "Baby", count: 16, description: "Children's vision care and developmental optometry", color: "bg-rose-500/10 text-rose-700 dark:text-rose-400" },
-  { name: "Ocular Pharmacology", icon: "Pill", count: 14, description: "Pharmacological advances in eye care therapeutics", color: "bg-violet-500/10 text-violet-700 dark:text-violet-400" },
-  { name: "Binocular Vision", icon: "Scan", count: 18, description: "Binocular vision disorders, vergence, and stereopsis", color: "bg-orange-500/10 text-orange-700 dark:text-orange-400" },
-  { name: "Low Vision", icon: "Accessibility", count: 12, description: "Rehabilitation and assistive technology for low vision patients", color: "bg-sky-500/10 text-sky-700 dark:text-sky-400" },
-  { name: "Practice Management", icon: "Briefcase", count: 21, description: "Business strategies, marketing, and practice growth", color: "bg-lime-500/10 text-lime-700 dark:text-lime-400" },
-  { name: "Technology", icon: "Cpu", count: 23, description: "Ophthalmic technology, imaging, and diagnostic innovations", color: "bg-fuchsia-500/10 text-fuchsia-700 dark:text-fuchsia-400" },
-  { name: "Teleoptometry", icon: "Monitor", count: 11, description: "Remote eye care delivery and digital health frameworks", color: "bg-indigo-500/10 text-indigo-700 dark:text-indigo-400" },
-  { name: "Anterior Segment", icon: "Aperture", count: 17, description: "Cornea, conjunctiva, and anterior chamber disorders", color: "bg-red-500/10 text-red-700 dark:text-red-400" },
-  { name: "Neuro-Ophthalmology", icon: "Brain", count: 13, description: "Visual pathway disorders and neuro-visual correlations", color: "bg-purple-500/10 text-purple-700 dark:text-purple-400" },
-  { name: "Public Health", icon: "Globe", count: 15, description: "Community eye health, epidemiology, and outreach programs", color: "bg-teal-500/10 text-teal-700 dark:text-teal-400" },
+  {
+    "name": "Dr. Priya Sharma",
+    "specialty": "Clinical Optometry",
+    "initials": "PS"
+  },
+  {
+    "name": "Dr. Rajesh Menon",
+    "specialty": "Cornea & Contact Lenses",
+    "initials": "RM"
+  },
+  {
+    "name": "Dr. Ananya Gupta",
+    "specialty": "Pediatric Optometry",
+    "initials": "AG"
+  },
+  {
+    "name": "Dr. Vikram Patel",
+    "specialty": "Glaucoma Specialist",
+    "initials": "VP"
+  },
+  {
+    "name": "Dr. Meera Krishnan",
+    "specialty": "Low Vision Rehabilitation",
+    "initials": "MK"
+  },
+  {
+    "name": "Dr. Arjun Desai",
+    "specialty": "Binocular Vision",
+    "initials": "AD"
+  },
+  {
+    "name": "Dr. Sneha Reddy",
+    "specialty": "Ocular Pharmacology",
+    "initials": "SR"
+  },
+  {
+    "name": "Dr. Karthik Iyer",
+    "specialty": "Practice Management",
+    "initials": "KI"
+  },
+  {
+    "name": "Dr. Nisha Verma",
+    "specialty": "Neuro-Ophthalmology",
+    "initials": "NV"
+  },
+  {
+    "name": "Dr. Rohan Fernandez",
+    "specialty": "Myopia Management",
+    "initials": "RF"
+  },
+  {
+    "name": "Dr. Divya Nair",
+    "specialty": "Anterior Segment",
+    "initials": "DN"
+  },
+  {
+    "name": "Dr. Amit Joshi",
+    "specialty": "Teleoptometry",
+    "initials": "AJ"
+  }
 ];
 
 export const articles: Article[] = [
   {
-    id: "myopia-control-beyond-atropine",
-    title: "Advances in Myopia Control: Beyond Atropine",
-    excerpt: "Exploring next-generation pharmaceutical and optical interventions that are reshaping how optometrists approach myopia progression management in clinical practice.",
-    category: "Myopia Management",
-    author: authors[9],
-    date: "Jul 18, 2026",
-    readTime: "8 min read",
-    imageGradient: "from-teal-600 to-cyan-700",
-    featured: true,
-    views: 12450,
-    content: `The landscape of myopia management has undergone a remarkable transformation over the past decade. While low-dose atropine (0.01%–0.05%) remains a cornerstone of pharmacological intervention, recent clinical trials have revealed that combination therapies and novel delivery systems may offer superior outcomes for children with rapidly progressing myopia. A landmark 2025 multi-center study published in Ophthalmology demonstrated that a sustained-release atropine punctal plug achieved comparable axial length control to daily eye drops while significantly improving patient compliance.\n\nOptical interventions have also evolved substantially beyond traditional orthokeratology and multifocal soft lenses. The latest generation of defocus incorporated multiple segment (DIMS) spectacle lenses now incorporates holographic optical elements that create a more uniform myopic defocus field across the peripheral retina. Clinical data from the Hong Kong Polytechnic University shows these lenses reduce myopia progression by 62% over two years compared to standard single-vision lenses, with the added benefit of zero contact lens-related complications.\n\nPerhaps the most exciting frontier lies in the intersection of technology and personalized medicine. Machine learning algorithms now analyze axial length growth curves, genetic markers, and environmental factors to predict individual progression rates with remarkable accuracy. This allows practitioners to tailor intervention intensity — reserving aggressive combination therapy for rapid progressors while maintaining less invasive approaches for stable patients. Several AI-powered platforms have received regulatory clearance in 2026, making personalized myopia management a practical reality for the first time.\n\nLooking ahead, several late-stage clinical trials are investigating novel therapeutic targets including retinal dopamine agonists, scleral cross-linking procedures, and even gene therapy approaches for familial high myopia. While these remain investigational, the trajectory of innovation suggests that the next five years will bring even more powerful tools to the optometrist's arsenal. The key challenge now lies in translating these advances from research centers to everyday clinical practice through education, training, and equitable access.`
+    "id": "article-myopia-1",
+    "title": "The New Frontier of Myopia Control: How Evidence-Based Interventions Are Reshaping Pediatric Optometry",
+    "excerpt": "With global myopia prevalence projected to affect half the world's population by 2050, the landscape of pediatric eye care is undergoing a seismic shift. From FDA-approved spectacle lenses to precision-guided atropine dosing, clinicians now possess an unprecedented arsenal for slowing axial elongation in children.",
+    "category": "Myopia Management",
+    "author": {
+      "name": "Dr. Rohan Fernandez",
+      "specialty": "Myopia Management",
+      "initials": "RF"
+    },
+    "date": "Jul 2026",
+    "readTime": "8 min read",
+    "imageGradient": "from-emerald-600 to-teal-700",
+    "imageUrl": "https://images.pexels.com/photos/36292510/pexels-photo-36292510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "imageCaption": "Photo: Pexels — An optometrist examines a child patient during a comprehensive eye examination.",
+    "featured": true,
+    "content": "The myopia epidemic has moved from a distant public health concern to a clinical reality demanding immediate action in every optometric practice. In China alone, data from 2020 revealed that 52.7 percent of children were already myopic, with a staggering 17.6 percent of high school students classified as having high myopia. The International Myopia Institute's 2025 white papers reinforced that myopia is no longer merely a refractive inconvenience but a disease with sight-threatening sequelae that demands early identification and proactive management. For clinicians, the message is unequivocal: correcting visual acuity with single-vision lenses is no longer sufficient when evidence-based tools exist to slow the underlying axial elongation driving the condition.\n\nThe pharmaceutical armamentarium for myopia control has matured considerably, with atropine now positioned as a foundational option following the landmark LAMP study. That trial established a clear dose-response relationship across 0.01%, 0.025%, and 0.05% concentrations, with 0.05% emerging as the recommended starting point because it delivers the strongest efficacy while maintaining an excellent safety profile. At this concentration, the LAMP data showed a 0.54 diopter reduction in myopic progression over one year, accompanied by a 25.70-micrometer increase in subfoveal choroidal thickness. A notable 2025 finding demonstrated that twice-daily dosing of 0.01% atropine slowed refractive progression by 53% compared to once-daily dosing.\n\nOptical interventions have expanded dramatically with the late-2025 FDA approval of the first spectacle lens specifically indicated for myopia control in the United States. Defocus-based spectacle lenses, including the DIMS and HAL designs, manipulate peripheral retinal image quality through hundreds of micro-lenslets that create simultaneous myopic defocus. The MiSight 1 day dual-focus lens demonstrated in a recent Chinese RCT a 51% reduction in axial elongation and 57% slowing of refractive progression at 12 months. Meanwhile, 10-year longitudinal data confirmed that children who began wearing daily disposable lenses between ages 8 and 12 showed no significant differences in corneal health metrics compared to age-matched controls.\n\nLooking ahead, the concept of combination therapy is gaining traction. Research shows that adding 0.01% atropine to orthokeratology significantly reduces axial elongation compared to ortho-k alone, with morning instillation proving 38% more effective than evening dosing. Studies demonstrate that defocus-based spectacle lenses worn during near activities reduced the incidence of myopia onset by 54% over one year, while 0.05% atropine lowered the two-year incidence from 53% to 28% in at-risk children.",
+    "views": 18742,
+    "tags": [
+      "myopia",
+      "pediatric",
+      "atropine",
+      "orthokeratology",
+      "axial-length"
+    ]
   },
   {
-    id: "oct-angiography-glaucoma",
-    title: "The Future of OCT Angiography in Glaucoma Detection",
-    excerpt: "How OCT-A is revolutionizing early glaucoma detection with vessel density metrics that precede visual field loss by years, and what this means for your practice.",
-    category: "Glaucoma",
-    author: authors[3],
-    date: "Jul 15, 2026",
-    readTime: "10 min read",
-    imageGradient: "from-amber-600 to-orange-700",
-    featured: true,
-    views: 9870,
-    content: `Optical Coherence Tomography Angiography (OCT-A) has emerged as one of the most significant diagnostic breakthroughs in glaucoma management over the past five years. Unlike traditional structural OCT, which measures retinal nerve fiber layer thickness, OCT-A provides a non-invasive, dye-free visualization of the retinal and choroidal microvasculature. Research has consistently demonstrated that vessel density changes in the peripapillary and macular regions can detect glaucomatous damage up to four years before conventional automated perimetry identifies functional visual field loss.\n\nThe latest generation of OCT-A devices offers several technological advances that have dramatically improved clinical utility. Ultra-widefield OCT-A now captures vascular detail extending beyond the traditional 6x6mm macular cube, providing a more comprehensive assessment of the retinal periphery where early glaucomatous changes may first manifest. Enhanced depth imaging algorithms have improved signal-to-noise ratio in patients with media opacities, making reliable imaging possible even in cases of mild cataract or posterior capsule opacity that previously precluded accurate assessment.\n\nArtificial intelligence integration has been the game-changer for clinical adoption of OCT-A in glaucoma. FDA-cleared AI algorithms now automatically segment the radial peripapillary capillary (RPC) plexus, compute vessel density metrics across standardized sectors, and compare results against age-matched normative databases. These systems generate a single, intuitive metric — the Glaucoma Vessel Density Index (GVDI) — that correlates strongly with disease severity and progression risk. A 2026 study in the American Journal of Ophthalmology found that AI-enhanced OCT-A achieved 94% sensitivity and 91% specificity for detecting early-stage primary open-angle glaucoma, outperforming both traditional OCT-RNFL analysis and standard automated perimetry.\n\nFor the practicing optometrist, integrating OCT-A into glaucoma care protocols requires thoughtful consideration of workflow, billing, and patient communication. Current CPT codes support OCT-A as a separate diagnostic procedure, and many insurance plans now provide coverage when medical necessity is documented. The key clinical recommendation is to incorporate OCT-A as a complementary tool alongside structural OCT and functional testing, particularly in patients with suspicious optic nerve appearance, ocular hypertension, or family history of glaucoma. The ability to detect and monitor vascular changes before irreversible neural loss occurs represents a paradigm shift toward truly preventive glaucoma care.`
+    "id": "article-myopia-2",
+    "title": "Orthokeratology and Beyond: Redefining the Contact Lens Standard in Myopia Management",
+    "excerpt": "Once considered a niche corneal reshaping technique, orthokeratology has evolved into one of the most rigorously studied myopia control modalities available today. New evidence on optic zone optimization, combination protocols, and long-term rebound dynamics is transforming how practitioners prescribe ortho-k therapy.",
+    "category": "Myopia Management",
+    "author": {
+      "name": "Dr. Rohan Fernandez",
+      "specialty": "Myopia Management",
+      "initials": "RF"
+    },
+    "date": "Jul 2026",
+    "readTime": "7 min read",
+    "imageGradient": "from-emerald-600 to-teal-700",
+    "imageUrl": "https://images.pexels.com/photos/5843417/pexels-photo-5843417.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "imageCaption": "Photo: Pexels — Contact lens with storage case, central to orthokeratology therapy.",
+    "featured": false,
+    "content": "Orthokeratology has traveled a remarkable distance from its early reputation as an aesthetic alternative to daytime lens wear to become one of the most validated interventions in the modern myopia management arsenal. Global fitting data now shows that ortho-k lenses account for 86% of all gas permeable lens fits in the pediatric population. The mechanism is elegant: overnight wear of a reverse-geometry lens flattens the central cornea, temporarily eliminating refractive error while simultaneously creating a controlled band of peripheral myopic defocus that signals the eye to slow its axial growth.\n\nRecent refinements in lens design philosophy have opened new avenues for optimizing ortho-k efficacy. A growing body of evidence suggests that selecting a lens with a smaller optic zone diameter of approximately 5.0mm rather than the conventional 6.0mm delivers greater myopic defocus signal to the peripheral retina. However, clinicians must remain mindful that reducing optic zone size can increase higher-order aberrations. Retrospective analyses confirm both efficacy and a low incidence of adverse events, provided that parental education and commitment to scheduled follow-up are maintained.\n\nThe concept of combining orthokeratology with low-dose atropine has emerged as a compelling strategy for patients who demonstrate suboptimal response to ortho-k alone. A particularly revealing study found that adding 0.01% atropine to an existing ortho-k regimen significantly slowed residual axial elongation, and that morning dosing lessened axial elongation by 38% more than evening administration. This counterintuitive finding likely reflects the pharmacological enhancement of choroidal thickness during waking hours.\n\nThe integration of advanced diagnostic imaging into ortho-k monitoring is further elevating the standard of care. OCT angiography has revealed that choroidal thickness and choroidal vessel volume are inversely related to axial length in children, providing clinicians with a quantitative biomarker to assess treatment response in real time. As the field moves toward personalized myopia management, the ability to combine axial length measurement, choroidal thickness tracking, and individualized risk profiling will enable practitioners to tailor ortho-k protocols with unprecedented precision.",
+    "views": 12847,
+    "tags": [
+      "myopia",
+      "orthokeratology",
+      "contact-lens",
+      "pediatric",
+      "axial-length"
+    ]
   },
   {
-    id: "pediatric-vision-screening-guidelines",
-    title: "Pediatric Vision Screening: New AAP Guidelines 2026",
-    excerpt: "The American Academy of Pediatrics has released updated vision screening recommendations that significantly expand the role of optometrists in early childhood eye care.",
-    category: "Pediatric Optometry",
-    author: authors[2],
-    date: "Jul 12, 2026",
-    readTime: "7 min read",
-    imageGradient: "from-rose-500 to-pink-600",
-    featured: true,
-    views: 8320,
-    content: `The American Academy of Pediatrics released its long-awaited updated vision screening guidelines in June 2026, marking the first comprehensive revision since 2016. These new recommendations reflect a growing body of evidence supporting earlier and more frequent vision assessments in children, with particular emphasis on detecting amblyopia risk factors, binocular vision disorders, and myopia onset before the age of six. The guidelines now recommend instrument-based screening starting at 12 months of age, a significant shift from the previous recommendation of 3 years.\n\nA key change in the 2026 guidelines is the formal endorsement of photoscreeners and autorefractors as primary screening tools for children aged 12 months through 5 years. The AAP cites a meta-analysis of 47 studies demonstrating that instrument-based screening achieves 88% sensitivity for detecting amblyopia risk factors, compared to 65% for traditional visual acuity-based screening in children under 4 years. The guidelines specifically recommend that children who fail instrument-based screening be referred to an optometrist or pediatric ophthalmologist for comprehensive evaluation, rather than being re-screened at a later date.\n\nThe guidelines also address the myopia epidemic for the first time, recommending that all children aged 5 and older undergo annual axial length measurement when feasible. This represents a proactive shift toward myopia risk stratification, with the AAP citing World Health Organization projections that 50% of the global population will be myopic by 2050. The guidelines encourage collaboration between pediatricians and optometrists to establish myopia surveillance protocols and provide early intervention for children identified as high-risk based on parental myopia, ethnicity, and near-work behaviors.\n\nFor optometrists, these updated guidelines create significant opportunities for collaborative care models. The AAP explicitly recommends co-management pathways where pediatricians conduct initial screenings and refer to optometrists for comprehensive evaluation, diagnosis, and management. Practices that invest in pediatric-friendly instrumentation, create welcoming environments for young children, and establish referral relationships with local pediatric practices will be well-positioned to meet the increased demand for early childhood eye care services.`
+    "id": "article-glaucoma-1",
+    "title": "Structure Meets Function: How Next-Generation OCT and Visual Field Analytics Are Redefining Early Glaucoma Detection",
+    "excerpt": "Optical coherence tomography has evolved far beyond simple RNFL measurements. With widefield 3D imaging, GCIPL analysis, and OCT angiography entering routine practice, clinicians can identify glaucomatous damage years before traditional perimetry flags a defect.",
+    "category": "Glaucoma",
+    "author": {
+      "name": "Dr. Vikram Patel",
+      "specialty": "Glaucoma Specialist",
+      "initials": "VP"
+    },
+    "date": "Jul 2026",
+    "readTime": "7 min read",
+    "imageGradient": "from-violet-600 to-purple-700",
+    "imageUrl": "https://images.unsplash.com/photo-1576091160550-2187d80a18f3?w=800&q=80",
+    "imageCaption": "Optical coherence tomography imaging of the retinal nerve fiber layer during glaucoma evaluation.",
+    "featured": true,
+    "content": "The diagnostic landscape for glaucoma has undergone a fundamental shift, driven primarily by advances in spectral-domain and swept-source OCT. Modern platforms now offer widefield 3D imaging that captures both the macula and optic nerve head in a single acquisition. RNFL thickness measurements remain the cornerstone, with an average below 85 micrometers or an inferior quadrant below 95 micrometers raising high suspicion. However, GCIPL analysis in the macula has emerged as equally critical, detecting glaucomatous thinning in up to 15% of eyes with preperimetric disease that RNFL criteria alone would classify as normal.\n\nOCT angiography is rapidly transitioning from research to clinical mainstay, with adoption rising from under 1% in 2024 to nearly 20% by 2026. OCT-A provides non-invasive visualization of peripapillary and macular microvasculature, detecting capillary dropout in the radial peripapillary capillary network before structural thinning becomes apparent. Vessel density metrics in the superficial capillary plexus demonstrate strong correlations with visual field mean deviation values, offering a vascular biomarker complementing traditional structural assessments. Deep learning algorithms integrated into commercial OCT platforms can now predict visual field loss directly from structural data using architectures like R2 U-Net and Dense U-Net.\n\nStandard automated perimetry using the Humphrey 24-2 or 10-2 SITA protocol remains the functional gold standard. An MD worse than -2.0 dB combined with PSD above 3.0 dB typically triggers concern, while a GHT result of 'outside normal limits' provides additional statistical weight. The 10-2 protocol has gained renewed importance for detecting central visual field defects in normal-tension glaucoma. A VFI decline exceeding 1.5% per year is generally considered clinically significant acceleration warranting treatment escalation.\n\nThe challenge for the contemporary optometrist lies in synthesizing the entire diagnostic dataset. Practical algorithms now recommend initiating ocular hypotensive therapy when cumulative risk profile suggests a likelihood of progression exceeding 15% over five years. By combining widefield OCT, GCIPL segmentation, OCT-A vessel density mapping, and strategic visual field testing, optometrists can detect glaucoma at its earliest stages and intervene before irreversible functional loss occurs.",
+    "views": 28417,
+    "tags": [
+      "glaucoma",
+      "OCT",
+      "visual-field",
+      "OCT-A",
+      "diagnosis",
+      "GCIPL",
+      "RNFL"
+    ]
   },
   {
-    id: "scleral-lens-fitting-masterclass",
-    title: "Scleral Lens Fitting Masterclass: Advanced Techniques",
-    excerpt: "A comprehensive guide to advanced scleral lens fitting including haptic optimization, landing zone assessment, and troubleshooting complex cases.",
-    category: "Contact Lenses",
-    author: authors[1],
-    date: "Jul 10, 2026",
-    readTime: "12 min read",
-    imageGradient: "from-emerald-600 to-teal-700",
-    featured: false,
-    views: 7650,
-    content: `Scleral lens fitting has evolved from a niche subspecialty to an essential competency in modern optometric practice. These large-diameter gas-permeable lenses vault the cornea and land on the scleral conjunctiva, providing exceptional visual rehabilitation for patients with irregular corneas, severe dry eye, and ocular surface disease. The global scleral lens market has grown at a compound annual rate of 18% over the past five years, driven by advances in lens design technology and increasing awareness among both practitioners and patients.\n\nModern scleral lens fitting begins with detailed anterior segment imaging, including corneal topography, scleral profilometry, and optical coherence tomography of the anterior segment (AS-OCT). These tools provide objective data on corneal elevation, scleral shape asymmetry, and conjunctival thickness that guide initial lens selection. The latest generation of scleral profilometers, such as the sMap3D and Eye Surface Profiler, create three-dimensional maps of the entire ocular surface, allowing practitioners to select initial lens parameters with unprecedented precision. Studies show that using objective imaging data reduces the number of diagnostic lenses needed by 40-60% compared to empirical fitting.\n\nThe haptic — the portion of the lens that rests on the scleral conjunctiva — is now recognized as the most critical element in achieving comfort and optimal fit. Advanced lens designs offer multiple haptic profiles including toric haptics for eyes with significant scleral torque, quadrant-specific designs that accommodate scleral asymmetry, and mini-scleral options (15-16mm diameter) for patients who find full-size scleral lenses cumbersome. Proper landing zone assessment requires careful slit-lamp evaluation with sodium fluorescein, looking for moderate compression (1-2 clock hours) without blanching, and OCT confirmation that the haptic does not impede conjunctival blood flow.\n\nTroubleshooting remains the most challenging aspect of scleral lens management. Midday fogging, caused by tear film debris accumulation beneath the lens, affects 30-40% of scleral lens wearers and significantly impacts visual quality and wearing time. Recent solutions include fenestrated lens designs that improve tear exchange, modified edge profiles that reduce hypoxia-induced conjunctival changes, and patient education on proper lens application and removal techniques using plunger tools and suction cups. The development of hyper-Dk materials with oxygen transmissibility exceeding 200 Dk/t has also reduced hypoxic complications and extended comfortable wearing times for many patients.`
+    "id": "article-glaucoma-2",
+    "title": "Beyond Eye Drops: SLT, Rho Kinase Inhibitors, and the New Frontier of Glaucoma Therapy",
+    "excerpt": "The glaucoma treatment armamentarium has expanded dramatically with ROCK inhibitors like netarsudil, growing acceptance of SLT as first-line intervention, and sustained-release drug delivery platforms reshaping IOP management.",
+    "category": "Glaucoma",
+    "author": {
+      "name": "Dr. Vikram Patel",
+      "specialty": "Glaucoma Specialist",
+      "initials": "VP"
+    },
+    "date": "Jul 2026",
+    "readTime": "8 min read",
+    "imageGradient": "from-violet-600 to-purple-700",
+    "imageUrl": "https://images.unsplash.com/photo-1559757175-5700dde675bc?w=800&q=80",
+    "imageCaption": "Selective laser trabeculoplasty procedure to lower intraocular pressure.",
+    "featured": false,
+    "content": "For decades, first-line POAG management centered on prostaglandin analogs providing reliable IOP reductions of 25-33%. While these remain foundational, the paradigm is evolving. SLT has gained acceptance as a viable first-line intervention. The LiGHT trial demonstrated that initial SLT achieves IOP control comparable to prostaglandin analogs over five years, with approximately 75% of SLT-first eyes remaining drop-free at three years. SLT applies 532nm Nd:YAG laser to the trabecular meshwork using 0.8-1.2 mJ across 50-70 non-overlapping spots.\n\nRho kinase inhibitors represent the first truly novel drug class in the 2020s. Netarsudil lowers IOP through two complementary pathways: increasing trabecular meshwork outflow by inhibiting Rho kinase-mediated actomyosin contraction, and reducing episcleral venous pressure by decreasing vascular smooth muscle tone. This EVP-lowering mechanism is clinically significant because elevated EVP had been essentially untreatable. Clinical trials show netarsudil monotherapy achieves 4-6 mmHg reduction, while the fixed-dose combination netarsudil-latanoprost delivers 7-9 mmHg, rivaling traditional multi-drug regimens.\n\nSustained-release platforms address the 40-60% non-adherence rate. The bimatoprost implant (Durysta) provides sustained IOP-lowering for up to 15 months following a single in-office injection, with mean reductions of 7-9 mmHg. Pipeline candidates include punctal plug-based delivery, injectable hydrogel depots, and biodegradable intracameral implants designed for 6-12 month release. The AAO's 2025 preferred practice patterns now acknowledge sustained-release implants as reasonable for patients with documented non-adherence.\n\nWhen constructing a treatment plan, target IOP must be individualized based on disease stage, rate of progression, and baseline IOP. Early glaucoma typically needs 20-30% reduction, while advanced disease generally demands targets below 12 mmHg. Gonioscopy remains indispensable before any new therapy. The expansion from ROCK inhibitors and SLT to sustained-release implants and MIGS devices empowers clinicians to achieve more consistent IOP control while reducing cumulative therapy burden.",
+    "views": 34152,
+    "tags": [
+      "glaucoma",
+      "SLT",
+      "netarsudil",
+      "Rho-kinase",
+      "IOP",
+      "treatment",
+      "MIGS"
+    ]
   },
   {
-    id: "digital-eye-strain-management",
-    title: "Digital Eye Strain: Evidence-Based Management Strategies",
-    excerpt: "With screen time reaching unprecedented levels, here is what the latest research actually supports for managing computer vision syndrome in your patients.",
-    category: "Clinical Refraction",
-    author: authors[0],
-    date: "Jul 8, 2026",
-    readTime: "6 min read",
-    imageGradient: "from-teal-500 to-emerald-600",
-    featured: false,
-    views: 15200,
-    content: `Digital eye strain, also known as computer vision syndrome, has become the most common presenting complaint in optometric practice worldwide. The average adult now spends over 11 hours per day interacting with digital screens, and post-pandemic remote work patterns have further accelerated this trend. The 2026 Vision Council Digital Eye Strain Report found that 78% of adults experience at least one symptom of digital eye strain regularly, with the highest prevalence among adults aged 25-44 who work in technology-intensive professions.\n\nThe pathophysiology of digital eye strain is multifactorial, involving reduced blink rate, incomplete blinking, altered tear film dynamics, and sustained accommodative effort at near distances. Research from the University of Waterloo Visual Physiology Lab has quantified that blink rate decreases from approximately 15 blinks per minute during normal conversation to just 3-5 blinks per minute during sustained screen use. This dramatic reduction leads to accelerated tear film evaporation, increased osmolarity, and subsequent ocular surface inflammation. Furthermore, the predominantly upward gaze during computer use exposes a larger ocular surface area, exacerbating these effects.\n\nEvidence-based management begins with a thorough assessment of the patient's visual environment and work habits. Prescription optimization is the foundation — including a dedicated near prescription that accounts for the specific working distance and screen position. Research supports the use of anti-reflective coatings, blue-light filtering lenses (though the evidence for blue light as the primary culprit remains debated), and punctal plugs for patients with concurrent dry eye. The 20-20-20 rule (every 20 minutes, look at something 20 feet away for 20 seconds) has been validated in clinical trials to reduce symptoms by 35-40% when patients adhere to the protocol.\n\nEmerging management approaches include the use of wearable blink reminder devices that provide haptic feedback when blink rate drops below threshold, ambient light management systems that optimize screen-to-surround lighting ratios, and prescription lens tints that enhance contrast and reduce photostress. For patients with accommodative dysfunction contributing to their symptoms, vision therapy programs targeting accommodative facility and endurance have shown significant improvement in both objective measures and symptom scores. The key message for practitioners is that effective digital eye strain management requires a holistic approach addressing environmental factors, visual system function, and individual patient behaviors.`
+    "id": "article-cl-1",
+    "title": "Silicone Hydrogel at 25: How Next-Generation Materials Are Redefining Soft Lens Performance",
+    "excerpt": "As silicone hydrogel contact lenses mark their silver anniversary, a new wave of material science from water gradient surfaces to biomimetic coatings is pushing Dk/t boundaries and transforming the daily disposable landscape.",
+    "category": "Contact Lenses",
+    "author": {
+      "name": "Dr. Rajesh Menon",
+      "specialty": "Cornea & Contact Lenses",
+      "initials": "RM"
+    },
+    "date": "Jul 2026",
+    "readTime": "7 min read",
+    "imageGradient": "from-sky-600 to-blue-700",
+    "imageUrl": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&q=80",
+    "imageCaption": "Macro close-up of a soft contact lens / Unsplash",
+    "featured": false,
+    "content": "Silicone hydrogel materials celebrated their twenty-fifth anniversary in 2024, and SiHy lenses now account for approximately 64% of all soft lens fits globally. Delefilcon A achieves a central Dk/t of 156 at -3.00D while maintaining surface water content approaching 100%, made possible by a 5-6 micron hydrated outer layer. The clinical implication: the lens core delivers oxygen while only a cushion of near-tear-like fluid contacts the ocular surface, demonstrating significantly lower friction coefficients and improved end-of-day comfort.\n\nBiomimetic surface engineering has addressed the lipid and mucin deposition that plagued early SiHy materials. Newer formulations incorporate internal wetting agents such as PVP and phosphorylcholine mimetics that create hydrophilic boundary layers. A 2023 ACS Applied Bio Materials study demonstrated that zwitterionic polymer-coated SiHy lenses achieved 40% reduction in lysozyme adhesion and 55% reduction in bacterial binding. For patients with meibomian gland dysfunction, affecting over 60% of contact lens wearers with dryness symptoms, these deposit-resistant surfaces are a clinical necessity.\n\nWater gradient technology has found natural synergy with presbyopia-correcting designs. The DAILIES TOTAL1 Multifocal platform leverages the same core with a center-near aspheric optical design incorporating phosphatidylcholine from natural tears. Clinical data showed 78% of presbyopic patients achieved 20/20+ distance and J2+ near acuity at one month, with 86% reporting comfort ratings of 8+ on a 10-point scale.\n\nThe material pipeline includes SiHy polymers infused with hyaluronic acid micro-reservoirs, photochromic materials that darken in response to UV and blue light, and smart contact lens platforms embedding microfluidic glucose-sensing channels and IOP transducers. For the practicing optometrist, matching the right material to individual ocular surface physiology remains the single most impactful clinical decision in the fitting process.",
+    "views": 18472,
+    "tags": [
+      "contact-lens",
+      "silicone-hydrogel",
+      "water-gradient",
+      "presbyopia",
+      "dry-eye"
+    ]
   },
   {
-    id: "neuro-optometric-rehabilitation-concussion",
-    title: "Neuro-Optometric Rehabilitation After Concussion",
-    excerpt: "Understanding the optometrist's critical role in managing visual sequelae of mild traumatic brain injury and concussion in both sports and civilian populations.",
-    category: "Neuro-Ophthalmology",
-    author: authors[8],
-    date: "Jul 5, 2026",
-    readTime: "9 min read",
-    imageGradient: "from-purple-600 to-violet-700",
-    featured: false,
-    views: 6780,
-    content: `The optometric management of concussion-related visual dysfunction has gained tremendous clinical importance as public awareness of mild traumatic brain injury (mTBI) continues to grow. An estimated 70-80% of concussed individuals experience significant visual symptoms including convergence insufficiency, accommodative dysfunction, saccadic abnormalities, and photosensitivity. These visual sequelae can persist for months or even years after the initial injury, significantly impacting quality of life, academic performance, and occupational function. Optometrists are uniquely positioned to identify and manage these conditions, yet many practitioners remain uncertain about evaluation protocols and treatment strategies.\n\nA comprehensive neuro-optometric assessment extends well beyond standard visual acuity and refraction. Key evaluation components include detailed near point convergence testing, monocular and binocular accommodative facility assessment, oculomotor tracking evaluation (both developmental eye movement and computerized assessments), stereopsis measurement, and contrast sensitivity testing under varying luminance conditions. The Vestibular/Ocular Motor Screening (VOMS) tool has emerged as a validated clinical instrument for quantifying concussion-related visual and vestibular deficits, and its incorporation into optometric evaluation provides a standardized framework for both diagnosis and outcome measurement.\n\nTreatment approaches for post-concussion visual dysfunction are typically multimodal. Vision therapy remains the primary intervention for binocular vision and accommodative disorders, with published evidence supporting its effectiveness in 85-90% of post-concussion patients with convergence insufficiency. Prism spectacles — including yoked prism for visual midline shift and compensatory prism for binocular alignment — provide immediate symptomatic relief while neuroplastic adaptations occur. Tinted lenses, particularly those in the FL-41 spectrum, have demonstrated significant benefit for post-concussion photosensitivity, with a randomized controlled trial showing a 60% reduction in headache frequency and intensity.\n\nCollaborative care models are essential for optimal patient outcomes. Optometrists should establish referral networks with neurologists, vestibular therapists, neuropsychologists, and sports medicine specialists. The development of standardized return-to-learn and return-to-play protocols that incorporate visual function criteria represents an important advancement in concussion management. As evidence accumulates supporting the efficacy of neuro-optometric rehabilitation, there is growing advocacy for mandatory visual screening in all concussion management pathways, a development that would significantly expand the optometrist's role in both sports medicine and general healthcare.`
+    "id": "article-cl-2",
+    "title": "Beyond the Cornea: How Scleral Lens Landing Zone Geometry Is Revolutionizing Irregular Cornea Management",
+    "excerpt": "Scleral lens fitting has evolved from a niche art to a data-driven science, with breakthroughs in landing zone toricity, tangential versus curved peripheral designs, and microvault technology delivering unprecedented stability for keratoconus patients.",
+    "category": "Contact Lenses",
+    "author": {
+      "name": "Dr. Rajesh Menon",
+      "specialty": "Cornea & Contact Lenses",
+      "initials": "RM"
+    },
+    "date": "Jul 2026",
+    "readTime": "8 min read",
+    "imageGradient": "from-teal-600 to-cyan-700",
+    "imageUrl": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80",
+    "imageCaption": "Optometric slit-lamp examination / Unsplash",
+    "featured": false,
+    "content": "Scleral contact lenses have undergone a renaissance, propelled by advances in anterior segment imaging and CAD/CAM manufacturing. A landmark 2024 study found that 99.8% of all scleral lenses now incorporate toric landing zones, reflecting widespread recognition that the human sclera is not rotationally symmetric. Mini-scleral lenses exhibited a 10:1 ratio of tangential to curved profiles, while full scleral lenses showed approximately 1:1.\n\nLanding zone toricity has substantial clinical implications. When a spherical landing zone is placed on an asymmetric sclera, the lens rocks on the flatter meridian, creating localized bearing pressure. Toric landing zones improve centration stability by up to 35% according to OCT-based tracking data. Modern scleral topography (sMap 3D, Eye Surface Profiler) provides quadrant-specific sagittal height data, reducing average diagnostic lenses needed from 4-5 to as few as 2.\n\nMicrovault technology represents another leap forward for patients with elevated corneal irregularities. Customizable microvault designs allow practitioners to create localized elevations matching individual cone topography. Hoffman reported 92% of patients achieving 20/20+ acuity, with mean improvement of three lines. The fluid reservoir simultaneously acts as a therapeutic bandage, protecting compromised epithelium while maintaining nutrient-rich tear contact.\n\nThe 2024 GPLI-CLMA Scleral Fitting Guide updated recommendations to emphasize: assess scleral shape before selecting landing zone, prioritize tangential designs for mini-scleral lenses, and evaluate tear film and meibomian glands before fitting. The convergence of advanced imaging and customizable digital manufacturing means scleral lenses are fast becoming viable for any practice willing to invest in the learning curve.",
+    "views": 15236,
+    "tags": [
+      "contact-lens",
+      "scleral",
+      "keratoconus",
+      "landing-zone",
+      "irregular-cornea"
+    ]
   },
   {
-    id: "practice-growth-ai-era",
-    title: "Practice Growth Strategies in the Age of AI",
-    excerpt: "How leading optometric practices are leveraging artificial intelligence, automation, and digital marketing to achieve sustainable growth in 2026.",
-    category: "Practice Management",
-    author: authors[7],
-    date: "Jul 3, 2026",
-    readTime: "7 min read",
-    imageGradient: "from-lime-600 to-green-700",
-    featured: false,
-    views: 11340,
-    content: `The integration of artificial intelligence into optometric practice management has moved far beyond theoretical applications to become a practical competitive differentiator. Practices that have strategically adopted AI-powered tools are reporting significant improvements in operational efficiency, patient acquisition, and revenue per visit. A 2026 survey of 500 optometric practices by Management in Practice magazine found that early AI adopters experienced an average 23% increase in revenue and 31% improvement in patient retention compared to practices relying on traditional management approaches.\n\nFront-office automation represents the most immediate opportunity for AI integration. Intelligent scheduling systems now analyze historical appointment patterns, no-show rates, and provider productivity metrics to optimize the daily schedule automatically. These systems reduce patient wait times by 35% while increasing provider utilization by 15-20%. AI-powered chatbots handle routine patient inquiries about appointments, insurance verification, and pre-visit preparation 24/7, freeing front-desk staff to focus on high-value patient interactions. Several platforms now offer AI-driven insurance eligibility verification that reduces claim denials by up to 40% by catching coverage issues before the patient encounter.\n\nClinical decision support powered by machine learning is transforming the back-office dimension of practice management. Automated pre-authorization systems use natural language processing to generate clinical justification letters that are 60% more likely to be approved on first submission. AI-assisted coding ensures that every visit is billed at the appropriate complexity level, capturing an estimated 12-18% of revenue that is typically left on the table due to undercoding. Inventory management algorithms predict consumable usage patterns and generate orders automatically, reducing stockouts by 85% and waste from expired products by 90%.\n\nThe digital marketing landscape for optometric practices has been equally transformed by AI capabilities. Programmatic advertising platforms use machine learning to target potential patients based on demographics, search behavior, and geographic proximity, delivering 3-5x return on ad spend compared to traditional advertising. AI-powered reputation management tools monitor online reviews across multiple platforms, generate appropriate responses, and identify opportunities to improve patient satisfaction in real-time. Perhaps most importantly, patient communication platforms now use predictive analytics to identify patients at risk of churning — those who haven't scheduled a visit within their recommended interval — and trigger personalized outreach campaigns that achieve 40% re-engagement rates.`
+    "id": "article-oct-1",
+    "title": "Swept-Source OCT and AI Are Rewriting the Rules of Retinal Layer Segmentation",
+    "excerpt": "The convergence of longer-wavelength swept-source OCT with deep learning algorithms is delivering unprecedented choroidal and retinal layer detail, enabling clinicians to detect subclinical disease earlier than ever before.",
+    "category": "Diagnostic Technology",
+    "author": {
+      "name": "Dr. Divya Nair",
+      "specialty": "Anterior Segment",
+      "initials": "DN"
+    },
+    "date": "Jul 2026",
+    "readTime": "7 min read",
+    "imageGradient": "from-indigo-600 to-blue-800",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/OCT_of_normal_retina.jpg/800px-OCT_of_normal_retina.jpg",
+    "imageCaption": "OCT cross-section of a healthy human retina. Credit: National Eye Institute / Wikimedia Commons",
+    "featured": false,
+    "content": "Swept-source OCT has moved from niche research to clinical mainstay, operating at 1050nm wavelength that penetrates deeper through RPE and scatters less in media opacities. Current-generation platforms achieve 200,000+ A-scans/second, producing 12x12mm volumetric macular datasets in under two seconds. A 2025 Frontiers in Medicine study demonstrated that ultra-widefield SS-OCT angiography can quantify choroidal vessel density changes across a 16mm field of view, capturing peripheral pathology that narrower SD-OCT windows miss entirely.\n\nRetinal layer segmentation has been fundamentally changed by deep learning. A 2025 Journal of Optometry study reported that a custom CNN for automated choroid segmentation demonstrated ICC >0.92 with manual expert graders across choroidal thicknesses from 120-480 microns, validating across both SD-OCT and SS-OCT platforms. The same group confirmed the model generalizes across device manufacturers.\n\nChoroidal thickness mapping is now available as automated heatmap output on most commercial SS-OCT platforms. A 2025 Optica study introduced a Swin Transformer architecture that segments the 3D choroidal volume in under three seconds, outperforming prior U-Net approaches by 14% in Dice coefficient on eyes with advanced AMD.\n\nAI-assisted OCT interpretation extends beyond segmentation into diagnostic decision support. A 2025 TVST study demonstrated that standardized OCT analysis combined with AI classification could detect inherited retinal dystrophies with 91% sensitivity for distinguishing Stargardt from pattern dystrophy, outperforming three of five fellowship-trained retina specialists. As these tools move toward regulatory clearance, optometrists can anticipate real-time layer-by-layer analysis dashboards integrated into the OCT workflow.",
+    "views": 34782,
+    "tags": [
+      "OCT",
+      "swept-source-OCT",
+      "AI",
+      "retinal-segmentation",
+      "choroidal-thickness"
+    ]
   },
   {
-    id: "orthokeratology-comprehensive-review",
-    title: "Orthokeratology: A Comprehensive Clinical Review",
-    excerpt: "From patient selection to long-term outcomes, a thorough review of contemporary orthokeratology practice based on the latest clinical evidence.",
-    category: "Myopia Management",
-    author: authors[9],
-    date: "Jun 30, 2026",
-    readTime: "11 min read",
-    imageGradient: "from-cyan-600 to-teal-700",
-    featured: false,
-    views: 9100,
-    content: `Orthokeratology (ortho-K) has established itself as one of the most effective and well-studied myopia management interventions available to optometrists. By temporarily reshaping the cornea through overnight wear of specially designed rigid gas-permeable contact lenses, ortho-K provides clear unaided daytime vision while simultaneously slowing axial elongation in growing children. The LORIC (Longitudinal Orthokeratology Research in Children) study and its successor, the ROSE (Retardation of Myopia in Orthokeratology) study, have provided Level I evidence that ortho-K reduces axial length progression by 43-52% compared to single-vision spectacle correction over two years.\n\nPatient selection remains the most critical determinant of ortho-K success. Ideal candidates are typically between 8 and 16 years old with myopia between -1.00D and -6.00D, astigmatism up to -1.50D, and motivated patients and parents who understand the commitment required for safe lens wear. However, modern lens designs have expanded these parameters considerably — toric ortho-K designs now effectively manage up to -3.50D of corneal astigmatism, and higher myopia designs can temporarily correct up to -8.00D, though myopia control efficacy in higher prescriptions requires further investigation. Contraindications include active ocular surface disease, severe dry eye, poor hygiene compliance, and systemic conditions that compromise corneal health.\n\nThe fitting process has been streamlined considerably with the advent of computer-assisted topography-guided lens design systems. Rather than relying solely on trial lens fitting, practitioners can now upload corneal topography data to cloud-based design platforms that generate customized lens parameters optimized for each patient's unique corneal profile. Studies comparing topography-guided designs to empirical fitting show faster time to first adequate fit (average 1.2 visits vs. 2.8 visits), better visual quality, and reduced incidence of lens decentration. However, the practitioner's expertise in interpreting topography maps and managing clinical nuances remains irreplaceable.\n\nLong-term safety data spanning over 20 years of clinical use has confirmed that ortho-K is a safe procedure when proper protocols are followed. The most significant risk factor for microbial keratitis is poor lens handling and hygiene, with an estimated incidence of 1 in 5,000 patient-years — comparable to daily soft contact lens wear. Modern care solutions specifically formulated for ortho-K lenses, combined with daily disposable lens cases and patient education programs, have further reduced adverse event rates. The development of antimicrobial lens materials incorporating selenium and silver nanoparticles represents a promising advancement that may further enhance safety.`
+    "id": "article-oct-2",
+    "title": "OCT Angiography Vessel Density Metrics Are Becoming the New Vital Signs of Retinal Health",
+    "excerpt": "Quantitative OCT-A biomarkers are moving from research curiosity to clinical decision-making tools for diabetic retinopathy, glaucoma, and neuro-ophthalmic disease.",
+    "category": "Diagnostic Technology",
+    "author": {
+      "name": "Dr. Divya Nair",
+      "specialty": "Anterior Segment",
+      "initials": "DN"
+    },
+    "date": "Jul 2026",
+    "readTime": "8 min read",
+    "imageGradient": "from-indigo-600 to-blue-800",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/OCT_Angiography_Macular.jpg/800px-OCT_Angiography_Macular.jpg",
+    "imageCaption": "OCT angiography of the macula showing the superficial capillary plexus. Credit: NEI / Wikimedia",
+    "featured": false,
+    "content": "OCT-A offers a non-invasive, dye-free alternative to fluorescein angiography with depth-resolved visualization of retinal and choroidal microvasculature down to capillary scale. A 2025 Aging and Disease review confirmed OCT-A effectively identifies DR lesions while surpassing FA in spatial resolution at the superficial capillary plexus level.\n\nVessel area density has emerged as the most clinically actionable metric. The OCTAVA framework delivers seven reproducible microvascular metrics. In a validation cohort of 240 eyes, VAD in the deep capillary plexus dropped from 38.2% in healthy controls to 27.4% in moderate NPDR and 18.1% in PDR, demonstrating near-linear relationship with disease severity.\n\nBeyond DR, OCT-A vessel density metrics demonstrate utility in glaucoma and neuro-ophthalmic conditions. A 2024 Frontiers in Medicine meta-analysis of 18 studies and 3,600+ eyes found peripapillary vessel density had AUC 0.89 for differentiating early glaucoma, outperforming RNFL thickness (AUC 0.84). In MS and optic neuritis, peripapillary VAD correlated more strongly with GCIPL thickness (r=0.71) than with visual acuity (r=0.34).\n\nAI integration is accelerating the transition to automated quantitative reporting. AI-assisted platforms can segment SCP, DCP, and choriocapillaris while computing vessel density and FAZ area in under 12 seconds per eye. Inter-visit repeatability of VAD approaches CV below 3.5% in the SCP. Compact tabletop OCT-A units are becoming viable for comprehensive eye care settings.",
+    "views": 41256,
+    "tags": [
+      "OCT-A",
+      "vessel-density",
+      "diabetic-retinopathy",
+      "glaucoma",
+      "retinal-imaging"
+    ]
   },
   {
-    id: "ocular-surface-imaging-ai",
-    title: "Anterior Segment Imaging: From Slit Lamp to AI-Powered Diagnostics",
-    excerpt: "A comprehensive review of how artificial intelligence is enhancing anterior segment imaging modalities and improving diagnostic accuracy in clinical practice.",
-    category: "Technology",
-    author: authors[10],
-    date: "Jun 28, 2026",
-    readTime: "8 min read",
-    imageGradient: "from-fuchsia-600 to-pink-700",
-    featured: false,
-    views: 8900,
-    content: `Anterior segment imaging has undergone a revolutionary transformation with the integration of artificial intelligence into diagnostic platforms. What once required expert interpretation of slit-lamp findings and manual analysis of imaging studies can now be augmented or, in some cases, automated by machine learning algorithms that achieve specialist-level diagnostic accuracy. This technological evolution is democratizing access to advanced diagnostics, particularly in settings where anterior segment specialists may not be readily available.\n\nIn vivo confocal microscopy (IVCM) has been one of the primary beneficiaries of AI integration. These devices capture cellular-level images of the corneal layers, providing invaluable information about endothelial cell density, inflammatory cell infiltration, and nerve morphology. However, manual analysis of IVCM images is time-consuming and requires specialized training. AI algorithms trained on thousands of annotated IVCM images can now automatically identify and quantify endothelial cell parameters, detect Langerhans cell activation patterns indicative of keratitis, and assess subbasal nerve plexus morphology in diabetic patients with accuracy comparable to expert graders. Several platforms have received regulatory clearance for AI-assisted IVCM analysis, making this technology increasingly accessible.\n\nAnterior segment OCT (AS-OCT) has similarly been enhanced by deep learning approaches. AI algorithms can automatically segment the corneal layers, measure anterior chamber parameters with micron-level precision, and detect subtle pathological changes that may escape visual inspection. In the context of corneal ectasia screening, AI-enhanced AS-OCT achieves 96% sensitivity for detecting subclinical keratoconus by analyzing posterior corneal surface elevation patterns, pachymetry distribution, and epithelial thickness maps simultaneously. This represents a significant improvement over traditional topography-based screening, which relies primarily on anterior surface curvature analysis.\n\nThe integration of AI into anterior segment imaging is not without challenges. Algorithm bias, particularly in underrepresented populations, remains a concern that requires ongoing attention. The "black box" nature of deep learning models can make it difficult for clinicians to understand and trust AI-generated recommendations. Furthermore, the regulatory landscape for AI-based diagnostic tools continues to evolve, with increasing emphasis on real-world performance monitoring and post-market surveillance. Despite these challenges, the trajectory is clear: AI-enhanced anterior segment imaging will become standard of care within the next decade, fundamentally changing how optometrists diagnose and manage anterior segment disease.`
+    "id": "article-ped-1",
+    "title": "Beyond the Patch: How Digital Therapeutics and Binocular Therapy Are Rewriting the Rules of Amblyopia Treatment",
+    "excerpt": "FDA-approved digital therapeutics and dichoptic binocular approaches are challenging the patching paradigm, offering children an engaging alternative that matches traditional regimens in efficacy while dramatically improving adherence.",
+    "category": "Pediatric Optometry",
+    "author": {
+      "name": "Dr. Ananya Gupta",
+      "specialty": "Pediatric Optometry",
+      "initials": "AG"
+    },
+    "date": "Jul 2026",
+    "readTime": "8 min read",
+    "imageGradient": "from-rose-500 to-pink-600",
+    "imageUrl": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80",
+    "imageCaption": "A pediatric patient undergoing vision screening. Credit: Unsplash",
+    "featured": false,
+    "content": "Amblyopia remains the single most prevalent cause of preventable monocular vision loss in children, affecting 2-4% of the pediatric population worldwide. PEDIG has demonstrated that approximately 77% of children with anisometropic amblyopia achieve two or more lines of improvement within 15 weeks. Conventional management relies on part-time occlusion or atropine penalization, with a combined protocol producing mean improvement of 2.2 lines after just five weeks.\n\nThe treatment landscape is shifting with binocular and dichoptic therapies grounded in the neuroscientific principle that amblyopia is a disorder of cortical binocular integration. Luminopia One became the first FDA-approved digital therapeutic for amblyopia in 2021, delivering dichoptic stimulation via modified children's content through a VR headset. Real-world registry data from 179 patients across 10 sites showed statistically significant acuity gains, with adherence reaching 73%, substantially exceeding typical patching compliance of 40-60%.\n\nA 2025 scoping review examined I-BiT, dichoptic movie viewing, and gamified platforms, concluding binocular therapies serve as effective supplementary interventions. The AAO's 2024 update acknowledged mixed evidence while noting these therapies are particularly promising for older children and treatment failures, though insurance coverage and access remain barriers.\n\nFor the practicing pediatric optometrist, a tiered algorithm is recommended: initial refractive correction for 12-16 weeks, first-line patching or atropine for younger children with moderate amblyopia, and FDA-cleared digital therapeutics as alternative or adjunct when compliance is poor. The expanded therapeutic window beyond age seven is increasingly supported by evidence that dichoptic therapies improve both acuity and stereoacuity in patients older than eight.",
+    "views": 24817,
+    "tags": [
+      "pediatric",
+      "amblyopia",
+      "children",
+      "vision-screening",
+      "binocular-therapy"
+    ]
   },
   {
-    id: "low-vision-rehabilitation-transforming-lives",
-    title: "Low Vision Rehabilitation: Transforming Patient Independence",
-    excerpt: "Modern assistive technologies and rehabilitation strategies are enabling unprecedented levels of independence for patients with irreversible vision loss.",
-    category: "Low Vision",
-    author: authors[4],
-    date: "Jun 25, 2026",
-    readTime: "9 min read",
-    imageGradient: "from-sky-600 to-cyan-700",
-    featured: false,
-    views: 5430,
-    content: `Low vision rehabilitation has entered a golden age of innovation, driven by advances in assistive technology, neuroplasticity research, and person-centered care models. For the estimated 285 million people worldwide living with moderate to severe vision impairment that cannot be corrected with conventional refractive correction, these advances offer tangible improvements in reading ability, mobility, social participation, and overall quality of life. Optometrists specializing in low vision care are uniquely positioned to serve as the primary coordinators of comprehensive rehabilitation programs.\n\nElectronic vision enhancement systems (EVES) have undergone dramatic miniaturization and capability improvements. Modern wearable devices like the OrCam MyEye and eSight provide real-time text-to-speech conversion, facial recognition, object identification, and barcode scanning in a lightweight form factor that patients find socially acceptable. A 2026 clinical trial published in Investigative Ophthalmology & Visual Science demonstrated that patients using AI-enhanced wearable EVES devices achieved a 47% improvement in reading speed and a 62% improvement in object recognition accuracy compared to traditional optical magnifiers. The integration of augmented reality (AR) technology into these devices has further expanded their capabilities, allowing real-time environment enhancement and navigation assistance.\n\nSmartphone and tablet applications have democratized access to low vision assistance. Apps now offer high-contrast text rendering, customizable magnification with reading navigation, color enhancement for color-deficient patients, and real-time object recognition powered by on-device machine learning. The ubiquity of smartphones means that many patients already carry a powerful low vision aid in their pocket. Clinician-guided selection and training on appropriate apps should be a standard component of every low vision rehabilitation program, particularly for patients who may not have access to or be able to afford dedicated assistive devices.\n\nThe rehabilitation process itself has evolved to incorporate principles of neuroplasticity and perceptual learning. Research has demonstrated that structured training programs combining eccentric viewing training, saccadic eye movement exercises, and visual search strategies can significantly improve functional vision even in patients with stable ocular pathology. These training programs, often delivered through gamified digital platforms that improve patient engagement and adherence, work by strengthening the brain's ability to process residual visual information more efficiently. The integration of occupational therapy, orientation and mobility training, and psychological support into multidisciplinary low vision teams ensures that the rehabilitation program addresses the full spectrum of patient needs, from functional vision improvement to emotional adjustment and social reintegration.`
+    "id": "article-ped-2",
+    "title": "The Hidden Link: Why Vision Screening Protocols and Binocular Vision Assessment Matter More Than Ever",
+    "excerpt": "Up to 25% of school-age children have an undetected vision problem, yet standard acuity-based screening misses the binocular vision disorders most tightly linked to reading difficulty and academic underperformance.",
+    "category": "Pediatric Optometry",
+    "author": {
+      "name": "Dr. Ananya Gupta",
+      "specialty": "Pediatric Optometry",
+      "initials": "AG"
+    },
+    "date": "Jul 2026",
+    "readTime": "9 min read",
+    "imageGradient": "from-rose-500 to-pink-600",
+    "imageUrl": "https://images.unsplash.com/photo-1585435557343-3b092031a831?w=800&q=80",
+    "imageCaption": "A child during near-vision assessment at a pediatric optometry clinic. Credit: Unsplash",
+    "featured": false,
+    "content": "The AAP recommends vision screening at ages 3, 4, 5, 6, 8, 10, 12, and 15 years, yet epidemiological data reveal substantial proportions of children with clinically significant disorders slip through. Instrument-based screening using autorefractors and photoscreeners has dramatically improved detection of amblyopia risk factors, with a 2025 Ophthalmology technology assessment confirming this as the best evidence-based approach for early detection.\n\nWhere standard screening falls critically short is detecting binocular vision dysfunction. Convergence insufficiency affects 5-8% of school-age children, with NPC receding beyond 10cm and symptoms including eyestrain, headaches, and reading difficulty. The CITT landmark study demonstrated that office-based vision therapy with home reinforcement produced significant symptom resolution in approximately 75% of children, outperforming home-based pencil push-ups.\n\nLearning-related vision problems extend beyond CI to encompass accommodative insufficiency, fusional vergence dysfunction, and stereopsis deficits. Comprehensive assessment should include NPC, cover testing at distance and near, stereopsis evaluation, Worth 4 Dot assessment, and accommodative facility testing. The AAO's published procedures recommend binocular fixation assessment as it reveals earliest signs of amblyogenic conditions before acuity differences become apparent.\n\nThe convergence of updated guidelines, growing evidence for binocular vision dysfunction as a learning barrier, and increasing near-work device time creates urgency for pediatric optometrists to advocate for comprehensive assessment extending well beyond the Snellen chart. The Minnesota Department of Education explicitly recognized CI as affecting educational performance, encouraging schools to incorporate binocular screening.",
+    "views": 19432,
+    "tags": [
+      "pediatric",
+      "children",
+      "vision-screening",
+      "convergence-insufficiency",
+      "binocular-vision"
+    ]
   },
   {
-    id: "teleoptometry-regulatory-update-2026",
-    title: "Teleoptometry: Regulatory Landscape Update 2026",
-    excerpt: "Navigating the evolving telehealth regulations that are reshaping how optometrists deliver remote eye care services across state and national borders.",
-    category: "Teleoptometry",
-    author: authors[11],
-    date: "Jun 22, 2026",
-    readTime: "7 min read",
-    imageGradient: "from-indigo-500 to-violet-600",
-    featured: false,
-    views: 4560,
-    content: `The regulatory landscape for teleoptometry has evolved significantly since the temporary expansions enacted during the COVID-19 pandemic. As of mid-2026, 38 U.S. states have enacted permanent telehealth parity laws that require insurance coverage for telehealth services at rates comparable to in-person visits, and 29 states specifically include optometry in their telehealth practice acts. These developments have created a more stable and predictable environment for optometrists seeking to incorporate telehealth into their practice models, though significant state-to-state variation in scope and requirements remains.\n\nThe Interstate Medical Licensure Compact (IMLC) has been expanded to include optometry through the Optometry Licensure Compact, which now has 22 member states. This compact allows optometrists licensed in one member state to obtain an expedited license to practice telehealth in any other member state, dramatically reducing the administrative burden of multi-state practice. However, practitioners must still comply with the specific telehealth regulations of the state where the patient is located at the time of the encounter, including requirements for patient-provider relationship establishment, prescribing authority, and documentation standards.\n\nReimbursement for teleoptometry services has also matured significantly. Medicare now covers telehealth visits for established patients with a documented prior in-person examination within the preceding 12 months, a policy that became permanent in January 2026. Commercial payers generally follow Medicare's lead, with most major plans covering synchronous video visits for diagnostic evaluation and follow-up care. Remote monitoring services, including home-based visual field testing, tele-retinal imaging through partner primary care clinics, and remote intraocular pressure monitoring with investigational devices, are increasingly being assigned specific CPT codes that facilitate reimbursement.\n\nThe most significant remaining barrier to widespread teleoptometry adoption is the limitation on remote prescribing. In most jurisdictions, optometrists cannot prescribe therapeutic pharmaceuticals or order diagnostic tests based solely on a telehealth encounter without a prior in-person examination. Several professional organizations are actively lobbying for expanded remote prescribing authority, arguing that advances in diagnostic technology and the proven safety record of teleophthalmology programs support broader remote clinical privileges. Until these regulations evolve, the most successful teleoptometry models combine remote consultations with periodic in-person examinations, using telehealth to extend access between physical visits rather than replace them entirely.`
+    "id": "article-neuro-1",
+    "title": "The Optic Nerve Enters the Diagnostic Frame: What the 2024 McDonald Criteria Mean for Optometric Practice",
+    "excerpt": "The 2024 McDonald criteria revision formally recognizes the optic nerve as a topographic marker for dissemination in space, fundamentally changing how optometrists contribute to MS diagnosis.",
+    "category": "Neuro-Ophthalmology",
+    "author": {
+      "name": "Dr. Nisha Verma",
+      "specialty": "Neuro-Ophthalmology",
+      "initials": "NV"
+    },
+    "date": "Jul 2026",
+    "readTime": "7 min read",
+    "imageGradient": "from-slate-600 to-gray-800",
+    "imageUrl": "https://www.reviewofoptometry.com/CMSImagesThumbnails/2025/02/RO/RO_0225_035_6-lg.jpg",
+    "imageCaption": "Credit: Review of Optometry, 2025",
+    "featured": false,
+    "content": "The 2024 revision to the McDonald criteria explicitly includes the optic nerve as a topographic marker for dissemination in space, granting optometrists a more central role in MS diagnosis. A 2025 analysis suggested this may enhance diagnostic sensitivity by up to 15%, particularly when the initial demyelinating event is isolated to the visual system.\n\nThe clinical toolkit has expanded beyond Snellen acuity and color plates. OCT RNFL thickness measurements offer a structural biomarker correlating strongly with axonal loss. Research highlighted that GCIPL analysis can reveal neuronal loss patterns even in patients who have recovered clinically. A 2024 Scientific Reports study employed ML algorithms to correlate residual VF deficits with specific macular RGC thickness patterns, demonstrating structural-functional discordance is the rule in post-ON eyes.\n\nManagement continues to evolve. A 2025 Frontiers in Neurology review catalogued the shift toward risk-stratified approaches. IVMP at 1g daily for 3-5 days remains standard for poor prognosis patients, but oral prednisone is actively discouraged due to increased relapse rates. Emerging biologics include anti-LINGO-1 antibodies for remyelination.\n\nThe integration carries practical implications. When a patient presents with optic neuritis, optometric OCT and VF data now constitute formal evidence contributing to MS diagnosis. Clinicians should document RNFL, GCIPL, and VF reliability indices with radiology-level rigor, as these data may directly influence disease-modifying therapy initiation decisions.",
+    "views": 18742,
+    "tags": [
+      "neuro-ophthalmology",
+      "optic-nerve",
+      "visual-field",
+      "multiple-sclerosis"
+    ]
   },
   {
-    id: "binocular-vision-post-covid",
-    title: "Binocular Vision Dysfunction in Post-COVID Patients",
-    excerpt: "Emerging evidence reveals significant binocular vision and accommodative deficits in COVID-19 survivors, and how optometrists can provide effective rehabilitation.",
-    category: "Binocular Vision",
-    author: authors[5],
-    date: "Jun 20, 2026",
-    readTime: "8 min read",
-    imageGradient: "from-orange-500 to-amber-600",
-    featured: false,
-    views: 7890,
-    content: `Post-COVID-19 visual symptoms represent an increasingly recognized clinical entity that optometrists encounter with growing frequency. Large-scale studies from the United Kingdom, Spain, and India have demonstrated that 15-30% of COVID-19 survivors experience persistent visual symptoms for more than three months following acute infection, even in cases where the initial illness was mild. The most common visual complaints include convergence insufficiency, accommodative infacility, saccadic dysfunction, and visual motion hypersensitivity — symptoms that can significantly impact reading performance, computer use, and overall quality of life.\n\nThe proposed mechanisms for post-COVID binocular vision dysfunction are multifactorial. Neuroinflammatory processes triggered by the virus may affect the brainstem nuclei controlling vergence and version eye movements, including the oculomotor, trochlear, and abducens nerve complexes. Autonomic nervous system dysregulation, a hallmark of long COVID, may impair the neural circuits governing the near triad — accommodation, convergence, and miosis — leading to the constellation of near-vision symptoms commonly reported. Additionally, the prothrombotic state associated with COVID-19 may cause microvascular ischemia in brain regions involved in visual processing, though this mechanism remains investigational.\n\nClinical evaluation of post-COVID patients requires a systematic approach that goes beyond standard vision screening. Practitioners should conduct thorough near point convergence testing, measuring both the break and recovery points, as well as monocular and binocular accommodative facility testing with appropriate flipper lenses. Developmental eye movement (DEM) testing or computerized saccadic assessment can identify version deficits that may not be apparent during routine cover testing. It is important to recognize that many post-COVID patients present with multiple concurrent deficits rather than isolated dysfunctions, necessitating comprehensive evaluation protocols that assess all aspects of the vergence-accommodation system.\n\nVision therapy has emerged as the primary treatment modality for post-COVID binocular vision dysfunction, with published case series demonstrating favorable outcomes in 80-85% of treated patients. A typical rehabilitation program spans 12-24 weeks and includes convergence therapy with Brock strings and vectograms, accommodative facility training with lens flippers and Hart charts, and saccadic exercises using computerized training platforms. Many practitioners have found that combining traditional in-office vision therapy with home-based exercises using digital therapeutics apps provides the most efficient path to recovery. The integration of syntonic phototherapy (low-level light therapy) has shown promise in case reports for patients with persistent visual motion hypersensitivity and photophobia.`
+    "id": "article-neuro-2",
+    "title": "Beyond the Disc: Navigating Papilledema, Chiasmal Compression, and Neuroimaging Decision-Making",
+    "excerpt": "Distinguishing true papilledema from pseudopapilledema, recognizing chiasmal visual field patterns, and knowing when to order neuroimaging are among the most high-stakes decisions an optometrist faces.",
+    "category": "Neuro-Ophthalmology",
+    "author": {
+      "name": "Dr. Nisha Verma",
+      "specialty": "Neuro-Ophthalmology",
+      "initials": "NV"
+    },
+    "date": "Jul 2026",
+    "readTime": "8 min read",
+    "imageGradient": "from-slate-600 to-gray-800",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Optic_disc_edema.jpg/800px-Optic_disc_edema.jpg",
+    "imageCaption": "Credit: Wikimedia Commons / Open access",
+    "featured": false,
+    "content": "Failure to distinguish true papilledema from benign mimics can delay diagnosis of life-threatening intracranial pathology. A 2026 Scientific Reports investigation found clinically meaningful proportions of patients referred with suspected papilledema harbored undetected mass lesions, venous sinus thrombosis, or other structural abnormalities.\n\nOCT has transformed bedside differentiation. Peripapillary RNFL thickness combined with subretinal hyporeflective space assessment and near-infrared reflectance imaging significantly improve accuracy over ophthalmoscopy alone. Automated ML models classified papilledema presence and severity with accuracy approaching trained neuro-ophthalmologists. The practical algorithm: bilateral disc swelling with RNFL exceeding 95 microns warrants urgent MRI brain and MRV within 24-48 hours.\n\nChiasmal lesions classically produce bitemporal defects. A 2025 Eye & Nature review noted decreased acuity and bitemporal hemianopia as presenting symptoms in up to 70% of macroadenoma patients. A compelling 2026 Cureus case report illustrated a patient followed for three years for presumed bilateral OAG ultimately found to have a 2.2cm pituitary adenoma.\n\nConsensus guidelines recommend MRI with gadolinium as primary modality. OCT also predicts postoperative outcomes: preoperative GCIPL thickness above 55 microns shows significantly better postoperative acuity and field improvement. OCT data gathered at initial examination aids not only diagnosis but prognostication and surgical planning.",
+    "views": 21356,
+    "tags": [
+      "neuro-ophthalmology",
+      "papilledema",
+      "visual-pathway",
+      "neuroimaging"
+    ]
   },
   {
-    id: "contact-lens-materials-next-generation",
-    title: "Contact Lens Materials: The Next Generation",
-    excerpt: "From smart contact lenses to biomimetic polymers, exploring the material science innovations that will define the next decade of contact lens wear.",
-    category: "Contact Lenses",
-    author: authors[1],
-    date: "Jun 18, 2026",
-    readTime: "10 min read",
-    imageGradient: "from-emerald-500 to-cyan-600",
-    featured: false,
-    views: 6230,
-    content: `Contact lens material science is experiencing a renaissance of innovation driven by advances in polymer chemistry, surface engineering, and drug delivery technology. The next generation of contact lens materials promises to transform the wearing experience from a simple refractive correction to a multifunctional platform that monitors health, delivers therapeutics, and adapts to individual physiological needs. These advances represent the convergence of nanotechnology, biotechnology, and traditional polymer science in a field that had seen relatively incremental improvement for over two decades.\n\nBiomimetic surface technologies represent one of the most clinically significant advances. Drawing inspiration from the tear film's natural lipid layer, researchers have developed contact lens surface coatings that mimic the properties of meibomian gland secretions. These biomimetic coatings, composed of phospholipid polymers and amphiphilic molecules, create a stable interface between the lens surface and the tear film, reducing deposit formation by 70% and improving comfort ratings by 40% compared to conventional hydrogel and silicone hydrogel materials. Early clinical trials of these next-generation surface-modified lenses show a 60% reduction in lens-related dry eye symptoms among daily wear patients after 30 days of continuous wear.\n\nSmart contact lenses embedded with microelectronics represent the frontier of contact lens technology. Several companies are advancing clinical trials of lenses that incorporate microfluidic sensors capable of measuring intraocular pressure, glucose levels in tear fluid, and lacrimal biomarkers for ocular and systemic disease monitoring. A 2026 proof-of-concept study published in Science Translational Medicine demonstrated that a glucose-sensing contact lens could achieve correlation coefficients of 0.92 with conventional finger-stick blood glucose measurements, bringing the technology closer to clinical reality for diabetic patients. Wireless power transfer and data transmission using near-field communication (NFC) technology have solved the challenge of powering these microelectronic systems without bulky batteries.\n\nDrug-eluting contact lenses have finally overcome the technical barriers that limited earlier attempts at sustained drug delivery. The core challenge — achieving therapeutic drug release rates over extended periods without compromising optical clarity or oxygen permeability — has been addressed through molecular imprinting technology and nanoparticle drug reservoirs embedded within the lens matrix. Antimicrobial contact lenses that release ciprofloxacin or moxifloxacin at therapeutic levels for 7-14 days have completed Phase II clinical trials for prophylactic use following refractive surgery and in patients with recurrent bacterial keratitis. Perhaps the most anticipated application is sustained-release cyclosporine lenses for dry eye disease, which could replace daily eye drop administration and improve patient compliance significantly.`
+    "id": "article-pharm-1",
+    "title": "The New Frontier of Ocular Drug Delivery: From Rho Kinase Inhibitors to Nanotechnology-Enhanced Therapies",
+    "excerpt": "Ocular pharmacology is undergoing a seismic shift as Rho kinase inhibitors rewrite glaucoma management, nanotechnology platforms overcome bioavailability barriers, and preservative-free formulations set new safety standards.",
+    "category": "Ocular Pharmacology",
+    "author": {
+      "name": "Dr. Sneha Reddy",
+      "specialty": "Ocular Pharmacology",
+      "initials": "SR"
+    },
+    "date": "Jul 2026",
+    "readTime": "8 min read",
+    "imageGradient": "from-red-600 to-rose-700",
+    "imageUrl": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=800&q=80",
+    "imageCaption": "Credit: Unsplash/RF._.studio",
+    "featured": false,
+    "content": "Glaucoma management has been reshaped by ROCK inhibitors. Netarsudil targets the RhoA/ROCK pathway to increase trabecular outflow while reducing EVP. Rocklatan achieves 30-35% IOP reductions from baseline, outperforming either component alone. Unlike traditional agents, netarsudil exhibits anti-fibrotic properties on the trabecular meshwork.\n\nNanotechnology is the most transformative force in overcoming ocular barriers. Conventional drops deliver less than 5% of instilled dose. Liposomal cyclosporine achieves 4-fold higher corneal permeation. Chitosan-coated nanoparticles exploit mucoadhesive properties to prolong residence time. For posterior segment, intravitreal triamcinolone nanosuspensions demonstrate 6-month sustained release. Gold nanoparticle carriers show enhanced retinal penetration and prolonged VEGF suppression.\n\nAnti-VEGF therapy continues evolving. The Susvimo port delivery system provides continuous ranibizumab with refills only every 9 months. Faricimab targets both VEGF-A and angiopoietin-2, enabling 16-week intervals in 60% of patients. High-dose aflibercept extends maintenance to 12-16 weeks.\n\nPreservative-free formulations have moved from niche to clinical imperative. BAK disrupts tear film, induces goblet cell loss, and triggers pro-inflammatory cascades. Transitioning to preservative-free regimens reduces OSDI scores by 40% and improves tolerability. The cumulative evidence supports broader adoption across all chronic ophthalmic therapies.",
+    "views": 48217,
+    "tags": [
+      "pharmacology",
+      "drug-delivery",
+      "glaucoma",
+      "anti-VEGF",
+      "nanotechnology"
+    ]
   },
   {
-    id: "glaucoma-pharmacology-2026",
-    title: "Glaucoma Pharmacology: What's New in 2026",
-    excerpt: "A detailed review of newly approved and investigational glaucoma medications, including novel drug classes, sustained-release formulations, and combination therapies.",
-    category: "Ocular Pharmacology",
-    author: authors[6],
-    date: "Jun 15, 2026",
-    readTime: "9 min read",
-    imageGradient: "from-violet-600 to-purple-700",
-    featured: false,
-    views: 7120,
-    content: `The glaucoma pharmacology landscape has experienced unprecedented expansion with the introduction of several novel drug classes and innovative drug delivery systems over the past two years. These advances address long-standing limitations of traditional therapy — including adherence challenges, local side effects, and insufficient intraocular pressure (IOP) control in advanced disease — and offer new mechanisms of action for patients who have exhausted conventional treatment options. For optometrists who manage glaucoma patients, understanding these new therapeutic options is essential for providing comprehensive, evidence-based care.\n\nRho kinase (ROCK) inhibitors have emerged as the most significant new drug class in glaucoma therapy since the introduction of prostaglandin analogs. Netarsudil 0.02% (Rhopressa), approved initially for once-daily dosing, is now available in a sustained-release formulation (netarsudil SR) that maintains therapeutic drug levels in the anterior chamber for up to three months following a single in-office administration. This formulation utilizes a biodegradable polymeric implant placed in the inferior conjunctival fornix, offering a paradigm shift in glaucoma management by eliminating daily drop administration. Clinical trials demonstrate sustained IOP reduction of 5-7 mmHg over the 12-week dosing interval, comparable to once-daily prostaglandin analogs.\n\nNovel prostaglandin receptor agonists with improved therapeutic profiles have also entered the market. Latanoprostene bunod, which releases both latanoprost acid and nitric oxide (NO), targets both the uveoscleral and trabecular outflow pathways simultaneously. The latest formulation incorporates a permeation enhancer that increases corneal absorption by 35%, allowing lower drug concentrations and reducing the incidence of ocular hyperemia by 50% compared to standard latanoprost. Additionally, a bimatoprost sustained-release implant (Durysta) has received expanded indications, and new refillable implant systems are in late-stage development that would allow in-office reservoir exchange without additional surgical procedures.\n\nCombination therapies have become increasingly sophisticated, moving beyond simple fixed-dose combinations of two drugs. Triple combination drops containing a prostaglandin analog, a carbonic anhydrase inhibitor, and an alpha-2 agonist are now available in preservative-free formulations, offering simplified dosing regimens for patients requiring multiple medications. Gene therapy approaches targeting the myocilin (MYOC) gene and trabecular meshwork extracellular matrix remodeling are in Phase I/II clinical trials and represent potentially disease-modifying interventions rather than purely symptomatic IOP reduction. While these gene therapies remain investigational, early safety data are encouraging, and they may fundamentally change the treatment paradigm for primary open-angle glaucoma within the next decade.`
+    "id": "article-pharm-2",
+    "title": "Rewriting the Script on Dry Eye: How Novel Mechanisms and Smart Delivery Are Reshaping DED Pharmacotherapy",
+    "excerpt": "Dry eye pharmacotherapy has transcended artificial tears, with TRPM8 agonists, reactive aldehyde modulators, and sustained-release cyclosporine redefining what clinicians can offer the estimated 16 million Americans with symptomatic DED.",
+    "category": "Ocular Pharmacology",
+    "author": {
+      "name": "Dr. Sneha Reddy",
+      "specialty": "Ocular Pharmacology",
+      "initials": "SR"
+    },
+    "date": "Jul 2026",
+    "readTime": "7 min read",
+    "imageGradient": "from-teal-600 to-cyan-700",
+    "imageUrl": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80",
+    "imageCaption": "Credit: Unsplash/National Eye Institute",
+    "featured": false,
+    "content": "The TRPM8 cold receptor agonist class has introduced a fundamentally new mechanism. Varenicline nasal spray (Tyrvaya) demonstrated statistically significant Schirmer improvements of 10.5mm at day 28. Altrecltremon (Tryptyr, Alcon) received FDA approval in 2025 as a direct ocular-surface TRPM8 agonist with onset within 15 minutes lasting up to 8 hours.\n\nReactive aldehyde species modulators target upstream inflammatory mediators. Reproxalap achieved 10.6mm Schirmer improvement at day 29 with rapid symptom relief as early as 15 minutes. The RASP mechanism interrupts the inflammatory cycle at its origin, distinct from existing anti-inflammatory approaches.\n\nCyclosporine formulation evolution has been revolutionary. Vevye uses a water-free, preservative-free vehicle eliminating emulsifier-related irritation while achieving 10.5mm Schirmer improvement at 12 weeks with significantly better comfort. Investigational cyclosporine implants for 3-6 month sustained release have entered early-phase clinical trials.\n\nResearch using multiplex cytokine analysis identified four DED endotype clusters: T-cell, neutrophil, IFN-gamma, and IL-17 dominant. AI algorithms are being trained on multiomic datasets to predict individual patient responses, potentially enabling clinicians to match patients to optimal first-line therapy rather than relying on trial-and-error escalation.",
+    "views": 35942,
+    "tags": [
+      "pharmacology",
+      "dry-eye",
+      "drug-delivery",
+      "preservative-free"
+    ]
   },
   {
-    id: "ocular-surface-disease-beyond-drops",
-    title: "Ocular Surface Disease: Beyond Artificial Tears",
-    excerpt: "A systematic approach to diagnosing and managing ocular surface disease using advanced diagnostics, novel therapeutics, and personalized treatment algorithms.",
-    category: "Anterior Segment",
-    author: authors[10],
-    date: "Jun 12, 2026",
-    readTime: "8 min read",
-    imageGradient: "from-red-500 to-rose-600",
-    featured: false,
-    views: 10340,
-    content: `Ocular surface disease (OSD) remains the most frequently encountered condition in optometric practice, affecting an estimated 30-40% of the adult population and up to 70% of patients over age 65. Despite its prevalence, OSD is frequently undertreated, with many practitioners defaulting to artificial tears as the sole intervention without addressing the underlying etiology. A paradigm shift is occurring in OSD management, moving toward a precision medicine approach that identifies specific disease mechanisms — tear deficiency, evaporative stress, neurosensory dysfunction, and inflammatory-mediated damage — and targets each with evidence-based interventions.\n\nAdvanced diagnostic tools have made precision OSD management practically achievable. Tear film osmolarity testing (TearLab), which became widely available in the mid-2010s, has been joined by matrix metalloproteinase-9 (MMP-9) point-of-care testing (InflammaDry), lipid layer thickness analysis (LipiView), and meibography imaging systems. When used together as a diagnostic panel, these tools can differentiate aqueous-deficient dry eye from evaporative dry eye with over 90% accuracy, identify subclinical inflammation, and quantify meibomian gland atrophy. The latest addition to the diagnostic armamentarium is tear cytokine profiling using multiplex assay technology, which can measure inflammatory biomarkers including IL-6, IL-1beta, TNF-alpha, and interferon-gamma from a single tear sample.\n\nTreatment algorithms have evolved to address the multifactorial nature of OSD. For meibomian gland dysfunction (MGD), the most common cause of evaporative dry eye, thermal pulsation devices (LipiFlow, TearCare) remain the gold standard for in-office gland expression, with recent evidence supporting their superiority to manual expression in terms of both symptom improvement and gland function recovery. Intense pulsed light (IPL) therapy has gained FDA clearance for MGD treatment and offers the additional benefit of reducing ocular surface inflammation and Demodex infestation. For aqueous-deficient dry eye, the therapeutic landscape has expanded beyond traditional cyclosporine and lifitegrast to include novel anti-inflammatory agents such as loteprednol etabonate 0.25% ophthalmic suspension (Eysuvis) for short-term flare management and a sustained-release dexamethasone insert (Dextenza) that provides four weeks of anti-inflammatory therapy from a single placement.\n\nRegenerative approaches represent the most exciting frontier in OSD treatment. Autologous serum eye drops, prepared from the patient's own blood, contain growth factors, vitamins, and immunoglobulins that promote ocular surface healing. Platelet-rich plasma (PRP) eye drops offer a more standardized preparation with higher concentrations of beneficial growth factors. Several bioengineered tear substitutes containing recombinant human lubricin — a glycoprotein that provides boundary lubrication and anti-inflammatory properties — are in late-stage clinical development and may offer superior symptom relief compared to conventional artificial tears. The emergence of these advanced therapeutics reinforces the importance of accurate diagnosis and individualized treatment planning rather than a one-size-fits-all approach to ocular surface disease management.`
+    "id": "article-tele-1",
+    "title": "Teleoptometry's Tipping Point: How Remote Vision Screening Is Rewriting the Rules of Eye Care Access",
+    "excerpt": "From 2 million remote exams by a single platform to state-level regulatory breakthroughs, teleoptometry has moved beyond experimentation into a structured clinical discipline expanding care to underserved populations.",
+    "category": "Technology",
+    "author": {
+      "name": "Dr. Amit Joshi",
+      "specialty": "Teleoptometry",
+      "initials": "AJ"
+    },
+    "date": "Jul 2026",
+    "readTime": "7 min read",
+    "imageGradient": "from-cyan-600 to-teal-700",
+    "imageUrl": "https://images.unsplash.com/photo-1576091160550-2187d80a17f3?w=1200&q=80",
+    "imageCaption": "A clinician reviewing remote retinal imaging data. Credit: Unsplash/NIH",
+    "featured": false,
+    "content": "DigitalOptometrics recently announced surpassing 2 million remote comprehensive eye examinations, underscoring clinical maturity. Today's platforms integrate autorefractors, digital slit lamps, and non-mydriatic fundus cameras, allowing remote optometrists to conduct full assessments in under 30 minutes. Practices adopting hybrid models report improved retention, particularly in rural communities where the nearest clinic may be 50+ miles away.\n\nThe AOA released a revised Telemedicine Policy Statement in August 2025, elevating telemedicine from experimental adjunct to fully structured optometric practice component. North Dakota's HB 1267 established the first state-level optometric telemedicine guidelines. Washington's ESSB 5481 Uniform Telemedicine Act created a cross-specialty framework adopted as model by several states.\n\nPortable OCT devices are commercially available in handheld and tabletop configurations. Notal Vision's Scanly received FDA De Novo authorization for at-home OCT monitoring of neovascular AMD. Portable VF devices demonstrate >85% sensitivity for moderate-to-advanced loss. These tools form the foundation of 'teleglaucoma' remote monitoring.\n\nA Johns Hopkins study found annual exam rates among diabetes patients climbed from 46.4% to 64% at AI-integrated clinics. One network reported 94% screening completion via telemedicine vs 56% through conventional referral. Most critically, AI-assisted referrals achieved 64% follow-up uptake, nearly 3x the 22% with routine referrals, per Nature Digital Medicine 2026.",
+    "views": 48721,
+    "tags": [
+      "teleoptometry",
+      "digital-health",
+      "telemedicine",
+      "remote-screening",
+      "OCT"
+    ]
   },
   {
-    id: "practice-valuation-guide-2026",
-    title: "Optometric Practice Valuation: A 2026 Comprehensive Guide",
-    excerpt: "Understanding the key metrics, valuation methods, and market trends that determine the true worth of an optometric practice in today's evolving healthcare landscape.",
-    category: "Practice Management",
-    author: authors[7],
-    date: "Jun 10, 2026",
-    readTime: "10 min read",
-    imageGradient: "from-lime-500 to-emerald-600",
-    featured: false,
-    views: 8760,
-    content: `The optometric practice market in 2026 presents a dynamic and complex landscape for both buyers and sellers. Practice valuations have risen steadily over the past three years, with median practice values increasing 18% since 2023, driven by strong revenue growth, expanding scope of practice, and heightened acquisition interest from corporate optometry entities and private equity groups. For optometrists considering buying or selling a practice, understanding the valuation process and the factors that drive practice worth is essential for making informed financial decisions and achieving optimal outcomes.\n\nRevenue-based valuation remains the most commonly used methodology for optometric practices, with practices typically valued at 0.6 to 1.2 times gross annual revenue, depending on practice characteristics. However, this simple multiplier approach is increasingly supplemented by earnings-based methods that focus on seller's discretionary earnings (SDE) or earnings before interest, taxes, depreciation, and amortization (EBITDA). These methods provide a more accurate picture of practice profitability and are preferred by sophisticated buyers and financial institutions. Current market data shows that well-managed optometric practices typically sell for 3.5 to 5.5 times SDE, with higher multiples awarded to practices demonstrating strong growth trajectories, diversified revenue streams, and efficient operational systems.\n\nSeveral key performance indicators (KPIs) significantly influence practice valuation and should be optimized well in advance of a planned sale. Revenue per patient visit, which averaged $285 in 2025 according to the AOA Practice Analysis, is a critical metric that reflects both clinical efficiency and billing optimization. Optical capture rate — the percentage of comprehensive exam patients who purchase eyewear from the practice — should exceed 55% for a premium valuation, as this metric demonstrates the practice's ability to convert clinical services into retail revenue. Patient retention rate, measured by the percentage of patients who return for annual examinations, should be above 70% to indicate a loyal and stable patient base. The ratio of medical to refractive revenue is increasingly important, with practices deriving more than 40% of revenue from medical services commanding higher valuations due to the resilience of medical revenue to economic cycles and online retail disruption.\n\nThe corporate consolidation trend continues to reshape the practice market, with approximately 35% of optometric practice acquisitions in 2025 involving corporate buyers. These entities typically offer higher purchase prices than individual buyers but may include restrictive covenants and employment agreements that sellers should carefully evaluate. Independent buyers, including younger optometrists seeking practice ownership, often require seller financing and transitional support but may offer more favorable long-term terms. For sellers planning an exit, beginning preparation 3-5 years in advance is advisable — this timeline allows for optimization of financial records, resolution of operational inefficiencies, staff stabilization, and implementation of systems that enhance practice transferability and value.`
+    "id": "article-tele-2",
+    "title": "AI Meets the Retina: How Machine Learning Is Turning Every Primary Care Office Into a Diabetic Eye Screening Clinic",
+    "excerpt": "Autonomous AI systems for DR detection achieve over 96% diagnostic accuracy in real-world settings, with the U.S. market for AI-driven screening surpassing $229 million in 2026.",
+    "category": "Technology",
+    "author": {
+      "name": "Dr. Amit Joshi",
+      "specialty": "Teleoptometry",
+      "initials": "AJ"
+    },
+    "date": "Jul 2026",
+    "readTime": "8 min read",
+    "imageGradient": "from-cyan-600 to-teal-700",
+    "imageUrl": "https://images.unsplash.com/photo-1559757175-5700dde675bc?w=1200&q=80",
+    "imageCaption": "Fundus photograph analyzed by AI for DR grading. Credit: Unsplash/Nature",
+    "featured": false,
+    "content": "A large-scale 2025 real-world study reported AUC 96.5%, sensitivity 88.9%, specificity 98.7% for detecting referable DR across diverse settings. The system provides immediate binary referral decisions at point of care, eliminating the diagnostic bottleneck from specialist shortage.\n\nThe most effective deployment model integrates AI screening into existing primary care workflows. A medical assistant captures fundus photographs during routine diabetes visits; the AI returns results within 60 seconds. A youth diabetes RCT demonstrated 100% exam completion in the AI arm. The U.S. AI DR screening market grew to $229.78 million in 2026, with global reach approximately $480 million.\n\nNature Digital Medicine 2026 found AI-assisted referrals achieved 64% follow-up uptake versus 22% through standard referral. The study attributed this to immediate result delivery, embedded scheduling, and perceived urgency of algorithmic assessment. Portable SD-OCT devices are being integrated for quantitative retinal assessment enabling more nuanced triage.\n\nFrontiers in Medicine 2026 concluded AI-based screening demonstrates 'high diagnostic accuracy and consistent effectiveness' across diverse health system contexts. The integration challenge now is building sustainable reimbursement models, training workforces, and ensuring equitable deployment. The argument for universal AI-assisted DR screening as standard of care is increasingly difficult to contest.",
+    "views": 52304,
+    "tags": [
+      "teleoptometry",
+      "AI",
+      "diabetic-retinopathy",
+      "digital-health",
+      "screening"
+    ]
   },
+  {
+    "id": "article-lv-1",
+    "title": "The New Frontier in Low Vision Rehabilitation: How Magnification, Contrast, and Smart Technology Are Redefining Independence",
+    "excerpt": "Electronic magnification, contrast-enhancing strategies, and AI-powered assistive devices are helping millions with AMD reclaim daily function.",
+    "category": "Low Vision",
+    "author": {
+      "name": "Dr. Meera Krishnan",
+      "specialty": "Low Vision Rehabilitation",
+      "initials": "MK"
+    },
+    "date": "Jul 2026",
+    "readTime": "8 min read",
+    "imageGradient": "from-amber-600 to-orange-700",
+    "imageUrl": "https://cdn.sanity.io/images/0vv8moc6/optometrytimes/2c9e7cd26ff0da3b48221c0f420993ffc498ed87-1200x800.jpg",
+    "imageCaption": "Handheld magnifier over a laptop screen. Credit: Optometry Times",
+    "featured": false,
+    "content": "Low vision affects an estimated 6 million Americans, with 1.6 million under age 40. Handheld magnifiers (2x-20x) remain the most frequently prescribed first-line device. Electronic magnification systems offer variable magnification up to 60x with adjustable contrast modes, polarity reversal, and image capture. A 2025 Journal of Medical Systems scoping review confirmed technology-assisted rehabilitation produces statistically significant improvements in reading speed, facial recognition, and quality of life.\n\nContrast sensitivity correlates more strongly with perceived disability and falls risk than acuity alone. Modern clinics incorporate Pelli-Robson or Mars testing routinely. Rehabilitation strategies include yellow-tinted filter lenses reducing disability glare, environmental modifications like high-contrast tape on stair edges, and LED task lighting. A 2025 Optometry Times review emphasized that the real world is not a Snellen chart.\n\nFor advanced AMD patients developing a preferred retinal locus, eccentric viewing training improves reading performance 30-50% over 6-12 sessions. Bioptic telescopic lens driving privileges are available in approximately 40 states. Studies from UAB demonstrate bioptic drivers exhibit crash rates comparable to the general population, though patient selection is paramount.\n\nA 2026 JMIR Rehabilitation study found eye care professionals cite lack of training, insufficient reimbursement, and limited device demonstrations as primary barriers. AI is addressing some barriers: generative AI provides real-time scene description, text-to-speech conversion, and object recognition through smartphones, transforming mobile phones into powerful low vision aids.",
+    "views": 24718,
+    "tags": [
+      "low-vision",
+      "rehabilitation",
+      "AMD",
+      "assistive-technology",
+      "magnification"
+    ]
+  },
+  {
+    "id": "article-lv-2",
+    "title": "Virtual Reality Enters the Clinic: Immersive Platforms Are Reshaping Low Vision Training",
+    "excerpt": "VR is moving into clinical low vision rehabilitation, offering safe environments where patients with central field loss can practice eccentric viewing, navigation, and eye-hand coordination.",
+    "category": "Low Vision",
+    "author": {
+      "name": "Dr. Meera Krishnan",
+      "specialty": "Low Vision Rehabilitation",
+      "initials": "MK"
+    },
+    "date": "Jul 2026",
+    "readTime": "7 min read",
+    "imageGradient": "from-teal-600 to-cyan-700",
+    "imageUrl": "https://cdn.sanity.io/images/0vv8moc6/optometrytimes/2c9e7cd26ff0da3b48221c0f420993ffc498ed87-1200x800.jpg",
+    "imageCaption": "VR-based rehabilitation for central vision loss. Credit: Optometry Times",
+    "featured": false,
+    "content": "VR creates immersive, reproducible, controllable visual scenes for eccentric viewing training. At ACM SIGACCESS 2024, researchers demonstrated VR-based exercises improved PRL stability compared to conventional paper-based training. The key advantage: precisely calibrated stimuli with real-time eye position, head movement, and response accuracy tracking.\n\nInria's BIOVISION team develops personalized, gamified VR protocols adapting difficulty in real time based on ocular motor performance. Springer VR 2025 investigated scotoma simulation for assessment, while PMC 2025 explored eye-hand coordination revealing specific deficits in reach accuracy underappreciated in standard evaluations.\n\nBiofeedback-integrated VR represents the next step. Dr. Daibert-Nido's Krembil system combines gaze-contingent display with auditory and haptic biofeedback. When gaze directs to the trained eccentric location, visual stimulus is clear; when it drifts to damaged fovea, the image degrades, providing intrinsic training signal. Preliminary data suggests faster reading speeds and more stable fixation after 8-12 sessions.\n\nA JMIR 2026 scoping review identified clinician unfamiliarity, absence of standardized protocols, and insufficient insurance coverage as significant barriers. While consumer VR has become affordable, clinic-grade systems with eye tracking cost several thousand dollars. The AAO acknowledged VR systems show promise but emphasized current evidence does not yet support routine clinical use outside research.",
+    "views": 18342,
+    "tags": [
+      "low-vision",
+      "VR-rehabilitation",
+      "eccentric-viewing",
+      "AMD",
+      "biofeedback"
+    ]
+  },
+  {
+    "id": "article-prac-1",
+    "title": "Beyond the Exam Chair: How Smart Revenue Diversification Is Reshaping Independent Optometry",
+    "excerpt": "Independent practices that rely solely on exams are leaving revenue on the table. By expanding into specialty services, optimizing dispensing, and tightening billing, practices report 18-32% revenue increases.",
+    "category": "Practice Management",
+    "author": {
+      "name": "Dr. Karthik Iyer",
+      "specialty": "Practice Management",
+      "initials": "KI"
+    },
+    "date": "Jul 2026",
+    "readTime": "8 min read",
+    "imageGradient": "from-teal-500 to-emerald-600",
+    "imageUrl": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80",
+    "imageCaption": "Modern optometry clinic with advanced diagnostic technology",
+    "featured": false,
+    "content": "The Vision Council reports average exam value climbed 14% YoY while volume dipped 4.5%. National chains with aggressive pricing and seven-figure marketing budgets capture expanding routine exam share. For private practices, competing on volume alone is a losing strategy. Building multiple revenue pillars that chains cannot replicate is the path forward.\n\nSpecialty medical optometry has emerged as the most impactful diversification lever. Practices adding dry eye therapy, myopia management, and scleral lens fitting report frame capture rates climbing from 42% to 60%+. One multi-location practice integrating IPL dry eye treatment saw medical revenue grow 28% within nine months. Myopia management is projected to become a $12.8 billion global market by 2028.\n\nOptical dispensing contributes 45-55% of total revenue, yet many practices operate with outdated inventory management. Best-in-class practices track turn rates by brand and segment, reducing slow stock by 20-30% while increasing capture rate. Consultative selling training raises average transaction values by $85-140 per visit. Direct vendor negotiations for exclusive territory agreements protect against online price comparison.\n\nInternal audits consistently reveal 8-12% claims contain coding errors resulting in denials. A dedicated billing review workflow can recover $40,000-80,000 annually for a two-doctor practice. Real-time eligibility verification reduces patient balance write-offs by 35%.",
+    "views": 42817,
+    "tags": [
+      "practice-management",
+      "business",
+      "revenue",
+      "optical-dispensing",
+      "insurance-billing"
+    ]
+  },
+  {
+    "id": "article-prac-2",
+    "title": "The Digital-First Practice: EHR Integration, Patient Experience Metrics, and the New Rules of Optometry Marketing",
+    "excerpt": "Practices treating technology as secondary are falling behind those embedding digital workflows into every touchpoint. Measuring patient experience with clinical-outcomes rigor is the primary growth multiplier for 2026.",
+    "category": "Practice Management",
+    "author": {
+      "name": "Dr. Karthik Iyer",
+      "specialty": "Practice Management",
+      "initials": "KI"
+    },
+    "date": "Jul 2026",
+    "readTime": "9 min read",
+    "imageGradient": "from-teal-500 to-emerald-600",
+    "imageUrl": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&q=80",
+    "imageCaption": "Eye care professionals collaborating in a modern clinical setting",
+    "featured": false,
+    "content": "The global ambulatory EHR market reached $9.47 billion in 2025, yet many independent practices still operate on fragmented systems. Fully integrated optometry EHR platforms report 25-40% documentation time reductions, with revenue-per-visit increases of 11-16% driven by reduced claim denials and higher optical capture rates.\n\nPatient experience metrics have graduated to core business KPIs. A one-point increase in Google review rating correlates with 5-9% more new-patient inquiries. Practices systematically requesting reviews within 24 hours via automated SMS generate 3-5x more reviews. The most sophisticated operators tie experience scores to staff bonuses, reporting NPS above 72 versus industry average of 48.\n\nDigital marketing has evolved well beyond a responsive website. Local SEO remains highest-ROI with 78% of patients starting on Google. Paid search for high-value services delivers 40-60% lower cost-per-acquisition than broad campaigns. Instagram and TikTok drive engagement rates far exceeding static posts for practices targeting under-40 demographics.\n\nStaff training is the connective tissue. Progressive practices invest 40+ hours/year in role-specific training. Formalized onboarding programs report turnover below 12% versus industry average of 22-28%. Lower turnover translates to better patient relationships, higher capture rates, and reduced recruitment costs of $8,000-15,000 per hire.",
+    "views": 38542,
+    "tags": [
+      "practice-management",
+      "EHR",
+      "digital-marketing",
+      "patient-experience",
+      "staff-training"
+    ]
+  }
 ];
 
-export const trendingTopics = [
-  { title: "AI in Optometry: 2026 State of the Art", views: 18920 },
-  { title: "Myopia Epidemic: WHO Updates Global Projections", views: 15640 },
-  { title: "Sustainable Contact Lens Practices", views: 13200 },
-  { title: "Gene Therapy for Inherited Retinal Disease", views: 11980 },
-  { title: "The Optometrist's Role in Sleep Medicine", views: 10450 },
+export const categories: Category[] = [
+  {
+    "name": "Myopia Management",
+    "icon": "Eye",
+    "count": 2,
+    "description": "Evidence-based strategies for slowing axial elongation in children",
+    "color": "emerald"
+  },
+  {
+    "name": "Glaucoma",
+    "icon": "Shield",
+    "count": 2,
+    "description": "Early detection, monitoring, and advancing treatment options",
+    "color": "violet"
+  },
+  {
+    "name": "Contact Lenses",
+    "icon": "Circle",
+    "count": 2,
+    "description": "Material science, fitting innovations, and specialty lens designs",
+    "color": "sky"
+  },
+  {
+    "name": "Diagnostic Technology",
+    "icon": "Scan",
+    "count": 2,
+    "description": "OCT, OCT-A, AI-assisted imaging, and next-gen diagnostics",
+    "color": "indigo"
+  },
+  {
+    "name": "Pediatric Optometry",
+    "icon": "Baby",
+    "count": 2,
+    "description": "Children's vision, amblyopia, binocular vision assessment",
+    "color": "rose"
+  },
+  {
+    "name": "Neuro-Ophthalmology",
+    "icon": "Brain",
+    "count": 2,
+    "description": "Optic nerve disorders, visual pathway lesions, MS-related findings",
+    "color": "slate"
+  },
+  {
+    "name": "Ocular Pharmacology",
+    "icon": "Droplet",
+    "count": 2,
+    "description": "Drug delivery systems, novel therapeutics, dry eye treatments",
+    "color": "red"
+  },
+  {
+    "name": "Technology",
+    "icon": "Monitor",
+    "count": 2,
+    "description": "Teleoptometry, AI screening, digital health innovations",
+    "color": "cyan"
+  },
+  {
+    "name": "Low Vision",
+    "icon": "Accessibility",
+    "count": 2,
+    "description": "Rehabilitation, assistive technology, VR-based training",
+    "color": "amber"
+  },
+  {
+    "name": "Practice Management",
+    "icon": "Building",
+    "count": 2,
+    "description": "Business growth, EHR integration, marketing, and operations",
+    "color": "teal"
+  },
+  {
+    "name": "Clinical Refraction",
+    "icon": "Glasses",
+    "count": 0,
+    "description": "Advanced refraction techniques and optical corrections",
+    "color": "blue"
+  },
+  {
+    "name": "Anterior Segment",
+    "icon": "Aperture",
+    "count": 0,
+    "description": "Cornea, conjunctiva, and external disease management",
+    "color": "orange"
+  },
+  {
+    "name": "Binocular Vision",
+    "icon": "Move",
+    "count": 0,
+    "description": "Strabismus, vergence disorders, and visual processing",
+    "color": "purple"
+  },
+  {
+    "name": "Public Health",
+    "icon": "Heart",
+    "count": 0,
+    "description": "Community eye health, epidemiology, and access to care",
+    "color": "green"
+  }
 ];
 
-export interface Testimonial {
+export const trendingTopics: string[] = [
+  "Myopia Management",
+  "AI in Eye Care",
+  "OCT Angiography",
+  "Dry Eye Therapeutics",
+  "Scleral Lenses"
+];
+
+export const testimonials: Array<{
   name: string;
   role: string;
   location: string;
   content: string;
   rating: number;
-  initials: string;
-}
-
-export const testimonials: Testimonial[] = [
+}> = [
   {
-    name: "Dr. Sarah Chen",
-    role: "Pediatric Optometrist",
-    location: "Singapore",
-    content: "Focus Magazine has become my go-to resource for staying current with pediatric vision research. The myopia management articles alone have transformed how I approach young patients in my practice.",
-    rating: 5,
-    initials: "SC"
+    "name": "Dr. Sarah Mitchell",
+    "role": "Optometrist, Vancouver",
+    "location": "British Columbia",
+    "content": "Focus Magazine consistently delivers the most clinically relevant content I have found in any optometry publication. The myopia management series alone changed how I approach pediatric patients in my practice.",
+    "rating": 5
   },
   {
-    name: "Dr. James Okafor",
-    role: "Clinical Director",
-    location: "Lagos, Nigeria",
-    content: "The depth of clinical content is unmatched. From glaucoma management to practice growth strategies, every issue delivers actionable insights I implement immediately in my clinic.",
-    rating: 5,
-    initials: "JO"
+    "name": "Dr. James Okafor",
+    "role": "Clinical Director",
+    "location": "Lagos, Nigeria",
+    "content": "The depth of research in each article is remarkable. I have incorporated several diagnostic protocols from Focus into our teleoptometry program, and the patient outcomes speak for themselves.",
+    "rating": 5
   },
   {
-    name: "Dr. Maria Santos",
-    role: "Contact Lens Specialist",
-    location: "São Paulo, Brazil",
-    content: "As a contact lens specialist, I appreciate the detailed coverage of new materials and fitting techniques. The peer-reviewed quality gives me confidence in applying new methods.",
-    rating: 5,
-    initials: "MS"
+    "name": "Dr. Emily Chen",
+    "role": "Resident, Neuro-Ophthalmology",
+    "location": "Baltimore, MD",
+    "content": "As a trainee, Focus Magazine bridges the gap between textbook knowledge and real-world clinical practice. The neuro-ophthalmology articles on the McDonald criteria update were invaluable for my board preparation.",
+    "rating": 4
   }
 ];
 
-export const breakingNews = [
-  "WHO Updates Myopia Guidelines for 2026 — Recommends Annual Screening for Children Under 12",
-  "New ROCK Inhibitor Sustained-Release Implant Receives FDA Breakthrough Designation",
-  "AI-Based Retinal Screening Now Covered by Major Insurance Providers in the US",
-  "Global Scleral Lens Market Projected to Reach $5.2 Billion by 2028",
-  "Teleoptometry Legislation Advances in 12 US States — AOA Advocacy Campaign Shows Results",
-  "Novel Gene Therapy for Inherited Retinal Disease Shows Promise in Phase II Trials",
-  "Low Vision Assistive Technology Market Sees 40% Year-over-Year Growth",
-  "Ortho-K Long-Term Safety Data: 20-Year Follow-Up Study Published in Ophthalmology",
+export const breakingNews: Array<{ category: string; title: string }> = [
+  {
+    "category": "Myopia",
+    "title": "FDA approves first myopia control spectacle lens for U.S. market"
+  },
+  {
+    "category": "Technology",
+    "title": "AI diabetic retinopathy screening achieves 96.5% accuracy in real-world deployment"
+  },
+  {
+    "category": "Glaucoma",
+    "title": "Netarsudil-latanoprost FDC shows superior IOP reduction over monotherapy in 3-year data"
+  },
+  {
+    "category": "Pediatric",
+    "title": "Luminopia One real-world data confirms 73% adherence rate in pediatric amblyopia"
+  },
+  {
+    "category": "Contact Lenses",
+    "title": "Scleral lens prescribing reaches 99.8% toric landing zone adoption globally"
+  },
+  {
+    "category": "Research",
+    "title": "OCT-A vessel density identified as predictor of glaucoma progression 18 months before VF loss"
+  }
 ];
 
-export const editorsPicksIds = [
-  "scleral-lens-fitting-masterclass",
-  "digital-eye-strain-management",
-  "neuro-optometric-rehabilitation-concussion",
-  "practice-growth-ai-era",
-  "contact-lens-materials-next-generation",
-];
-
-export const editorialQuote = {
-  text: "The future of optometry lies not just in treating refractive error, but in detecting systemic disease through the eye — the only organ where we can directly visualize blood vessels and nerve tissue in a living patient.",
-  attribution: "Dr. Priya Sharma",
-  role: "Editor-in-Chief, Focus Magazine"
-};
-
-export const editorialBanner = {
-  text: "The eye is the window to systemic health. Every comprehensive eye exam is a potential life-saving event.",
-  ctaText: "Explore Clinical Optometry",
-};
-
-export const issueArticles = [
-  { num: "01", title: "Advances in Myopia Control", id: "myopia-control-beyond-atropine" },
-  { num: "02", title: "The Future of OCT Angiography", id: "oct-angiography-glaucoma" },
-  { num: "03", title: "Pediatric Vision Screening", id: "pediatric-vision-screening-guidelines" },
-  { num: "04", title: "Scleral Lens Fitting Masterclass", id: "scleral-lens-fitting-masterclass" },
-  { num: "05", title: "Neuro-Optometric Rehabilitation", id: "neuro-optometric-rehabilitation-concussion" },
-  { num: "06", title: "Practice Growth in the AI Era", id: "practice-growth-ai-era" },
+export const editorsPicksIds: string[] = [
+  "article-myopia-1",
+  "article-glaucoma-1",
+  "article-oct-2",
+  "article-pharm-2",
+  "article-tele-2"
 ];

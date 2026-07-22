@@ -1,61 +1,116 @@
-'use client';
+"use client";
 
-import { Badge } from '@/components/ui/badge';
-import { TrendingUp } from 'lucide-react';
-import { trendingTopics, articles } from '@/lib/magazine-data';
+import { motion } from "framer-motion";
+import { Eye } from "lucide-react";
+import { trendingTopics, articles } from "@/lib/magazine-data";
 
-interface TrendingSidebarProps {
-  onArticleOpen: (id: string) => void;
-}
+const listContainer = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: { staggerChildren: 0.07 },
+  },
+};
+
+const listItem = {
+  hidden: { opacity: 0, x: 16 },
+  show: { opacity: 1, x: 0, transition: { duration: 0.35, ease: "easeOut" as const } },
+};
 
 function formatViews(n: number): string {
-  if (n >= 1000) return (n / 1000).toFixed(1) + 'K';
+  if (n >= 1000) return `${(n / 1000).toFixed(1)}K`;
   return n.toString();
 }
 
-export default function TrendingSidebar({ onArticleOpen }: TrendingSidebarProps) {
-  const handleTopicClick = (topic: (typeof trendingTopics)[0]) => {
-    const match = articles.find(
-      (a) => a.title.toLowerCase().includes(topic.title.toLowerCase().split(':')[0].toLowerCase())
-    );
-    if (match) {
-      onArticleOpen(match.id);
-    }
-  };
+function getCategoryForTopic(title: string): string | null {
+  const firstWord = title.split(":")[0].split(" ")[0].toLowerCase();
+  const match = articles.find((a) =>
+    a.title.toLowerCase().includes(firstWord)
+  );
+  return match ? match.category : null;
+}
 
+export default function TrendingSidebar() {
   return (
-    <aside className="bg-card border border-border rounded-xl p-6">
-      <div className="flex items-center gap-2 mb-5">
-        <TrendingUp className="h-5 w-5 text-accent" />
-        <h3 className="text-lg font-bold">Trending Now</h3>
-      </div>
-      <ol className="space-y-4">
-        {trendingTopics.map((topic, i) => (
-          <li key={i}>
-            <button
-              onClick={() => handleTopicClick(topic)}
-              className="flex items-start gap-3 text-left group w-full"
-            >
-              <span className="text-2xl font-bold text-primary/30 leading-none mt-0.5 tabular-nums w-7 shrink-0">
-                {String(i + 1).padStart(2, '0')}
-              </span>
-              <div className="flex-1 min-w-0">
-                <p className="text-sm font-medium leading-snug group-hover:text-primary transition-colors line-clamp-2">
-                  {topic.title}
-                </p>
-                <div className="flex items-center gap-2 mt-1.5">
-                  <Badge variant="outline" className="text-[10px] px-1.5 py-0">
-                    {topic.category}
-                  </Badge>
-                  <span className="text-xs text-muted-foreground">
-                    {formatViews(topic.views)} views
-                  </span>
+    <aside className="bg-card border border-border p-6">
+      {/* Header */}
+      <motion.div
+        initial={{ opacity: 0, y: 8 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.4 }}
+        className="flex items-baseline gap-3 mb-6"
+      >
+        <span className="editorial-badge text-primary">Trending</span>
+        <h3 className="font-editorial text-xl font-semibold">Now</h3>
+      </motion.div>
+
+      {/* Numbered List */}
+      <motion.ol
+        variants={listContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+        className="space-y-0"
+      >
+        {trendingTopics.map((topic, i) => {
+          const rank = i + 1;
+          const category = getCategoryForTopic(topic.title);
+          const isTop = rank === 1;
+
+          return (
+            <motion.li key={i} variants={listItem} className="group">
+              <div className="flex items-start gap-3 py-4 cursor-pointer">
+                {/* Rank Number */}
+                <span
+                  className={`text-lg font-black leading-none mt-0.5 tabular-nums w-6 shrink-0 text-right select-none transition-colors duration-200 ${
+                    isTop
+                      ? "text-amber-600 group-hover:text-amber-700"
+                      : "text-muted-foreground/25 group-hover:text-muted-foreground/50"
+                  }`}
+                >
+                  {String(rank).padStart(2, "0")}
+                </span>
+
+                {/* Content */}
+                <div className="flex-1 min-w-0">
+                  <p
+                    className={`text-sm leading-snug mb-1.5 line-clamp-2 transition-colors duration-200 ${
+                      isTop
+                        ? "font-editorial font-semibold text-foreground group-hover:text-amber-700"
+                        : "font-editorial font-medium text-muted-foreground group-hover:text-foreground"
+                    }`}
+                  >
+                    {topic.title}
+                  </p>
+                  <div className="flex items-center gap-2">
+                    {category && (
+                      <span
+                        className={`text-[9px] font-bold tracking-[0.15em] uppercase px-1.5 py-0.5 border ${
+                          isTop
+                            ? "border-amber-600/30 text-amber-700 bg-amber-50"
+                            : "border-border text-muted-foreground"
+                        }`}
+                      >
+                        {category}
+                      </span>
+                    )}
+                    <span className="text-[11px] text-muted-foreground/70 flex items-center gap-1">
+                      <Eye className="w-3 h-3" />
+                      {formatViews(topic.views)}
+                    </span>
+                  </div>
                 </div>
               </div>
-            </button>
-          </li>
-        ))}
-      </ol>
+
+              {/* Rule separator (not after last item) */}
+              {rank < trendingTopics.length && (
+                <hr className="magazine-rule ml-9" />
+              )}
+            </motion.li>
+          );
+        })}
+      </motion.ol>
     </aside>
   );
 }

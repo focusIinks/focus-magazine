@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
 export default function ReadingProgress() {
   const [progress, setProgress] = useState(0);
@@ -17,15 +17,20 @@ export default function ReadingProgress() {
       }
     };
 
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <div
-      className="fixed top-0 left-0 h-[3px] bg-primary z-[60] transition-all duration-150"
+      className="fixed top-0 left-0 h-1 z-[60]"
       style={{
         width: `${progress}%`,
+        background:
+          progress === 0
+            ? "transparent"
+            : "linear-gradient(90deg, hsl(var(--primary)) 0%, hsl(var(--primary) / 0.6) 100%)",
+        transition: "width 0.1s linear, background 0.3s ease",
         opacity: progress === 0 ? 0 : 1,
       }}
     />

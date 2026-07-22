@@ -29,7 +29,7 @@ export function FeaturedArticles({ onArticleOpen }: FeaturedArticlesProps) {
   return (
     <section className="py-20 md:py-24 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Left-aligned editorial header */}
+        {/* Editorial section header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -37,10 +37,15 @@ export function FeaturedArticles({ onArticleOpen }: FeaturedArticlesProps) {
           transition={{ duration: 0.5 }}
           className="mb-12"
         >
-          <span className="text-xs tracking-[0.2em] text-primary font-semibold uppercase">
-            Featured
-          </span>
-          <h2 className="text-3xl md:text-4xl font-bold mt-2">Cover Stories</h2>
+          <div className="flex items-center gap-4 mb-2">
+            <span className="editorial-badge text-xs tracking-[0.25em] text-primary font-bold uppercase">
+              Featured
+            </span>
+          </div>
+          <h2 className="font-editorial text-3xl md:text-4xl font-bold text-foreground">
+            Cover Stories
+          </h2>
+          <div className="magazine-rule mt-4 h-px w-full bg-gradient-to-r from-foreground via-foreground/40 to-transparent" />
         </motion.div>
 
         {/* Asymmetric magazine grid */}
@@ -49,43 +54,59 @@ export function FeaturedArticles({ onArticleOpen }: FeaturedArticlesProps) {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="grid grid-cols-1 lg:grid-cols-12 gap-6"
+          className="grid grid-cols-1 lg:grid-cols-12 gap-0 lg:gap-6"
         >
-          {/* Main story - col-span-7, row-span-2 */}
+          {/* ── Main story — col-span-7 ── */}
           <motion.div variants={item} className="lg:col-span-7 lg:row-span-2">
             <div
-              className="group cursor-pointer relative rounded-xl overflow-hidden h-full min-h-[480px] transition-all duration-500 hover:brightness-110 hover:scale-[1.005]"
+              className="group cursor-pointer relative rounded-none overflow-hidden h-full min-h-[520px] md:min-h-[580px] transition-all duration-700"
               onClick={() => onArticleOpen(main.id)}
             >
-              <div
-                className={`absolute inset-0 bg-gradient-to-br ${main.imageGradient}`}
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
-              <div className="relative z-10 flex flex-col justify-end h-full p-6 md:p-8">
-                <div className="flex items-center gap-3 mb-3">
-                  <span className="bg-amber-500 text-white text-[10px] font-bold tracking-wider uppercase px-3 py-1">
+              {/* Image or gradient fallback */}
+              {main.imageUrl ? (
+                <img
+                  src={main.imageUrl}
+                  alt={main.imageCaption || main.title}
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                />
+              ) : (
+                <div
+                  className={`absolute inset-0 bg-gradient-to-br ${main.imageGradient}`}
+                />
+              )}
+
+              {/* Editorial overlay gradient */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-black/10" />
+
+              {/* Content */}
+              <div className="relative z-10 flex flex-col justify-end h-full p-6 md:p-10">
+                <div className="flex items-center gap-3 mb-4">
+                  <span className="bg-amber-500 text-white text-[10px] font-bold tracking-[0.15em] uppercase px-3 py-1 rounded-none">
                     {main.category}
                   </span>
-                  <span className="text-white/50 text-[10px] font-bold tracking-wider uppercase">
+                  <span className="text-white/50 text-[10px] font-bold tracking-[0.15em] uppercase">
                     Cover Story
                   </span>
                 </div>
-                <h3 className="text-2xl md:text-3xl font-bold text-white leading-tight mb-3">
+
+                <h3 className="font-editorial text-2xl md:text-4xl font-bold text-white leading-[1.1] mb-3 max-w-2xl">
                   {main.title}
                 </h3>
-                <p className="text-white/70 text-sm leading-relaxed mb-4 line-clamp-2 max-w-xl">
+
+                <p className="text-white/65 text-sm md:text-base leading-relaxed mb-5 line-clamp-2 max-w-xl">
                   {main.excerpt}
                 </p>
+
                 <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center text-white text-xs font-bold">
+                  <div className="w-9 h-9 rounded-full bg-white/15 backdrop-blur-sm flex items-center justify-center text-white text-xs font-bold">
                     {main.author.initials}
                   </div>
                   <div className="flex flex-col">
                     <span className="text-white text-sm font-medium">
                       {main.author.name}
                     </span>
-                    <span className="text-white/50 text-xs">
-                      {main.date} · {main.readTime}
+                    <span className="text-white/45 text-xs tracking-wide">
+                      {main.date} &middot; {main.readTime}
                     </span>
                   </div>
                 </div>
@@ -93,33 +114,47 @@ export function FeaturedArticles({ onArticleOpen }: FeaturedArticlesProps) {
             </div>
           </motion.div>
 
-          {/* Side stories - col-span-5 */}
+          {/* ── Side stories — col-span-5 ── */}
           {side.map((article, i) => (
             <motion.div
               key={article.id}
               variants={item}
-              className="lg:col-span-5"
+              className="lg:col-span-5 mt-6 lg:mt-0"
             >
               <div
-                className="group cursor-pointer relative rounded-xl overflow-hidden bg-white transition-all duration-300 hover:border-l-4 hover:border-l-primary hover:shadow-lg h-full border border-border"
+                className="group cursor-pointer relative rounded-none overflow-hidden bg-white border border-border border-l-4 border-l-primary transition-all duration-300 hover:shadow-xl hover:shadow-primary/5 h-full"
                 onClick={() => onArticleOpen(article.id)}
               >
-                <span className="absolute top-4 right-4 z-10 text-6xl font-black text-primary/10 select-none leading-none">
+                {/* Large number watermark */}
+                <span className="absolute top-4 right-6 z-10 text-7xl md:text-8xl font-black text-primary/[0.06] select-none leading-none pointer-events-none">
                   {String(i + 2).padStart(2, "0")}
                 </span>
-                <div
-                  className={`h-44 bg-gradient-to-br ${article.imageGradient} relative overflow-hidden`}
-                >
-                  <div className="absolute inset-0 bg-black/10" />
-                  <span className="absolute bottom-3 left-4 bg-amber-500 text-white text-[10px] font-bold tracking-wider uppercase px-3 py-1">
+
+                {/* Top image area */}
+                <div className="relative h-48 overflow-hidden">
+                  {article.imageUrl ? (
+                    <img
+                      src={article.imageUrl}
+                      alt={article.imageCaption || article.title}
+                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                    />
+                  ) : (
+                    <div
+                      className={`absolute inset-0 bg-gradient-to-br ${article.imageGradient}`}
+                    />
+                  )}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                  <span className="absolute bottom-3 left-4 bg-amber-500 text-white text-[10px] font-bold tracking-[0.15em] uppercase px-3 py-1 rounded-none">
                     {article.category}
                   </span>
                 </div>
-                <div className="p-5">
-                  <h4 className="font-bold text-base leading-snug mb-2 group-hover:text-primary transition-colors line-clamp-2">
+
+                {/* Card body */}
+                <div className="p-5 md:p-6">
+                  <h4 className="font-editorial font-bold text-base md:text-lg leading-snug mb-2 text-foreground group-hover:underline decoration-primary decoration-2 underline-offset-4 transition-all line-clamp-2">
                     {article.title}
                   </h4>
-                  <p className="text-muted-foreground text-xs leading-relaxed mb-3 line-clamp-2">
+                  <p className="text-muted-foreground text-xs md:text-sm leading-relaxed mb-4 line-clamp-2">
                     {article.excerpt}
                   </p>
                   <div className="flex items-center gap-3 text-xs text-muted-foreground">

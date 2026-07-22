@@ -2,100 +2,119 @@
 
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
+import { testimonials } from "@/lib/magazine-data";
 
-const testimonials = [
-  {
-    quote:
-      "Focus Magazine has become my go-to resource for staying current with pediatric vision research. The myopia management articles alone have transformed how I approach young patients.",
-    name: "Dr. Sarah Chen",
-    designation: "Pediatric Optometrist, Singapore",
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.15,
+      delayChildren: 0.2,
+    },
   },
-  {
-    quote:
-      "The depth of clinical content is unmatched. From glaucoma management to practice growth strategies, every issue delivers actionable insights I implement immediately.",
-    name: "Dr. James Okafor",
-    designation: "Clinical Director, Lagos",
+};
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] },
   },
-  {
-    quote:
-      "As a contact lens specialist, I appreciate the detailed coverage of new materials and fitting techniques. The peer-reviewed quality gives me confidence in applying new methods.",
-    name: "Dr. Maria Santos",
-    designation: "Contact Lens Specialist, São Paulo",
-  },
-];
+};
+
+function StarRating({ rating }: { rating: number }) {
+  return (
+    <div className="flex gap-0.5">
+      {Array.from({ length: 5 }).map((_, i) => (
+        <Star
+          key={i}
+          className={
+            i < rating
+              ? "w-3.5 h-3.5 fill-amber-400 text-amber-400"
+              : "w-3.5 h-3.5 fill-none text-white/20"
+          }
+        />
+      ))}
+    </div>
+  );
+}
 
 function TestimonialCard({
   testimonial,
-  index,
 }: {
   testimonial: (typeof testimonials)[number];
-  index: number;
 }) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 24 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.5, delay: 0.12 * index }}
-      className="bg-white/5 border border-white/10 rounded-xl p-8 backdrop-blur-sm relative overflow-hidden flex flex-col"
+      variants={cardVariants}
+      className="border-t border-white/10 pt-8 flex flex-col"
     >
-      {/* Opening quote mark */}
-      <span className="text-5xl text-primary/30 font-serif leading-none select-none">
+      {/* Large decorative opening quote */}
+      <span className="font-editorial text-6xl leading-none text-white/15 select-none">
         &ldquo;
       </span>
 
       {/* Quote text */}
-      <p className="text-base leading-relaxed text-white/80 italic mt-3 flex-1">
-        {testimonial.quote}
+      <p className="font-body text-base leading-relaxed text-white/90 mt-2 flex-1">
+        {testimonial.content}
       </p>
 
-      {/* Divider */}
-      <div className="w-8 h-px bg-white/20 my-5" />
-
       {/* Star rating */}
-      <div className="flex gap-0.5 mb-4">
-        {Array.from({ length: 5 }).map((_, si) => (
-          <Star
-            key={si}
-            className="w-4 h-4 fill-amber-400 text-amber-400"
-          />
-        ))}
+      <div className="mt-6">
+        <StarRating rating={testimonial.rating} />
       </div>
 
-      {/* Author info */}
-      <div>
-        <p className="font-bold text-white">{testimonial.name}</p>
-        <p className="text-sm text-white/50">{testimonial.designation}</p>
+      {/* Author */}
+      <div className="mt-4">
+        <p className="font-semibold text-white text-sm tracking-wide">
+          {testimonial.name}
+        </p>
+        <p className="text-white/60 text-sm mt-0.5">
+          {testimonial.role}, {testimonial.location}
+        </p>
       </div>
-
-      {/* Large decorative closing quote mark */}
-      <span className="absolute bottom-2 right-4 text-8xl text-white/5 font-serif leading-none select-none rotate-180">
-        &ldquo;
-      </span>
     </motion.div>
   );
 }
 
 export function TestimonialsSection() {
   return (
-    <section className="py-20 md:py-28 bg-foreground">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header - Left-aligned editorial */}
-        <div className="mb-12">
-          <span className="text-xs tracking-[0.2em] text-background/40 font-semibold uppercase">
-            Reviewers
+    <section className="relative py-24 md:py-32 bg-foreground text-background overflow-hidden">
+      {/* Subtle pattern overlay */}
+      <div
+        className="absolute inset-0 opacity-[0.03] pointer-events-none"
+        style={{
+          backgroundImage:
+            "linear-gradient(to right, rgba(255,255,255,0.4) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.4) 1px, transparent 1px)",
+          backgroundSize: "60px 60px",
+        }}
+      />
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Section header */}
+        <div className="mb-16 md:mb-20">
+          <span className="inline-block text-[11px] tracking-[0.2em] font-semibold uppercase bg-white/20 text-white px-3 py-1">
+            What Readers Say
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-white mt-2">
-            What Our Readers Say
-          </h2>
         </div>
 
-        {/* Testimonial cards grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {testimonials.map((t, i) => (
-            <TestimonialCard key={t.name} testimonial={t} index={i} />
+        {/* Testimonial cards — three columns with vertical dividers */}
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-80px" }}
+          className="grid grid-cols-1 md:grid-cols-3 md:divide-x md:divide-white/10"
+        >
+          {testimonials.map((t) => (
+            <TestimonialCard key={t.name} testimonial={t} />
           ))}
-        </div>
+        </motion.div>
+
+        {/* Bottom decorative rule */}
+        <div className="mt-16 border-t border-white/10" />
       </div>
     </section>
   );

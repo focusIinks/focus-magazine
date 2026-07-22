@@ -1,124 +1,271 @@
 "use client";
 
-import { useRef } from "react";
-import { motion } from "framer-motion";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import { articles } from "@/lib/magazine-data";
+import { useCallback, useEffect, useState } from "react";
+import { motion, type Variants } from "framer-motion";
+import { ChevronLeft, ChevronRight, Clock } from "lucide-react";
+import useEmblaCarousel from "embla-carousel-react";
+import { articles, type Article } from "@/lib/magazine-data";
 
 interface EditorsPicksProps {
   onArticleOpen: (id: string) => void;
 }
 
-export function EditorsPicks({ onArticleOpen }: EditorsPicksProps) {
-  const scrollRef = useRef<HTMLDivElement>(null);
-  const editorsPicks = articles.filter((a) => !a.featured).slice(0, 5);
+/* ------------------------------------------------------------------ */
+/*  Animation variants                                                 */
+/* ------------------------------------------------------------------ */
+const sectionVariants: Variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { duration: 0.6, ease: "easeOut" as const },
+  },
+};
 
-  const scroll = (direction: "left" | "right") => {
-    if (!scrollRef.current) return;
-    const amount = direction === "left" ? -300 : 300;
-    scrollRef.current.scrollBy({ left: amount, behavior: "smooth" });
-  };
+const headerVariants: Variants = {
+  hidden: { opacity: 0, y: 24 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.5, ease: "easeOut" as const },
+  },
+};
+
+const cardVariants: Variants = {
+  hidden: { opacity: 0, y: 32 },
+  visible: (i: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.5, delay: 0.08 * i, ease: "easeOut" as const },
+  }),
+};
+
+/* ------------------------------------------------------------------ */
+/*  Component                                                          */
+/* ------------------------------------------------------------------ */
+export function EditorsPicks({ onArticleOpen }: EditorsPicksProps) {
+  const editorsPicks = articles.filter((a) => !a.featured).slice(0, 6);
+
+  /* Embla setup */
+  const [emblaRef, emblaApi] = useEmblaCarousel({
+    align: "start",
+    slidesToScroll: 1,
+    containScroll: "trimSnaps",
+    dragFree: true,
+  });
+
+  const [canScrollPrev, setCanScrollPrev] = useState(false);
+  const [canScrollNext, setCanScrollNext] = useState(false);
+  const [selectedIndex, setSelectedIndex] = useState(0);
+
+  const scrollPrev = useCallback(() => emblaApi?.scrollPrev(), [emblaApi]);
+  const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
+
+  const onSelect = useCallback(() => {
+    if (!emblaApi) return;
+    setCanScrollPrev(emblaApi.canScrollPrev());
+    setCanScrollNext(emblaApi.canScrollNext());
+    setSelectedIndex(emblaApi.selectedScrollSnap());
+  }, [emblaApi]);
+
+  useEffect(() => {
+    if (!emblaApi) return;
+    onSelect();
+    emblaApi.on("select", onSelect);
+    emblaApi.on("reInit", onSelect);
+    return () => {
+      emblaApi.off("select", onSelect);
+      emblaApi.off("reInit", onSelect);
+    };
+  }, [emblaApi, onSelect]);
+
+  const scrollTo = useCallback(
+    (index: number) => emblaApi?.scrollTo(index),
+    [emblaApi]
+  );
 
   return (
-    <section className="py-20 bg-muted/30">
+    <motion.section
+      variants={sectionVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, margin: "-80px" }}
+      className="py-20 md:py-28 bg-muted/20"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Left-aligned editorial header */}
+        {/* ── Section Header ── */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="mb-12"
+          variants={headerVariants}
+          className="mb-12 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4"
         >
-          <span className="text-xs tracking-[0.2em] text-primary font-semibold uppercase">
-            Editor&apos;s Picks
-          </span>
-          <h2 className="text-3xl md:text-4xl font-bold mt-2">Curated for You</h2>
+          <div>
+            <span className="editorial-badge text-primary mb-3 inline-block">
+              Editor&apos;s Picks
+            </span>
+            <p className="text-sm text-muted-foreground mt-3 max-w-md font-body">
+              Hand-selected stories our editors believe will shape the
+              conversation in optometry and vision science.
+            </p>
+          </div>
+
+          {/* Arrow navigation */}
+          <div className="flex items-center gap-3 shrink-0">
+            <button
+              onClick={scrollPrev}
+              disabled={!canScrollPrev}
+              aria-label="Previous"
+              className="w-10 h-10 rounded-full border border-border flex items-center justify-center transition-colors duration-200 hover:border-primary hover:text-primary disabled:opacity-30 disabled:pointer-events-none"
+            >
+              <ChevronLeft className="w-4 h-4" />
+            </button>
+            <button
+              onClick={scrollNext}
+              disabled={!canScrollNext}
+              aria-label="Next"
+              className="w-10 h-10 rounded-full border border-border flex items-center justify-center transition-colors duration-200 hover:border-primary hover:text-primary disabled:opacity-30 disabled:pointer-events-none"
+            >
+              <ChevronRight className="w-4 h-4" />
+            </button>
+          </div>
         </motion.div>
 
-        {/* Carousel container */}
+        {/* ── Embla Carousel ── */}
         <div className="relative">
-          {/* Left arrow - always visible */}
-          <button
-            onClick={() => scroll("left")}
-            className="absolute -left-5 top-1/2 -translate-y-1/2 z-10 bg-white border border-border shadow-lg w-11 h-11 rounded-full flex items-center justify-center hover:bg-accent transition-colors hidden lg:flex"
-            aria-label="Scroll left"
-          >
-            <ChevronLeft className="w-5 h-5" />
-          </button>
+          <div className="overflow-hidden" ref={emblaRef}>
+            <div className="flex gap-6">
+              {editorsPicks.map((article, i) => (
+                <CarouselCard
+                  key={article.id}
+                  article={article}
+                  index={i}
+                  onOpen={onArticleOpen}
+                />
+              ))}
+            </div>
+          </div>
 
-          {/* Right arrow - always visible */}
-          <button
-            onClick={() => scroll("right")}
-            className="absolute -right-5 top-1/2 -translate-y-1/2 z-10 bg-white border border-border shadow-lg w-11 h-11 rounded-full flex items-center justify-center hover:bg-accent transition-colors hidden lg:flex"
-            aria-label="Scroll right"
-          >
-            <ChevronRight className="w-5 h-5" />
-          </button>
-
-          {/* Scrollable track */}
-          <div
-            ref={scrollRef}
-            className="flex gap-5 overflow-x-auto pb-4 snap-x snap-mandatory"
-            style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
-          >
-            {editorsPicks.map((article, i) => (
-              <motion.div
-                key={article.id}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: 0.08 * i }}
-                className="min-w-[300px] w-72 shrink-0 snap-start"
-              >
-                <div
-                  className="group/card cursor-pointer bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300 h-full flex flex-col"
-                  onClick={() => onArticleOpen(article.id)}
-                >
-                  {/* Gradient header */}
-                  <div
-                    className={`h-44 bg-gradient-to-br ${article.imageGradient} relative overflow-hidden shrink-0`}
-                  >
-                    {/* Frosted glass overlay at bottom */}
-                    <div className="absolute inset-x-0 bottom-0 h-16 bg-black/20 backdrop-blur-sm" />
-                    {/* Category badge */}
-                    <span className="absolute bottom-3 left-4 bg-white/20 backdrop-blur-md text-white text-[10px] font-bold tracking-wider uppercase px-3 py-1 border border-white/20">
-                      {article.category}
-                    </span>
-                    {/* PICK badge */}
-                    <span className="absolute top-3 right-3 bg-amber-500 text-white text-[10px] font-bold px-2 py-0.5">
-                      PICK
-                    </span>
-                  </div>
-
-                  {/* Body */}
-                  <div className="px-5 py-4 flex flex-col flex-1">
-                    <h3 className="font-bold text-sm leading-snug line-clamp-2 mb-2 group-hover/card:text-primary transition-colors">
-                      {article.title}
-                    </h3>
-                    <p className="text-xs text-muted-foreground line-clamp-2 mb-3 flex-1">
-                      {article.excerpt}
-                    </p>
-                    <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                      <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center text-[10px] font-bold text-primary shrink-0">
-                        {article.author.initials}
-                      </div>
-                      <span className="font-medium truncate">{article.author.name.replace("Dr. ", "")}</span>
-                      <span className="ml-auto shrink-0">{article.date}</span>
-                    </div>
-                    {/* Read more link */}
-                    <div className="border-t border-border/50 mt-3 pt-3">
-                      <span className="text-xs text-primary font-semibold group-hover/card:underline underline-offset-2">
-                        Read More →
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </motion.div>
+          {/* ── Dot Indicators ── */}
+          <div className="flex items-center justify-center gap-2 mt-8">
+            {editorsPicks.map((_, idx) => (
+              <button
+                key={idx}
+                onClick={() => scrollTo(idx)}
+                aria-label={`Go to slide ${idx + 1}`}
+                className={`transition-all duration-300 rounded-full ${
+                  idx === selectedIndex
+                    ? "w-6 h-2 bg-primary"
+                    : "w-2 h-2 bg-border hover:bg-muted-foreground/40"
+                }`}
+              />
             ))}
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
+  );
+}
+
+/* ------------------------------------------------------------------ */
+/*  Card sub-component                                                 */
+/* ------------------------------------------------------------------ */
+interface CardProps {
+  article: Article;
+  index: number;
+  onOpen: (id: string) => void;
+}
+
+function CarouselCard({ article, index, onOpen }: CardProps) {
+  /* Access new fields — cast via `any` to avoid TS errors if data file
+     hasn't been updated yet.  Falls back gracefully.                */
+  const a = article as Article & {
+    imageUrl?: string;
+    imageCaption?: string;
+    tags?: string[];
+  };
+
+  return (
+    <motion.div
+      variants={cardVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      custom={index}
+      className="w-80 md:w-96 shrink-0"
+    >
+      <div
+        onClick={() => onOpen(a.id)}
+        className="group/card cursor-pointer bg-card border border-border flex flex-col h-full transition-all duration-300 hover:shadow-[0_12px_40px_-12px_rgba(0,0,0,0.12)] hover:border-primary/30"
+      >
+        {/* ── Image ── */}
+        <div className="relative h-56 overflow-hidden shrink-0 bg-muted">
+          {a.imageUrl ? (
+            <img
+              src={a.imageUrl}
+              alt={a.imageCaption ?? a.title}
+              loading="lazy"
+              className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover/card:scale-[1.04]"
+            />
+          ) : (
+            <div
+              className={`absolute inset-0 bg-gradient-to-br ${a.imageGradient}`}
+            />
+          )}
+
+          {/* Category badge */}
+          <span className="absolute top-3 left-3 text-[10px] font-bold tracking-[0.15em] uppercase bg-background/80 backdrop-blur-sm px-2.5 py-1 text-foreground">
+            {a.category}
+          </span>
+
+          {/* Tags row */}
+          {a.tags && a.tags.length > 0 && (
+            <div className="absolute bottom-3 left-3 flex gap-1.5">
+              {a.tags.slice(0, 2).map((tag) => (
+                <span
+                  key={tag}
+                  className="text-[9px] tracking-wider uppercase font-semibold bg-foreground/60 backdrop-blur-sm text-background px-2 py-0.5"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          )}
+
+          {/* Image caption overlay */}
+          {a.imageCaption && (
+            <span className="absolute bottom-3 right-3 text-[9px] text-background/70 font-body hidden group-hover/card:block">
+              {a.imageCaption}
+            </span>
+          )}
+        </div>
+
+        {/* ── Content ── */}
+        <div className="flex flex-col flex-1 p-5">
+          {/* Category (mobile) + title */}
+          <h3 className="font-editorial text-xl font-bold leading-tight line-clamp-2 mb-2 group-hover/card:text-primary transition-colors duration-200">
+            {a.title}
+          </h3>
+
+          <p className="font-body text-sm text-muted-foreground line-clamp-2 mb-4 flex-1">
+            {a.excerpt}
+          </p>
+
+          {/* Meta row */}
+          <div className="flex items-center gap-2 text-xs text-muted-foreground mb-4">
+            <span className="font-medium">{a.author.name}</span>
+            <span className="text-border">·</span>
+            <span>{a.date}</span>
+            <span className="text-border">·</span>
+            <Clock className="w-3 h-3 inline-block mr-0.5" />
+            <span>{a.readTime}</span>
+          </div>
+
+          {/* Divider + Read More */}
+          <div className="border-t border-border/60 pt-3">
+            <span className="text-xs font-semibold text-primary tracking-wide uppercase group-hover/card:underline underline-offset-4 transition-all">
+              Read More &rarr;
+            </span>
+          </div>
+        </div>
+      </div>
+    </motion.div>
   );
 }

@@ -46,11 +46,25 @@
   --color-magazine-accent: var(--magazine-accent);
 }
 
+/* ============================================================
+   EDITORIAL MAGAZINE — DESIGN SYSTEM
+   Premium oklch color system with teal identity
+   ============================================================ */
+
 :root {
+  /* --- Typography --- */
+  --font-editorial: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-body: 'Source Serif 4', Georgia, serif;
+
+  /* --- Spacing & Shape --- */
   --radius: 0.625rem;
+
+  /* --- Brand Palette (oklch) --- */
   --magazine-teal: oklch(0.52 0.13 180);
   --magazine-teal-light: oklch(0.92 0.04 180);
   --magazine-accent: oklch(0.78 0.14 80);
+
+  /* --- Semantic Tokens --- */
   --background: oklch(0.98 0.003 180);
   --foreground: oklch(0.13 0.01 180);
   --card: oklch(1 0 0);
@@ -69,6 +83,8 @@
   --border: oklch(0.9 0.008 180);
   --input: oklch(0.9 0.008 180);
   --ring: oklch(0.52 0.13 180);
+
+  /* --- Chart Palette --- */
   --chart-1: oklch(0.52 0.13 180);
   --chart-2: oklch(0.78 0.14 80);
   --chart-3: oklch(0.65 0.1 160);
@@ -76,34 +92,48 @@
   --chart-5: oklch(0.769 0.188 70.08);
 }
 
+/* --- Dark Mode: Richer editorial depth --- */
 .dark {
-  --magazine-teal: oklch(0.62 0.15 180);
-  --magazine-teal-light: oklch(0.2 0.04 180);
-  --magazine-accent: oklch(0.82 0.16 80);
-  --background: oklch(0.1 0.018 180);
-  --foreground: oklch(0.96 0.005 180);
-  --card: oklch(0.15 0.022 180);
-  --card-foreground: oklch(0.96 0.005 180);
-  --popover: oklch(0.15 0.022 180);
-  --popover-foreground: oklch(0.96 0.005 180);
-  --primary: oklch(0.62 0.15 180);
-  --primary-foreground: oklch(0.1 0.018 180);
-  --secondary: oklch(0.2 0.03 180);
-  --secondary-foreground: oklch(0.96 0.005 180);
-  --muted: oklch(0.2 0.025 180);
-  --muted-foreground: oklch(0.65 0.02 180);
-  --accent: oklch(0.28 0.05 80);
-  --accent-foreground: oklch(0.96 0.005 180);
+  /* --- Typography (inherited, declared for completeness) --- */
+  --font-editorial: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-body: 'Source Serif 4', Georgia, serif;
+
+  /* --- Brand Palette (dark-adapted) --- */
+  --magazine-teal: oklch(0.64 0.16 180);
+  --magazine-teal-light: oklch(0.18 0.045 180);
+  --magazine-accent: oklch(0.84 0.17 80);
+
+  /* --- Semantic Tokens --- */
+  --background: oklch(0.09 0.02 185);
+  --foreground: oklch(0.95 0.006 180);
+  --card: oklch(0.13 0.024 185);
+  --card-foreground: oklch(0.95 0.006 180);
+  --popover: oklch(0.13 0.024 185);
+  --popover-foreground: oklch(0.95 0.006 180);
+  --primary: oklch(0.64 0.16 180);
+  --primary-foreground: oklch(0.09 0.02 185);
+  --secondary: oklch(0.19 0.032 185);
+  --secondary-foreground: oklch(0.93 0.008 180);
+  --muted: oklch(0.19 0.028 185);
+  --muted-foreground: oklch(0.62 0.025 180);
+  --accent: oklch(0.26 0.055 80);
+  --accent-foreground: oklch(0.93 0.008 180);
   --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(0.22 0.025 180);
-  --input: oklch(0.22 0.025 180);
-  --ring: oklch(0.62 0.15 180);
-  --chart-1: oklch(0.62 0.15 180);
-  --chart-2: oklch(0.82 0.16 80);
-  --chart-3: oklch(0.72 0.13 160);
+  --border: oklch(0.2 0.028 185);
+  --input: oklch(0.2 0.028 185);
+  --ring: oklch(0.64 0.16 180);
+
+  /* --- Chart Palette --- */
+  --chart-1: oklch(0.64 0.16 180);
+  --chart-2: oklch(0.84 0.17 80);
+  --chart-3: oklch(0.73 0.14 160);
   --chart-4: oklch(0.627 0.265 303.9);
   --chart-5: oklch(0.645 0.246 16.439);
 }
+
+/* ============================================================
+   BASE STYLES
+   ============================================================ */
 
 html {
   scroll-behavior: smooth;
@@ -113,15 +143,108 @@ html {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground antialiased;
   }
+
   ::selection {
     background: oklch(0.52 0.13 180 / 20%);
   }
 }
 
+/* ============================================================
+   EDITORIAL UTILITIES
+   ============================================================ */
+
 @layer utilities {
+  /* --- Font Families --- */
+  .font-editorial {
+    font-family: var(--font-editorial);
+  }
+
+  .font-body {
+    font-family: var(--font-body);
+  }
+
+  /* --- Editorial Typography --- */
+  .editorial-headline {
+    font-family: var(--font-editorial);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    @apply tracking-tight;
+  }
+
+  .editorial-subhead {
+    font-family: var(--font-editorial);
+    font-weight: 500;
+    @apply tracking-normal text-foreground/70;
+  }
+
+  .editorial-byline {
+    @apply font-sans text-xs tracking-widest uppercase text-muted-foreground;
+  }
+
+  .text-editorial {
+    font-family: var(--font-body);
+    line-height: 1.8;
+    @apply text-foreground/85;
+  }
+
+  .editorial-badge {
+    @apply text-[10px] font-bold tracking-[0.15em] uppercase;
+  }
+
+  /* --- Magazine Rules --- */
+  .magazine-rule {
+    @apply w-full h-px bg-border;
+  }
+
+  .magazine-rule-vertical {
+    @apply w-px h-full bg-border;
+  }
+
+  /* --- Editorial Card (sharp edges, editorial feel) --- */
+  .editorial-card {
+    @apply bg-card border border-border transition-all duration-300 rounded-none;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 10px 30px -5px rgba(0, 0, 0, 0.08);
+  }
+  .editorial-card:hover {
+    box-shadow: 0 8px 15px -3px rgba(0, 0, 0, 0.12), 0 20px 50px -12px rgba(0, 0, 0, 0.12);
+  }
+
+  /* --- Image Utilities --- */
+  .img-editorial {
+    @apply w-full h-full object-cover transition-transform duration-700 hover:scale-105;
+  }
+
+  .img-overlay {
+    @apply absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent;
+  }
+
+  .editorial-overlay {
+    @apply bg-gradient-to-t from-black/70 via-black/20 to-transparent;
+  }
+
+  /* --- Section Spacing --- */
+  .section-padding {
+    @apply py-20 md:py-28;
+  }
+
+  .section-padding-lg {
+    @apply py-24 md:py-32;
+  }
+
+  /* --- Interaction --- */
+  .hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-1;
+  }
+  .hover-lift:hover {
+    box-shadow: 0 8px 15px -3px rgba(0, 0, 0, 0.12), 0 20px 50px -12px rgba(0, 0, 0, 0.12);
+  }
+
+  /* --- Existing Utilities (preserved) --- */
   .magazine-gradient {
     background: linear-gradient(145deg, oklch(0.28 0.14 180), oklch(0.18 0.08 170), oklch(0.14 0.06 185));
   }
@@ -198,6 +321,10 @@ html {
   }
 }
 
+/* ============================================================
+   KEYFRAMES
+   ============================================================ */
+
 @keyframes ticker-scroll {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
@@ -231,4 +358,20 @@ html {
 @keyframes marquee {
   0% { transform: translateX(0%); }
   100% { transform: translateX(-100%); }
+}
+
+@keyframes editorial-reveal {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes line-expand {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes counter-up {
+  0% { opacity: 0; transform: scale(0.6); }
+  60% { opacity: 1; transform: scale(1.08); }
+  100% { opacity: 1; transform: scale(1); }
 }

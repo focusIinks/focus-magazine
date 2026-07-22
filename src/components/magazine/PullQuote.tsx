@@ -4,45 +4,82 @@ import { motion } from "framer-motion";
 
 export default function PullQuote() {
   return (
-    <section className="py-16 bg-background relative overflow-hidden">
+    <section className="py-20 md:py-28 bg-muted/30 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
-          initial={{ opacity: 0, scale: 0.98 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true, margin: "-60px" }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          className="relative py-8"
+          initial={{ opacity: 0, y: 25 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+          className="relative max-w-3xl mx-auto"
         >
-          {/* Top divider */}
-          <div className="w-16 h-px bg-border mx-auto mb-10" />
+          {/* Decorative horizontal rule — top */}
+          <motion.div
+            initial={{ scaleX: 0 }}
+            whileInView={{ scaleX: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+            className="w-full h-px bg-border/60 mx-auto origin-left"
+          />
 
-          {/* Decorative opening quote mark */}
-          <span className="absolute top-4 left-1/2 -translate-x-[120%] md:left-[calc(50%-18rem)] md:translate-x-0 text-8xl text-primary/15 font-serif leading-none select-none pointer-events-none">
-            &ldquo;
-          </span>
+          <div className="py-12 md:py-16">
+            {/* Large decorative opening quote mark */}
+            <motion.span
+              initial={{ opacity: 0, scale: 0.7 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
+              className="block text-center font-editorial text-8xl md:text-9xl text-primary/20 leading-none select-none -mt-8 mb-2"
+              aria-hidden="true"
+            >
+              &ldquo;
+            </motion.span>
 
-          {/* Quote text */}
-          <blockquote className="relative max-w-3xl mx-auto text-center px-4">
-            <p className="text-2xl md:text-3xl lg:text-4xl font-light italic text-foreground leading-snug">
-              The future of optometry lies not just in treating refractive
-              error, but in detecting systemic disease through the eye — the
-              only organ where we can directly visualize blood vessels and nerve
-              tissue in a living patient.
+            {/* Quote text */}
+            <motion.blockquote
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
+              className="text-center px-4"
+            >
+              <p className="font-editorial text-2xl md:text-3xl lg:text-4xl font-medium leading-snug text-foreground">
+                The future of optometry lies not just in treating refractive
+                error, but in detecting systemic disease through the eye — the
+                only organ where we can directly visualize blood vessels and nerve
+                tissue in a living patient.
+              </p>
+            </motion.blockquote>
+          </div>
+
+          {/* Attribution with magazine-rule above */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.45 }}
+            className="flex flex-col items-center"
+          >
+            {/* Thin magazine rule */}
+            <div className="w-10 h-px bg-border/60 mb-6" />
+
+            {/* Editorial byline */}
+            <p className="font-editorial text-sm tracking-wide uppercase text-muted-foreground">
+              — Dr. Priya Sharma
             </p>
-          </blockquote>
+            <p className="font-editorial text-xs tracking-wider uppercase text-muted-foreground/70 mt-1">
+              Editor-in-Chief, Focus Magazine
+            </p>
+          </motion.div>
 
-          {/* Decorative closing quote mark */}
-          <span className="absolute bottom-4 right-1/2 translate-x-[80%] md:right-[calc(50%-18rem)] md:translate-x-0 text-8xl text-primary/15 font-serif leading-none select-none pointer-events-none">
-            &rdquo;
-          </span>
-
-          {/* Attribution */}
-          <p className="text-center text-sm font-semibold text-primary mt-8">
-            — Dr. Priya Sharma, Editor-in-Chief, Focus Magazine
-          </p>
-
-          {/* Bottom divider */}
-          <div className="w-16 h-px bg-border mx-auto mt-10" />
+          {/* Decorative horizontal rule — bottom */}
+          <motion.div
+            initial={{ scaleX: 0 }}
+            whileInView={{ scaleX: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
+            className="w-full h-px bg-border/60 mx-auto origin-right mt-8"
+          />
         </motion.div>
       </div>
     </section>
