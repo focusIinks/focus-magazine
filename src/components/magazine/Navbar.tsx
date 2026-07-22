@@ -20,7 +20,7 @@ import {
 
 const navLinks = [
   { label: "Home", href: "#home" },
-  { label: "Articles", href: "#articles" },
+  { label: "Articles", href: "#articles", badge: true },
   { label: "Categories", href: "#categories" },
   { label: "About", href: "#about" },
   { label: "Contact", href: "#contact" },
@@ -74,7 +74,7 @@ export function Navbar({ onSearchOpen }: NavbarProps) {
               <Eye className="w-5 h-5 text-primary-foreground" />
             </div>
             <div className="flex items-baseline gap-1">
-              <span className="text-xl font-bold tracking-tight text-foreground">
+              <span className="text-2xl font-bold tracking-tight text-foreground drop-shadow-sm">
                 FOCUS
               </span>
               <span className="text-sm font-light text-muted-foreground hidden sm:inline">
@@ -89,15 +89,25 @@ export function Navbar({ onSearchOpen }: NavbarProps) {
               <button
                 key={link.href}
                 onClick={() => handleNavClick(link.href)}
-                className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors rounded-md hover:bg-accent"
+                className="relative px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors rounded-md hover:bg-accent"
               >
                 {link.label}
+                {link.badge && (
+                  <span className="absolute -top-0.5 -right-0.5 w-2 h-2 bg-red-500 rounded-full" />
+                )}
               </button>
             ))}
           </div>
 
           {/* Actions */}
           <div className="flex items-center gap-2">
+            <Button
+              className="hidden md:inline-flex bg-primary text-primary-foreground hover:bg-primary/90 font-medium"
+              size="sm"
+            >
+              Subscribe
+            </Button>
+
             <Button
               variant="ghost"
               size="icon"
@@ -156,11 +166,19 @@ export function Navbar({ onSearchOpen }: NavbarProps) {
                     <button
                       key={link.href}
                       onClick={() => handleNavClick(link.href)}
-                      className="px-4 py-3 text-left text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-accent rounded-md transition-colors"
+                      className="relative px-4 py-3 text-left text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-accent rounded-md transition-colors"
                     >
                       {link.label}
+                      {link.badge && (
+                        <span className="absolute top-3 right-4 w-2 h-2 bg-red-500 rounded-full" />
+                      )}
                     </button>
                   ))}
+                  <div className="mt-4 px-4">
+                    <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90 font-medium">
+                      Subscribe
+                    </Button>
+                  </div>
                 </div>
               </SheetContent>
             </Sheet>

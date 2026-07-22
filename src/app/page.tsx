@@ -1,16 +1,23 @@
 "use client";
 
 import { useState, useCallback } from "react";
+import ReadingProgress from "@/components/magazine/ReadingProgress";
 import { Navbar } from "@/components/magazine/Navbar";
+import { BreakingNewsTicker } from "@/components/magazine/BreakingNewsTicker";
 import { HeroSection } from "@/components/magazine/HeroSection";
 import { FeaturedArticles } from "@/components/magazine/FeaturedArticles";
+import { PopularThisWeek } from "@/components/magazine/PopularThisWeek";
+import { EditorsPicks } from "@/components/magazine/EditorsPicks";
 import { LatestArticles } from "@/components/magazine/LatestArticles";
 import { CategorySection } from "@/components/magazine/CategorySection";
+import { AuthorSpotlight } from "@/components/magazine/AuthorSpotlight";
+import { TestimonialsSection } from "@/components/magazine/TestimonialsSection";
 import { AboutSection } from "@/components/magazine/AboutSection";
 import { NewsletterSection } from "@/components/magazine/NewsletterSection";
 import { ContactSection } from "@/components/magazine/ContactSection";
 import { ArticleModal } from "@/components/magazine/ArticleModal";
 import { SearchOverlay } from "@/components/magazine/SearchOverlay";
+import BackToTop from "@/components/magazine/BackToTop";
 import { Footer } from "@/components/magazine/Footer";
 
 export default function HomePage() {
@@ -22,17 +29,23 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <ReadingProgress />
       <Navbar onSearchOpen={() => setSearchOpen(true)} />
       <main className="flex-1 pt-16 md:pt-20">
         <HeroSection onArticleOpen={openArticle} />
         <FeaturedArticles onArticleOpen={openArticle} />
+        <PopularThisWeek onArticleOpen={openArticle} />
+        <EditorsPicks onArticleOpen={openArticle} />
         <LatestArticles onArticleOpen={openArticle} />
         <CategorySection />
+        <AuthorSpotlight onArticleOpen={openArticle} />
+        <TestimonialsSection />
         <AboutSection />
         <NewsletterSection />
         <ContactSection />
       </main>
       <Footer />
+      <BackToTop />
 
       <ArticleModal
         articleId={articleModal}

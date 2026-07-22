@@ -276,3 +276,58 @@ export const trendingTopics = [
   { title: "Gene Therapy for Inherited Retinal Disease", views: 11980 },
   { title: "The Optometrist's Role in Sleep Medicine", views: 10450 },
 ];
+
+export interface Testimonial {
+  name: string;
+  role: string;
+  location: string;
+  content: string;
+  rating: number;
+  initials: string;
+}
+
+export const testimonials: Testimonial[] = [
+  {
+    name: "Dr. Sarah Chen",
+    role: "Pediatric Optometrist",
+    location: "Singapore",
+    content: "Focus Magazine has become my go-to resource for staying current with pediatric vision research. The myopia management articles alone have transformed how I approach young patients in my practice.",
+    rating: 5,
+    initials: "SC"
+  },
+  {
+    name: "Dr. James Okafor",
+    role: "Clinical Director",
+    location: "Lagos, Nigeria",
+    content: "The depth of clinical content is unmatched. From glaucoma management to practice growth strategies, every issue delivers actionable insights I implement immediately in my clinic.",
+    rating: 5,
+    initials: "JO"
+  },
+  {
+    name: "Dr. Maria Santos",
+    role: "Contact Lens Specialist",
+    location: "São Paulo, Brazil",
+    content: "As a contact lens specialist, I appreciate the detailed coverage of new materials and fitting techniques. The peer-reviewed quality gives me confidence in applying new methods.",
+    rating: 5,
+    initials: "MS"
+  }
+];
+
+export const breakingNews = [
+  "WHO Updates Myopia Guidelines for 2026 — Recommends Annual Screening for Children Under 12",
+  "New ROCK Inhibitor Sustained-Release Implant Receives FDA Breakthrough Designation",
+  "AI-Based Retinal Screening Now Covered by Major Insurance Providers in the US",
+  "Global Scleral Lens Market Projected to Reach $5.2 Billion by 2028",
+  "Teleoptometry Legislation Advances in 12 US States — AOA Advocacy Campaign Shows Results",
+  "Novel Gene Therapy for Inherited Retinal Disease Shows Promise in Phase II Trials",
+  "Low Vision Assistive Technology Market Sees 40% Year-over-Year Growth",
+  "Ortho-K Long-Term Safety Data: 20-Year Follow-Up Study Published in Ophthalmology",
+];
+
+export const editorsPicksIds = [
+  "scleral-lens-fitting-masterclass",
+  "digital-eye-strain-management",
+  "neuro-optometric-rehabilitation-concussion",
+  "practice-growth-ai-era",
+  "contact-lens-materials-next-generation",
+];
