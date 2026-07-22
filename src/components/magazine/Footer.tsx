@@ -1,161 +1,150 @@
 "use client";
 
-import { useState } from "react";
-import { Twitter, Instagram, Linkedin, Youtube } from "lucide-react";
-import { toast } from "sonner";
+import { Twitter, Instagram, Linkedin, Rss, Mail, ExternalLink } from "lucide-react";
 
-const sectionLinks = [
+const quickLinks = [
   { label: "Home", href: "#home" },
-  { label: "Stories", href: "#articles" },
-  { label: "Topics", href: "#categories" },
+  { label: "Articles", href: "#articles" },
+  { label: "Categories", href: "#categories" },
   { label: "About", href: "#about" },
-  { label: "Contact", href: "#contact" },
+  { label: "Newsletter", href: "#newsletter", icon: Mail },
 ];
 
-const categoryLinks = [
+const topics = [
   "Clinical Optometry",
   "Myopia Management",
-  "Practice Growth",
   "Contact Lenses",
-  "Ocular Disease",
+  "Glaucoma",
   "Technology",
 ];
 
 const socialLinks = [
-  { icon: Twitter, href: "#", label: "Twitter" },
-  { icon: Instagram, href: "#", label: "Instagram" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Youtube, href: "#", label: "YouTube" },
+  { icon: Twitter, label: "Twitter", href: "#" },
+  { icon: Instagram, label: "Instagram", href: "#" },
+  { icon: Linkedin, label: "LinkedIn", href: "#" },
+  { icon: Rss, label: "RSS", href: "#" },
+];
+
+const legalLinks = [
+  { label: "Privacy Policy", href: "#" },
+  { label: "Terms of Use", href: "#" },
+  { label: "Cookie Policy", href: "#" },
 ];
 
 export function Footer() {
-  const [footerEmail, setFooterEmail] = useState("");
-
-  const handleNavClick = (href: string) => {
+  const handleClick = (href: string) => {
     const el = document.querySelector(href);
     if (el) {
       el.scrollIntoView({ behavior: "smooth" });
     }
   };
 
-  const handleSubscribe = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!footerEmail || !footerEmail.includes("@")) {
-      toast.error("Please enter a valid email address.");
-      return;
-    }
-    toast.success("Subscribed! Welcome to Focus Magazine.");
-    setFooterEmail("");
-  };
-
   return (
     <footer className="bg-foreground text-background mt-auto">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 md:pt-20 pb-0">
-        {/* 4-Column Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-8 mb-16">
-          {/* Col 1 — Brand + Subscribe */}
-          <div className="col-span-2 md:col-span-1">
-            <span className="font-editorial text-3xl tracking-tight text-background">
-              FOCUS
-            </span>
-            <p className="text-[10px] tracking-[0.3em] font-medium uppercase text-background/40 mt-1 mb-5">
-              MAGAZINE
-            </p>
-            <p className="text-sm text-background/50 leading-relaxed mb-6">
-              The premier digital publication for optometrists and eye care
-              professionals. Curating the future of vision.
-            </p>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-14 md:pt-16 pb-0">
+        {/* ─── Brand Header ─── */}
+        <div className="mb-12 md:mb-14">
+          <h2 className="font-editorial text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-background leading-none">
+            FOCUS MAGAZINE
+          </h2>
+          <p className="mt-3 text-sm sm:text-base text-background/45 tracking-wide">
+            Where Vision Science Meets Clinical Excellence
+          </p>
+        </div>
 
-            {/* Mini Subscribe Form */}
-            <form onSubmit={handleSubscribe} className="flex">
-              <input
-                type="email"
-                placeholder="your@email.com"
-                value={footerEmail}
-                onChange={(e) => setFooterEmail(e.target.value)}
-                className="flex-1 min-w-0 h-9 bg-background/10 border border-background/10 text-background text-sm placeholder:text-background/30 px-3 focus:outline-none focus:border-background/30 transition-colors"
-              />
-              <button
-                type="submit"
-                className="bg-primary text-primary-foreground text-xs font-bold tracking-[0.15em] uppercase px-4 h-9 hover:bg-primary/90 transition-colors shrink-0"
-              >
-                Join
-              </button>
-            </form>
-          </div>
-
-          {/* Col 2 — Sections */}
+        {/* ─── 4-Column Grid ─── */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-8 mb-14 md:mb-16">
+          {/* Quick Links */}
           <div>
             <h3 className="text-[10px] tracking-[0.2em] text-background/30 font-bold uppercase mb-5">
-              Sections
+              Quick Links
             </h3>
             <ul className="space-y-3">
-              {sectionLinks.map((link) => (
-                <li key={link.href}>
-                  <a
-                    href={link.href}
-                    onClick={(e) => {
-                      e.preventDefault();
-                      handleNavClick(link.href);
-                    }}
-                    className="text-sm text-background/60 hover:text-background transition-colors duration-200"
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
+              {quickLinks.map((link) => {
+                const Icon = link.icon;
+                return (
+                  <li key={link.href}>
+                    <a
+                      href={link.href}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        handleClick(link.href);
+                      }}
+                      className="inline-flex items-center gap-2 text-sm text-background/60 hover:text-background transition-colors duration-200"
+                    >
+                      {Icon && <Icon className="w-3.5 h-3.5" />}
+                      {link.label}
+                    </a>
+                  </li>
+                );
+              })}
             </ul>
           </div>
 
-          {/* Col 3 — Categories */}
+          {/* Topics */}
           <div>
             <h3 className="text-[10px] tracking-[0.2em] text-background/30 font-bold uppercase mb-5">
-              Categories
+              Topics
             </h3>
             <ul className="space-y-3">
-              {categoryLinks.map((cat) => (
-                <li key={cat}>
+              {topics.map((topic) => (
+                <li key={topic}>
                   <span className="text-sm text-background/60 hover:text-background transition-colors duration-200 cursor-pointer">
-                    {cat}
+                    {topic}
                   </span>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Col 4 — Connect */}
+          {/* Connect */}
           <div>
             <h3 className="text-[10px] tracking-[0.2em] text-background/30 font-bold uppercase mb-5">
               Connect
             </h3>
-
-            <div className="flex gap-2 mb-6">
-              {socialLinks.map((s) => (
-                <a
-                  key={s.label}
-                  href={s.href}
-                  aria-label={s.label}
-                  className="w-9 h-9 border border-background/15 hover:border-background/40 flex items-center justify-center transition-colors duration-200 text-background/50 hover:text-background"
-                >
-                  <s.icon className="w-4 h-4" />
-                </a>
-              ))}
+            <div className="flex gap-2.5">
+              {socialLinks.map((s) => {
+                const Icon = s.icon;
+                return (
+                  <a
+                    key={s.label}
+                    href={s.href}
+                    aria-label={s.label}
+                    className="w-9 h-9 border border-background/15 hover:border-background/40 flex items-center justify-center transition-colors duration-200 text-background/50 hover:text-background"
+                  >
+                    <Icon className="w-4 h-4" />
+                  </a>
+                );
+              })}
             </div>
+          </div>
 
-            <p className="text-xs text-background/30 leading-relaxed">
-              Follow us for the latest in optometry and eye care innovation.
-            </p>
+          {/* Legal */}
+          <div>
+            <h3 className="text-[10px] tracking-[0.2em] text-background/30 font-bold uppercase mb-5">
+              Legal
+            </h3>
+            <ul className="space-y-3">
+              {legalLinks.map((link) => (
+                <li key={link.href}>
+                  <a
+                    href={link.href}
+                    className="inline-flex items-center gap-2 text-sm text-background/60 hover:text-background transition-colors duration-200"
+                  >
+                    {link.label}
+                    <ExternalLink className="w-3 h-3 opacity-40" />
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="border-t border-background/10 py-6 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-xs text-background/40">
-            © {new Date().getFullYear()} Focus Magazine
-          </p>
-          <p className="text-xs text-background/40">
-            Published by{" "}
-            <span className="text-background/60 font-medium">Focuslinks</span>
+        {/* ─── Bottom Bar ─── */}
+        <div className="border-t border-background/10 py-6">
+          <p className="text-xs text-background/40 text-center sm:text-left">
+            &copy; 2026 Focus Magazine. Published by{" "}
+            <span className="text-background/60 font-medium">Focuslinks</span>.
           </p>
         </div>
       </div>

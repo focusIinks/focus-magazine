@@ -1,17 +1,14 @@
 "use client";
 
-import { useState, useMemo, useCallback, useEffect, useRef } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { useState, useMemo, useEffect, useCallback, useRef } from "react";
 import {
-  Command,
-  CommandEmpty,
-  CommandGroup,
-  CommandInput,
-  CommandItem,
-  CommandList,
-} from "@/components/ui/command";
-import { Search, Clock, ArrowRight, CornerDownLeft, ArrowUpDown, X } from "lucide-react";
-import { articles, authors, categories } from "@/lib/magazine-data";
+  Dialog,
+  DialogContent,
+  DialogTitle,
+  DialogDescription,
+} from "@/components/ui/dialog";
+import { Search } from "lucide-react";
+import { articles, type Article } from "@/lib/magazine-data";
 
 interface SearchOverlayProps {
   open: boolean;
@@ -19,262 +16,205 @@ interface SearchOverlayProps {
   onArticleOpen: (id: string) => void;
 }
 
-const recentSearches = ["Myopia Management", "Glaucoma", "Contact Lenses"];
+// Pick 5 consistent "suggested" articles based on a seed so they don't jump around
+function getSuggestedArticles(): Article[] {
+  const shuffled = [...articles].sort((a, b) => a.id.localeCompare(b.id));
+  return shuffled.slice(0, 5);
+}
+
+const suggestedArticles = getSuggestedArticles();
 
 export function SearchOverlay({ open, onClose, onArticleOpen }: SearchOverlayProps) {
   const [query, setQuery] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
 
+  // Reset query when dialog opens
   useEffect(() => {
     if (open) {
-      setQuery("");
+      // Small delay so the Dialog animation has time to mount the input
+      const timer = setTimeout(() => {
+        setQuery("");
+        inputRef.current?.focus();
+      }, 50);
+      return () => clearTimeout(timer);
     }
   }, [open]);
 
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape" && open) {
-        onClose();
-      }
-    };
-    document.addEventListener("keydown", handleKeyDown);
-    return () => document.removeEventListener("keydown", handleKeyDown);
-  }, [open, onClose]);
-
-  const articleResults = useMemo(() => {
+  // Filter articles as user types
+  const results = useMemo(() => {
     if (!query.trim()) return [];
     const q = query.toLowerCase();
-    return articles.filter(
-      (a) =>
-        a.title.toLowerCase().includes(q) ||
-        a.category.toLowerCase().includes(q) ||
-        a.author.name.toLowerCase().includes(q) ||
-        a.excerpt.toLowerCase().includes(q)
-    );
+    return articles.filter((article) => {
+      return (
+        article.title.toLowerCase().includes(q) ||
+        article.excerpt.toLowerCase().includes(q) ||
+        article.category.toLowerCase().includes(q) ||
+        article.author.name.toLowerCase().includes(q) ||
+        article.tags.some((tag) => tag.toLowerCase().includes(q))
+      );
+    });
   }, [query]);
 
-  const authorResults = useMemo(() => {
-    if (!query.trim()) return [];
-    const q = query.toLowerCase();
-    return authors.filter(
-      (a) => a.name.toLowerCase().includes(q) || a.specialty.toLowerCase().includes(q)
-    );
-  }, [query]);
-
-  const categoryResults = useMemo(() => {
-    if (!query.trim()) return [];
-    const q = query.toLowerCase();
-    return categories.filter(
-      (c) => c.name.toLowerCase().includes(q) || c.description.toLowerCase().includes(q)
-    );
-  }, [query]);
-
-  const hasResults = articleResults.length > 0 || authorResults.length > 0 || categoryResults.length > 0;
   const hasQuery = query.trim().length > 0;
 
-  const handleArticleSelect = useCallback(
+  const handleSelect = useCallback(
     (id: string) => {
       onArticleOpen(id);
-      setQuery("");
       onClose();
     },
     [onArticleOpen, onClose]
   );
 
-  const handleRecentClick = useCallback(
-    (term: string) => {
-      setQuery(term);
-    },
-    []
-  );
-
   return (
-    <AnimatePresence>
-      {open && (
-        <motion.div
-          className="fixed inset-0 z-[100] flex items-start justify-center pt-[12vh]"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.2, ease: "easeOut" }}
-        >
-          {/* Backdrop */}
-          <motion.div
-            className="absolute inset-0 bg-black/60 backdrop-blur-xl"
-            onClick={onClose}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.25 }}
-          />
+    <Dialog open={open} onOpenChange={(isOpen) => !isOpen && onClose()}>
+      <DialogContent
+        showCloseButton={false}
+        className="fixed inset-0 top-0 left-0 z-[100] flex h-full w-full max-w-none translate-x-0 translate-y-0 rounded-none border-0 bg-white p-0 shadow-none data-[state=open]:zoom-in-100 data-[state=closed]:zoom-out-100 sm:max-w-none"
+      >
+        {/* Visually hidden but accessible title & description for screen readers */}
+        <DialogTitle className="sr-only">Search Articles</DialogTitle>
+        <DialogDescription className="sr-only">
+          Search for articles by title, topic, author, or tag
+        </DialogDescription>
 
-          {/* Panel */}
-          <motion.div
-            className="relative z-10 w-full max-w-2xl mx-4 bg-background/95 backdrop-blur-md rounded-2xl border border-border/50 shadow-2xl overflow-hidden"
-            initial={{ opacity: 0, scale: 0.95, y: -10 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            exit={{ opacity: 0, scale: 0.95, y: -10 }}
-            transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
-          >
-            {/* Search Input Area */}
-            <div className="relative px-6 pt-6 pb-0">
-              <div className="flex items-center gap-3">
-                <Search className="size-5 text-muted-foreground/70 shrink-0 mt-1" />
-                <input
-                  ref={inputRef}
-                  type="text"
-                  value={query}
-                  onChange={(e) => setQuery(e.target.value)}
-                  placeholder="Search articles, authors, categories…"
-                  className="flex-1 bg-transparent font-editorial text-2xl placeholder:text-muted-foreground/40 placeholder:font-editorial placeholder:text-2xl outline-none py-2 border-0 border-b border-border/60 focus:border-border transition-colors"
-                  autoFocus
-                />
-                {query && (
-                  <button
-                    onClick={() => setQuery("")}
-                    className="p-1 rounded-md text-muted-foreground/50 hover:text-muted-foreground transition-colors"
-                  >
-                    <X className="size-4" />
-                  </button>
-                )}
+        <div className="flex h-full flex-col items-center">
+          {/* Search Input — centered at top */}
+          <div className="w-full max-w-2xl px-4 pt-8 pb-4 sm:pt-12 sm:px-6">
+            <div className="relative">
+              <Search className="absolute left-4 top-1/2 -translate-y-1/2 size-5 text-neutral-400" />
+              <input
+                ref={inputRef}
+                type="text"
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+                placeholder="Search articles, topics, authors..."
+                className="w-full rounded-xl border border-neutral-200 bg-neutral-50 py-3.5 pl-12 pr-24 text-base text-neutral-900 placeholder:text-neutral-400 outline-none transition-colors focus:border-neutral-300 focus:bg-white focus:ring-2 focus:ring-neutral-100"
+                autoFocus
+              />
+              {/* Cmd+K hint */}
+              <div className="absolute right-4 top-1/2 -translate-y-1/2 flex items-center gap-0.5 pointer-events-none">
+                <kbd className="hidden sm:inline-flex items-center h-6 min-w-6 px-1.5 rounded-md border border-neutral-200 bg-white text-[11px] font-medium text-neutral-400 leading-none">
+                  ⌘K
+                </kbd>
               </div>
             </div>
+          </div>
 
-            {/* Results Area */}
-            <div className="px-2 pb-2 pt-2 min-h-[240px] max-h-[55vh] overflow-y-auto">
-              <Command shouldFilter={false}>
-                <CommandList className="max-h-none overflow-visible">
-                  {/* Recent Searches — show when no query */}
-                  {!hasQuery && (
-                    <CommandGroup heading="Recent Searches" className="px-4">
-                      {recentSearches.map((term) => (
-                        <CommandItem
-                          key={term}
-                          value={term}
-                          onSelect={() => handleRecentClick(term)}
-                          className="flex items-center gap-3 py-2.5 px-3 rounded-lg cursor-pointer transition-colors duration-150 data-[selected=true]:bg-muted"
-                        >
-                          <Clock className="size-4 text-muted-foreground/50 shrink-0" />
-                          <span className="flex-1 text-sm">{term}</span>
-                          <ArrowRight className="size-3 text-muted-foreground/30" />
-                        </CommandItem>
-                      ))}
-                    </CommandGroup>
-                  )}
+          {/* Divider */}
+          <div className="w-full max-w-2xl px-4 sm:px-6">
+            <div className="h-px bg-neutral-100" />
+          </div>
 
-                  {/* Article Results */}
-                  {hasQuery && articleResults.length > 0 && (
-                    <CommandGroup heading="Articles" className="px-4">
-                      {articleResults.map((article) => (
-                        <CommandItem
-                          key={article.id}
-                          value={article.id}
-                          onSelect={() => handleArticleSelect(article.id)}
-                          className="flex items-start gap-3 py-3 px-3 rounded-lg cursor-pointer transition-colors duration-150 data-[selected=true]:bg-muted group"
-                        >
-                          <div className="flex-1 min-w-0">
-                            <p className="font-semibold text-sm leading-snug truncate">
-                              {article.title}
-                            </p>
-                            <div className="flex items-center gap-1.5 mt-1 text-muted-foreground text-xs">
-                              <span>{article.category}</span>
-                              <span className="text-border">·</span>
-                              <span>{article.author.name}</span>
-                              <span className="text-border">·</span>
-                              <span>{article.date}</span>
-                            </div>
+          {/* Results Area */}
+          <div className="w-full max-w-2xl flex-1 overflow-y-auto px-4 sm:px-6 py-2">
+            {/* Suggested Reading — when no query */}
+            {!hasQuery && (
+              <div>
+                <p className="px-3 pt-4 pb-2 text-xs font-medium uppercase tracking-wider text-neutral-400">
+                  Suggested Reading
+                </p>
+                <ul className="divide-y divide-neutral-100">
+                  {suggestedArticles.map((article) => (
+                    <li key={article.id}>
+                      <button
+                        onClick={() => handleSelect(article.id)}
+                        className="flex w-full items-start gap-4 rounded-lg px-3 py-3.5 text-left transition-colors hover:bg-neutral-50"
+                      >
+                        <div className="flex-1 min-w-0">
+                          <p className="text-sm font-semibold text-neutral-900 leading-snug truncate">
+                            {article.title}
+                          </p>
+                          <div className="mt-1 flex flex-wrap items-center gap-x-2 gap-y-0.5 text-xs text-neutral-500">
+                            <span>{article.category}</span>
+                            <span className="text-neutral-300">·</span>
+                            <span>{article.author.name}</span>
+                            <span className="text-neutral-300">·</span>
+                            <span>{article.date}</span>
                           </div>
-                          <ArrowRight className="size-3.5 text-muted-foreground/0 group-data-[selected=true]:text-muted-foreground/50 transition-all duration-150 shrink-0 mt-0.5" />
-                        </CommandItem>
-                      ))}
-                    </CommandGroup>
-                  )}
+                        </div>
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
 
-                  {/* Author Results */}
-                  {hasQuery && authorResults.length > 0 && (
-                    <CommandGroup heading="Authors" className="px-4">
-                      {authorResults.map((author) => (
-                        <CommandItem
-                          key={author.name}
-                          value={author.name}
-                          className="flex items-center gap-3 py-2.5 px-3 rounded-lg cursor-pointer transition-colors duration-150 data-[selected=true]:bg-muted group"
-                        >
-                          <div className="flex items-center justify-center size-8 rounded-full bg-muted text-xs font-semibold text-muted-foreground shrink-0">
-                            {author.initials}
+            {/* Search Results */}
+            {hasQuery && results.length > 0 && (
+              <div>
+                <p className="px-3 pt-4 pb-2 text-xs font-medium uppercase tracking-wider text-neutral-400">
+                  {results.length} result{results.length !== 1 ? "s" : ""}
+                </p>
+                <ul className="divide-y divide-neutral-100">
+                  {results.map((article) => (
+                    <li key={article.id}>
+                      <button
+                        onClick={() => handleSelect(article.id)}
+                        className="flex w-full items-start gap-4 rounded-lg px-3 py-3.5 text-left transition-colors hover:bg-neutral-50"
+                      >
+                        <div className="flex-1 min-w-0">
+                          <p className="text-sm font-semibold text-neutral-900 leading-snug truncate">
+                            {article.title}
+                          </p>
+                          <div className="mt-1 flex flex-wrap items-center gap-x-2 gap-y-0.5 text-xs text-neutral-500">
+                            <span>{article.category}</span>
+                            <span className="text-neutral-300">·</span>
+                            <span>{article.author.name}</span>
+                            <span className="text-neutral-300">·</span>
+                            <span>{article.date}</span>
                           </div>
-                          <div className="flex-1 min-w-0">
-                            <p className="font-semibold text-sm leading-snug">
-                              {author.name}
-                            </p>
-                            <p className="text-muted-foreground text-xs mt-0.5">
-                              {author.specialty}
-                            </p>
-                          </div>
-                          <ArrowRight className="size-3.5 text-muted-foreground/0 group-data-[selected=true]:text-muted-foreground/50 transition-all duration-150 shrink-0" />
-                        </CommandItem>
-                      ))}
-                    </CommandGroup>
-                  )}
+                        </div>
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
 
-                  {/* Category Results */}
-                  {hasQuery && categoryResults.length > 0 && (
-                    <CommandGroup heading="Categories" className="px-4">
-                      {categoryResults.map((cat) => (
-                        <CommandItem
-                          key={cat.name}
-                          value={cat.name}
-                          className="flex items-center gap-3 py-2.5 px-3 rounded-lg cursor-pointer transition-colors duration-150 data-[selected=true]:bg-muted group"
-                        >
-                          <div className="flex-1 min-w-0">
-                            <p className="font-semibold text-sm leading-snug">
-                              {cat.name}
-                            </p>
-                            <p className="text-muted-foreground text-xs mt-0.5">
-                              {cat.count} articles
-                            </p>
-                          </div>
-                          <ArrowRight className="size-3.5 text-muted-foreground/0 group-data-[selected=true]:text-muted-foreground/50 transition-all duration-150 shrink-0" />
-                        </CommandItem>
-                      ))}
-                    </CommandGroup>
-                  )}
+            {/* No Results */}
+            {hasQuery && results.length === 0 && (
+              <div className="flex flex-col items-center justify-center py-20 text-center">
+                <div className="flex items-center justify-center size-12 rounded-full bg-neutral-100 mb-4">
+                  <Search className="size-5 text-neutral-400" />
+                </div>
+                <p className="text-sm font-medium text-neutral-900">
+                  No results found
+                </p>
+                <p className="mt-1 text-sm text-neutral-500 max-w-xs">
+                  Try adjusting your search or browse our suggested reading.
+                </p>
+              </div>
+            )}
+          </div>
 
-                  {/* Empty State */}
-                  {hasQuery && !hasResults && (
-                    <CommandEmpty className="py-12 text-muted-foreground/60 text-sm">
-                      No results found for "{query}"
-                    </CommandEmpty>
-                  )}
-                </CommandList>
-              </Command>
-            </div>
-
-            {/* Footer Hint */}
-            <div className="flex items-center justify-center gap-4 px-6 py-3 border-t border-border/40 bg-muted/30">
-              <span className="flex items-center gap-1.5 text-[11px] text-muted-foreground/60 tracking-wide">
-                <kbd className="inline-flex items-center justify-center h-5 min-w-5 px-1 rounded border border-border/50 bg-background/80 text-[10px] font-medium text-muted-foreground/70">
+          {/* Footer */}
+          <div className="w-full max-w-2xl px-4 sm:px-6 pb-6 pt-2">
+            <div className="h-px bg-neutral-100 mb-3" />
+            <div className="flex items-center justify-center gap-4 text-[11px] text-neutral-400">
+              <span className="flex items-center gap-1.5">
+                <kbd className="inline-flex items-center justify-center h-5 min-w-5 px-1 rounded border border-neutral-200 bg-white text-[10px] font-medium text-neutral-400 leading-none">
                   Esc
                 </kbd>
                 to close
               </span>
-              <span className="text-border/40">·</span>
-              <span className="flex items-center gap-1.5 text-[11px] text-muted-foreground/60 tracking-wide">
-                <kbd className="inline-flex items-center justify-center h-5 min-w-5 px-1 rounded border border-border/50 bg-background/80 text-[10px] font-medium text-muted-foreground/70">
-                  <CornerDownLeft className="size-2.5" />
+              <span className="text-neutral-200">·</span>
+              <span className="flex items-center gap-1.5">
+                <kbd className="inline-flex items-center justify-center h-5 min-w-5 px-1 rounded border border-neutral-200 bg-white text-[10px] font-medium text-neutral-400 leading-none">
+                  ↵
                 </kbd>
-                to search
+                to open
               </span>
-              <span className="text-border/40">·</span>
-              <span className="flex items-center gap-1.5 text-[11px] text-muted-foreground/60 tracking-wide">
-                <kbd className="inline-flex items-center justify-center h-5 min-w-5 px-1 rounded border border-border/50 bg-background/80 text-[10px] font-medium text-muted-foreground/70">
-                  <ArrowUpDown className="size-2.5" />
+              <span className="text-neutral-200">·</span>
+              <span className="flex items-center gap-1.5">
+                <kbd className="inline-flex items-center justify-center h-5 min-w-5 px-1 rounded border border-neutral-200 bg-white text-[10px] font-medium text-neutral-400 leading-none">
+                  ↑↓
                 </kbd>
                 to navigate
               </span>
             </div>
-          </motion.div>
-        </motion.div>
-      )}
-    </AnimatePresence>
+          </div>
+        </div>
+      </DialogContent>
+    </Dialog>
   );
 }
