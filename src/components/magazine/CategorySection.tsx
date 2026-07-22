@@ -1,9 +1,6 @@
 "use client";
 
-import { useState } from "react";
 import { motion } from "framer-motion";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import {
   Eye,
   Circle,
@@ -41,24 +38,6 @@ const iconMap: Record<string, LucideIcon> = {
   Globe,
 };
 
-// Map category names to a shadow color for the glow effect
-const categoryGlowMap: Record<string, string> = {
-  "Clinical Refraction": "0 8px 30px rgba(20,184,166,0.3)",
-  "Contact Lenses": "0 8px 30px rgba(16,185,129,0.3)",
-  "Myopia Management": "0 8px 30px rgba(6,182,212,0.3)",
-  Glaucoma: "0 8px 30px rgba(245,158,11,0.3)",
-  "Pediatric Optometry": "0 8px 30px rgba(244,63,94,0.3)",
-  "Ocular Pharmacology": "0 8px 30px rgba(139,92,246,0.3)",
-  "Binocular Vision": "0 8px 30px rgba(249,115,22,0.3)",
-  "Low Vision": "0 8px 30px rgba(14,165,233,0.3)",
-  "Practice Management": "0 8px 30px rgba(132,204,22,0.3)",
-  Technology: "0 8px 30px rgba(217,70,239,0.3)",
-  Teleoptometry: "0 8px 30px rgba(99,102,241,0.3)",
-  "Anterior Segment": "0 8px 30px rgba(239,68,68,0.3)",
-  "Neuro-Ophthalmology": "0 8px 30px rgba(168,85,247,0.3)",
-  "Public Health": "0 8px 30px rgba(20,184,166,0.3)",
-};
-
 function CategoryCard({
   cat,
   index,
@@ -66,9 +45,14 @@ function CategoryCard({
   cat: (typeof categories)[number];
   index: number;
 }) {
-  const [hovered, setHovered] = useState(false);
   const Icon = iconMap[cat.icon] || Eye;
-  const glowShadow = categoryGlowMap[cat.name] || "0 8px 30px rgba(20,184,166,0.3)";
+
+  // Parse the color string: "bg-teal-500/10 text-teal-700 dark:text-teal-400"
+  const bgClass = cat.color.split(" ").find((c) => c.startsWith("bg-")) || "bg-primary/10";
+  const textClasses = cat.color
+    .split(" ")
+    .filter((c) => c.startsWith("text-"))
+    .join(" ");
 
   return (
     <motion.div
@@ -77,77 +61,63 @@ function CategoryCard({
       viewport={{ once: true }}
       transition={{ duration: 0.4, delay: 0.04 * index }}
     >
-      <Card
-        className="group cursor-pointer border-0 shadow-sm transition-all duration-300 hover:-translate-y-1 h-full relative overflow-visible"
-        style={{
-          boxShadow: hovered ? glowShadow : undefined,
-        }}
-        onMouseEnter={() => setHovered(true)}
-        onMouseLeave={() => setHovered(false)}
-      >
-        {/* Article count badge */}
-        <span className="absolute -top-1.5 -right-1.5 z-10 bg-primary/10 text-primary text-[11px] font-bold rounded-full px-2 py-0.5 pointer-events-none">
-          {cat.count}
+      <div className="group bg-card rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 p-5 flex flex-col items-center text-center cursor-pointer relative overflow-hidden">
+        {/* Icon container */}
+        <div
+          className={`w-14 h-14 rounded-full flex items-center justify-center ${bgClass}`}
+        >
+          <Icon className={`w-6 h-6 ${textClasses}`} />
+        </div>
+
+        {/* Category name */}
+        <h3 className="font-bold text-sm mt-3">{cat.name}</h3>
+
+        {/* Article count pill */}
+        <span className="mt-2 bg-muted text-muted-foreground text-[11px] rounded-full px-2.5 py-0.5 font-medium">
+          {cat.count} articles
         </span>
-        <CardContent className="p-6 flex flex-col items-center text-center h-full">
-          <div
-            className={`w-14 h-14 rounded-xl flex items-center justify-center mb-3 ${cat.color} group-hover:scale-110 transition-transform relative`}
-          >
-            {/* Subtle background pattern */}
-            <div
-              className="absolute inset-0 rounded-xl opacity-[0.15]"
-              style={{
-                backgroundImage:
-                  "radial-gradient(circle at 2px 2px, currentColor 1px, transparent 0)",
-                backgroundSize: "8px 8px",
-              }}
-            />
-            <Icon className="w-7 h-7 relative z-[1]" />
-          </div>
-          <h3 className="font-semibold text-sm mb-1 group-hover:text-primary transition-colors">
-            {cat.name}
-          </h3>
-          <p className="text-xs text-muted-foreground leading-relaxed mb-2 line-clamp-2">
-            {cat.description}
-          </p>
-          <span className="text-[11px] text-muted-foreground/70 font-medium mt-auto">
-            {cat.count} articles
-          </span>
-        </CardContent>
-      </Card>
+
+        {/* Bottom accent line - grows on hover */}
+        <div className="absolute bottom-0 left-0 h-0.5 w-0 group-hover:w-full bg-primary transition-all duration-300" />
+      </div>
     </motion.div>
   );
 }
 
 export function CategorySection() {
   return (
-    <section id="categories" className="py-16 md:py-24 bg-background">
+    <section id="categories" className="py-20 md:py-28 bg-muted/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center gap-4 mb-4">
-          <div className="h-px bg-primary flex-1" />
-          <h2 className="text-2xl md:text-3xl font-bold tracking-tight whitespace-nowrap">
-            Explore by Category
+        {/* Header - Left-aligned editorial */}
+        <div className="mb-12">
+          <span className="text-xs tracking-[0.2em] text-primary font-semibold uppercase">
+            Topics
+          </span>
+          <h2 className="text-3xl md:text-4xl font-bold mt-2">
+            Explore Specialties
           </h2>
-          <div className="h-px bg-primary flex-1" />
         </div>
-        <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Dive into specialized topics across the full spectrum of optometric
-          care and vision science.
-        </p>
 
+        {/* Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
           {categories.map((cat, i) => (
             <CategoryCard key={cat.name} cat={cat} index={i} />
           ))}
         </div>
 
-        {/* View All Categories */}
-        <div className="text-center mt-10">
-          <Button variant="outline" className="px-6 group">
-            View All Categories
-            <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-0.5 transition-transform" />
-          </Button>
-        </div>
+        {/* View All Topics link */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.4, delay: 0.3 }}
+          className="text-center mt-12"
+        >
+          <button className="inline-flex items-center gap-2 text-primary font-semibold text-sm hover:gap-3 transition-all duration-200">
+            View All Topics
+            <ArrowRight className="w-4 h-4" />
+          </button>
+        </motion.div>
       </div>
     </section>
   );

@@ -1,16 +1,30 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { ArrowRight, Clock, User, BookOpen, Users, Mail } from "lucide-react";
 import { articles } from "@/lib/magazine-data";
+import { Share2, Bookmark, MessageCircle } from "lucide-react";
 
-const stats = [
-  { icon: BookOpen, number: "15K+", label: "Articles Read" },
-  { icon: Users, number: "200+", label: "Expert Authors" },
-  { icon: Mail, number: "50K+", label: "Subscribers" },
-];
+const stagger = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { staggerChildren: 0.1 },
+  },
+};
+
+const fadeUp = {
+  hidden: { opacity: 0, y: 24 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } },
+};
+
+const gradientMap: Record<string, string> = {
+  "from-amber-600 to-orange-700": "#d97706",
+  "from-rose-500 to-pink-600": "#f43f5e",
+  "from-emerald-600 to-teal-700": "#0d9488",
+  "from-teal-500 to-emerald-600": "#14b8a6",
+  "from-purple-600 to-violet-700": "#9333ea",
+  "from-teal-600 to-cyan-700": "#0d9488",
+};
 
 interface HeroSectionProps {
   onArticleOpen: (id: string) => void;
@@ -18,184 +32,171 @@ interface HeroSectionProps {
 
 export function HeroSection({ onArticleOpen }: HeroSectionProps) {
   const featured = articles.find((a) => a.featured) || articles[0];
+  const otherFeatured = articles.filter((a) => a.featured && a.id !== featured.id).slice(0, 3);
+
+  // Pad if fewer than 3 other featured
+  while (otherFeatured.length < 3) {
+    const next = articles.find((a) => !otherFeatured.includes(a) && a.id !== featured.id);
+    if (next) otherFeatured.push(next);
+    else break;
+  }
+
+  const firstWord = featured.title.split(" ")[0];
+  const restTitle = featured.title.split(" ").slice(1).join(" ");
 
   return (
-    <section id="home" className="relative min-h-[90vh] flex items-center overflow-hidden">
-      {/* Background */}
+    <section className="relative min-h-screen flex items-center overflow-hidden">
+      {/* Full-bleed gradient background */}
       <div className="absolute inset-0 magazine-gradient" />
-      <div className="absolute inset-0 opacity-10">
-        <svg className="w-full h-full" viewBox="0 0 800 600" fill="none">
-          <motion.circle
-            cx="650" cy="100" r="200"
-            stroke="currentColor" strokeWidth="0.5" className="text-white/20"
-            animate={{ y: [0, -10, 0] }}
-            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-          />
-          <motion.circle
-            cx="650" cy="100" r="250"
-            stroke="currentColor" strokeWidth="0.3" className="text-white/10"
-            animate={{ y: [0, -10, 0] }}
-            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 0.3 }}
-          />
-          <motion.circle
-            cx="650" cy="100" r="300"
-            stroke="currentColor" strokeWidth="0.2" className="text-white/5"
-            animate={{ y: [0, -10, 0] }}
-            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 0.6 }}
-          />
-          <motion.circle
-            cx="150" cy="500" r="150"
-            stroke="currentColor" strokeWidth="0.5" className="text-white/15"
-            animate={{ y: [0, -10, 0] }}
-            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-          />
-          <motion.circle
-            cx="150" cy="500" r="200"
-            stroke="currentColor" strokeWidth="0.3" className="text-white/8"
-            animate={{ y: [0, -10, 0] }}
-            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 1.3 }}
-          />
-          {/* Eye shape */}
-          <motion.ellipse
-            cx="400" cy="300" rx="120" ry="60"
-            stroke="currentColor" strokeWidth="0.4" className="text-white/10"
-            animate={{ y: [0, -10, 0] }}
-            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
-          />
-          <motion.circle
-            cx="400" cy="300" r="30"
-            stroke="currentColor" strokeWidth="0.5" className="text-white/15"
-            animate={{ y: [0, -10, 0] }}
-            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 0.8 }}
-          />
-          <motion.circle
-            cx="400" cy="300" r="12" fill="currentColor" className="text-white/8"
-            animate={{ y: [0, -10, 0] }}
-            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 1.1 }}
-          />
-          {/* Grid lines */}
-          <motion.line
-            x1="0" y1="200" x2="800" y2="200"
-            stroke="currentColor" strokeWidth="0.2" className="text-white/5"
-            animate={{ y: [0, -10, 0] }}
-            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 0.2 }}
-          />
-          <motion.line
-            x1="0" y1="400" x2="800" y2="400"
-            stroke="currentColor" strokeWidth="0.2" className="text-white/5"
-            animate={{ y: [0, -10, 0] }}
-            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 0.7 }}
-          />
-          <motion.line
-            x1="200" y1="0" x2="200" y2="600"
-            stroke="currentColor" strokeWidth="0.2" className="text-white/5"
-            animate={{ y: [0, -10, 0] }}
-            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 0.4 }}
-          />
-          <motion.line
-            x1="600" y1="0" x2="600" y2="600"
-            stroke="currentColor" strokeWidth="0.2" className="text-white/5"
-            animate={{ y: [0, -10, 0] }}
-            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 0.9 }}
-          />
+
+      {/* Subtle grid pattern overlay */}
+      <div className="absolute inset-0 opacity-[0.06]">
+        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="hero-grid" x="0" y="0" width="32" height="32" patternUnits="userSpaceOnUse">
+              <circle cx="1" cy="1" r="0.8" fill="white" />
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#hero-grid)" />
         </svg>
       </div>
 
-      {/* Bottom gradient overlay */}
-      <div className="h-32 bg-gradient-to-t from-background to-transparent absolute bottom-0 left-0 right-0 z-10" />
+      {/* Ambient glow */}
+      <div className="absolute top-1/4 -left-32 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-1/4 -right-32 w-80 h-80 bg-amber-400/8 rounded-full blur-3xl" />
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 md:py-40">
-        <div className="max-w-3xl">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-          >
-            <Badge
-              variant="secondary"
-              className="mb-6 bg-white/15 text-white/90 border-white/20 hover:bg-white/20"
+      {/* Main content */}
+      <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-20 lg:pb-0">
+        <motion.div
+          className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12 items-center"
+          variants={stagger}
+          initial="hidden"
+          animate="visible"
+        >
+          {/* LEFT COLUMN */}
+          <div className="lg:col-span-3 flex flex-col gap-5">
+            {/* Issue label */}
+            <motion.div variants={fadeUp} className="flex items-center gap-4">
+              <span className="tracking-[0.25em] text-xs uppercase text-white/60 font-medium">
+                Issue 47 &middot; July 2026
+              </span>
+            </motion.div>
+
+            {/* Gold editorial marker */}
+            <motion.div variants={fadeUp} className="w-12 h-0.5 bg-amber-400" />
+
+            {/* Large editorial headline */}
+            <motion.h1
+              variants={fadeUp}
+              className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white leading-[1.05] tracking-tight text-balance"
             >
-              Featured Story
-            </Badge>
-          </motion.div>
+              <span className="text-white/70">{firstWord}</span>
+              <br className="hidden sm:block" />{" "}
+              <span>{restTitle}</span>
+            </motion.h1>
 
-          <motion.h1
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight tracking-tight mb-6"
-          >
-            {featured.title}
-          </motion.h1>
+            {/* Divider */}
+            <motion.div variants={fadeUp} className="w-full max-w-xl h-px bg-white/20" />
 
-          <motion.p
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-lg sm:text-xl text-white/80 leading-relaxed mb-8 max-w-2xl"
-          >
-            {featured.excerpt}
-          </motion.p>
-
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="flex flex-wrap items-center gap-4 text-white/70 text-sm mb-10"
-          >
-            <div className="flex items-center gap-2">
-              <User className="w-4 h-4" />
-              <span>{featured.author.name}</span>
-            </div>
-            <span className="text-white/30">|</span>
-            <span>{featured.date}</span>
-            <span className="text-white/30">|</span>
-            <div className="flex items-center gap-1">
-              <Clock className="w-4 h-4" />
-              <span>{featured.readTime}</span>
-            </div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.5 }}
-          >
-            <Button
-              size="lg"
-              onClick={() => onArticleOpen(featured.id)}
-              className="bg-white text-teal-900 hover:bg-white/90 font-semibold shadow-lg shadow-black/10"
+            {/* Excerpt */}
+            <motion.p
+              variants={fadeUp}
+              className="text-lg text-white/70 leading-relaxed max-w-xl"
             >
-              Read Featured Article
-              <ArrowRight className="w-4 h-4 ml-2" />
-            </Button>
-          </motion.div>
+              {featured.excerpt}
+            </motion.p>
 
-          {/* Stat counters */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.7 }}
-            className="flex flex-wrap items-center gap-6 sm:gap-0 mt-14"
-          >
-            {stats.map((stat, i) => (
-              <motion.div
-                key={stat.label}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.8 + i * 0.15 }}
-                className={`flex items-center gap-3 px-6 ${
-                  i > 0 ? "border-l border-white/20" : ""
-                }`}
+            {/* Author info */}
+            <motion.div variants={fadeUp} className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-full bg-white/20 text-white font-bold text-sm flex items-center justify-center shrink-0">
+                {featured.author.initials}
+              </div>
+              <div className="flex flex-col">
+                <span className="text-white font-medium text-sm">
+                  {featured.author.name}
+                </span>
+                <span className="text-white/50 text-xs">
+                  {featured.author.specialty} &middot; {featured.date}
+                </span>
+              </div>
+            </motion.div>
+
+            {/* CTA buttons */}
+            <motion.div variants={fadeUp} className="flex flex-wrap items-center gap-3 mt-2">
+              <button
+                onClick={() => onArticleOpen(featured.id)}
+                className="bg-white text-teal-900 font-semibold px-6 py-3 rounded-none hover:bg-white/90 transition-colors duration-200 cursor-pointer"
               >
-                <stat.icon className="w-5 h-5 text-white/50" />
-                <div>
-                  <div className="text-2xl font-bold text-white">{stat.number}</div>
-                  <div className="text-xs text-white/60">{stat.label}</div>
+                Read Cover Story
+              </button>
+              <button className="border border-white/30 text-white hover:bg-white/10 px-6 py-3 rounded-none transition-colors duration-200 cursor-pointer">
+                Browse Issue
+              </button>
+            </motion.div>
+
+            {/* Stat pills */}
+            <motion.div variants={fadeUp} className="flex items-center gap-3 mt-4">
+              {["15 Articles", "8 Authors", "6 Categories"].map((stat) => (
+                <span
+                  key={stat}
+                  className="bg-white/10 rounded-full px-4 py-2 text-white/80 text-sm whitespace-nowrap"
+                >
+                  {stat}
+                </span>
+              ))}
+            </motion.div>
+          </div>
+
+          {/* RIGHT COLUMN */}
+          <div className="lg:col-span-2 flex flex-col gap-3">
+            {otherFeatured.map((article) => (
+              <motion.div
+                key={article.id}
+                variants={fadeUp}
+                onClick={() => onArticleOpen(article.id)}
+                className="flex gap-3 bg-white/5 border border-white/10 px-4 py-3 hover:bg-white/10 transition-colors duration-200 cursor-pointer group"
+              >
+                {/* Colored bar */}
+                <div
+                  className="w-[3px] shrink-0 rounded-full"
+                  style={{
+                    backgroundColor: gradientMap[article.imageGradient] || "#0d9488",
+                  }}
+                />
+                <div className="flex flex-col gap-1.5 min-w-0">
+                  <span className="text-[10px] uppercase tracking-widest text-white/50 font-medium">
+                    {article.category}
+                  </span>
+                  <h3 className="text-sm font-semibold text-white line-clamp-2 group-hover:text-amber-300 transition-colors duration-200">
+                    {article.title}
+                  </h3>
+                  <span className="text-xs text-white/50">
+                    {article.author.name} &middot; {article.date}
+                  </span>
                 </div>
               </motion.div>
             ))}
-          </motion.div>
+          </div>
+        </motion.div>
+      </div>
+
+      {/* Bottom bar */}
+      <div className="absolute bottom-0 left-0 right-0 h-14 bg-black/20 backdrop-blur-sm flex items-center justify-between px-6 z-20">
+        <span className="text-xs text-white/50">Published by Focuslinks</span>
+        <div className="flex items-center gap-1">
+          {[
+            { icon: Share2, label: "Share" },
+            { icon: Bookmark, label: "Bookmark" },
+            { icon: MessageCircle, label: "Comment" },
+          ].map(({ icon: Icon, label }) => (
+            <button
+              key={label}
+              aria-label={label}
+              className="p-2 text-white/50 hover:text-white/80 transition-colors duration-200 cursor-pointer"
+            >
+              <Icon className="w-4 h-4" />
+            </button>
+          ))}
         </div>
       </div>
     </section>

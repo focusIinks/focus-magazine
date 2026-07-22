@@ -1,19 +1,21 @@
 'use client';
 
+import { breakingNews } from '@/lib/magazine-data';
+
+const fallbackHeadlines = [
+  'WHO Updates Myopia Guidelines for 2026 — Recommends Annual Screening for Children Under 12',
+  'New ROCK Inhibitor Sustained-Release Implant Receives FDA Breakthrough Designation',
+  'AI-Based Retinal Screening Now Covered by Major Insurance Providers in the US',
+  'Global Scleral Lens Market Projected to Reach $5.2 Billion by 2028',
+  'Teleoptometry Legislation Advances in 12 US States — AOA Advocacy Campaign Shows Results',
+  'Novel Gene Therapy for Inherited Retinal Disease Shows Promise in Phase II Trials',
+  'Low Vision Assistive Technology Market Sees 40% Year-over-Year Growth',
+  'Ortho-K Long-Term Safety Data: 20-Year Follow-Up Study Published in Ophthalmology',
+];
+
+const headlines = breakingNews.length > 0 ? breakingNews : fallbackHeadlines;
+
 export default function BreakingNewsTicker() {
-  const headlines = [
-    'WHO Updates Myopia Guidelines for 2026',
-    'New ROCK Inhibitor Receives FDA Approval',
-    'AI-Based Retinal Screening Now Covered by Insurance',
-    'Scleral Lens Market Projected to Hit $5B by 2028',
-    'Teleoptometry Legislation Advances in 12 States',
-    'Novel Gene Therapy Shows Promise for Inherited Retinal Disease',
-    'Low Vision Devices Market Sees 40% Growth',
-    'Ortho-K Safety Data Reassures Practitioners',
-  ];
-
-  const separator = ' \u2022 ';
-
   return (
     <>
       <style>{`
@@ -26,22 +28,31 @@ export default function BreakingNewsTicker() {
           }
         }
         .ticker-track {
-          animation: ticker-scroll 30s linear infinite;
+          animation: ticker-scroll 40s linear infinite;
+        }
+        .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+        }
+        .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
         }
       `}</style>
-      <div className="w-full h-9 flex items-center bg-primary/5 dark:bg-primary/10 border-b border-border overflow-hidden">
-        <span className="shrink-0 bg-red-500 text-white text-[10px] font-bold px-2 py-0.5 rounded ml-4 mr-3">
-          BREAKING
+      <div className="w-full h-10 flex items-center bg-foreground text-background overflow-hidden">
+        <span className="shrink-0 bg-red-600 text-white text-[10px] font-bold tracking-wider uppercase px-3 py-1">
+          LATEST
         </span>
-        <div className="overflow-hidden flex-1">
+        <div className="overflow-hidden flex-1 scrollbar-hide">
           <div className="ticker-track flex whitespace-nowrap">
             {[...headlines, ...headlines].map((headline, index) => (
               <span
                 key={index}
-                className="text-sm text-muted-foreground"
+                className="text-sm text-background/70"
               >
                 {headline}
-                {index < headlines.length * 2 - 1 ? separator : ''}
+                {index < headlines.length * 2 - 1 && (
+                  <span className="text-red-500 mx-4">●</span>
+                )}
               </span>
             ))}
           </div>

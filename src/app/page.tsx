@@ -3,11 +3,15 @@
 import { useState, useCallback } from "react";
 import ReadingProgress from "@/components/magazine/ReadingProgress";
 import { Navbar } from "@/components/magazine/Navbar";
-import { BreakingNewsTicker } from "@/components/magazine/BreakingNewsTicker";
 import { HeroSection } from "@/components/magazine/HeroSection";
+import BreakingNewsTicker from "@/components/magazine/BreakingNewsTicker";
 import { FeaturedArticles } from "@/components/magazine/FeaturedArticles";
+import MasonryGrid from "@/components/magazine/MasonryGrid";
+import EditorialBanner from "@/components/magazine/EditorialBanner";
+import IssueCover from "@/components/magazine/IssueCover";
 import { PopularThisWeek } from "@/components/magazine/PopularThisWeek";
 import { EditorsPicks } from "@/components/magazine/EditorsPicks";
+import PullQuote from "@/components/magazine/PullQuote";
 import { LatestArticles } from "@/components/magazine/LatestArticles";
 import { CategorySection } from "@/components/magazine/CategorySection";
 import { AuthorSpotlight } from "@/components/magazine/AuthorSpotlight";
@@ -31,11 +35,16 @@ export default function HomePage() {
     <div className="min-h-screen flex flex-col">
       <ReadingProgress />
       <Navbar onSearchOpen={() => setSearchOpen(true)} />
-      <main className="flex-1 pt-16 md:pt-20">
+      <main className="flex-1">
         <HeroSection onArticleOpen={openArticle} />
+        <BreakingNewsTicker />
         <FeaturedArticles onArticleOpen={openArticle} />
+        <MasonryGrid onArticleOpen={openArticle} />
+        <EditorialBanner />
+        <IssueCover onArticleOpen={openArticle} />
         <PopularThisWeek onArticleOpen={openArticle} />
         <EditorsPicks onArticleOpen={openArticle} />
+        <PullQuote />
         <LatestArticles onArticleOpen={openArticle} />
         <CategorySection />
         <AuthorSpotlight onArticleOpen={openArticle} />

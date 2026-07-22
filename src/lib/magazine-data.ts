@@ -331,3 +331,23 @@ export const editorsPicksIds = [
   "practice-growth-ai-era",
   "contact-lens-materials-next-generation",
 ];
+
+export const editorialQuote = {
+  text: "The future of optometry lies not just in treating refractive error, but in detecting systemic disease through the eye — the only organ where we can directly visualize blood vessels and nerve tissue in a living patient.",
+  attribution: "Dr. Priya Sharma",
+  role: "Editor-in-Chief, Focus Magazine"
+};
+
+export const editorialBanner = {
+  text: "The eye is the window to systemic health. Every comprehensive eye exam is a potential life-saving event.",
+  ctaText: "Explore Clinical Optometry",
+};
+
+export const issueArticles = [
+  { num: "01", title: "Advances in Myopia Control", id: "myopia-control-beyond-atropine" },
+  { num: "02", title: "The Future of OCT Angiography", id: "oct-angiography-glaucoma" },
+  { num: "03", title: "Pediatric Vision Screening", id: "pediatric-vision-screening-guidelines" },
+  { num: "04", title: "Scleral Lens Fitting Masterclass", id: "scleral-lens-fitting-masterclass" },
+  { num: "05", title: "Neuro-Optometric Rehabilitation", id: "neuro-optometric-rehabilitation-concussion" },
+  { num: "06", title: "Practice Growth in the AI Era", id: "practice-growth-ai-era" },
+];

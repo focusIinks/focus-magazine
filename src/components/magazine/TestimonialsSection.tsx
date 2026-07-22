@@ -24,62 +24,76 @@ const testimonials = [
   },
 ];
 
+function TestimonialCard({
+  testimonial,
+  index,
+}: {
+  testimonial: (typeof testimonials)[number];
+  index: number;
+}) {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 24 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, delay: 0.12 * index }}
+      className="bg-white/5 border border-white/10 rounded-xl p-8 backdrop-blur-sm relative overflow-hidden flex flex-col"
+    >
+      {/* Opening quote mark */}
+      <span className="text-5xl text-primary/30 font-serif leading-none select-none">
+        &ldquo;
+      </span>
+
+      {/* Quote text */}
+      <p className="text-base leading-relaxed text-white/80 italic mt-3 flex-1">
+        {testimonial.quote}
+      </p>
+
+      {/* Divider */}
+      <div className="w-8 h-px bg-white/20 my-5" />
+
+      {/* Star rating */}
+      <div className="flex gap-0.5 mb-4">
+        {Array.from({ length: 5 }).map((_, si) => (
+          <Star
+            key={si}
+            className="w-4 h-4 fill-amber-400 text-amber-400"
+          />
+        ))}
+      </div>
+
+      {/* Author info */}
+      <div>
+        <p className="font-bold text-white">{testimonial.name}</p>
+        <p className="text-sm text-white/50">{testimonial.designation}</p>
+      </div>
+
+      {/* Large decorative closing quote mark */}
+      <span className="absolute bottom-2 right-4 text-8xl text-white/5 font-serif leading-none select-none rotate-180">
+        &ldquo;
+      </span>
+    </motion.div>
+  );
+}
+
 export function TestimonialsSection() {
   return (
-    <section className="py-16 md:py-24 bg-foreground text-background">
+    <section className="py-20 md:py-28 bg-foreground">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center gap-4 mb-4">
-          <div className="h-px bg-background/20 flex-1" />
-          <h2 className="text-2xl md:text-3xl font-bold tracking-tight whitespace-nowrap">
+        {/* Header - Left-aligned editorial */}
+        <div className="mb-12">
+          <span className="text-xs tracking-[0.2em] text-background/40 font-semibold uppercase">
+            Reviewers
+          </span>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mt-2">
             What Our Readers Say
           </h2>
-          <div className="h-px bg-background/20 flex-1" />
         </div>
-        <p className="text-center text-background/60 mb-12 max-w-2xl mx-auto">
-          Trusted by optometrists and vision scientists across 60+ countries.
-        </p>
 
+        {/* Testimonial cards grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {testimonials.map((t, i) => (
-            <motion.div
-              key={t.name}
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.12 * i }}
-              className="bg-background/5 border border-background/10 rounded-xl p-6 md:p-8 flex flex-col"
-            >
-              {/* Quote Icon */}
-              <svg
-                className="w-8 h-8 mb-4 text-background/20 shrink-0"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-              >
-                <path d="M11 7.05C7.21 7.54 4 11 4 15v4h6v-4H7.5c0-2.48 1.35-4.64 3.5-5.77V7.05zM18 7.05C14.21 7.54 11 11 11 15v4h6v-4h-2.5c0-2.48 1.35-4.64 3.5-5.77V7.05z" />
-              </svg>
-
-              {/* Quote Text */}
-              <p className="text-lg leading-relaxed mb-6 flex-1 text-background/90">
-                &ldquo;{t.quote}&rdquo;
-              </p>
-
-              {/* Star Rating */}
-              <div className="flex gap-0.5 mb-4">
-                {Array.from({ length: 5 }).map((_, si) => (
-                  <Star
-                    key={si}
-                    className="w-4 h-4 fill-amber-400 text-amber-400"
-                  />
-                ))}
-              </div>
-
-              {/* Author Info */}
-              <div>
-                <p className="font-bold">{t.name}</p>
-                <p className="text-sm text-background/60">{t.designation}</p>
-              </div>
-            </motion.div>
+            <TestimonialCard key={t.name} testimonial={t} index={i} />
           ))}
         </div>
       </div>
