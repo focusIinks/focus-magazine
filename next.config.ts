@@ -1,16 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "export",
-  basePath: "/focus-magazine",
-  assetPrefix: "/focus-magazine/",
-  images: {
-    unoptimized: true,
-  },
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-  reactStrictMode: false,
+  // Server runtime for API routes that use Node.js APIs (fs)
+  serverExternalPackages: [],
 };
 
 export default nextConfig;

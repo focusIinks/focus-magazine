@@ -1,78 +1,71 @@
 "use client";
 
-import { useState, useCallback } from "react";
-import { Navbar } from "@/components/magazine/Navbar";
-import { HeroSection } from "@/components/magazine/HeroSection";
-import { FeaturedArticles } from "@/components/magazine/FeaturedArticles";
-import { LatestArticles } from "@/components/magazine/LatestArticles";
-import { CategorySection } from "@/components/magazine/CategorySection";
-import { AboutSection } from "@/components/magazine/AboutSection";
-import { NewsletterSection } from "@/components/magazine/NewsletterSection";
-import { ArticleModal } from "@/components/magazine/ArticleModal";
-import { SearchOverlay } from "@/components/magazine/SearchOverlay";
-import { Footer } from "@/components/magazine/Footer";
-import BackToTop from "@/components/magazine/BackToTop";
+import { useState, useEffect, Suspense } from "react";
+import { useSearchParams } from "next/navigation";
+import LoginScreen from "@/components/LoginScreen";
+import ChatInterface from "@/components/ChatInterface";
+import { Loader2 } from "lucide-react";
 
-export default function HomePage() {
-  const [articleModal, setArticleModal] = useState<string | null>(null);
-  const [searchOpen, setSearchOpen] = useState(false);
+interface Model { id: string; owned_by?: string; }
 
-  const openArticle = useCallback((id: string) => setArticleModal(id), []);
-  const closeArticle = useCallback(() => setArticleModal(null), []);
+function AppContent() {
+  const searchParams = useSearchParams();
+  const error = searchParams.get("error");
+  const success = searchParams.get("success") === "true";
 
+  const [authenticated, setAuthenticated] = useState<boolean | null>(null);
+  const [models, setModels] = useState<Model[]>([]);
+
+  useEffect(() => { checkAuth(); }, [success]);
+
+  const checkAuth = async () => {
+    try {
+      const res = await fetch("/api/auth/status");
+      const data = await res.json();
+      if (data.authenticated) {
+        setAuthenticated(true);
+        try {
+          const modelsRes = await fetch("/api/models");
+          const modelsData = await modelsRes.json();
+          if (modelsData.data) setModels(modelsData.data);
+        } catch {
+          setModels([{ id: "gpt-4o-mini", owned_by: "openai" }, { id: "gpt-4o", owned_by: "openai" }]);
+        }
+      } else {
+        setAuthenticated(false);
+      }
+    } catch { setAuthenticated(false); }
+  };
+
+  const handleLogout = async () => {
+    await fetch("/api/auth/logout", { method: "POST" });
+    setAuthenticated(false);
+    setModels([]);
+  };
+
+  if (authenticated === null) {
+    return (
+      <div className="min-h-screen bg-[#0a0a0f] text-white flex items-center justify-center">
+        <Loader2 className="w-6 h-6 animate-spin text-violet-400" />
+      </div>
+    );
+  }
+
+  if (!authenticated) {
+    return <LoginScreen onLogin={() => {}} error={error} success={success} />;
+  }
+
+  return <ChatInterface models={models} onLogout={handleLogout} />;
+}
+
+export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col">
-      <Navbar onSearchOpen={() => setSearchOpen(true)} />
-
-      <main className="flex-1">
-        <div id="home">
-          <HeroSection onArticleOpen={openArticle} />
-        </div>
-
-        <FeaturedArticles onArticleOpen={openArticle} />
-
-        <div className="magazine-rule max-w-7xl mx-auto" />
-
-        <div id="articles">
-          <LatestArticles onArticleOpen={openArticle} />
-        </div>
-
-        <div className="magazine-rule max-w-7xl mx-auto" />
-
-        <div id="categories">
-          <CategorySection />
-        </div>
-
-        <div className="magazine-rule max-w-7xl mx-auto" />
-
-        <div id="about">
-          <AboutSection />
-        </div>
-
-        <div className="magazine-rule max-w-7xl mx-auto" />
-
-        <div id="newsletter">
-          <NewsletterSection />
-        </div>
-      </main>
-
-      <Footer />
-      <BackToTop />
-
-      <ArticleModal
-        articleId={articleModal}
-        open={!!articleModal}
-        onClose={closeArticle}
-      />
-
-      <SearchOverlay
-        open={searchOpen}
-        onClose={() => setSearchOpen(false)}
-        onArticleOpen={(id) => {
-          setSearchOpen(false);
-          openArticle(id);
-        }}
-      />
-    </div>
+    <Suspense fallback={
+      <div className="min-h-screen bg-[#0a0a0f] text-white flex items-center justify-center">
+        <Loader2 className="w-6 h-6 animate-spin text-violet-400" />
+      </div>
+    }>
+      <AppContent />
+    </Suspense>
   );
 }

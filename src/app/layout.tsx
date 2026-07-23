@@ -1,54 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Playfair_Display, Source_Serif_4 } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
-import { Toaster } from "@/components/ui/toaster";
-import { ThemeProvider } from "next-themes";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-const playfairDisplay = Playfair_Display({
-  variable: "--font-editorial",
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const sourceSerif = Source_Serif_4({
-  variable: "--font-body",
-  subsets: ["latin"],
-  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Focus Magazine — Where Vision Science Meets Clinical Excellence",
-  description:
-    "Focus Magazine is the definitive independent publication for optometrists and vision scientists — delivering peer-reviewed clinical insights, cutting-edge myopia management strategies, advanced contact lens science, glaucoma breakthroughs, and actionable practice growth tactics to elevate patient care and professional development.",
-  keywords: [
-    "optometry",
-    "optometrist",
-    "eye care",
-    "myopia management",
-    "glaucoma",
-    "contact lenses",
-    "clinical refraction",
-    "ophthalmology",
-    "vision science",
-    "eye health",
-    "focus magazine",
-  ],
-  authors: [{ name: "Focus Magazine Editorial Team" }],
-  openGraph: {
-    title: "Focus Magazine — Where Vision Science Meets Clinical Excellence",
-    description:
-      "The definitive independent publication for optometrists — peer-reviewed clinical insights, myopia management strategies, and practice growth for eye care professionals.",
-    type: "website",
+  title: "AI Free — Free AI with your ChatGPT Account",
+  description: "Use your ChatGPT account (free or paid) to access GPT models through an OpenAI-compatible interface. No API key needed. No browser extension required.",
+  icons: {
+    icon: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>",
   },
 };
 
@@ -58,19 +21,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} ${playfairDisplay.variable} ${sourceSerif.variable} antialiased bg-background text-foreground`}
-      >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="light"
-          enableSystem={false}
-          disableTransitionOnChange
-        >
-          {children}
-          <Toaster />
-        </ThemeProvider>
+    <html lang="en" className={`${inter.variable} h-full antialiased`}>
+      <body className="min-h-full flex flex-col bg-[#0a0a0f] text-white font-[var(--font-inter)]">
+        {children}
       </body>
     </html>
   );
